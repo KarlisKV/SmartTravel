@@ -20,7 +20,7 @@ from pathlib import Path
 import pandas as pd
 from flask import Flask, request, jsonify
 
-# Import after running from airport_project so get_climate_data finds climatemaps
+# Uses climatemaps from GitHub (see get_climate_data.py); install: pip install git+https://github.com/KarlisKV/climatemaps.git
 from get_climate_data import get_climate_data_for_location, get_global_climate_grid
 
 app = Flask(__name__)

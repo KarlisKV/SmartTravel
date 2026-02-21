@@ -2,6 +2,13 @@
 """
 Get climate data for a specific location (coordinates).
 
+Uses the climatemaps package from https://github.com/KarlisKV/climatemaps
+Install: pip install git+https://github.com/KarlisKV/climatemaps.git
+
+Climate rasters are loaded from data/raw/ relative to a repo root directory.
+Set CLIMATEMAPS_DATA_DIR to the path of a clone of that repo (containing data/raw/),
+or clone it to SmartTravel/climatemaps so the default works.
+
 Edit the coordinates in the main() function, then run:
     python get_climate_data.py
 
@@ -13,19 +20,14 @@ Returns 5 numpy arrays (one for each variable) with 12 monthly values:
 - rainy_days: Number of rainy (wet) days per month
 """
 
-import sys
 import os
+import sys
 import numpy as np
 from pathlib import Path
 from typing import List, Optional, Tuple
 
-# Add climatemaps-master directory to Python path (lives in airport_project, one level up from SmartTravel)
-script_dir = Path(__file__).resolve().parent
-climatemaps_dir = script_dir.parent.parent / "climatemaps-master"
-if climatemaps_dir.exists():
-    sys.path.insert(0, str(climatemaps_dir))
-
-# Import climatemaps modules
+# Climatemaps package: install from GitHub (not a local path)
+#   pip install git+https://github.com/KarlisKV/climatemaps.git
 try:
     from climatemaps.datasets import (
         ClimateVarKey,
@@ -34,15 +36,23 @@ try:
     )
     from climatemaps.data import load_climate_data
 except ImportError as e:
-    print("Error: Missing required dependencies.", file=sys.stderr)
+    print("Error: Missing climatemaps package.", file=sys.stderr)
     print("", file=sys.stderr)
-    print("Please make sure:", file=sys.stderr)
-    print("1. The climatemaps-master directory exists in airport_project (parent of SmartTravel)", file=sys.stderr)
-    print("2. All dependencies are installed:", file=sys.stderr)
-    print("   pip install -r climatemaps-master/requirements.txt", file=sys.stderr)
+    print("Install from GitHub:", file=sys.stderr)
+    print("  pip install git+https://github.com/KarlisKV/climatemaps.git", file=sys.stderr)
+    print("", file=sys.stderr)
+    print("Then ensure climate data is available: clone the repo and set CLIMATEMAPS_DATA_DIR", file=sys.stderr)
+    print("to the clone root (the directory that contains data/raw/), or clone to SmartTravel/climatemaps.", file=sys.stderr)
     print("", file=sys.stderr)
     print(f"Original error: {e}", file=sys.stderr)
     sys.exit(1)
+
+# Data root: climatemaps uses relative paths data/raw/... so CWD must be the repo root
+script_dir = Path(__file__).resolve().parent
+_default_data_root = script_dir.parent.parent / "climatemaps"
+_climatemaps_data_dir = Path(os.environ.get("CLIMATEMAPS_DATA_DIR", str(_default_data_root))).resolve()
+if _climatemaps_data_dir.exists() and (_climatemaps_data_dir / "data" / "raw").exists():
+    os.chdir(_climatemaps_data_dir)
 
 
 def get_climate_data_for_location(lat: float, lon: float) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
