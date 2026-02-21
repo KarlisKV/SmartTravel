@@ -1,0 +1,2458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(160deg, #5b21b6 0%, #7c3aed 35%, #a78bfa 70%, #c4b5fd 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.logo {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    z-index: 1001;
+    letter-spacing: 0.5px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.75rem 2rem;
+    border-radius: 999px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+}
+
+.logo-small {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+#results-screen {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 0; /* allow flex child to shrink and scroll */
+}
+
+/* World map background on home screen only */
+#loading-screen {
+    background-image:
+        linear-gradient(160deg, rgba(91, 33, 182, 0.88) 0%, rgba(124, 58, 237, 0.82) 35%, rgba(167, 139, 250, 0.78) 70%, rgba(196, 181, 253, 0.75) 100%),
+        url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Equirectangular_projection_SW.jpg/1920px-Equirectangular_projection_SW.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.screen.active {
+    display: flex;
+    opacity: 1;
+    z-index: 10;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+    padding-top: 6rem;
+    text-align: center;
+    overflow-y: auto;
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+#destination-screen .container,
+#destination-selection-screen .container {
+    justify-content: flex-start;
+    padding-bottom: 3rem;
+    padding-top: 7rem;
+    gap: 2rem;
+}
+
+.visa-glossary-container {
+    text-align: center;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+    padding-top: 7rem;
+}
+
+/* Let the screen scroll, not the container, so the scrollbar is at the viewport edge */
+#visa-glossary-screen .container {
+    overflow: visible;
+}
+
+.visa-glossary-intro {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.visa-glossary-intro a {
+    color: #c4b5fd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.visa-glossary-intro a:hover {
+    text-decoration: underline;
+}
+
+.visa-glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.visa-glossary-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.visa-glossary-title-box {
+    background: rgba(40, 40, 50, 0.85);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.visa-glossary-border-red .visa-glossary-title-box { border-color: #dc2626; }
+.visa-glossary-border-green .visa-glossary-title-box { border-color: #16a34a; }
+.visa-glossary-border-blue .visa-glossary-title-box { border-color: #2563eb; }
+.visa-glossary-border-gold .visa-glossary-title-box { border-color: #ca8a04; }
+
+.visa-glossary-item h3 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.visa-glossary-item p {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+.visa-glossary-map-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 3rem;
+}
+
+.visa-glossary-map-section .visa-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.visa-glossary-map-hint {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+.visa-glossary-map-legend {
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: center;
+}
+
+.visa-glossary-map-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.visa-glossary-map-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.visa-glossary-map {
+    height: 585px;
+    flex: 3 1 0;
+    min-width: 840px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1e293b;
+}
+
+.visa-glossary-dropdown-column {
+    flex: 0 0 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.visa-glossary-dropdown {
+    max-width: 320px;
+}
+
+@media (max-width: 900px) {
+    .visa-glossary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .visa-glossary-map-row {
+        flex-wrap: wrap;
+    }
+    .visa-glossary-map {
+        height: 400px;
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+    .visa-glossary-dropdown-column {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .visa-glossary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    align-items: stretch;
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+.date-buttons {
+    margin-top: 0;
+    width: 100%;
+    max-width: 900px;
+    align-items: stretch;
+}
+
+.date-buttons .btn {
+    width: 100%;
+}
+
+.btn {
+    padding: 1.15rem 2rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    text-transform: none;
+    letter-spacing: 0.02em;
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+.btn-primary {
+    background: white;
+    color: #5b21b6;
+}
+
+.btn-primary:hover {
+    background: #faf5ff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.btn-back {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 0.7rem 1.25rem;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    backdrop-filter: blur(12px);
+    transition: transform 0.2s ease, background 0.2s ease;
+    z-index: 1000;
+}
+
+.btn-back:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: translateX(-2px);
+}
+
+/* Map Screen Styles */
+#map-screen {
+    background: #f5f5f5;
+}
+
+.map-header {
+    position: relative;
+    background: linear-gradient(160deg, #5b21b6 0%, #7c3aed 50%, #a78bfa 100%);
+    padding: 1.5rem 2rem;
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.map-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.explore-map-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+}
+.explore-layer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+.explore-layer-btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    padding: 0.4rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(124, 58, 237, 0.35);
+    background: #fff;
+    font-family: inherit;
+    font-size: 0.75rem;
+    color: #374151;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+.explore-layer-btn:hover {
+    background: rgba(196, 181, 253, 0.25);
+    border-color: #a78bfa;
+}
+.explore-layer-btn.active {
+    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    border-color: #5b21b6;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(91, 33, 182, 0.35);
+}
+.explore-layer-icon {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.15rem;
+}
+.explore-layer-btn .explore-layer-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+.explore-layer-select {
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #c4b5fd;
+    background: #fff;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+.explore-map-legend {
+    padding: 0.35rem 0.75rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #374151;
+}
+.explore-climate-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #374151;
+}
+.explore-climate-options label { font-weight: 500; }
+.explore-climate-select {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+.explore-map-container {
+    flex: 1;
+    min-height: 400px;
+    position: relative;
+}
+#map.explore-map,
+.explore-map-container .explore-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#map-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#map-screen .map-header {
+    flex-shrink: 0;
+}
+#map-screen .explore-map-controls {
+    flex-shrink: 0;
+}
+#map-screen .explore-map-container {
+    flex: 1;
+    min-height: 0;
+}
+#map {
+    flex: 1;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Results Screen Styles */
+#results-screen {
+    background: linear-gradient(160deg, #5b21b6 0%, #7c3aed 35%, #a78bfa 70%, #c4b5fd 100%);
+    background-attachment: fixed;
+}
+
+.results-container {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    padding: 6rem 2rem 4rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.results-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.results-loading {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 3rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.results-loading-text {
+    display: block;
+}
+
+.results-loading-pct {
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.results-error {
+    color: #fecaca;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 14px;
+    margin-top: 1rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.results-charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.results-charts-side-by-side {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.results-charts-side-by-side .chart-card {
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .results-charts-side-by-side {
+        grid-template-columns: 1fr;
+    }
+}
+
+.chart-card {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+}
+
+.chart-card h3 {
+    color: #374151;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.chart-card canvas {
+    max-height: 220px;
+}
+
+.chart-card-wide {
+    grid-column: 1 / -1;
+}
+
+.chart-card-wide canvas {
+    max-height: 280px;
+}
+
+.chart-card-full {
+    grid-column: 1 / -1;
+}
+
+.temp-heatmap {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    margin-top: 0.5rem;
+    min-height: 56px;
+}
+
+.temp-heatmap-cell {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.temp-heatmap-legend {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.temp-heatmap-legend-bar {
+    flex: 1;
+    max-width: 120px;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(to right, rgb(0, 80, 200), rgb(120, 200, 120), rgb(255, 180, 0), rgb(255, 80, 0));
+}
+
+/* Explore map: permanent plug-type labels on countries */
+.leaflet-tooltip.plug-label-tooltip {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Explore map: climate chart popup (OpenClimateMap-style monthly chart) */
+.climate-chart-popup {
+    min-width: 320px;
+}
+.climate-chart-popup-title {
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    font-size: 0.95rem;
+}
+.climate-chart-popup-coords {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+.climate-chart-popup-canvas-wrap {
+    width: 320px;
+    height: 220px;
+}
+
+/* Visa + Travel advisory side by side */
+.visa-advisory-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    align-items: start;
+}
+
+.visa-advisory-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.visa-advisory-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.visa-advisory-row .visa-requirement-results-section,
+.visa-advisory-row .travel-advisory-section {
+    max-width: none;
+    margin: 0;
+    min-width: 0;
+}
+
+.visa-advisory-row .driving-side-section,
+.visa-advisory-row .languages-section,
+.visa-advisory-row .religion-section,
+.visa-advisory-row .travel-advisory-section {
+    max-width: none;
+    margin: 0;
+    min-width: 0;
+}
+
+@media (max-width: 900px) {
+    .visa-advisory-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .visa-advisory-left-column,
+    .visa-advisory-right-column {
+        gap: 1.5rem;
+    }
+}
+
+/* Nearest airports table */
+.airports-section {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+/* Results header with flag */
+.results-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+#results-title {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.results-flag {
+    width: 48px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+}
+
+/* Flag icon in dropdown */
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    border-radius: 2px;
+}
+
+.nationality-select option {
+    padding: 0.5rem;
+}
+
+/* Custom dropdown for nationality with flags */
+.nationality-select-wrapper {
+    position: relative;
+}
+
+.nationality-select {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.nationality-custom-dropdown {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.nationality-dropdown-selected {
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 0.875rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #374151;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+}
+
+.nationality-dropdown-selected:hover {
+    background: #fafafa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.nationality-dropdown-selected .flag-icon {
+    width: 24px;
+    height: 18px;
+    margin-right: 0.75rem;
+    border-radius: 2px;
+}
+
+.nationality-dropdown-arrow {
+    color: #6b7280;
+    font-size: 0.75rem;
+    transition: transform 0.2s ease;
+}
+
+.nationality-custom-dropdown.open .nationality-dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.nationality-dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.nationality-custom-dropdown.open .nationality-dropdown-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.nationality-search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.95rem;
+    outline: none;
+    background: #fafafa;
+}
+
+.nationality-search-input:focus {
+    background: white;
+}
+
+.nationality-dropdown-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.nationality-dropdown-item {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.15s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    outline: none;
+}
+
+.nationality-dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.nationality-dropdown-item:hover,
+.nationality-dropdown-item:focus {
+    background: #f3f4f6;
+}
+
+.nationality-dropdown-item.nationality-dropdown-empty {
+    color: #6b7280;
+    font-style: italic;
+    cursor: default;
+}
+
+.nationality-dropdown-item.nationality-dropdown-empty:hover {
+    background: transparent;
+}
+
+.nationality-dropdown-item .flag-icon {
+    width: 24px;
+    height: 18px;
+    margin-right: 0.75rem;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.nationality-dropdown-item span {
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+.airports-title {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* U.S. Travel Advisory */
+.travel-advisory-section {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.travel-advisory-section .airports-title {
+    text-align: center;
+}
+
+.advisory-card {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.advisory-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.advisory-level-badge {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.25rem 0.6rem;
+    border-radius: 8px;
+}
+
+.advisory-destination {
+    font-weight: 600;
+    color: #374151;
+    font-size: 1.05rem;
+}
+
+.advisory-text {
+    color: #4b5563;
+    margin: 0.25rem 0 0.5rem;
+    font-size: 0.95rem;
+}
+
+.advisory-risks {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.advisory-risk-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 0.35rem;
+}
+
+.advisory-risk-pill {
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    background: rgba(91, 33, 182, 0.08);
+    color: #5b21b6;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(91, 33, 182, 0.2);
+}
+
+.advisory-date {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    margin: 0.25rem 0;
+}
+
+.advisory-links {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.advisory-links a {
+    color: #5b21b6;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.advisory-links a:hover {
+    text-decoration: underline;
+}
+
+/* Visa / entry requirement (results screen) */
+.visa-requirement-results-section {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.visa-requirement-results-card {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.visa-requirement-results-card .visa-route {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+}
+
+.visa-requirement-results-card .visa-glossary-desc {
+    color: #4b5563;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.visa-requirement-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.visa-requirement-table th,
+.visa-requirement-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.visa-requirement-table th {
+    color: #5b21b6;
+    font-weight: 600;
+}
+
+.visa-requirement-table td {
+    color: #374151;
+}
+
+.visa-requirement-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.visa-requirement-glossary {
+    margin: 1rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+/* Plugs & voltage */
+.plug-voltage-section,
+.driving-side-section {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+/* LGBTQ+ Travel Information */
+.lgbtq-section {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.lgbtq-card {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.lgbtq-info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lgbtq-location {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    color: #374151;
+}
+
+.lgbtq-region {
+    color: #6b7280;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.lgbtq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.lgbtq-item {
+    padding: 0.75rem;
+    background: #f9fafb;
+    border-radius: 8px;
+    border-left: 3px solid #e5e7eb;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.lgbtq-label {
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.25rem;
+}
+
+.lgbtq-yes {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.lgbtq-no {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lgbtq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* LGBTQ+ Full Table */
+.lgbtq-table-wrapper {
+    max-width: 1400px;
+    margin: 2rem auto 0;
+}
+
+.lgbtq-table-container {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    overflow-x: auto;
+}
+
+.lgbtq-full-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    min-width: 800px;
+}
+
+.lgbtq-full-table th,
+.lgbtq-full-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    vertical-align: top;
+}
+
+.lgbtq-full-table td:first-child {
+    min-width: 200px;
+}
+
+.lgbtq-full-table td:nth-child(2) {
+    min-width: 250px;
+}
+
+.lgbtq-full-table th {
+    color: #5b21b6;
+    font-weight: 600;
+    background: rgba(91, 33, 182, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.lgbtq-full-table td {
+    color: #374151;
+}
+
+.lgbtq-full-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.lgbtq-full-table tbody tr:hover {
+    background: rgba(91, 33, 182, 0.04);
+}
+
+.lgbtq-full-table td:first-child {
+    font-weight: 600;
+    color: #374151;
+}
+
+.lgbtq-full-table td:first-child strong {
+    color: #5b21b6;
+}
+
+@media (max-width: 768px) {
+    .lgbtq-table-container {
+        padding: 0.75rem;
+    }
+    
+    .lgbtq-full-table {
+        font-size: 0.85rem;
+    }
+    
+    .lgbtq-full-table th,
+    .lgbtq-full-table td {
+        padding: 0.5rem 0.25rem;
+    }
+}
+
+.currency-section,
+.languages-section,
+.religion-section {
+    margin-bottom: 1.25rem;
+}
+
+.currency-section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.currency-section .airports-title,
+.languages-section .airports-title,
+.religion-section .airports-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.currency-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+    .currency-container {
+        flex-direction: column;
+    }
+}
+
+.religion-section {
+    margin-bottom: 1.25rem;
+}
+
+.religion-section .airports-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.religion-chart-container {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    position: relative;
+    height: 300px;
+    max-width: 100%;
+}
+
+.plug-voltage-card,
+.driving-side-card,
+.currency-card,
+.languages-card {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.currency-card {
+    flex: 1;
+    min-width: 0;
+    padding: 0.75rem 1rem;
+}
+
+.languages-card {
+    padding: 0.75rem 1rem;
+}
+
+.currency-info-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.currency-info-row {
+    display: table-row;
+}
+
+.currency-info-label {
+    display: table-cell;
+    padding: 0.25rem 0.625rem 0.25rem 0;
+    font-weight: 600;
+    color: #6b7280;
+    font-size: 0.8125rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.currency-info-value {
+    display: table-cell;
+    padding: 0.25rem 0;
+    color: #111827;
+    font-size: 0.875rem;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+.currency-info-divider {
+    height: 0.375rem;
+}
+
+.currency-info-divider .currency-info-label,
+.currency-info-divider .currency-info-value {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 0.375rem;
+    margin-top: 0.125rem;
+}
+
+.currency-calculator {
+    flex: 1;
+    min-width: 0;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.currency-calculator h4 {
+    margin: 0 0 0.75rem 0;
+    color: #374151;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.currency-calc-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.currency-calc-input-group,
+.currency-calc-result-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    flex: 1;
+    min-width: 150px;
+}
+
+.currency-calc-input-group input {
+    padding: 0.625rem;
+    border: 2px solid rgba(91, 33, 182, 0.2);
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #1f2937;
+    background: white;
+    transition: border-color 0.2s;
+}
+
+.currency-calc-input-group input:focus {
+    outline: none;
+    border-color: #7c3aed;
+}
+
+.currency-calc-input-group select,
+.currency-calc-result-group select {
+    padding: 0.4375rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    font-size: 0.875rem;
+    background: white;
+    color: #374151;
+    cursor: pointer;
+}
+
+.currency-calc-arrow {
+    font-size: 1.5rem;
+    color: #7c3aed;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.currency-result-amount {
+    padding: 0.625rem;
+    background: rgba(91, 33, 182, 0.08);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #5b21b6;
+    text-align: center;
+    min-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency-calc-swap {
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+.btn-currency-swap {
+    padding: 0.4375rem 0.875rem;
+    background: rgba(91, 33, 182, 0.1);
+    color: #5b21b6;
+    border: 1px solid rgba(91, 33, 182, 0.2);
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-currency-swap:hover {
+    background: rgba(91, 33, 182, 0.15);
+}
+
+.languages-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.languages-country {
+    font-size: 0.9375rem;
+    color: #111827;
+    margin-bottom: 0.25rem;
+}
+
+.languages-text {
+    font-size: 0.875rem;
+    color: #374151;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .currency-calc-row {
+        flex-direction: column;
+    }
+    
+    .currency-calc-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .currency-calc-input-group,
+    .currency-calc-result-group {
+        width: 100%;
+    }
+}
+
+.plug-voltage-meta {
+    margin-bottom: 0.75rem;
+}
+
+.plug-voltage-location {
+    font-weight: 600;
+    color: #374151;
+    font-size: 1.05rem;
+}
+
+.plug-voltage-table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.plug-voltage-table th,
+.plug-voltage-table td {
+    padding: 0.5rem 1rem 0.5rem 0;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.plug-voltage-table th {
+    color: #5b21b6;
+    font-weight: 600;
+}
+
+.plug-voltage-table td {
+    color: #374151;
+    vertical-align: top;
+}
+
+.plug-voltage-types-cell {
+    padding-top: 0.25rem;
+}
+
+.plug-socket-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    align-items: center;
+}
+
+.plug-socket-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plug-socket-label {
+    font-size: 0.9rem;
+    color: #374151;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.plug-socket-img {
+    width: 260px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* Socket icons in list: 3× larger (one per plug type letter) */
+.plug-socket-list .plug-socket-img {
+    width: 300px;
+    max-height: 240px;
+}
+
+.airports-table-wrapper {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    overflow-x: auto;
+}
+
+.airports-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.airports-table th,
+.airports-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.airports-table th {
+    color: #5b21b6;
+    font-weight: 600;
+}
+
+.airports-table td {
+    color: #374151;
+}
+
+.airports-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.airports-table tbody tr:hover {
+    background: rgba(91, 33, 182, 0.04);
+}
+
+.airports-table td:last-child {
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* World Heritage sites within 200 km */
+.heritage-section {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.heritage-section .airports-title {
+    margin-bottom: 1rem;
+}
+
+.heritage-table-wrapper {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    overflow-x: auto;
+}
+
+.heritage-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.heritage-table th,
+.heritage-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.heritage-table th {
+    color: #5b21b6;
+    font-weight: 600;
+}
+
+.heritage-table td {
+    color: #374151;
+}
+
+.heritage-table .heritage-desc-cell {
+    max-width: 420px;
+    vertical-align: top;
+}
+
+.heritage-desc-wrap {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #6b7280;
+}
+
+.heritage-desc-text {
+    display: block;
+}
+
+.heritage-desc-toggle {
+    display: inline-block;
+    margin-top: 0.35rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #5b21b6;
+    background: rgba(91, 33, 182, 0.08);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.heritage-desc-toggle:hover {
+    background: rgba(91, 33, 182, 0.15);
+}
+
+.heritage-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.heritage-table tbody tr:hover {
+    background: rgba(91, 33, 182, 0.04);
+}
+
+.heritage-table .heritage-distance {
+    white-space: nowrap;
+    text-align: right;
+    color: #5b21b6;
+    font-weight: 500;
+}
+
+.heritage-empty {
+    color: #6b7280;
+    font-style: italic;
+}
+
+/* Results map (location + nearest airports) */
+.results-map-container {
+    max-width: 1200px;
+    margin: 2rem auto 3rem;
+}
+
+.results-map-container .airports-title {
+    margin-bottom: 1rem;
+}
+
+.results-map {
+    height: 380px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    background: #e8e4f0;
+}
+
+/* Your location: red dot */
+.dest-marker {
+    background: none !important;
+    border: none !important;
+}
+
+.dest-marker span {
+    font-size: 28px;
+    line-height: 1;
+    color: #dc2626;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    display: block;
+}
+
+/* Airports: yellow airplane */
+.airport-marker {
+    background: none !important;
+    border: none !important;
+}
+
+.airport-marker span {
+    font-size: 48px;
+    line-height: 1;
+    color: #eab308;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    display: block;
+}
+
+/* Explore map: smaller airplane icons (same style as results) */
+#map.explore-map .airport-marker span {
+    font-size: 24px;
+}
+
+/* UNESCO / cultural heritage marker on map */
+.heritage-marker {
+    background: none !important;
+    border: none !important;
+}
+
+.heritage-marker span {
+    font-size: 28px;
+    line-height: 1;
+    display: block;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.4));
+}
+
+/* Explore map: smaller heritage icons (same style as results) */
+#map.explore-map .heritage-marker span {
+    font-size: 22px;
+}
+
+.results-marker {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.results-marker-dest {
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+}
+
+.results-marker-airport {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    font-size: 1.25rem;
+}
+
+.results-marker-airport span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #5b21b6;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(91, 33, 182, 0.4);
+}
+
+.results-marker-dest span {
+    display: inline-block;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+    margin: 0.75rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Date Selection Screen Styles */
+.calendars-container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.calendar-section {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.calendar-section h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.month-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    position: relative;
+    z-index: 2;
+}
+
+.month-btn {
+    padding: 0.85rem 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.18);
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    backdrop-filter: blur(6px);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
+}
+
+.month-btn:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.month-btn.selected {
+    background: white;
+    color: #5b21b6 !important;
+    border-color: white;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.4);
+    font-weight: 700;
+}
+
+.selected-dates-info {
+    margin: 0;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    width: 100%;
+    max-width: 900px;
+}
+
+.date-hint {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn:disabled:hover {
+    transform: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Destination Selection Screen Styles */
+.destination-and-nationality-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 700px;
+    margin: 1.5rem 0;
+    align-items: flex-start;
+}
+
+.destination-block {
+    flex: 1;
+    min-width: 260px;
+}
+
+.nationality-block {
+    flex: 0 0 auto;
+    min-width: 220px;
+}
+
+.visa-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Native select is hidden, custom dropdown handles everything */
+.nationality-select {
+    display: none;
+}
+
+.nationality-select option {
+    background: #2d2a3a;
+    color: white;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem 0;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.05rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    color: white;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.autocomplete-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0.5rem;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: none;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.autocomplete-results.show {
+    display: block;
+}
+
+.autocomplete-item {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background 0.2s ease;
+    color: #333;
+}
+
+.autocomplete-item:last-child {
+    border-bottom: none;
+}
+
+.autocomplete-item:hover {
+    background: rgba(91, 33, 182, 0.08);
+}
+
+.autocomplete-item.selected {
+    background: rgba(102, 126, 234, 0.2);
+}
+
+.selected-destination {
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.selected-destination.show {
+    display: block;
+}
+
+.destination-hint {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 1.5rem 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5rem;
+        padding: 0.6rem 1.5rem;
+        top: 1rem;
+    }
+
+    .logo-small {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .button-group {
+        max-width: 100%;
+    }
+
+    .container {
+        padding-top: 5rem;
+    }
+
+    .calendars-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .calendar-section {
+        min-width: 100%;
+    }
+
+    .month-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+    }
+
+    .month-btn {
+        padding: 0.7rem 0.4rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Animation for screen transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.screen.active .container {
+    animation: fadeIn 0.35s ease-out;
+}
+
+.screen.active .results-container {
+    animation: fadeIn 0.35s ease-out;
+}
+
+/* Scratch Map Styles */
+.scratch-map-container {
+    padding: 1rem 2rem;
+    width: 100%;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+    padding-top: 5rem; /* Add top padding to avoid logo overlap */
+}
+
+.scratch-map-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem; /* Add top margin for spacing */
+}
+
+.scratch-map-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0 1.25rem;
+}
+
+.scratch-map-top-stats {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.scratch-map-top-stats-main {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.75rem 1.1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+
+.scratch-map-top-stats-label {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.scratch-map-top-stats-value {
+    font-weight: 700;
+    color: white;
+}
+
+.scratch-map-instructions {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.scratch-map-instructions-compact {
+    padding: 0.75rem 1.1rem;
+}
+
+.scratch-map-instructions p {
+    margin: 0;
+    color: white;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.scratch-map-instructions strong {
+    font-weight: 600;
+}
+
+.scratch-map-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.scratch-map-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+}
+
+.world-map-svg {
+    width: 100%;
+    flex: 1;
+    min-height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.scratch-map-lists {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 250px);
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+}
+
+.lists-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.list-section h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.country-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+.country-item {
+    padding: 0.75rem 1rem;
+    background: white;
+    border-radius: 6px;
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.country-item:hover {
+    transform: translateX(4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.country-flag {
+    font-size: 1.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.country-name {
+    flex: 1;
+}
+
+.empty-list {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Continents Breakdown */
+.continents-breakdown {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.continents-breakdown h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.continents-breakdown h3:not(:first-child) {
+    margin-top: 2.25rem;
+}
+
+.continents-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.continent-section {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.continent-section h4 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.continent-countries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.country-item-small {
+    padding: 0.5rem 0.75rem;
+    background: white;
+    border-radius: 6px;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.country-item-small:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.country-item-small .country-flag {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+@media (max-width: 1024px) {
+    .scratch-map-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .scratch-map-wrapper {
+        min-height: 500px;
+    }
+    
+    .world-map-svg {
+        min-height: 500px;
+    }
+    
+    .continents-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .scratch-map-container {
+        padding: 1rem;
+    }
+
+    .scratch-map-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .mode-toggle {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .btn-mode {
+        flex: 1;
+    }
+
+    .scratch-map-wrapper {
+        min-height: 400px;
+    }
+
+    .world-map-svg {
+        min-height: 400px;
+    }
+}

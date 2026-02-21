@@ -1,0 +1,228 @@
+Location;PlugTypes;Voltage;Frequency
+Afghanistan;C,F;220 V;50Hz
+Albania;C,F;230 V;50Hz
+Algeria;C,F;230 V;50Hz
+American Samoa;A,B,F,I;120 V;60Hz
+Andorra;C,F;230 V;50Hz
+Angola;C;220 V;50Hz
+Anguilla;A;110 V;60Hz
+Antigua;A,B;230 V;60Hz
+Argentina;C,I;220 V;50Hz
+Armenia;C,F;230 V;50Hz
+Aruba;A,B,F;127 V;60Hz
+Australia;I;240 V;50Hz
+Austria;C,F;230 V;50Hz
+Azerbaijan;C,F;220 V;50Hz
+Azores;F;230 V;50Hz
+Bahamas;A,B;120 V;60Hz
+Bahrain;G;230 V;50Hz
+Balearic Islands;C,F;230 V;50Hz
+Bangladesh;C,D,G,K;220 V;50Hz
+Barbados;A,B;115 V;50Hz
+Belarus;C,F;220 V;50Hz
+Belgium;C,E;230 V;50Hz
+Belize;A,B,G;110/220 V;60Hz
+Benin;C,E;220 V;50Hz
+Bermuda;A,B;120 V;60Hz
+Bhutan;C,D,F,G,M;230 V;50Hz
+Bolivia;A,C;115/230 V;50Hz
+Bosnia & Herzegovina;C,F;230 V;50Hz
+Botswana;D,G,M;230 V;50Hz
+Brazil;C,N;127/220 V;60Hz
+British Virgin Islands;A,B;110 V;60Hz
+Brunei Darussalam;G;240 V;50Hz
+Bulgaria;C,F;230 V;50Hz
+Burkina Faso;C,E;220 V;50Hz
+Burundi;C,E;220 V;50Hz
+Cambodia;A,C,G;230 V;50Hz
+Cameroon;C,E;220 V;50Hz
+Canada;A,B;120 V;60Hz
+Canary Islands;C,F;230 V;50Hz
+Cape Verde;C,F;220 V;50Hz
+Cayman Islands;A,B;120 V;60Hz
+"Central African
+Republic";"""C,E""";220 V;50Hz
+Chad;C,D,E,F;220 V;50Hz
+Channel Islands;C,G;230 V;50Hz
+Chile;C,L;220 V;50Hz
+China (Mainland);A,C,I;220 V;50Hz
+Colombia;A,B;110 V;60Hz
+Comoros;C,E;220 V;50Hz
+Congo - Brazzaville;C,E;230 V;50Hz
+Congo - Kinshasa;C,D,E;220 V;50Hz
+Cook Islands;I;240 V;50Hz
+Costa Rica;A,B;120 V;60Hz
+Cote d’Ivoire;C,E;230 V;50Hz
+Croatia;C,F;230 V;50Hz
+Cuba;A,B;110 V;60Hz
+Cyprus;G;240 V;50Hz
+Czech Republic;C,E;230 V;50Hz
+Denmark;C,F,E,K;230 V;50Hz
+Djibouti;C,E;220 V;50Hz
+Dominica;D,G;230 V;50Hz
+Dominican Rep.;A,B;110 V;60Hz
+Ecuador;A,B;120 V;60Hz
+Egypt;C,F;220 V;50Hz
+El Salvador;A,B;115 V;60Hz
+Equatorial Guinea;C,E;220 V;50Hz
+Eritrea;C,L;230 V;50Hz
+Estonia;C,F;230 V;50Hz
+Ethiopia;C,F,L;220 V;50Hz
+Faroe Islands;C,F,E,K;230 V;50Hz
+Falkland Islands;G;240 V;50Hz
+Fiji;I;240 V;50Hz
+Finland;C,F;230 V;50Hz
+France;C,E;230 V;50Hz
+French Guiana;C,D,E;220 V;50Hz
+Gaza Strip;C,D,H;230 V;50Hz
+Gambia;G;230 V;50Hz
+Gabon;C;220 V;50Hz
+Georgia;C,F;220 V;50Hz
+Germany;C,F;230 V;50Hz
+Ghana;D,G;230 V;50Hz
+Gibraltar;C,G;240 V;50Hz
+Greece;C,F;230 V;50Hz
+Greenland;C,E,F,K;220 V;50Hz
+Grenada;G;230 V;50Hz
+Guadeloupe;C,D,E;230 V;50Hz
+Guam;A,B;110 V;60Hz
+Guatemala;A,B;120 V;60Hz
+Guinea;C,F,K;220 V;50Hz
+Guinea-Bissau;C;220 V;50Hz
+Guyana;A,B,D,G;240 V;60Hz
+Haiti;A,B;110 V;60Hz
+Honduras;A,B;110 V;60Hz
+Hong Kong;D,G;220 V;50Hz
+Hungary;C,F;230 V;50Hz
+Iceland;C,F;230 V;50Hz
+India;C,D,M;230 V;50Hz
+Indonesia;C,F;110/220 V;50Hz
+Iran;C,F;220 V;50Hz
+Iraq;C,D,G;230 V;50Hz
+Ireland;G;230 V;50Hz
+Isle of Man;C,G;230 V;50Hz
+Israel;C,H,M;230 V;50Hz
+Italy;C,F,L;230 V;50Hz
+Jamaica;A,B;110 V;50Hz
+Japan;A,B;100 V;50/60Hz
+Jordan;B,C,D,F,G,J;230 V;50Hz
+Kazakhstan;C,F;220 V;50Hz
+Kenya;G;240 V;50Hz
+Kiribati;I;240 V;50Hz
+North Korea;A,C,F;110/220 V;50/60Hz
+South Korea;A,B,C,F;220 V;60Hz
+Kuwait;C,G,M;240 V;50Hz
+Laos;A,B,C,E,F;230 V;50Hz
+Kyrgyzstan;C,F;220 V;50Hz
+Latvia;C,F;220 V;50Hz
+Lebanon;A,B,C,D,G;220 V;50Hz
+Lesotho;M;220 V;50Hz
+Liberia;A,B,C,E,F;120/220 V;50/60Hz
+Libya;C,D,F,L;127/230 V;50Hz
+Lithuania;C,F;230 V;50Hz
+Liechtenstein;C,J;230 V;50Hz
+Luxembourg;C,F;230 V;50Hz
+Macau;D,M,G,F;220 V;50Hz
+Macedonia;C,F;230 V;50Hz
+Madagascar;C,D,E,J,K;127/220 V;50Hz
+Madeira;C,F;230 V;50Hz
+Malawi;G;230 V;50Hz
+Malaysia;A,C,G,M;240 V;50Hz
+Maldives;A,C,D,G,J,K,L;230 V;50Hz
+Mali;C,E;220 V;50Hz
+Malta;G;230 V;50Hz
+Martinique;C,D,E;220 V;50Hz
+Mauritania;C;220 V;50Hz
+Mexico;A,B;127 V;60Hz
+Micronesia;A,B;120 V;60Hz
+Moldova;C,F;220 V;50Hz
+Monaco;C,D,E,F;230 V;50Hz
+Mongolia;C,E;220 V;50Hz
+Montenegro;C,F;230 V;50Hz
+Montserrat;A,B;230 V;60Hz
+Morocco;C,E;120/220 V;50Hz
+Mozambique;C,F,M;220 V;50Hz
+Burma;C,D,F,G;230 V;50Hz
+Myanmar;C,D,F,G;230 V;50Hz
+Namibia;D,M;220 V;50Hz
+Nauru;I;240 V;50Hz
+Nepal;C,D,M;230 V;50Hz
+Netherlands;C,F;230 V;50Hz
+Netherlands Antilles;A,B,C,F;127/220 V;50Hz
+New Calcedonia;C,F;220 V;50Hz
+New Zealand;I;230 V;50Hz
+Nicaragua;A,B;120 V;60Hz
+Niger;A,B,C,D,E,F;220 V;50Hz
+Nigeria;D,G;230 V;50Hz
+Norway;C,F;230 V;50Hz
+Okinawa;A,B;120 V;60Hz
+Oman;C,G;240 V;50Hz
+Pakistan;C,D,M,G;230 V;50Hz
+Palau;A,B;120 V;60Hz
+Panama;A,B;110 V;60Hz
+Papua New Guinea;I;240 V;50Hz
+Paraguay;C;220 V;50Hz
+Peru;A,B,C;220 V;60Hz
+Philippines;A,B,C;220 V;60Hz
+Poland;C,E;230 V;50Hz
+Portugal;C,F;230 V;50Hz
+Puerto Rico;A,B;120 V;60Hz
+Qatar;D,G;240 V;50Hz
+Reunion;E;220 V;50Hz
+Romania;C,F;230 V;50Hz
+Russia;C,F;220 V;50Hz
+Rwanda;C,J;230 V;50Hz
+St. Kitts;A,B,D,G;230 V;60Hz
+Nevis;A,B,D,G;230 V;60Hz
+St. Lucia;G;240 V;50Hz
+St. Martin;C,F;120/220 V;60Hz
+St. Vincent;A,C,E,G,I,K;230 V;50Hz
+Samoa;I;230 V;50Hz
+San Marino;C,F,L;230 V;50Hz
+Sao Tome & Principe;C,F;220 V;50Hz
+Saudi Arabia;G;220/230 V;60Hz
+Senegal;C,D,E,K;230 V;50Hz
+Serbia;C,F;230 V;50Hz
+Seychelles;G;240 V;50Hz
+Sierra Leone;D,G;230 V;50Hz
+Singapore;C,G,M;230 V;50Hz
+Slovakia;C,E;230 V;50Hz
+Slovenia;C,F;230 V;50Hz
+Somalia;C;220 V;50Hz
+South Africa;C,M,N;230 V;50Hz
+Spain;C,F;230 V;50Hz
+Sri Lanka;D,M,G;230 V;50Hz
+Sudan;C,D;230 V;50Hz
+Suriname;C,F;127 V;60Hz
+Swaziland;M;230 V;50Hz
+Sweden;C,F;230 V;50Hz
+Switzerland;C,J;230 V;50Hz
+Syria;C,E,L;220 V;50Hz
+Tahiti;A,B,E;110/220 V;60Hz
+Taiwan;A,B;110 V;60Hz
+Tanzania;D,G;230 V;50Hz
+Thailand;A,B,C,F,O;220 V;50Hz
+Timor-Leste;C,E,F,I;220 V;50Hz
+Togo;C;220 V;50Hz
+Tonga;I;240 V;50Hz
+Trinidad & Tobago;A,B;115 V;60Hz
+Tunisia;C,E;230 V;50Hz
+Turkey;C,F;230 V;50Hz
+Turkmenistan;B,C,F;220 V;50Hz
+Turks & Caicos;A,B;120 V;60Hz
+Tuvalu;I;220 V;50Hz
+Uganda;G;240 V;50Hz
+Ukraine;C,F;220 V;50Hz
+United Arab Emirates;D,G;220 V;50Hz
+United Kingdom;G;230 V;50Hz
+United States;A,B;120 V;60Hz
+US Virgin Islands;A,B;110 V;60Hz
+Uruguay;C,F,I,L;230 V;50Hz
+Uzbekistan;C,I;220 V;50Hz
+Vanuatu;C,G,I;220 V;50Hz
+Venezuela;A,B;120 V;60Hz
+Vietnam;A,C,F;220 V;50Hz
+Virgin Islands;A,B;110 V;60Hz
+Yemen;A,D,G;230 V;50Hz
+Zambia;C,D,G;230 V;50Hz
+Zimbabwe;D,G;220 V;50Hz

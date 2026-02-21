@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTravel — Climate Travel Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Logo -->
+    <div class="logo">SmartTravel.Com</div>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="screen active">
+        <div class="container">
+            <p class="subtitle">Plan your perfect trip & explore the world!</p>
+            <div class="button-group">
+                <button id="btn-know-destination" class="btn btn-primary">
+                    I know where I want to travel
+                </button>
+                <button id="btn-explore-world" class="btn btn-secondary">
+                    Explore the world
+                </button>
+                <button id="btn-scratch-map" class="btn btn-secondary">
+                    My World Scratch Map
+                </button>
+                <button id="btn-visa-glossary" class="btn btn-secondary">
+                    Visa info all nationalities
+                </button>
+                <button id="btn-lgbtq-table" class="btn btn-secondary">
+                    LGBTQ+ Travel Information
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visa Glossary Screen -->
+    <div id="visa-glossary-screen" class="screen">
+        <div class="container visa-glossary-container">
+            <button id="btn-back-visa-glossary" class="btn-back">← Back</button>
+            <h2>Visa glossary</h2>
+            <p class="visa-glossary-intro">Definitions of visa types used for travel requirements. Source: <a href="https://www.passportindex.org/travel-visa-checker/" target="_blank" rel="noopener">Passport Index</a>.</p>
+            <div class="visa-glossary-grid">
+                <section class="visa-glossary-item visa-glossary-border-red">
+                    <div class="visa-glossary-title-box"><h3>Visa required</h3></div>
+                    <p>Visa required means that prior to travel, you must apply for a visa. This may require filling out forms, providing documents, and paying fees. It must be completed and approved prior to departure.</p>
+                </section>
+                <section class="visa-glossary-item visa-glossary-border-green">
+                    <div class="visa-glossary-title-box"><h3>Visa-free</h3></div>
+                    <p>Visa-free means that you can travel to the destination country without the need for a travel visa. In such a case only a valid passport is required for entry and exit purposes.</p>
+                </section>
+                <section class="visa-glossary-item visa-glossary-border-red">
+                    <div class="visa-glossary-title-box"><h3>eVisa</h3></div>
+                    <p>This eVisa (electronic visa) is a digital alternative to the conventional visa obtained by an embassy. Online submission of personal information and payment is still required, and applicants may be subject to further questionnaires and interviews. Once approved, the eVisa is required at immigration checkpoint for verification.</p>
+                </section>
+                <section class="visa-glossary-item visa-glossary-border-blue">
+                    <div class="visa-glossary-title-box"><h3>eVisa</h3></div>
+                    <p>This eVisa is a simplified online visa application requiring submission of relevant personal information and according payment. It is usually issued within 3 days.</p>
+                </section>
+                <section class="visa-glossary-item visa-glossary-border-blue">
+                    <div class="visa-glossary-title-box"><h3>Visa-on-arrival</h3></div>
+                    <p>Visa-on-arrival means that you must obtain a visa in order to enter the destination country, but it can be obtained upon arrival at the designated border checkpoints and may require a fee payment.</p>
+                </section>
+                <section class="visa-glossary-item visa-glossary-border-blue">
+                    <div class="visa-glossary-title-box"><h3>Free Visa-on-arrival</h3></div>
+                    <p>Free visa-on-arrival means that you must obtain a visa in order to enter the destination country, but it can be obtained upon arrival, and is provided free of charge.</p>
+                </section>
+                <section class="visa-glossary-item visa-glossary-border-green">
+                    <div class="visa-glossary-title-box"><h3>Tourist Card</h3></div>
+                    <p>A tourist card is an on-site registration issued to a tourist for a stated period of time, in lieu of a passport or a visa, and is obtained upon arrival.</p>
+                </section>
+                <section class="visa-glossary-item visa-glossary-border-gold">
+                    <div class="visa-glossary-title-box"><h3>eTA</h3></div>
+                    <p>An Electronic Travel Authorization (eTA) is an entry requirement for visa-exempt foreign nationals. An eTA is a type of registration which is electronically linked to a traveler's passport.</p>
+                </section>
+            </div>
+            <div class="visa-glossary-map-section">
+                <p class="visa-glossary-map-hint">Select your nationality to see where you can travel — countries are colored by visa requirement.</p>
+                <div id="visa-glossary-map-legend" class="visa-glossary-map-legend" style="display: none;"></div>
+                <div class="visa-glossary-map-row">
+                    <div id="visa-glossary-map" class="visa-glossary-map"></div>
+                    <div class="visa-glossary-dropdown-column">
+                        <label class="visa-label">Your nationality (passport)</label>
+                        <div id="visa-glossary-nationality-dropdown" class="nationality-custom-dropdown visa-glossary-dropdown">
+                            <div class="nationality-dropdown-selected">
+                                <span class="nationality-selected-text">Select your nationality</span>
+                                <span class="nationality-dropdown-arrow">▼</span>
+                            </div>
+                            <div class="nationality-dropdown-options">
+                                <input type="text" id="visa-glossary-nationality-search" class="nationality-search-input" placeholder="Type to search..." autocomplete="off">
+                                <div class="nationality-dropdown-list" id="visa-glossary-nationality-list"></div>
+                            </div>
+                        </div>
+                        <select id="visa-glossary-nationality-select" style="display: none;" aria-hidden="true">
+                            <option value="">Select your nationality</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Destination Selection Screen -->
+    <div id="destination-selection-screen" class="screen">
+        <div class="container">
+            <button id="btn-back-destination-selection" class="btn-back">← Back</button>
+            <h2>Where do you want to go?</h2>
+            <div class="destination-and-nationality-row">
+                <div class="destination-block">
+                    <label class="visa-label">Destination</label>
+                    <div class="search-wrapper">
+                        <input 
+                            type="text" 
+                            id="destination-search" 
+                            class="search-input" 
+                            placeholder="Search city or country (e.g. London, France)"
+                            autocomplete="off"
+                        />
+                        <div id="autocomplete-results" class="autocomplete-results"></div>
+                    </div>
+                    <div id="selected-destination" class="selected-destination"></div>
+                </div>
+                <div class="nationality-block">
+                    <label class="visa-label">Your nationality (passport)</label>
+                    <div id="nationality-custom-dropdown" class="nationality-custom-dropdown" style="display: none;">
+                        <div class="nationality-dropdown-selected">
+                            <span class="nationality-selected-text">Select your nationality</span>
+                            <span class="nationality-dropdown-arrow">▼</span>
+                        </div>
+                        <div class="nationality-dropdown-options">
+                            <input type="text" id="nationality-search-input" class="nationality-search-input" placeholder="Type to search..." autocomplete="off">
+                            <div class="nationality-dropdown-list"></div>
+                        </div>
+                    </div>
+                    <!-- Hidden select for form value -->
+                    <select id="nationality-select" style="display: none;">
+                        <option value="">Select your nationality</option>
+                    </select>
+                </div>
+            </div>
+            <p class="destination-hint">Pick a place and your nationality — then you’ll go to date selection.</p>
+        </div>
+    </div>
+
+    <!-- Destination Options Screen -->
+    <div id="destination-screen" class="screen">
+        <div class="container">
+            <button id="btn-back-destination" class="btn-back">← Back</button>
+            <h2>Select Your Travel Dates</h2>
+            <div class="calendars-container">
+                <div class="calendar-section">
+                    <h3>Start Month</h3>
+                    <div class="month-grid" id="start-month-grid">
+                        <!-- Months will be generated by JavaScript -->
+                    </div>
+                </div>
+                <div class="calendar-section">
+                    <h3>End Month</h3>
+                    <div class="month-grid" id="end-month-grid">
+                        <!-- Months will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <div class="selected-dates-info" id="selected-dates-info"></div>
+            <p class="date-hint" id="date-hint">Select start and end month — we’ll show your climate charts next.</p>
+            <div class="button-group date-buttons">
+                <button id="btn-best-time" class="btn btn-secondary">
+                    I don’t know my dates — show me the full year
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Screen (climate charts) -->
+    <div id="results-screen" class="screen">
+        <div class="results-container">
+            <button id="btn-back-results" class="btn-back">← Back</button>
+            <div id="results-header" class="results-header" style="display: none;">
+                <img id="results-flag" class="results-flag" src="" alt="" style="display: none;">
+                <h2 id="results-title">Climate at your destination</h2>
+            </div>
+            <div id="results-loading" class="results-loading">
+                <span class="results-loading-text">Planning your trip</span>
+                <span id="results-loading-pct" class="results-loading-pct">0%</span>
+            </div>
+            <div id="results-charts" class="results-charts results-charts-side-by-side" style="display: none;">
+                <div class="chart-card">
+                    <h3>Temperature °C</h3>
+                    <canvas id="chart-temp-combined"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Cloud cover % &amp; rainy days</h3>
+                    <canvas id="chart-cloud-rainy"></canvas>
+                </div>
+            </div>
+            <div id="results-currency" class="currency-section" style="display: none;">
+                <h3 class="airports-title">Currency</h3>
+                <div class="currency-container">
+                    <div id="currency-content" class="currency-card"></div>
+                    <div id="currency-calculator" class="currency-calculator" style="display: none;">
+                        <h4>Currency Converter</h4>
+                        <div class="currency-calc-row">
+                            <div class="currency-calc-input-group">
+                                <input type="number" id="currency-amount-input" placeholder="Enter amount" step="0.01" min="0">
+                                <select id="currency-from-select"></select>
+                            </div>
+                            <div class="currency-calc-arrow">→</div>
+                            <div class="currency-calc-result-group">
+                                <div id="currency-result-amount" class="currency-result-amount">0.00</div>
+                                <select id="currency-to-select"></select>
+                            </div>
+                        </div>
+                        <div class="currency-calc-swap">
+                            <button id="currency-swap-btn" class="btn-currency-swap">Swap currencies</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="visa-advisory-row">
+                <div class="visa-advisory-left-column">
+                    <div id="results-visa-requirement" class="visa-requirement-results-section" style="display: none;">
+                        <h3 class="airports-title">Visa / entry requirement</h3>
+                        <div id="visa-requirement-results-content" class="visa-requirement-results-card"></div>
+                    </div>
+                    <div id="results-travel-advisory" class="travel-advisory-section" style="display: none;">
+                        <h3 class="airports-title">U.S. Travel Advisory</h3>
+                        <div id="travel-advisory-content"></div>
+                    </div>
+                </div>
+                <div class="visa-advisory-right-column">
+                    <div id="results-languages" class="languages-section" style="display: none;">
+                        <h3 class="airports-title">Languages</h3>
+                        <div id="languages-content" class="languages-card"></div>
+                    </div>
+                    <div id="results-religion" class="religion-section" style="display: none;">
+                        <h3 class="airports-title">Religion</h3>
+                        <div class="religion-chart-container">
+                            <canvas id="chart-religion"></canvas>
+                        </div>
+                    </div>
+                    <div id="results-driving-side" class="driving-side-section" style="display: none;">
+                        <h3 class="airports-title">Driving side</h3>
+                        <div id="driving-side-content" class="driving-side-card"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="results-lgbtq" class="lgbtq-section" style="display: none;">
+                <h3 class="airports-title">LGBTQ+ Travel Information</h3>
+                <div id="lgbtq-content" class="lgbtq-card"></div>
+            </div>
+            <div id="results-airports" class="airports-section" style="display: none;">
+                <h3 class="airports-title">Nearest airports</h3>
+                <div class="airports-table-wrapper">
+                    <table class="airports-table">
+                        <thead>
+                            <tr>
+                                <th>Airport</th>
+                                <th>City</th>
+                                <th>Country</th>
+                                <th>Distance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="airports-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="results-map-container" class="results-map-container" style="display: none;">
+                <h3 class="airports-title">Location, nearest airports &amp; UNESCO sites</h3>
+                <div id="results-map" class="results-map"></div>
+            </div>
+            <div id="results-plug-voltage" class="plug-voltage-section" style="display: none;">
+                <h3 class="airports-title">Plugs & voltage</h3>
+                <div id="plug-voltage-content" class="plug-voltage-card"></div>
+            </div>
+            <div id="results-heritage" class="heritage-section" style="display: none;">
+                <h3 class="airports-title">UNESCO World Heritage sites within 400 km</h3>
+                <div class="heritage-table-wrapper">
+                    <table class="heritage-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Date inscribed</th>
+                                <th>Category</th>
+                                <th>Short description</th>
+                                <th>Distance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="heritage-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="results-error" class="results-error" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Map Screen -->
+    <div id="map-screen" class="screen">
+        <div class="map-header">
+            <div class="logo-small">SmartTravel.Com</div>
+            <button id="btn-back-map" class="btn-back">← Back</button>
+            <h2>Explore the World</h2>
+        </div>
+        <div class="explore-map-controls">
+            <div class="explore-layer-buttons" id="explore-layer-buttons" role="group" aria-label="Map layer">
+                <button type="button" class="explore-layer-btn active" data-layer="none" title="None"><span class="explore-layer-icon" aria-hidden="true">◻</span><span class="explore-layer-label">None</span></button>
+                <button type="button" class="explore-layer-btn" data-layer="driving_side" title="Driving side"><span class="explore-layer-icon" aria-hidden="true">🚗</span><span class="explore-layer-label">Driving</span></button>
+                <button type="button" class="explore-layer-btn" data-layer="travel_advisory" title="Travel advisory level"><span class="explore-layer-icon" aria-hidden="true">🛡️</span><span class="explore-layer-label">Advisory</span></button>
+                <button type="button" class="explore-layer-btn" data-layer="airports" title="Airports"><span class="explore-layer-icon" aria-hidden="true">✈️</span><span class="explore-layer-label">Airports</span></button>
+                <button type="button" class="explore-layer-btn" data-layer="heritage" title="UNESCO Heritage sites"><span class="explore-layer-icon" aria-hidden="true">🏛️</span><span class="explore-layer-label">Heritage</span></button>
+                <button type="button" class="explore-layer-btn" data-layer="religion" title="Dominant religion"><span class="explore-layer-icon" aria-hidden="true">🕊️</span><span class="explore-layer-label">Religion</span></button>
+            </div>
+            <div id="explore-map-legend" class="explore-map-legend" style="display: none;"></div>
+        </div>
+        <div id="explore-map-container" class="explore-map-container">
+            <div id="map" class="explore-map"></div>
+        </div>
+    </div>
+
+    <!-- Scratch Map Screen -->
+    <div id="scratch-map-screen" class="screen">
+        <div class="scratch-map-container">
+            <button id="btn-back-scratch-map" class="btn-back">← Back</button>
+            <h2>My World Scratch Map</h2>
+
+            <div class="scratch-map-top-bar">
+                <div id="scratch-map-top-stats" class="scratch-map-top-stats">
+                    <div class="scratch-map-top-stats-main">
+                        <span class="scratch-map-top-stats-label">Countries visited:</span>
+                        <span id="scratch-map-visited-count" class="scratch-map-top-stats-value">0</span>
+                    </div>
+                    <div class="scratch-map-top-stats-main">
+                        <span class="scratch-map-top-stats-label">% world visited:</span>
+                        <span id="scratch-map-visited-percent" class="scratch-map-top-stats-value">—</span>
+                    </div>
+                </div>
+
+                <div class="scratch-map-instructions scratch-map-instructions-compact">
+                    <p><strong>Left click</strong> to mark as visited • <strong>Right click</strong> to mark as want to visit</p>
+                </div>
+            </div>
+
+            <div class="scratch-map-layout">
+                <div class="scratch-map-wrapper">
+                    <div id="world-map-svg" class="world-map-svg"></div>
+                </div>
+            </div>
+            
+            <div id="continents-breakdown" class="continents-breakdown">
+                <h3>Countries Visited by Continent</h3>
+                <div id="continents-list" class="continents-list"></div>
+
+                <h3>Countries you want to visit by Continent</h3>
+                <div id="want-continents-list" class="continents-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LGBTQ+ Table Screen -->
+    <div id="lgbtq-table-screen" class="screen">
+        <div class="container">
+            <button id="btn-back-lgbtq-table" class="btn-back">← Back</button>
+            <h2>LGBTQ+ Travel Information</h2>
+            <p class="subtitle">Complete information for all territories</p>
+            <div id="lgbtq-table-loading" class="results-loading">Loading LGBTQ+ data…</div>
+            <div id="lgbtq-table-wrapper" class="lgbtq-table-wrapper" style="display: none;">
+                <div class="lgbtq-table-container">
+                    <table id="lgbtq-table" class="lgbtq-full-table">
+                        <thead id="lgbtq-table-head">
+                        </thead>
+                        <tbody id="lgbtq-table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
