@@ -9,8 +9,10 @@ gunicorn>=21.0.0
 pandas>=2.0.0
 numpy>=1.24.0
 rasterio>=1.3.0
+matplotlib>=3.8.0
 
 # Climatemaps: climate rasters (temperature, precipitation, etc.)
+# (climatemaps imports matplotlib at load time but does not declare it in setup.py)
 # Requires data/raw/ from a clone of the repo (set CLIMATEMAPS_DATA_DIR or use SmartTravel/climatemaps)
 git+https://github.com/KarlisKV/climatemaps.git
 
