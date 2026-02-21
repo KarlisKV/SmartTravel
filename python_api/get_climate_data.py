@@ -31,10 +31,12 @@ from typing import List, Optional, Tuple
 try:
     from climatemaps.datasets import (
         ClimateVarKey,
+        DataFormat,
         HISTORIC_DATA_SETS,
         SpatialResolution,
     )
     from climatemaps.data import load_climate_data
+    from climatemaps.download import ensure_data_available
 except ImportError as e:
     print("Error: Missing climatemaps package.", file=sys.stderr)
     print("", file=sys.stderr)
@@ -53,6 +55,52 @@ _default_data_root = script_dir.parent.parent / "climatemaps"
 _climatemaps_data_dir = Path(os.environ.get("CLIMATEMAPS_DATA_DIR", str(_default_data_root))).resolve()
 if _climatemaps_data_dir.exists() and (_climatemaps_data_dir / "data" / "raw").exists():
     os.chdir(_climatemaps_data_dir)
+
+try:
+    import rasterio
+    from rasterio.windows import Window
+    _RASTERIO_AVAILABLE = True
+except ImportError:
+    _RASTERIO_AVAILABLE = False
+
+
+def _read_value_at_point(config, month: int, lon: float, lat: float) -> Optional[float]:
+    """
+    Read a single pixel from the raster at (lon, lat) instead of loading the full grid.
+    Uses ~KB per read instead of ~10–50 MB per full grid. Supports WORLDCLIM_HISTORY and CRU_TS.
+    """
+    if not _RASTERIO_AVAILABLE:
+        return None
+    ensure_data_available(config)
+    base_path = config.filepath
+    data_type = base_path.split("/")[-1]
+    if config.format not in (DataFormat.GEOTIFF_WORLDCLIM_HISTORY, DataFormat.CRU_TS):
+        return None
+    # Prefer absolute path so we don't depend on CWD (e.g. after request context)
+    path = _climatemaps_data_dir / base_path / f"{data_type}_{month:02d}.tif"
+    if not path.is_file():
+        return None
+    try:
+        with rasterio.open(path) as src:
+            row, col = src.index(lon, lat)
+            if row < 0 or col < 0 or row >= src.height or col >= src.width:
+                return np.nan
+            window = Window(col, row, 1, 1)  # type: ignore[call-arg]
+            arr = src.read(1, window=window).astype(float)
+            val = float(arr.flat[0])
+    except Exception:
+        return None
+    if config.format == DataFormat.GEOTIFF_WORLDCLIM_HISTORY:
+        if val == -32768 or val <= -300:
+            return np.nan
+    elif config.format == DataFormat.CRU_TS:
+        if val == 254 or val <= -9000:
+            return np.nan
+    val = val * config.conversion_factor
+    if config.conversion_function is not None:
+        small = np.array([[val]], dtype=np.float64)
+        val = config.conversion_function(small, month).flat[0]
+    return val
 
 
 def get_climate_data_for_location(lat: float, lon: float) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
@@ -79,17 +127,16 @@ def get_climate_data_for_location(lat: float, lon: float) -> Tuple[np.ndarray, n
     
     # Initialize arrays to store results
     arrays = []
-    cache = {}  # Cache loaded grids to avoid reloading for each month
-    
+
     for variable_type in desired_variables:
         # Find configs for this variable type
         configs = [cfg for cfg in HISTORIC_DATA_SETS if cfg.variable_type == variable_type]
-        
+
         if not configs:
             print(f"Warning: No data found for {variable_type.name}, filling with NaN", file=sys.stderr)
             arrays.append(np.full(12, np.nan))
             continue
-        
+
         # Prefer 10m resolution, fallback to 30m
         config = None
         for res in [SpatialResolution.MIN10, SpatialResolution.MIN30]:
@@ -99,33 +146,27 @@ def get_climate_data_for_location(lat: float, lon: float) -> Tuple[np.ndarray, n
                     break
             if config:
                 break
-        
+
         if not config:
             config = configs[0]  # Use whatever is available
-        
+
         variable_name = config.variable.display_name
-        
-        # Get data for all 12 months
+
+        # Read one pixel per month (no full-grid load: ~KB instead of ~800 MB total)
         monthly_values = []
         for month in range(1, 13):
             try:
-                # Use cache to avoid reloading same grid
-                cache_key = (config.data_type_slug, month)
-                if cache_key not in cache:
+                value = _read_value_at_point(config, month, lon, lat)
+                if value is None:
                     geo_grid = load_climate_data(config, month)
-                    cache[cache_key] = geo_grid
-                else:
-                    geo_grid = cache[cache_key]
-                
-                value = geo_grid.get_value_at_coordinate(lon, lat)
-                monthly_values.append(value)
+                    value = geo_grid.get_value_at_coordinate(lon, lat)
+                monthly_values.append(value if value is not None and value == value else np.nan)
             except ValueError as e:
                 print(f"Warning: {variable_name} month {month}: {e}", file=sys.stderr)
                 monthly_values.append(np.nan)
             except Exception as e:
                 print(f"Error: {variable_name} month {month}: {e}", file=sys.stderr)
                 monthly_values.append(np.nan)
-        
         arrays.append(np.array(monthly_values, dtype=np.float64))
     
     # Return as tuple: (temperature_day, temperature_night, precipitation, cloud_cover, rainy_days)

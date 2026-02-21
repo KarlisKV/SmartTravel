@@ -15,15 +15,39 @@ import base64
 import csv
 import json
 import math
+import sys
+import threading
+import time
 from pathlib import Path
+from typing import Optional
 
 import pandas as pd
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, g
+
+try:
+    import resource
+    _RESOURCE_AVAILABLE = True
+except ImportError:
+    _RESOURCE_AVAILABLE = False
+
+
+def _get_rss_mb():
+    """Current process RSS in MB (Linux: ru_maxrss is KB; macOS: bytes). Returns None if unavailable."""
+    if not _RESOURCE_AVAILABLE:
+        return None
+    try:
+        rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        if sys.platform == "darwin":
+            return round(rss / (1024 * 1024), 2)
+        return round(rss / 1024, 2)
+    except Exception:
+        return None
 
 # Uses climatemaps from GitHub (see get_climate_data.py); install: pip install git+https://github.com/KarlisKV/climatemaps.git
 from get_climate_data import get_climate_data_for_location, get_global_climate_grid
 
 app = Flask(__name__)
+app.logger.setLevel("INFO")
 
 # Paths relative to python_api/ (parent = SmartTravel/python_api, parent.parent = SmartTravel)
 _DATASETS = Path(__file__).resolve().parent.parent / "datasets"
@@ -346,161 +370,93 @@ def get_currency(country: str, place: str | None = None):
     return None
 
 
+# In-memory cache for exchange rates (1h TTL).
+_exchange_rate_cache = {}
+_exchange_rate_cache_lock = threading.Lock()
+_EXCHANGE_RATE_CACHE_TTL_SECONDS = 3600  # 1 hour
+
+# Frankfurter: free, no API key, ECB reference rates, no rate limits. Fallback: exchangerate-api.
+_FRANKFURTER_URL = "https://api.frankfurter.dev/v1/latest"
+_EXCHANGERATE_API_URL = "https://api.exchangerate-api.com/v4/latest"
+
+
+def _cache_exchange_rates(iso_code: str, result: dict):
+    with _exchange_rate_cache_lock:
+        _exchange_rate_cache[iso_code.upper()] = (
+            result.copy(),
+            time.monotonic() + _EXCHANGE_RATE_CACHE_TTL_SECONDS,
+        )
+
+
+def _fetch_frankfurter(iso_upper: str, timeout: int) -> Optional[dict]:
+    """Fetch 1 {iso} = x EUR, 1 {iso} = x USD from Frankfurter. Returns dict or None."""
+    try:
+        import requests
+        res = requests.get(
+            _FRANKFURTER_URL,
+            params={"base": iso_upper, "symbols": "EUR,USD"},
+            timeout=timeout,
+        )
+        if res.status_code != 200:
+            return None
+        data = res.json()
+        rates = data.get("rates") or {}
+        eur = rates.get("EUR")
+        usd = rates.get("USD")
+        if eur is None and usd is None:
+            return None
+        return {"eur_rate": eur, "usd_rate": usd}
+    except Exception:
+        return None
+
+
+def _fetch_exchangerate_api(iso_upper: str, timeout: int) -> Optional[dict]:
+    """Fetch 1 {iso} = x EUR, 1 {iso} = x USD from exchangerate-api. Returns dict or None."""
+    try:
+        import requests
+        res = requests.get(f"{_EXCHANGERATE_API_URL}/{iso_upper}", timeout=timeout)
+        if res.status_code != 200:
+            return None
+        data = res.json()
+        rates = data.get("rates") or {}
+        eur = rates.get("EUR")
+        usd = rates.get("USD")
+        if eur is None and usd is None:
+            return None
+        return {"eur_rate": eur, "usd_rate": usd}
+    except Exception:
+        return None
+
+
 def get_exchange_rates(iso_code: str, timeout_seconds: int = 10):
     """
-    Fetch current exchange rates for a currency (ISO code) vs EUR and USD using yfinance.
-    Returns dict with eur_rate and usd_rate, or None on error.
-    Uses timeout to prevent hanging.
+    Fetch exchange rates for a currency (ISO code) vs EUR and USD.
+    Primary: Frankfurter (ECB rates, no key, no limits). Fallback: exchangerate-api.
+    Returns dict with eur_rate and usd_rate, or None on error. Uses 1h in-memory cache.
     """
     if not iso_code:
         return None
-    
+
     iso_upper = iso_code.upper()
-    
-    # For EUR/USD themselves, return 1.0
-    if iso_upper == 'EUR':
+
+    if iso_upper == "EUR":
         return {"eur_rate": 1.0, "usd_rate": None}
-    if iso_upper == 'USD':
+    if iso_upper == "USD":
         return {"eur_rate": None, "usd_rate": 1.0}
-    
-    # Try yfinance first
-    try:
-        import yfinance as yf
-        use_yfinance = True
-    except ImportError:
-        use_yfinance = False
-        print(f"Warning: yfinance not installed. Install with: pip install yfinance")
-    
-    if not use_yfinance:
-        # Fallback: try exchangerate-api.com (free, no key needed for basic usage)
-        try:
-            import requests
-            # Get rates relative to the currency (e.g., JPY -> returns 1 JPY = X EUR, 1 JPY = X USD)
-            res = requests.get(f"https://api.exchangerate-api.com/v4/latest/{iso_upper}", timeout=5)
-            if res.status_code == 200:
-                data = res.json()
-                rates = data.get("rates", {})
-                eur_rate = rates.get("EUR")  # 1 {ISO} = X EUR
-                usd_rate = rates.get("USD")  # 1 {ISO} = X USD
-                # Return dict even if one rate is None
-                if eur_rate is not None or usd_rate is not None:
-                    return {"eur_rate": eur_rate, "usd_rate": usd_rate}
-            else:
-                print(f"Warning: exchangerate-api returned status {res.status_code} for {iso_upper}")
-        except ImportError:
-            print(f"Warning: requests library not available for exchange rate fallback")
-        except Exception as e:
-            print(f"Error fetching rates from exchangerate-api for {iso_upper}: {e}")
-        return None
-    
-    try:
-        # Yahoo Finance uses format like EURUSD=X, EURGBP=X, etc.
-        # For currency pairs, we need to construct the right ticker
-        eur_rate = None
-        usd_rate = None
-        
-        # Get EUR rate: {ISO}EUR=X means 1 {ISO} = X EUR
-        try:
-            eur_ticker = f"{iso_code.upper()}EUR=X"
-            eur_data = yf.Ticker(eur_ticker)
-            # Try info() first (faster, more reliable)
-            try:
-                eur_info_dict = eur_data.info
-                if eur_info_dict and 'regularMarketPrice' in eur_info_dict:
-                    eur_rate = float(eur_info_dict['regularMarketPrice'])
-            except (KeyError, ValueError, TypeError):
-                # Fallback to history
-                eur_info = eur_data.history(period="1d", interval="1m")
-                if not eur_info.empty:
-                    eur_rate = float(eur_info['Close'].iloc[-1])
-                else:
-                    # Try longer period
-                    eur_info = eur_data.history(period="5d")
-                    if not eur_info.empty:
-                        eur_rate = float(eur_info['Close'].iloc[-1])
-        except Exception as e:
-            print(f"Warning: Could not get EUR rate for {iso_code}: {e}")
-        
-        # Get USD rate: {ISO}USD=X means 1 {ISO} = X USD
-        try:
-            usd_ticker = f"{iso_code.upper()}USD=X"
-            usd_data = yf.Ticker(usd_ticker)
-            # Try info() first (faster, more reliable)
-            try:
-                usd_info_dict = usd_data.info
-                if usd_info_dict and 'regularMarketPrice' in usd_info_dict:
-                    usd_rate = float(usd_info_dict['regularMarketPrice'])
-            except (KeyError, ValueError, TypeError):
-                # Fallback to history
-                usd_info = usd_data.history(period="1d", interval="1m")
-                if not usd_info.empty:
-                    usd_rate = float(usd_info['Close'].iloc[-1])
-                else:
-                    # Try longer period
-                    usd_info = usd_data.history(period="5d")
-                    if not usd_info.empty:
-                        usd_rate = float(usd_info['Close'].iloc[-1])
-        except Exception as e:
-            print(f"Warning: Could not get USD rate for {iso_code}: {e}")
-        
-        # If direct pairs don't work, try inverse (EUR{ISO}=X, USD{ISO}=X)
-        if eur_rate is None:
-            try:
-                eur_ticker_inv = f"EUR{iso_code.upper()}=X"
-                eur_data_inv = yf.Ticker(eur_ticker_inv)
-                try:
-                    eur_info_dict_inv = eur_data_inv.info
-                    if eur_info_dict_inv and 'regularMarketPrice' in eur_info_dict_inv:
-                        inv_rate = float(eur_info_dict_inv['regularMarketPrice'])
-                        eur_rate = 1.0 / inv_rate if inv_rate != 0 else None
-                except (KeyError, ValueError, TypeError, ZeroDivisionError):
-                    eur_info_inv = eur_data_inv.history(period="5d")
-                    if not eur_info_inv.empty:
-                        inv_rate = float(eur_info_inv['Close'].iloc[-1])
-                        eur_rate = 1.0 / inv_rate if inv_rate != 0 else None
-            except Exception as e:
-                print(f"Warning: Could not get inverse EUR rate for {iso_code}: {e}")
-        
-        if usd_rate is None:
-            try:
-                usd_ticker_inv = f"USD{iso_code.upper()}=X"
-                usd_data_inv = yf.Ticker(usd_ticker_inv)
-                try:
-                    usd_info_dict_inv = usd_data_inv.info
-                    if usd_info_dict_inv and 'regularMarketPrice' in usd_info_dict_inv:
-                        inv_rate = float(usd_info_dict_inv['regularMarketPrice'])
-                        usd_rate = 1.0 / inv_rate if inv_rate != 0 else None
-                except (KeyError, ValueError, TypeError, ZeroDivisionError):
-                    usd_info_inv = usd_data_inv.history(period="5d")
-                    if not usd_info_inv.empty:
-                        inv_rate = float(usd_info_inv['Close'].iloc[-1])
-                        usd_rate = 1.0 / inv_rate if inv_rate != 0 else None
-            except Exception as e:
-                print(f"Warning: Could not get inverse USD rate for {iso_code}: {e}")
-        
-        if eur_rate is None and usd_rate is None:
-            print(f"Warning: No exchange rates found for {iso_code}, trying fallback API...")
-            # Try fallback API before giving up
-            try:
-                import requests
-                res = requests.get(f"https://api.exchangerate-api.com/v4/latest/{iso_upper}", timeout=5)
-                if res.status_code == 200:
-                    data = res.json()
-                    rates = data.get("rates", {})
-                    eur_rate = rates.get("EUR")
-                    usd_rate = rates.get("USD")
-                    if eur_rate is not None or usd_rate is not None:
-                        return {"eur_rate": eur_rate, "usd_rate": usd_rate}
-            except Exception as fallback_e:
-                print(f"Fallback API also failed for {iso_code}: {fallback_e}")
-            return None
-        
-        return {"eur_rate": eur_rate, "usd_rate": usd_rate}
-    except Exception as e:
-        print(f"Error fetching exchange rates for {iso_code}: {e}")
-        import traceback
-        traceback.print_exc()
-        return None
+
+    now = time.monotonic()
+    with _exchange_rate_cache_lock:
+        entry = _exchange_rate_cache.get(iso_upper)
+        if entry is not None and now < entry[1]:
+            return entry[0].copy()
+
+    timeout = min(timeout_seconds, 8)
+    result = _fetch_frankfurter(iso_upper, timeout)
+    if result is None:
+        result = _fetch_exchangerate_api(iso_upper, timeout)
+    if result is not None:
+        _cache_exchange_rates(iso_upper, result)
+    return result
 
 
 def load_languages_table():
@@ -1002,11 +958,31 @@ def map_layers():
         return jsonify({"error": str(e)}), 500
 
 
+@app.before_request
+def _log_memory_before():
+    """Record RSS at request start for per-request memory logging."""
+    g._mem_start_mb = _get_rss_mb()
+    g._mem_end_mb = None
+
+
 @app.after_request
 def add_cors(resp):
     resp.headers["Access-Control-Allow-Origin"] = "*"
     resp.headers["Access-Control-Allow-Methods"] = "GET, OPTIONS"
     resp.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    # Log RAM usage for this request
+    end_mb = _get_rss_mb()
+    if end_mb is not None and getattr(g, "_mem_start_mb", None) is not None:
+        start_mb = g._mem_start_mb
+        delta = round(end_mb - start_mb, 2) if start_mb is not None else None
+        path = request.path or request.endpoint or "?"
+        app.logger.info(
+            "RAM: %s | start=%.2f MB | end=%.2f MB | delta=%.2f MB",
+            path,
+            start_mb,
+            end_mb,
+            delta if delta is not None else 0,
+        )
     return resp
 
 
@@ -1110,6 +1086,8 @@ def climate():
         return jsonify({"error": "Longitude must be between -180 and 180"}), 400
     try:
         temp_day, temp_night, precip, cloud, rainy_days = _climate_with_fallback(lat, lon)
+        if _get_rss_mb() is not None:
+            app.logger.info("RAM: /climate after _climate_with_fallback = %.2f MB", _get_rss_mb())
         nearest = nearest_airports(lat, lon, top_n=5)
         payload = {
             "temperature_day": [float(x) if x == x else None for x in temp_day],
@@ -1131,7 +1109,7 @@ def climate():
                 payload["driving_side"] = driving_side
             currency_info = get_currency(country, place)
             if currency_info:
-                # Fetch exchange rates with a short timeout so slow yfinance doesn't block the whole search
+                # Fetch exchange rates with short timeout so slow API doesn't block the whole search
                 try:
                     import concurrent.futures
                     with concurrent.futures.ThreadPoolExecutor(max_workers=1) as ex:
