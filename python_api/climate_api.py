@@ -1461,9 +1461,34 @@ def visa_requirement():
     return jsonify(result)
 
 
-@app.route("/health", methods=["GET"])
-def health():
-    return jsonify({"status": "ok"})
+NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
+# Nominatim usage policy requires a descriptive User-Agent
+NOMINATIM_HEADERS = {"Accept": "application/json", "User-Agent": "SmartTravel/1.0 (travel app; https://github.com/your-repo)"}
+
+
+@app.route("/geocode", methods=["GET", "OPTIONS"])
+def geocode():
+    """Proxy to Nominatim to avoid CORS when frontend calls from another origin (e.g. 164.92.135.213)."""
+    if request.method == "OPTIONS":
+        return "", 204
+    q = (request.args.get("q") or "").strip()
+    if not q:
+        return jsonify([])
+    limit = request.args.get("limit", "6")
+    try:
+        import requests
+        res = requests.get(
+            NOMINATIM_URL,
+            params={"q": q, "format": "json", "limit": limit},
+            headers=NOMINATIM_HEADERS,
+            timeout=8,
+        )
+        res.raise_for_status()
+        data = res.json()
+        return jsonify(data if isinstance(data, list) else [])
+    except Exception as e:
+        app.logger.warning("Geocode proxy error: %s", e)
+        return jsonify([])
 
 
 if __name__ == "__main__":
