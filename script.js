@@ -3,7 +3,7 @@
  * Expects climate API at http://127.0.0.1:5000
  */
 
-const API_BASE = 'http://127.0.0.1:5000';
+const API_BASE = 'https://smarttravel-wcqi.onrender.com/';
 
 // Register datalabels plugin so labels show on charts (must run after Chart.js and plugin are loaded)
 if (typeof Chart !== 'undefined' && typeof ChartDataLabels !== 'undefined') {
