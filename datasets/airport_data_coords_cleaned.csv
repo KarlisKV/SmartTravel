@@ -1,0 +1,1470 @@
+Continent/Region,Country,City,type,Airport Name,IATA Code,latitude_deg,longitude_deg
+Northern Africa,Algeria,Algiers,large_airport,Houari Boumediene Airport,ALG,36.693886,3.214531
+Northern Africa,Algeria,Annaba,medium_airport,Rabah Bitat Airport,AAE,36.826781,7.81334
+Northern Africa,Algeria,Batna,medium_airport,Batna Airport,BLJ,35.752102,6.30859
+Northern Africa,Algeria,Béjaïa,medium_airport,Soummam Airport,BJA,36.711952,5.069804
+Northern Africa,Algeria,Chlef,medium_airport,Chlef International Airport,CFK,36.217166,1.342237
+Northern Africa,Algeria,Constantine,medium_airport,Mohamed Boudiaf International Airport,CZL,36.2760009765625,6.620389938354492
+Northern Africa,Algeria,Jijel,medium_airport,Jijel Ferhat Abbas Airport,GJL,36.795101,5.87361
+Northern Africa,Algeria,Oran,medium_airport,Oran Es Senia Airport,ORN,35.623901,-0.621183
+Northern Africa,Algeria,Oumache,medium_airport,Biskra Airport,BSK,34.793301,5.73823
+Northern Africa,Algeria,Sétif,medium_airport,Ain Arnat Airport,QSF,36.178100585900005,5.3244900703399995
+Northern Africa,Algeria,Tlemcen,medium_airport,Zenata – Messali El Hadj Airport,TLM,35.013426,-1.457191
+Northern Africa,Egypt,Alexandria,large_airport,Alexandria International Airport,HBE,30.93249,29.696437
+Northern Africa,Egypt,Asyut,medium_airport,Assiut Airport,ATZ,27.050818,31.016309
+Northern Africa,Egypt,Aswan,medium_airport,Aswan International Airport,ASW,23.968137,32.824445
+Northern Africa,Egypt,Cairo,large_airport,Cairo International Airport,CAI,30.111534,31.396694
+Northern Africa,Egypt,El Arish,medium_airport,El Arish International Airport,AAC,31.078565,33.836791
+Northern Africa,Egypt,El Dabaa,medium_airport,El Alamein International Airport,DBB,30.924324,28.46161
+Northern Africa,Egypt,Hurghada,large_airport,Hurghada International Airport,HRG,27.176776,33.796692
+Northern Africa,Egypt,Luxor,medium_airport,Luxor International Airport,LXR,25.671037,32.706451
+Northern Africa,Egypt,Marsa Alam,medium_airport,Marsa Alam International Airport,RMF,25.555548,34.59245
+Northern Africa,Egypt,Mersa Matruh,medium_airport,Mersa Matruh International Airport,MUH,31.325464,27.221716
+Northern Africa,Egypt,Saint Catherine,medium_airport,St. Catherine International Airport,SKV,28.684601,34.062681
+Northern Africa,Egypt,Sharm El Sheikh,large_airport,[[Sharm El Sheikh International Airport],SSH,27.977272,34.394717
+Northern Africa,Egypt,Sohag,large_airport,Sohag International Airport,HMB,26.342515,31.743017
+Northern Africa,Egypt,Taba,medium_airport,Taba International Airport,TCP,29.594496,34.775752
+Northern Africa,Libya,Benghazi,medium_airport,Benina International Airport,BEN,32.096802,20.269501
+Northern Africa,Libya,Sabha,medium_airport,Sabha Airport,SEB,26.992452,14.466162
+Northern Africa,Libya,Tajoura,large_airport,Mitiga International Airport,MJI,32.89177,13.287878
+Northern Africa,Morocco,Agadir,large_airport,Agadir–Al Massira Airport,AGA,30.322478,-9.412003
+Northern Africa,Morocco,Beni Mellal,small_airport,Beni Mellal Airport,BEM,32.401895,-6.315905
+Northern Africa,Morocco,Casablanca,large_airport,Mohammed V International Airport,CMN,33.3675,-7.58997
+Northern Africa,Morocco,Fes,large_airport,Fès–Saïs Airport,FEZ,33.927299,-4.97796
+Northern Africa,Morocco,Marrakesh,large_airport,Marrakesh Menara Airport,RAK,31.606899,-8.0363
+Northern Africa,Morocco,Nador,medium_airport,Nador International Airport,NDR,34.9888,-3.02821
+Northern Africa,Morocco,Ouarzazate,medium_airport,Ouarzazate Airport,OZZ,30.9391002655,-6.909430027010001
+Northern Africa,Morocco,Oujda,medium_airport,Angads Airport,OUD,34.789558,-1.926041
+Northern Africa,Morocco,Rabat,large_airport,Rabat–Salé Airport,RBA,34.051498,-6.75152
+Northern Africa,Morocco,Tangier,large_airport,Tangier Ibn Battouta Airport,TNG,35.731741,-5.921459
+Northern Africa,Morocco,Tetouan,medium_airport,Sania Ramel Airport,TTU,35.594299,-5.32002
+Northern Africa,Morocco,Dakhla,medium_airport,Dakhla Airport,VIL,23.7183,-15.932
+Northern Africa,Morocco,Laayoune,medium_airport,Hassan I Airport,EUN,27.142467,-13.224947
+Northern Africa,Sudan,Khartoum,large_airport,Khartoum International Airport,KRT,15.5895,32.5532
+Northern Africa,Sudan,Port Sudan,medium_airport,Port Sudan New International Airport,PZU,19.4335994720459,37.234100341796875
+Northern Africa,Tunisia,Djerba,medium_airport,Djerba–Zarzis International Airport,DJE,33.875,10.7755
+Northern Africa,Tunisia,Enfidha,medium_airport,Enfidha–Hammamet International Airport,NBE,36.075833,10.438611
+Northern Africa,Tunisia,Monastir,medium_airport,Monastir Habib Bourguiba International Airport,MIR,35.75809860229492,10.75469970703125
+Northern Africa,Tunisia,Sfax,medium_airport,Sfax–Thyna International Airport,SFA,34.71799850463867,10.690999984741213
+Northern Africa,Tunisia,Tabarka,medium_airport,Tabarka–Aïn Draham International Airport,TBJ,36.98,8.87694
+Northern Africa,Tunisia,Tozeur,medium_airport,Tozeur–Nefta International Airport,TOE,33.939701080322266,8.110560417175293
+Northern Africa,Tunisia,Tunis,large_airport,Tunis–Carthage International Airport,TUN,36.851002,10.2272
+Western Africa,Benin,Cotonou,large_airport,Cadjehoun Airport,COO,6.35723,2.38435
+Western Africa,Burkina Faso,Bobo-Dioulasso,medium_airport,Bobo Dioulasso Airport,BOY,11.160099983215332,-4.33096981048584
+Western Africa,Burkina Faso,Ouagadougou,medium_airport,Thomas Sankara International Airport Ouagadougou,OUA,12.3532,-1.51242
+Western Africa,Cape Verde,Boa Vista,medium_airport,Aristides Pereira International Airport,BVC,16.136499404907227,-22.888900756835938
+Western Africa,Cape Verde,Sal Island,large_airport,Amílcar Cabral International Airport,SID,16.7414,-22.9494
+Western Africa,Cape Verde,"Praia, Santiago Island",large_airport,Nelson Mandela International Airport,RAI,14.941126,-23.484728
+Western Africa,Cape Verde,São Vicente,medium_airport,Cesária Évora Airport,VXE,16.8332,-25.0553
+Western Africa,The Gambia,Banjul,large_airport,Banjul International Airport,BJL,13.338,-16.652201
+Western Africa,Ghana,Accra,large_airport,Kotoka International Airport,ACC,5.605189800262451,-0.1667860001325607
+Western Africa,Ghana,Kumasi,large_airport,Prempeh I International Airport,KMS,6.71456,-1.59082
+Western Africa,Ghana,Takoradi,medium_airport,Takoradi Airport,TKD,4.896059989929199,-1.7747600078582764
+Western Africa,Ghana,Sunyani,medium_airport,Sunyani Airport,NYI,7.36183,-2.32876
+Western Africa,Ghana,Wa,small_airport,Wa Airport,WZA,10.0827,-2.50769
+Western Africa,Ghana,Tamale,medium_airport,Tamale Airport,TML,9.55718994140625,-0.8632140159606934
+Western Africa,Guinea,Conakry,medium_airport,Conakry International Airport,CKY,9.57689,-13.612
+Western Africa,Guinea-Bissau,Bissau,medium_airport,Osvaldo Vieira International Airport,OXB,11.894800186157228,-15.65369987487793
+Western Africa,Ivory Coast,Abidjan,large_airport,Félix-Houphouët-Boigny International Airport,ABJ,5.26139,-3.92629
+Western Africa,Liberia,Monrovia,large_airport,Roberts International Airport,ROB,6.23379,-10.3623
+Western Africa,Mali,Bamako,large_airport,Modibo Keita International Airport,BKO,12.5335,-7.94994
+Western Africa,Mauritania,Nouakchott,large_airport,Nouakchott–Oumtounsy International Airport,NKC,18.31,-15.969722
+Western Africa,Mauritania,Nouadhibou,medium_airport,Nouadhibou International Airport,NDB,20.9330997467041,-17.030000686645508
+Western Africa,Mauritania,Atar,medium_airport,Atar International Airport,ATR,20.506799697875977,-13.04319953918457
+Western Africa,Niger,Niamey,large_airport,Diori Hamani International Airport,NIM,13.4815,2.18361
+Western Africa,Nigeria,Abuja,large_airport,Nnamdi Azikiwe International Airport,ABV,9.00679,7.26317
+Western Africa,Nigeria,Calabar,medium_airport,Margaret Ekpo International Airport,CBQ,4.976019859313965,8.347200393676758
+Western Africa,Nigeria,"Asaba, Delta",medium_airport,Asaba International Airport,ABB,6.204167,6.665278
+Western Africa,Nigeria,Kano,medium_airport,Mallam Aminu Kano International Airport,KAN,12.0476,8.52462
+Western Africa,Nigeria,Lagos,large_airport,Murtala Muhammed International Airport,LOS,6.57737,3.32116
+Western Africa,Nigeria,Port Harcourt,medium_airport,Port Harcourt International Airport,PHC,5.0154900550842285,6.94959020614624
+Western Africa,Nigeria,Enugu,medium_airport,Akanu Ibiam International Airport,ENU,6.474269866943359,7.561960220336914
+Western Africa,Nigeria,Sokoto,medium_airport,Sadiq Abubakar III International Airport,SKO,12.916299819946287,5.207190036773682
+Western Africa,"Saint Helena, Ascension and Tristan da Cunha",Saint Helena,small_airport,Saint Helena Airport,HLE,-15.957725,-5.645943
+Western Africa,Senegal,Dakar,large_airport,Blaise Diagne International Airport,DSS,14.670878,-17.072829
+Western Africa,Sierra Leone,Freetown,large_airport,Freetown International Airport,FNA,8.61644,-13.1955
+Western Africa,Togo,Lomé,large_airport,Lomé–Tokoin International Airport,LFW,6.16561,1.25451
+Central Africa,Angola,Catumbela,medium_airport,Catumbela Airport,CBT,-12.4792,13.4869
+Central Africa,Angola,Luanda,large_airport,Quatro de Fevereiro Airport,LAD,-8.85837,13.2312
+Central Africa,Angola,Lubango,medium_airport,Lubango Airport,SDD,-14.924699783325195,13.574999809265137
+Central Africa,Cameroon,Douala,large_airport,Douala International Airport,DLA,4.00608,9.71948
+Central Africa,Cameroon,Yaoundé,large_airport,Yaoundé Nsimalen International Airport,NSI,3.72256,11.5533
+Central African Republic,Chad,N'Djamena,large_airport,N'Djamena International Airport,NDJ,12.1337,15.034
+Central African Republic,Democratic Republic of the Congo,Goma,medium_airport,Goma International Airport,GOM,-1.66617,29.237929
+Central African Republic,Democratic Republic of the Congo,Kinshasa,large_airport,N'djili Airport,FIH,-4.38575,15.4446
+Central African Republic,Democratic Republic of the Congo,Kisangani,medium_airport,Kisangani Bangoka International Airport,FKI,0.481638997793,25.3379993439
+Central African Republic,Democratic Republic of the Congo,Lubumbashi,medium_airport,Lubumbashi International Airport,FBM,-11.5913000107,27.5308990479
+Central African Republic,Equatorial Guinea,Malabo,medium_airport,Malabo International Airport,SSG,3.755270004272461,8.708720207214355
+Central African Republic,Gabon,Franceville,large_airport,M'Vengue El Hadj Omar Bongo Ondimba International Airport,MVB,-1.65616,13.438
+Central African Republic,Gabon,Libreville,large_airport,Léon-Mba International Airport,LBV,0.4586,9.41228
+Central African Republic,Gabon,Port-Gentil,large_airport,Port-Gentil International Airport,POG,-0.711739,8.75438
+Central African Republic,Republic of the Congo,Brazzaville,large_airport,Maya-Maya Airport,BZV,-4.2517,15.253
+Central African Republic,Republic of the Congo,Pointe-Noire,medium_airport,Agostinho-Neto International Airport,PNR,-4.81603,11.8866
+Central African Republic,São Tomé and Príncipe,São Tomé,medium_airport,São Tomé International Airport,TMS,0.378175,6.71215
+Southern Africa,Botswana,Gaborone,large_airport,Sir Seretse Khama International Airport,GBE,-24.555201,25.9182
+Southern Africa,Botswana,Maun,medium_airport,Maun Airport,MUB,-19.970491,23.431409
+Southern Africa,Botswana,Francistown,medium_airport,Francistown International Airport,FRW,-21.15914,27.468545
+Southern Africa,Botswana,Kasane,medium_airport,Kasane Airport,BBK,-17.832899,25.162399
+Southern Africa,Eswatini,Manzini,large_airport,King Mswati III International Airport,SHO,-26.358611,31.716944
+Southern Africa,Lesotho,Maseru,large_airport,Moshoeshoe I International Airport,MSU,-29.462299,27.5525
+Southern Africa,Namibia,Windhoek,large_airport,Hosea Kutako International Airport,WDH,-22.4799,17.4709
+Southern Africa,Namibia,Walvis Bay,medium_airport,Walvis Bay Airport,WVB,-22.979332,14.647102
+Eastern Africa,Burundi,Bujumbura,large_airport,Bujumbura International Airport,BJM,-3.32402,29.318501
+Eastern Africa,Comoros,Moroni,large_airport,Prince Said Ibrahim International Airport,HAH,-11.5337,43.2719
+Eastern Africa,Djibouti,Djibouti,large_airport,Djibouti–Ambouli International Airport,JIB,11.5473,43.1595
+Eastern Africa,Eritrea,Asmara,medium_airport,Asmara International Airport,ASM,15.291899681091309,38.910701751708984
+Eastern Africa,Ethiopia,Addis Ababa,large_airport,Addis Ababa Bole International Airport,ADD,8.97789,38.799301
+Eastern Africa,Ethiopia,Dire Dawa,medium_airport,Dire Dawa Airport,DIR,9.624699592590332,41.85419845581055
+Eastern Africa,Kenya,Eldoret,large_airport,Eldoret International Airport,EDL,0.404458,35.238899
+Eastern Africa,Kenya,Mombasa,large_airport,Moi International Airport,MBA,-4.03483,39.5942
+Eastern Africa,Kenya,Kisumu,large_airport,Kisumu International Airport,KIS,-0.086139,34.728901
+Eastern Africa,Kenya,Nairobi,large_airport,Jomo Kenyatta International Airport,NBO,-1.31923997402,36.9277992249
+Eastern Africa,Madagascar,Antananarivo,large_airport,Ivato International Airport,TNR,-18.7969,47.478802
+Eastern Africa,Madagascar,Antsiranana,medium_airport,Arrachart Airport,DIE,-12.3494,49.291698
+Eastern Africa,Madagascar,Mahajanga,medium_airport,Amborovy Airport,MJN,-15.666842,46.351233
+Eastern Africa,Madagascar,Nosy Be,medium_airport,Fascene Airport,NOS,-13.3121,48.3148
+Eastern Africa,Madagascar,Toamasina,medium_airport,Toamasina Airport,TMM,-18.109501,49.392502
+Eastern Africa,Madagascar,Tôlanaro,medium_airport,Tôlanaro Airport,FTU,-25.038099,46.9561
+Eastern Africa,Madagascar,Toliara,medium_airport,Toliara Airport,TLE,-23.3834,43.7285
+Eastern Africa,Malawi,Blantyre,medium_airport,Chileka International Airport,BLZ,-15.679100036621094,34.9739990234375
+Eastern Africa,Malawi,Lilongwe,medium_airport,Lilongwe International Airport,LLW,-13.7894,33.780998
+Eastern Africa,Mauritius,Plaine Magnien,large_airport,Sir Seewoosagur Ramgoolam International Airport,MRU,-20.430201,57.683601
+Eastern Africa,Mayotte,Dzaoudzi,large_airport,Dzaoudzi–Pamandzi International Airport,DZA,-12.809319,45.281815
+Eastern Africa,Mozambique,Maputo,large_airport,Maputo International Airport,MPM,-25.920799,32.572601
+Eastern Africa,Mozambique,Beira,large_airport,Beira Airport,BEW,-19.7964,34.9076
+Eastern Africa,Mozambique,Inhambane,medium_airport,Inhambane Airport,INH,-23.8764,35.408501
+Eastern Africa,Mozambique,Nampula,medium_airport,Nampula Airport,APL,-15.105600357055664,39.28179931640625
+Eastern Africa,Mozambique,Pemba,medium_airport,Pemba Airport,POL,-12.993302,40.524867
+Eastern Africa,Mozambique,Tete,medium_airport,Chingozi Airport,TET,-16.104799270629883,33.640201568603516
+Eastern Africa,Mozambique,Vilankulo,medium_airport,Vilankulo Airport,VNX,-22.018400192260746,35.31330108642578
+Eastern Africa,Réunion,Saint-Denis,large_airport,Roland Garros Airport,RUN,-20.890087,55.518894
+Eastern Africa,Rwanda,Kigali,large_airport,Kigali International Airport,KGL,-1.96863,30.1395
+Eastern Africa,Seychelles,Victoria,large_airport,Seychelles International Airport,SEZ,-4.67434,55.521801
+Eastern Africa,Somalia,Bosaso,small_airport,Bosaso Airport,BSA,11.275235,49.139231
+Eastern Africa,Somalia,Galkayo,small_airport,Abdullahi Yusuf Airport,GLK,6.78082990646,47.45470047
+Eastern Africa,Somalia,Garowe,small_airport,Garowe Airport,GGR,8.457942,48.567407
+Eastern Africa,Somalia,Hargeisa,medium_airport,Hargeisa Airport,HGA,9.513207,44.082389
+Eastern Africa,Somalia,Kismayo,medium_airport,Kismayo Airport,KMU,-0.377353,42.459202
+Eastern Africa,Somalia,Mogadishu,large_airport,Aden Adde International Airport,MGQ,2.01444,45.304699
+Eastern Africa,South Sudan,Juba,large_airport,Juba International Airport,JUB,4.87201,31.601101
+Eastern Africa,South Sudan,Malakal,medium_airport,Malakal Airport,MAK,9.55897,31.652201
+Eastern Africa,Tanzania,Arusha,medium_airport,Arusha Airport,ARK,-3.3677899837493896,36.63330078125
+Eastern Africa,Tanzania,Dar es Salaam,large_airport,Julius Nyerere International Airport,DAR,-6.87811,39.202599
+Eastern Africa,Tanzania,Hai District,medium_airport,Kilimanjaro International Airport,JRO,-3.42941,37.074501
+Eastern Africa,Tanzania,Mwanza,medium_airport,Mwanza Airport,MWZ,-2.4444899559020996,32.932701110839844
+Eastern Africa,Tanzania,Tanga,medium_airport,Tanga Airport,TGT,-5.09236,39.071201
+Eastern Africa,Tanzania,"Unguja, Zanzibar",large_airport,Abeid Amani Karume International Airport,ZNZ,-6.22202,39.224899
+Eastern Africa,Uganda,Arua,medium_airport,Arua Airport,RUA,3.049152,30.911714
+Eastern Africa,Uganda,Entebbe,large_airport,Entebbe International Airport,EBB,0.042386,32.443501
+Eastern Africa,Uganda,Gulu,medium_airport,Gulu Airport,ULU,2.8055601119995117,32.27180099487305
+Eastern Africa,Zambia,Livingstone,medium_airport,Harry Mwanga Nkumbula International Airport,LVI,-17.8218,25.822701
+Eastern Africa,Zambia,Lusaka,large_airport,Kenneth Kaunda International Airport,LUN,-15.330833,28.452722
+Eastern Africa,Zambia,Mfuwe,medium_airport,Mfuwe Airport,MFU,-13.258899688720703,31.936599731445312
+Eastern Africa,Zambia,Ndola,medium_airport,Simon Mwansa Kapwepwe International Airport,NLA,-12.961667,28.516667
+Eastern Africa,Zimbabwe,Harare,large_airport,Robert Gabriel Mugabe International Airport,HRE,-17.931801,31.0928
+Eastern Africa,Zimbabwe,Victoria Falls,medium_airport,Victoria Falls Airport,VFA,-18.09589958190918,25.839000701904297
+Eastern Africa,Zimbabwe,Bulawayo,medium_airport,Joshua Mqabuko Nkomo International Airport,BUQ,-20.021254,28.626296
+Americas - Caribbean,Anguilla,The Valley,large_airport,Clayton J. Lloyd International Airport,AXA,18.204773,-63.05383
+Americas - Caribbean,Antigua and Barbuda,St. John’s,medium_airport,V. C. Bird International Airport,ANU,17.1367,-61.792702
+Americas - Caribbean,Aruba,Oranjestad,large_airport,Queen Beatrix International Airport,AUA,12.5014,-70.015198
+Americas - Caribbean,The Bahamas,Nassau,large_airport,Lynden Pindling International Airport,NAS,25.039,-77.466202
+Americas - Caribbean,The Bahamas,Chub Cay,medium_airport,Chub Cay International Airport,CCZ,25.417101,-77.880898
+Americas - Caribbean,The Bahamas,Exuma,medium_airport,Exuma International Airport,GGT,23.562599,-75.877998
+Americas - Caribbean,The Bahamas,Freeport,medium_airport,Grand Bahama International Airport,FPO,26.5587005615,-78.695602417
+Americas - Caribbean,The Bahamas,North Eleuthera,medium_airport,North Eleuthera Airport,ELH,25.474899292,-76.6835021973
+Americas - Caribbean,The Bahamas,South Eleuthera,medium_airport,Rock Sound International Airport,RSD,24.8950787333,-76.1768817902
+Americas - Caribbean,The Bahamas,Marsh Harbour,medium_airport,Marsh Harbour International Airport,MHH,26.510711,-77.084262
+Americas - Caribbean,Barbados,Bridgetown,medium_airport,Grantley Adams International Airport,BGI,13.0746,-59.4925
+Americas - Caribbean,British Virgin Islands,Road Town,large_airport,Terrance B. Lettsome International Airport,EIS,18.445492,-64.541707
+Americas - Caribbean Netherlands,British Virgin Islands,"Kralendijk, Bonaire",large_airport,Flamingo International Airport,BON,12.131,-68.268501
+Americas - Caribbean Netherlands,British Virgin Islands,"Oranjestad, Sint Eustatius",medium_airport,F. D. Roosevelt Airport,EUX,17.4965,-62.979401
+Americas - Caribbean Netherlands,British Virgin Islands,"Flat Point, Saba",medium_airport,Juancho E. Yrausquin Airport,SAB,17.645351,-63.220571
+Americas - Caribbean Netherlands,Cayman Islands,Cayman Brac,medium_airport,Charles Kirkconnell International Airport,CYB,19.687,-79.882797
+Americas - Caribbean Netherlands,Cayman Islands,Georgetown,large_airport,Owen Roberts International Airport,GCM,19.292801,-81.357697
+Americas - Caribbean Netherlands,Cuba,Camagüey,medium_airport,Ignacio Agramonte International Airport,CMW,21.420299530029297,-77.84750366210938
+Americas - Caribbean Netherlands,Cuba,Cayo Coco,medium_airport,Jardines del Rey Airport,CCC,22.4610004425,-78.32839965820001
+Americas - Caribbean Netherlands,Cuba,Cayo Largo del Sur,medium_airport,Vilo Acuña Airport,CYO,21.6165008545,-81.5459976196
+Americas - Caribbean Netherlands,Cuba,Cienfuegos,medium_airport,Jaime González Airport,CFG,22.149999618530273,-80.41419982910156
+Americas - Caribbean Netherlands,Cuba,Havana,large_airport,José Martí International Airport,HAV,22.989200592041016,-82.40910339355469
+Americas - Caribbean Netherlands,Cuba,Holguín,medium_airport,Frank País Airport,HOG,20.785600662231445,-76.31510162353516
+Americas - Caribbean Netherlands,Cuba,Santa Clara,medium_airport,Abel Santamaría Airport,SNU,22.492201,-79.943604
+Americas - Caribbean Netherlands,Cuba,Santiago de Cuba,medium_airport,Antonio Maceo Airport,SCU,19.96980094909668,-75.83540344238281
+Americas - Caribbean Netherlands,Cuba,Varadero,large_airport,Juan Gualberto Gómez Airport,VRA,23.034401,-81.435303
+Americas - Caribbean Netherlands,Curaçao,Willemstad,large_airport,Curaçao International Airport,CUR,12.1889,-68.959801
+Americas - Caribbean Netherlands,Dominica,Marigot,medium_airport,Douglas–Charles Airport,DOM,15.547,-61.299999
+Americas - Caribbean Netherlands,Dominican Republic,Barahona,medium_airport,María Montez International Airport,BRX,18.25149917602539,-71.12039947509766
+Americas - Caribbean Netherlands,Dominican Republic,La Romana,large_airport,La Romana International Airport,LRM,18.452222,-68.911111
+Americas - Caribbean Netherlands,Dominican Republic,Punta Cana,large_airport,Punta Cana International Airport,PUJ,18.5674,-68.363403
+Americas - Caribbean Netherlands,Dominican Republic,Samana,medium_airport,Samaná El Catey International Airport,AZS,19.269259,-69.737405
+Americas - Caribbean Netherlands,Dominican Republic,San Felipe de Puerto Plata,medium_airport,Gregorio Luperón International Airport,POP,19.7579,-70.57
+Americas - Caribbean Netherlands,Dominican Republic,Santiago de los Caballeros,medium_airport,Cibao International Airport,STI,19.406099319458008,-70.60469818115234
+Americas - Caribbean Netherlands,Dominican Republic,Santo Domingo,large_airport,Las Américas International Airport,SDQ,18.42970085144,-69.668899536133
+Americas - Caribbean Netherlands,Grenada,St George’s,medium_airport,Maurice Bishop International Airport,GND,12.0042,-61.786201
+Americas - Caribbean Netherlands,Guadeloupe,Pointe-à-Pitre,large_airport,Pointe-à-Pitre International Airport,PTP,16.265301,-61.531799
+Americas - Caribbean Netherlands,Haiti,Cap-Haïtien,medium_airport,Cap-Haïtien International Airport,CAP,19.726734,-72.199576
+Americas - Caribbean Netherlands,Haiti,Port-au-Prince,large_airport,Toussaint Louverture International Airport,PAP,18.580023,-72.292596
+Americas - Caribbean Netherlands,Jamaica,Kingston,large_airport,Norman Manley International Airport,KIN,17.935699462890625,-76.7874984741211
+Americas - Caribbean Netherlands,Jamaica,Montego Bay,medium_airport,Sangster International Airport,MBJ,18.5037,-77.913399
+Americas - Caribbean Netherlands,Martinique,Fort-de-France,large_airport,Martinique Aimé Césaire International Airport,FDF,14.591,-61.003201
+Americas - Caribbean Netherlands,Montserrat,Brades,medium_airport,John A. Osborne Airport,MNI,16.791401,-62.193298
+Americas - Caribbean Netherlands,Puerto Rico,Aguadilla,large_airport,Rafael Hernández International Airport,BQN,18.4949,-67.129402
+Americas - Caribbean Netherlands,Puerto Rico,Ponce,large_airport,Mercedita International Airport,PSE,18.008301,-66.563004
+Americas - Caribbean Netherlands,Puerto Rico,San Juan,medium_airport,Fernando Luis Ribas Dominicci Airport,SIG,18.45680046081543,-66.09809875488281
+Americas - Caribbean Netherlands,Saint Barthélemy,Saint Jean,medium_airport,Gustaf III Airport,SBH,17.9044,-62.843601
+Americas - Caribbean Netherlands,Saint Kitts and Nevis,Basseterre,medium_airport,Robert L. Bradshaw International Airport,SKB,17.311199188232422,-62.71870040893555
+Americas - Caribbean Netherlands,Saint Lucia,Vieux Fort Quarter,large_airport,Hewanorra International Airport,UVF,13.7332,-60.952599
+Americas - Caribbean Netherlands,Saint Vincent and the Grenadines,Kingstown,medium_airport,Argyle International Airport,SVD,13.156695,-61.149945
+Americas - Caribbean Netherlands,Saint Vincent and the Grenadines,Canouan,medium_airport,Canouan Airport,CIW,12.699,-61.3424
+Americas - Caribbean Netherlands,Sint Maarten,Philipsburg,large_airport,Princess Juliana International Airport,SXM,18.041,-63.108898
+Americas - Caribbean Netherlands,Trinidad and Tobago,Port of Spain,medium_airport,Piarco International Airport,POS,10.5954,-61.3372
+Americas - Caribbean Netherlands,Trinidad and Tobago,Tobago,medium_airport,A.N.R. Robinson International Airport,TAB,11.1497,-60.832199
+Americas - Caribbean Netherlands,Turks and Caicos Islands,Blue Hills,large_airport,Providenciales Airport,PLS,21.773697,-72.268321
+Americas - Caribbean Netherlands,U.S. Virgin Islands,Charlotte Amalie,large_airport,Cyril E. King Airport,STT,18.337091,-64.977251
+Americas - Caribbean Netherlands,U.S. Virgin Islands,Christiansted,medium_airport,Henry E. Rohlsen Airport,STX,17.701413,-64.802608
+Americas - Central America,Belize,Belize City,large_airport,Philip S. W. Goldson International Airport,BZE,17.539951,-88.303556
+Americas - Central America,Costa Rica,Liberia,large_airport,Daniel Oduber Quirós International Airport,LIR,10.5933,-85.544403
+Americas - Central America,Costa Rica,San José,large_airport,Juan Santamaría International Airport,SJO,9.99386,-84.208801
+Americas - Central America,El Salvador,San Salvador,large_airport,El Salvador International Airport,SAL,13.4409,-89.055702
+Americas - Central America,Guatemala,Flores,medium_airport,Mundo Maya International Airport,FRS,16.913799,-89.866402
+Americas - Central America,Guatemala,Guatemala City,large_airport,La Aurora International Airport,GUA,14.5833,-90.527496
+Americas - Central America,Honduras,La Ceiba,medium_airport,Golosón International Airport,LCE,15.7425,-86.852997
+Americas - Central America,Honduras,Roatán,medium_airport,Juan Manuel Gálvez International Airport,RTB,16.316799,-86.523003
+Americas - Central America,Honduras,San Pedro Sula,medium_airport,Ramón Villeda Morales International Airport,SAP,15.4526,-87.923599
+Americas - Central America,Honduras,Tegucigalpa,medium_airport,Toncontín International Airport,TGU,14.0609,-87.217201
+Americas - Central America,Honduras,Comayagua,medium_airport,Comayagua International Airport,XPL,14.3824,-87.621201
+Americas - Central America,Nicaragua,Managua,medium_airport,Augusto C. Sandino International Airport,MGA,12.14150047302246,-86.16819763183594
+Americas - Central America,Nicaragua,Bluefields,medium_airport,Bluefields Airport,BEF,11.991,-83.774101
+Americas - Central America,Nicaragua,Corn Island,small_airport,Corn Island Airport,RNI,12.174785,-83.059445
+Americas - Central America,Panama,Bocas del Toro,medium_airport,"Bocas del Toro ""Isla Colón"" International Airport",BOC,9.34085,-82.250801
+Americas - Central America,Panama,"David, Chiriquí",medium_airport,Enrique Malek International Airport,DAV,8.391,-82.434998
+Americas - Central America,Panama,Panama City,medium_airport,"Albrook ""Marcos A. Gelabert"" International Airport",PAC,8.97334,-79.555603
+Americas - Central America,Panama,Rio Hato,small_airport,Scarlett Martínez International Airport,RIH,8.375880241394,-80.127899169922
+Americas - North America,Bermuda,Hamilton,medium_airport,L.F. Wade International Airport,BDA,32.363998,-64.678703
+Americas - North America,Canada,Abbotsford,medium_airport,Abbotsford International Airport,YXX,49.025299,-122.361
+Americas - North America,Canada,Barrie (Oro-Medonte),medium_airport,Lake Simcoe Regional Airport,YLK,44.485056,-79.554663
+Americas - North America,Canada,Calgary,large_airport,Calgary International Airport,YYC,51.118822,-114.009933
+Americas - North America,Canada,Charlottetown,medium_airport,Charlottetown Airport,YYG,46.290000915527344,-63.12110137939453
+Americas - North America,Canada,Deer Lake,medium_airport,Deer Lake Regional Airport,YDA,64.04309844970703,-139.1280059814453
+Americas - North America,Canada,Edmonton,large_airport,Edmonton International Airport,YEG,53.3097,-113.580002
+Americas - North America,Canada,Fredericton,medium_airport,Fredericton International Airport,YFC,45.868900299072266,-66.53720092773438
+Americas - North America,Canada,Gander,medium_airport,Gander International Airport,YQX,48.936258,-54.567719
+Americas - North America,Canada,Halifax (Goffs),large_airport,Halifax Stanfield International Airport,YHZ,44.8807983398,-63.5085983276
+Americas - North America,Canada,Hamilton,medium_airport,John C. Munro Hamilton International Airport,YHM,43.173599243199995,-79.93499755859999
+Americas - North America,Canada,Kamloops,medium_airport,Kamloops Airport,YKA,50.703038,-120.448641
+Americas - North America,Canada,Kelowna,medium_airport,Kelowna International Airport,YLW,49.9561,-119.377998
+Americas - North America,Canada,Kingston,medium_airport,Kingston Norman Rogers Airport,YGK,44.2253,-76.596901
+Americas - North America,Canada,Kitchener,medium_airport,Region of Waterloo International Airport,YKF,43.4608,-80.378601
+Americas - North America,Canada,London,medium_airport,London International Airport,YXU,43.035599,-81.1539
+Americas - North America,Canada,Moncton (Dieppe),medium_airport,Greater Moncton Roméo LeBlanc International Airport,YQM,46.112202,-64.678596
+Americas - North America,Canada,Montréal (Dorval),large_airport,Montréal–Trudeau International Airport,YUL,45.467837,-73.742294
+Americas - North America,Canada,Ottawa,large_airport,Ottawa Macdonald–Cartier International Airport,YOW,45.322498,-75.669197
+Americas - North America,Canada,Québec City,large_airport,Québec City Jean Lesage International Airport,YQB,46.7911,-71.393303
+Americas - North America,Canada,Regina,medium_airport,Regina International Airport,YQR,50.43190002441406,-104.66600036621094
+Americas - North America,Canada,Saint John,medium_airport,Saint John Airport,YSJ,45.31610107421875,-65.89029693603516
+Americas - North America,Canada,St. John's,large_airport,St. John's International Airport,YYT,47.618599,-52.7519
+Americas - North America,Canada,Sydney,medium_airport,JA Douglas McCurdy Sydney Airport,YQY,46.1614,-60.047798
+Americas - North America,Canada,Thunder Bay,medium_airport,Thunder Bay International Airport,YQT,48.37189865112305,-89.32389831542969
+Americas - North America,Canada,Toronto (Mississauga),large_airport,Toronto Pearson International Airport,YYZ,43.6772,-79.6306
+Americas - North America,Canada,Toronto,medium_airport,Billy Bishop Toronto City Airport,YTZ,43.627499,-79.396202
+Americas - North America,Canada,Vancouver (Richmond),large_airport,Vancouver International Airport,YVR,49.193901,-123.183998
+Americas - North America,Canada,Victoria (Sidney),medium_airport,Victoria International Airport,YYJ,48.647201,-123.427792
+Americas - North America,Canada,Whitehorse,medium_airport,Erik Nielsen Whitehorse International Airport,YXY,60.709599,-135.067001
+Americas - North America,Canada,Windsor,medium_airport,Windsor International Airport,YQG,42.27560043334961,-82.95559692382812
+Americas - North America,Canada,Winnipeg,large_airport,Winnipeg James Armstrong Richardson International Airport,YWG,49.909999847399995,-97.2398986816
+Americas - North America,Greenland,Kangerlussuaq,large_airport,Kangerlussuaq Airport,SFJ,67.010446,-50.715294
+Americas - North America,Greenland,Nuuk,large_airport,Nuuk Airport,GOH,64.191066,-51.67914
+Americas - North America,Greenland,Ilulissat,medium_airport,Ilulissat Airport,JAV,69.243202,-51.057098
+Americas - North America,Greenland,Narsarsuaq,medium_airport,Narsarsuaq Airport,UAK,61.1605,-45.425999
+Americas - North America,Mexico,Acapulco,medium_airport,Acapulco International Airport,ACA,16.757126,-99.753113
+Americas - North America,Mexico,Aguascalientes,medium_airport,Aguascalientes International Airport,AGU,21.699589,-102.318372
+Americas - North America,Mexico,Cancún,large_airport,Cancún International Airport,CUN,21.039444,-86.874304
+Americas - North America,Mexico,Chihuahua,medium_airport,Chihuahua International Airport,CUU,28.7029,-105.964996
+Americas - North America,Mexico,Ciudad del Carmen,medium_airport,Ciudad del Carmen International Airport,CME,18.65369987487793,-91.79900360107422
+Americas - North America,Mexico,Cozumel,large_airport,Cozumel International Airport,CZM,20.514922,-86.928538
+Americas - North America,Mexico,Culiacán,medium_airport,Culiacán International Airport,CUL,24.76504,-107.475228
+Americas - North America,Mexico,Durango,large_airport,Durango International Airport,DGO,24.125468,-104.527938
+Americas - North America,Mexico,Guadalajara,large_airport,Guadalajara International Airport,GDL,20.523342,-103.310108
+Americas - North America,Mexico,Hermosillo,medium_airport,Hermosillo International Airport,HMO,29.093527,-111.049891
+Americas - North America,Mexico,Huatulco,medium_airport,Bahías de Huatulco International Airport,HUX,15.774909,-96.260319
+Americas - North America,Mexico,Ixtapa,medium_airport,Ixtapa-Zihuatanejo International Airport,ZIH,17.601771,-101.460629
+Americas - North America,Mexico,León,medium_airport,León/Bajío International Airport,BJX,20.992695,-101.480284
+Americas - North America,Mexico,Loreto,medium_airport,Loreto International Airport,LTO,25.989200592041016,-111.3479995727539
+Americas - North America,Mexico,Manzanillo,medium_airport,Playa de Oro International Airport,ZLO,19.1448,-104.558998
+Americas - North America,Mexico,Mazatlán,large_airport,Mazatlán International Airport,MZT,23.161474,-106.264572
+Americas - North America,Mexico,Mérida,large_airport,Mérida International Airport,MID,20.930485,-89.645462
+Americas - North America,Mexico,Mexicali,medium_airport,Mexicali International Airport,MXL,32.630629,-115.242805
+Americas - North America,Mexico,Mexico City,large_airport,Mexico City International Airport,MEX,19.435137,-99.071328
+Americas - North America,Mexico,Monterrey,large_airport,Monterrey International Airport,MTY,25.778521,-100.106989
+Americas - North America,Mexico,Morelia,medium_airport,Morelia International Airport,MLM,19.849899,-101.025002
+Americas - North America,Mexico,Oaxaca,medium_airport,Oaxaca International Airport,OAX,17.000814,-96.72197
+Americas - North America,Mexico,Puebla,medium_airport,Puebla International Airport,PBC,19.158465,-98.371582
+Americas - North America,Mexico,Puerto Escondido,medium_airport,Puerto Escondido International Airport,PXM,15.876808,-97.0891
+Americas - North America,Mexico,Puerto Vallarta,large_airport,Puerto Vallarta International Airport,PVR,20.679913,-105.254391
+Americas - North America,Mexico,Querétaro,medium_airport,Querétaro Intercontinental Airport,QRO,20.6173,-100.185997
+Americas - North America,Mexico,Reynosa,medium_airport,Reynosa International Airport,REX,26.0089,-98.2285
+Americas - North America,Mexico,Saltillo,medium_airport,Saltillo International Airport,SLW,25.544145,-100.930195
+Americas - North America,Mexico,San Luis Potosí,medium_airport,San Luis Potosí International Airport,SLP,22.254299163800003,-100.930999756
+Americas - North America,Mexico,Tampico,medium_airport,Tampico International Airport,TAM,22.2964000702,-97.8658981323
+Americas - North America,Mexico,Tepic,medium_airport,Tepic International Airport,TPQ,21.419833,-104.842472
+Americas - North America,Mexico,Tijuana,large_airport,Tijuana International Airport,TIJ,32.541043,-116.969976
+Americas - North America,Mexico,Toluca,medium_airport,Toluca International Airport,TLC,19.3369,-99.56583
+Americas - North America,Mexico,Torreón,medium_airport,Torreón International Airport,TRC,25.5683,-103.411003
+Americas - North America,Mexico,Tulum,medium_airport,Tulum International Airport,TQO,20.172098,-87.660272
+Americas - North America,Mexico,Uruapan,medium_airport,Uruapan International Airport,UPN,19.3967,-102.039001
+Americas - North America,Mexico,Tuxtla Gutiérrez,medium_airport,Tuxtla Gutiérrez International Airport,TGZ,16.5636005402,-93.0224990845
+Americas - North America,Mexico,Veracruz,medium_airport,Veracruz International Airport,VER,19.1459007263,-96.1873016357
+Americas - North America,Mexico,Villahermosa,medium_airport,Villahermosa International Airport,VSA,17.997,-92.817398
+Americas - North America,Mexico,Zacatecas,medium_airport,Zacatecas International Airport,ZCL,22.8971,-102.686996
+Americas - North America,Saint Pierre and Miquelon,Saint-Pierre,medium_airport,Saint-Pierre Airport,FSP,46.762901306152344,-56.173099517822266
+Americas - North America,United States,Akron,medium_airport,Akron Executive Airport,AKC,41.037355,-81.46784
+Americas - North America,United States,Albany,medium_airport,Albany International Airport,ALB,42.74829864501953,-73.80169677734375
+Americas - North America,United States,Albuquerque,large_airport,Albuquerque International Sunport,ABQ,35.039976,-106.608925
+Americas - North America,United States,Amarillo,medium_airport,Rick Husband Amarillo International Airport,AMA,35.219398,-101.706001
+Americas - North America,United States,Anchorage,large_airport,Anchorage International Airport,ANC,61.179004,-149.992561
+Americas - North America,United States,Appleton,medium_airport,Appleton International Airport,ATW,44.258099,-88.519096
+Americas - North America,United States,Atlanta,large_airport,Hartsfield–Jackson Atlanta International Airport,ATL,33.6367,-84.428101
+Americas - North America,United States,Atlantic City,medium_airport,Atlantic City International Airport,ACY,39.45759963989258,-74.57720184326172
+Americas - North America,United States,Austin (TX),large_airport,Austin–Bergstrom International Airport,AUS,30.197535,-97.662015
+Americas - North America,United States,Baltimore,large_airport,Baltimore/Washington International Airport,BWI,39.1754,-76.668297
+Americas - North America,United States,Bangor,medium_airport,Bangor International Airport,BGR,44.8074,-68.828102
+Americas - North America,United States,Baudette,medium_airport,Baudette International Airport,BDE,48.7284011841,-94.612197876
+Americas - North America,United States,Bellingham,medium_airport,Bellingham International Airport,BLI,48.79280090332031,-122.53800201416016
+Americas - North America,United States,Birmingham,medium_airport,Birmingham–Shuttlesworth International Airport,BHM,33.562901,-86.753502
+Americas - North America,United States,Boise,medium_airport,Boise Airport,BOI,43.5644,-116.223
+Americas - North America,United States,Boston,large_airport,Logan International Airport,BOS,42.36197,-71.0079
+Americas - North America,United States,Brownsville,medium_airport,Brownsville/South Padre Island International Airport,BRO,25.90679931640625,-97.4259033203125
+Americas - North America,United States,Buffalo,large_airport,Buffalo Niagara International Airport,BUF,42.940498,-78.732201
+Americas - North America,United States,Calexico,small_airport,Calexico International Airport,CXL,32.6694984436,-115.513000488
+Americas - North America,United States,Charlotte,large_airport,Charlotte Douglas International Airport,CLT,35.2140007019043,-80.94309997558594
+Americas - North America,United States,Charleston (SC),medium_airport,Charleston International Airport,CHS,32.898602,-80.040497
+Americas - North America,United States,Chicago,large_airport,Midway International Airport,MDW,41.785999,-87.752403
+Americas - North America,United States,Cincinnati (OH) (Hebron),large_airport,Cincinnati/Northern Kentucky International Airport,CVG,39.048801,-84.667801
+Americas - North America,United States,Cleveland,large_airport,Cleveland Hopkins International Airport,CLE,41.411701,-81.8498
+Americas - North America,United States,Columbia (SC),medium_airport,Columbia Metropolitan Airport,CAE,33.938801,-81.119499
+Americas - North America,United States,Columbus (OH),large_airport,John Glenn Columbus International Airport,CMH,39.998001,-82.891899
+Americas - North America,United States,Corpus Christi,medium_airport,Corpus Christi International Airport,CRP,27.770399,-97.501198
+Americas - North America,United States,Dallas,medium_airport,Dallas Love Field,DAL,32.847099,-96.851799
+Americas - North America,United States,Dallas/Fort Worth,large_airport,Dallas/Fort Worth International Airport,DFW,32.896801,-97.038002
+Americas - North America,United States,Dayton (OH),medium_airport,Dayton International Airport,DAY,39.902401,-84.219398
+Americas - North America,United States,Denver,large_airport,Denver International Airport,DEN,39.861698150635,-104.672996521
+Americas - North America,United States,Des Moines (IA),medium_airport,Des Moines International Airport,DSM,41.534,-93.663101
+Americas - North America,United States,Detroit,large_airport,Detroit Metropolitan Airport,DTW,42.21377,-83.353786
+Americas - North America,United States,Duluth,medium_airport,Duluth International Airport,DLH,46.842098,-92.193604
+Americas - North America,United States,El Paso,medium_airport,El Paso International Airport,ELP,31.807199,-106.377998
+Americas - North America,United States,Erie,medium_airport,Erie International Airport,ERI,42.083127,-80.173867
+Americas - North America,United States,Fairbanks,medium_airport,Fairbanks International Airport,FAI,64.815102,-147.856003
+Americas - North America,United States,Fort Lauderdale,large_airport,Fort Lauderdale–Hollywood International Airport,FLL,26.072599,-80.152702
+Americas - North America,United States,Fort Myers,large_airport,Southwest Florida International Airport,RSW,26.53619956970215,-81.75520324707031
+Americas - North America,United States,Fresno,medium_airport,Fresno Yosemite International Airport,FAT,36.776199,-119.718002
+Americas - North America,United States,Gary,medium_airport,Gary/Chicago International Airport,GYY,41.61629867553711,-87.41280364990234
+Americas - North America,United States,Grand Rapids,medium_airport,Gerald R. Ford International Airport,GRR,42.88079834,-85.52279663
+Americas - North America,United States,Green Bay,medium_airport,Green Bay–Austin Straubel International Airport,GRB,44.483459,-88.130805
+Americas - North America,United States,Greensboro,medium_airport,Piedmont Triad International Airport,GSO,36.097801,-79.937302
+Americas - North America,United States,Greenville,medium_airport,Greenville-Spartanburg International Airport,GSP,34.895699,-82.218903
+Americas - North America,United States,Gulfport,medium_airport,Gulfport-Biloxi International Airport,GPT,30.407301,-89.070099
+Americas - North America,United States,Harlingen,medium_airport,Valley International Airport,HRL,26.228500366210938,-97.65440368652344
+Americas - North America,United States,Harrisburg,medium_airport,Harrisburg International Airport,MDT,40.193501,-76.763397
+Americas - North America,United States,Hartford (CT),large_airport,Bradley International Airport,BDL,41.93851,-72.688066
+Americas - North America,United States,Hilo,large_airport,Hilo International Airport,ITO,19.72135,-155.045428
+Americas - North America,United States,Honolulu,large_airport,Daniel K. Inouye International Airport,HNL,21.32062,-157.924228
+Americas - North America,United States,Houston,large_airport,George Bush Intercontinental Airport,IAH,29.984399795532227,-95.34140014648438
+Americas - North America,United States,Huntsville (AL),medium_airport,Huntsville International Airport,HSV,34.637199,-86.775101
+Americas - North America,United States,Indianapolis,large_airport,Indianapolis International Airport,IND,39.7173,-86.294403
+Americas - North America,United States,International Falls,medium_airport,Falls International Airport,INL,48.566200256347656,-93.4030990600586
+Americas - North America,United States,Jackson (MS),medium_airport,Jackson–Medgar Wiley Evers International Airport,JAN,32.311199,-90.075897
+Americas - North America,United States,Jacksonville,large_airport,Jacksonville International Airport,JAX,30.492469,-81.687813
+Americas - North America,United States,Juneau,medium_airport,Juneau International Airport,JNU,58.355,-134.576004
+Americas - North America,United States,Kailua-Kona,large_airport,Kona International Airport,KOA,19.738783,-156.045603
+Americas - North America,United States,Kansas City (MO),large_airport,Kansas City International Airport,MCI,39.2976,-94.713898
+Americas - North America,United States,Ketchikan,medium_airport,Ketchikan International Airport,KTN,55.35559845,-131.7140045
+Americas - North America,United States,Key West,medium_airport,Key West International Airport,EYW,24.556101,-81.759598
+Americas - North America,United States,Kissimmee,medium_airport,Kissimmee Gateway Airport,ISM,28.2898006439,-81.4371032715
+Americas - North America,United States,Knoxville,medium_airport,McGhee Tyson Airport,TYS,35.811001,-83.994003
+Americas - North America,United States,Lakeland,medium_airport,Lakeland Linder International Airport,LAL,27.987656,-82.018776
+Americas - North America,United States,Lansing,medium_airport,Capital Region International Airport,LAN,42.77870178222656,-84.58740234375
+Americas - North America,United States,Las Vegas,large_airport,Harry Reid International Airport,LAS,36.083361,-115.151817
+Americas - North America,United States,Little Rock,medium_airport,Bill and Hillary Clinton National Airport,LIT,34.729582,-92.223728
+Americas - North America,United States,Los Angeles,large_airport,Los Angeles International Airport,LAX,33.942501,-118.407997
+Americas - North America,United States,Louisville,large_airport,Louisville International Airport,SDF,38.1744,-85.736
+Americas - North America,United States,Lubbock,medium_airport,Lubbock Preston Smith International Airport,LBB,33.663601,-101.822998
+Americas - North America,United States,Madison (WI),medium_airport,Dane County Regional Airport,MSN,43.1399,-89.337502
+Americas - North America,United States,McAllen,medium_airport,McAllen Miller International Airport,MFE,26.176141,-98.237965
+Americas - North America,United States,Melbourne (FL),medium_airport,Melbourne Orlando International Airport,MLB,28.1028,-80.645302
+Americas - North America,United States,Memphis,large_airport,Memphis International Airport,MEM,35.0424,-89.9767
+Americas - North America,United States,Miami,large_airport,Miami International Airport,MIA,25.7932,-80.290604
+Americas - North America,United States,Midland/Odessa,medium_airport,Midland International Air and Space Port,MAF,31.942499,-102.202003
+Americas - North America,United States,Milwaukee,large_airport,General Mitchell International Airport,MKE,42.947201,-87.896599
+Americas - North America,United States,Minneapolis/St. Paul,large_airport,Minneapolis/St. Paul International Airport,MSP,44.880081,-93.221741
+Americas - North America,United States,Myrtle Beach,medium_airport,Myrtle Beach International Airport,MYR,33.679699,-78.928299
+Americas - North America,United States,Nashville,large_airport,Nashville International Airport,BNA,36.1245,-86.6782
+Americas - North America,United States,New Orleans,large_airport,Louis Armstrong New Orleans International Airport,MSY,29.993401,-90.258003
+Americas - North America,United States,New York City (Queens),large_airport,John F. Kennedy International Airport,JFK,40.639447,-73.779317
+Americas - North America,United States,Newark,large_airport,Newark Liberty International Airport,EWR,40.692501,-74.168701
+Americas - North America,United States,Newburgh,medium_airport,Stewart International Airport,SWF,41.504101,-74.104797
+Americas - North America,United States,Newport News,medium_airport,Newport News/Williamsburg International Airport,PHF,37.131901,-76.492996
+Americas - North America,United States,Niagara Falls,medium_airport,Niagara Falls International Airport,IAG,43.1073,-78.946198
+Americas - North America,United States,Norfolk (VA),large_airport,Norfolk International Airport,ORF,36.895341,-76.201
+Americas - North America,United States,Oakland,large_airport,Oakland International Airport,OAK,37.720085,-122.221184
+Americas - North America,United States,Oklahoma City,large_airport,Will Rogers World Airport,OKC,35.393388,-97.598248
+Americas - North America,United States,Omaha,large_airport,Eppley Airfield,OMA,41.3032,-95.894096
+Americas - North America,United States,Ontario,large_airport,Ontario International Airport,ONT,34.056,-117.600998
+Americas - North America,United States,Orange County (CA),large_airport,John Wayne Airport,SNA,33.675701,-117.867996
+Americas - North America,United States,Orlando,large_airport,Orlando International Airport,MCO,28.429399490356445,-81.30899810791016
+Americas - North America,United States,Palm Springs,medium_airport,Palm Springs International Airport,PSP,33.8297,-116.507004
+Americas - North America,United States,Panama City (FL),medium_airport,Northwest Florida Beaches International Airport,ECP,30.357106,-85.795414
+Americas - North America,United States,Pensacola,medium_airport,Pensacola International Airport,PNS,30.4734,-87.1866
+Americas - North America,United States,Philadelphia,large_airport,Philadelphia International Airport,PHL,39.871899,-75.241096
+Americas - North America,United States,Phoenix,large_airport,Phoenix Sky Harbor International Airport,PHX,33.435302,-112.005905
+Americas - North America,United States,Phoenix/Mesa,medium_airport,Phoenix–Mesa Gateway Airport,AZA,33.3078,-111.654999
+Americas - North America,United States,Pittsburgh,large_airport,Pittsburgh International Airport,PIT,40.491501,-80.232903
+Americas - North America,United States,Portland (ME),large_airport,Portland International Jetport,PWM,43.646198,-70.309303
+Americas - North America,United States,Portland (OR),large_airport,Portland International Airport,PDX,45.588699,-122.598
+Americas - North America,United States,Providence (Warwick),large_airport,Rhode Island T. F. Green International Airport,PVD,41.725038,-71.425668
+Americas - North America,United States,Racine,small_airport,Batten International Airport,RAC,42.7606010437,-87.8152008057
+Americas - North America,United States,Raleigh/Durham,large_airport,Raleigh–Durham International Airport,RDU,35.877602,-78.787498
+Americas - North America,United States,Reno,large_airport,Reno–Tahoe International Airport,RNO,39.4991,-119.767998
+Americas - North America,United States,Richmond (VA) (Sandston),large_airport,Richmond International Airport,RIC,37.505199,-77.319702
+Americas - North America,United States,Rochester (MN),medium_airport,Rochester International Airport,RST,43.908298,-92.5
+Americas - North America,United States,Rochester (NY),medium_airport,Greater Rochester International Airport,ROC,43.1189,-77.672401
+Americas - North America,United States,Rockford (IL),medium_airport,Chicago Rockford International Airport,RFD,42.1954,-89.097198
+Americas - North America,United States,Sacramento,large_airport,Sacramento International Airport,SMF,38.6954,-121.591003
+Americas - North America,United States,Salt Lake City,large_airport,Salt Lake City International Airport,SLC,40.78886,-111.979866
+Americas - North America,United States,San Antonio,large_airport,San Antonio International Airport,SAT,29.533701,-98.469803
+Americas - North America,United States,San Bernardino,medium_airport,San Bernardino International Airport,SBD,34.095402,-117.235001
+Americas - North America,United States,San Diego,large_airport,San Diego International Airport,SAN,32.7336006165,-117.190002441
+Americas - North America,United States,San Francisco,large_airport,San Francisco International Airport,SFO,37.619806,-122.374821
+Americas - North America,United States,San Jose (CA),large_airport,San Jose International Airport,SJC,37.362452,-121.929188
+Americas - North America,United States,Sanford (FL),large_airport,Orlando Sanford International Airport,SFB,28.777599334716797,-81.23750305175781
+Americas - North America,United States,Sarasota/Bradenton,large_airport,Sarasota–Bradenton International Airport,SRQ,27.394631,-82.554359
+Americas - North America,United States,Savannah (GA),large_airport,Savannah/Hilton Head International Airport,SAV,32.127602,-81.202103
+Americas - North America,United States,Seattle,seaplane_base,Kenmore Air Harbor Seaplane Base,LKE,47.629002,-122.338997
+Americas - North America,United States,Sheboygan,small_airport,Sheboygan County Memorial Airport,SBM,43.76959991,-87.85140228
+Americas - North America,United States,Everett (WA),medium_airport,Paine Field,PAE,47.9063,-122.281998
+Americas - North America,United States,Spokane,medium_airport,Spokane International Airport,GEG,47.6199,-117.533997
+Americas - North America,United States,St. Louis,large_airport,St. Louis Lambert International Airport,STL,38.748697,-90.370003
+Americas - North America,United States,St. Petersburg (FL),medium_airport,St. Pete–Clearwater International Airport,PIE,27.9102,-82.687401
+Americas - North America,United States,Syracuse,large_airport,Syracuse Hancock International Airport,SYR,43.11119842529297,-76.1063003540039
+Americas - North America,United States,Tallahassee,medium_airport,Tallahassee International Airport,TLH,30.3965,-84.350304
+Americas - North America,United States,Tampa,large_airport,Tampa International Airport,TPA,27.9755,-82.533203
+Americas - North America,United States,Tucson,medium_airport,Tucson International Airport,TUS,32.115004,-110.938053
+Americas - North America,United States,Tulsa,large_airport,Tulsa International Airport,TUL,36.19839859008789,-95.88809967041016
+Americas - North America,United States,"Washington, D.C.",large_airport,Ronald Reagan Washington National Airport**,DCA,38.8521,-77.037697
+Americas - North America,United States,West Palm Beach,large_airport,Palm Beach International Airport,PBI,26.683201,-80.095596
+Americas - North America,United States,Wilkes-Barre/Scranton,medium_airport,Wilkes-Barre/Scranton International Airport,AVP,41.338500976599995,-75.72339630130001
+Americas - North America,United States,Wilmington (NC),medium_airport,Wilmington International Airport,ILM,34.270599365234375,-77.90260314941406
+Americas - South America,Argentina,Buenos Aires,large_airport,Ministro Pistarini International Airport,EZE,-34.8222,-58.5358
+Americas - South America,Argentina,Bariloche,medium_airport,San Carlos de Bariloche Airport,BRC,-41.151199,-71.157501
+Americas - South America,Argentina,Comodoro Rivadavia,medium_airport,General Enrique Mosconi International Airport,CRD,-45.7853,-67.4655
+Americas - South America,Argentina,Córdoba,medium_airport,Ingeniero Aeronáutico Ambrosio L.V. Taravella International Airport,COR,-31.323601,-64.208
+Americas - South America,Argentina,Corrientes,medium_airport,Doctor Fernando Piragine Niveyro International Airport,CNQ,-27.4455,-58.7619
+Americas - South America,Argentina,El Calafate,medium_airport,Comandante Armando Tola International Airport,FTE,-50.2803,-72.053101
+Americas - South America,Argentina,El Palomar,medium_airport,El Palomar Airport,EPA,-34.6099,-58.6126
+Americas - South America,Argentina,Esquel,medium_airport,Brigadier General Antonio Parodi International Airport,EQS,-42.908001,-71.139503
+Americas - South America,Argentina,Formosa,medium_airport,Formosa International Airport,FMA,-26.2127,-58.2281
+Americas - South America,Argentina,Mar del Plata,medium_airport,Ástor Piazzolla International Airport,MDQ,-37.9342,-57.5733
+Americas - South America,Argentina,Mendoza,medium_airport,Governor Francisco Gabrielli International Airport,MDZ,-32.8316993713,-68.7929000854
+Americas - South America,Argentina,Neuquén,medium_airport,Presidente Perón International Airport,NQN,-38.949001,-68.155701
+Americas - South America,Argentina,Posadas,medium_airport,Libertador General José de San Martín Airport,PSS,-27.3858,-55.9707
+Americas - South America,Argentina,Puerto Iguazú,medium_airport,Cataratas del Iguazú International Airport,IGR,-25.737301,-54.4734
+Americas - South America,Argentina,Resistencia,medium_airport,Resistencia International Airport,RES,-27.45,-59.0561
+Americas - South America,Argentina,Río Gallegos,medium_airport,Piloto Civil Norberto Fernández International Airport,RGL,-51.6089,-69.3126
+Americas - South America,Argentina,Río Grande,medium_airport,Hermes Quijada International Airport,RGA,-53.7777,-67.7494
+Americas - South America,Argentina,Rosario,medium_airport,Rosario – Islas Malvinas International Airport,ROS,-32.9036,-60.785
+Americas - South America,Argentina,Salta,medium_airport,Martín Miguel de Güemes International Airport,SLA,-24.856000900299996,-65.4861984253
+Americas - South America,Argentina,San Miguel de Tucumán,medium_airport,Teniente Benjamín Matienzo International Airport,TUC,-26.8409,-65.104897
+Americas - South America,Argentina,San Salvador de Jujuy,medium_airport,Gobernador Horacio Guzmán International Airport,JUJ,-24.392799,-65.097801
+Americas - South America,Argentina,Santa Rosa del Conlara,small_airport,Valle del Conlara Airport,RLO,-32.384701,-65.186501
+Americas - South America,Argentina,Termas de Río Hondo,medium_airport,Termas de Río Hondo International Airport,RHD,-27.4966,-64.93595
+Americas - South America,Argentina,Trelew,medium_airport,Almirante Marcos A. Zar Airport,REL,-43.2105,-65.2703
+Americas - South America,Argentina,Ushuaia,medium_airport,Ushuaia – Malvinas Argentinas International Airport,USH,-54.8433,-68.2958
+Americas - South America,Bolivia,La Paz,medium_airport,El Alto International Airport,LPB,-16.5132999420166,-68.19229888916016
+Americas - South America,Bolivia,Santa Cruz de la Sierra,large_airport,Viru Viru International Airport,VVI,-17.6448,-63.135399
+Americas - South America,Bolivia,Cochabamba,medium_airport,Jorge Wilstermann International Airport,CBB,-17.421100616455078,-66.1771011352539
+Americas - South America,Brazil,Aracaju,medium_airport,Santa Maria Airport,AJU,-10.984,-37.070301
+Americas - South America,Brazil,Belém,large_airport,Val de Cães International Airport,BEL,-1.379279,-48.476207
+Americas - South America,Brazil,Belo Horizonte,large_airport,Tancredo Neves International Airport,CNF,-19.63571,-43.966928
+Americas - South America,Brazil,Boa Vista,medium_airport,Boa Vista International Airport,BVB,2.845855,-60.690944
+Americas - South America,Brazil,Brasília,large_airport,Brasília International Airport,BSB,-15.869167,-47.920834
+Americas - South America,Brazil,Campinas,medium_airport,Viracopos International Airport,VCP,-23.007404,-47.134502
+Americas - South America,Brazil,Campo Grande,medium_airport,Campo Grande International Airport,CGR,-20.469998,-54.673988
+Americas - South America,Brazil,Cuiabá,medium_airport,Marechal Rondon International Airport,CGB,-15.6529,-56.116699
+Americas - South America,Brazil,Curitiba,medium_airport,Afonso Pena International Airport,CWB,-25.5285,-49.1758
+Americas - South America,Brazil,Florianópolis,large_airport,Hercílio Luz International Airport,FLN,-27.670279,-48.552502
+Americas - South America,Brazil,Fortaleza,large_airport,Pinto Martins International Airport,FOR,-3.775833,-38.532222
+Americas - South America,Brazil,Foz do Iguaçu,medium_airport,Foz do Iguaçu International Airport,IGU,-25.594167,-54.489444
+Americas - South America,Brazil,Goiânia,medium_airport,Santa Genoveva Airport,GYN,-16.632,-49.220699
+Americas - South America,Brazil,João Pessoa,medium_airport,Presidente Castro Pinto International Airport,JPA,-7.148691,-34.950554
+Americas - South America,Brazil,Maceió,medium_airport,Zumbi dos Palmares International Airport,MCZ,-9.51081,-35.791698
+Americas - South America,Brazil,Manaus,large_airport,Eduardo Gomes International Airport,MAO,-3.03861,-60.049702
+Americas - South America,Brazil,Natal,medium_airport,Greater Natal International Airport,NAT,-5.769804,-35.366578
+Americas - South America,Brazil,Petrolina,medium_airport,Petrolina Airport,PNZ,-9.362422,-40.569098
+Americas - South America,Brazil,Porto Alegre,medium_airport,Salgado Filho Porto Alegre International Airport,POA,-29.994712,-51.166592
+Americas - South America,Brazil,Porto Velho,medium_airport,Governador Jorge Teixeira de Oliveira International Airport,PVH,-8.707854,-63.90242
+Americas - South America,Brazil,Recife,medium_airport,Guararapes International Airport,REC,-8.125984,-34.923316
+Americas - South America,Brazil,Rio Branco,medium_airport,Rio Branco International Airport,RBR,-9.869031,-67.893984
+Americas - South America,Brazil,Rio de Janeiro,large_airport,Rio de Janeiro/Galeão International Airport,GIG,-22.809999,-43.250557
+Americas - South America,Brazil,Salvador,large_airport,Deputado Luís Eduardo Magalhães International Airport,SSA,-12.908611,-38.322498
+Americas - South America,Brazil,São Luís,medium_airport,Marechal Cunha Machado International Airport,SLZ,-2.58536,-44.2341
+Americas - South America,Brazil,São Paulo,medium_airport,São Paulo–Congonhas Airport,CGH,-23.627657,-46.654601
+Americas - South America,Brazil,Teresina,medium_airport,Teresina Airport,THE,-5.06025,-42.823712
+Americas - South America,Brazil,Uberlândia,medium_airport,Uberlândia Airport,UDI,-18.883579,-48.225936
+Americas - South America,Brazil,Vitória,large_airport,Eurico de Aguiar Salles Airport,VIX,-20.258,-40.285
+Americas - South America,Chile,Antofagasta,medium_airport,Andrés Sabella Gálvez International Airport,ANF,-23.444501,-70.445099
+Americas - South America,Chile,Concepción,medium_airport,Carriel Sur International Airport,CCP,-36.772701,-73.063103
+Americas - South America,Chile,Puerto Montt,medium_airport,El Tepual International Airport,PMC,-41.43889999389648,-73.09400177001953
+Americas - South America,Chile,Punta Arenas,medium_airport,Presidente Carlos Ibáñez del Campo International Airport,PUQ,-53.002602,-70.854599
+Americas - South America,Chile,Santiago,large_airport,Arturo Merino Benítez International Airport,SCL,-33.393001556396484,-70.78579711914062
+Americas - South America,Colombia,Armenia,medium_airport,El Edén International Airport,AXM,4.45278,-75.7664
+Americas - South America,Colombia,Barranquilla,medium_airport,Ernesto Cortissoz International Airport,BAQ,10.8896,-74.7808
+Americas - South America,Colombia,Bogotá,large_airport,El Dorado International Airport,BOG,4.70159,-74.1469
+Americas - South America,Colombia,Bucaramanga,medium_airport,Palonegro International Airport,BGA,7.1265,-73.1848
+Americas - South America,Colombia,Buenaventura,medium_airport,Gerardo Tobar López Airport,BUN,3.81963,-76.9898
+Americas - South America,Colombia,Cali,medium_airport,Alfonso Bonilla Aragón International Airport,CLO,3.54322,-76.3816
+Americas - South America,Colombia,Cartagena,medium_airport,Rafael Núñez International Airport,CTG,10.4424,-75.513
+Americas - South America,Colombia,Cúcuta,medium_airport,Camilo Daza International Airport,CUC,7.92757,-72.5115
+Americas - South America,Colombia,Ibagué,medium_airport,Perales Airport,IBE,4.42161,-75.1333
+Americas - South America,Colombia,Ipiales,medium_airport,San Luis Airport,IPI,0.861946,-77.671783
+Americas - South America,Colombia,Florencia,medium_airport,Gustavo Artunduaga Paredes Airport,FLA,1.58919,-75.5644
+Americas - South America,Colombia,Leticia,medium_airport,Alfredo Vásquez Cobo International Airport,LET,-4.19355,-69.9432
+Americas - South America,Colombia,Maicao,medium_airport,Jorge Isaacs Airport,MCJ,11.2325,-72.4901
+Americas - South America,Colombia,Manizales,medium_airport,La Nubia Airport,MZL,5.0296,-75.4647
+Americas - South America,Colombia,Medellín,medium_airport,José María Córdova International Airport,MDE,6.16454,-75.4231
+Americas - South America,Colombia,Mitú,medium_airport,Fabio Alberto León Bentley Airport,MVP,1.25366,-70.2339
+Americas - South America,Colombia,Montería,medium_airport,Los Garzones Airport,MTR,8.82374,-75.8258
+Americas - South America,Colombia,Neiva,medium_airport,Benito Salas Airport,NVA,2.95015,-75.294
+Americas - South America,Colombia,Pasto,medium_airport,Antonio Nariño Airport,PSO,1.39625,-77.2915
+Americas - South America,Colombia,Pereira,medium_airport,Matecaña International Airport,PEI,4.81267,-75.7395
+Americas - South America,Colombia,Popayán,medium_airport,Guillermo León Valencia Airport,PPN,2.4544,-76.6093
+Americas - South America,Colombia,Providence Island,medium_airport,El Embrujo Airport,PVA,13.357461,-81.357977
+Americas - South America,Colombia,Quibdó,medium_airport,El Caraño Airport,UIB,5.69076,-76.6412
+Americas - South America,Colombia,Riohacha,medium_airport,Almirante Padilla Airport,RCH,11.5262,-72.926
+Americas - South America,Colombia,San Andrés,medium_airport,Gustavo Rojas Pinilla International Airport,ADZ,12.5836,-81.7112
+Americas - South America,Colombia,Tolú,small_airport,Golfo de Morrosquillo Airport,TLU,9.50945,-75.5854
+Americas - South America,Colombia,Tumaco,medium_airport,La Florida Airport,TCO,1.81442,-78.7492
+Americas - South America,Colombia,Santa Marta,medium_airport,Simón Bolívar International Airport,SMR,11.1196,-74.2306
+Americas - South America,Colombia,Sincelejo,medium_airport,Las Brujas Airport,CZU,9.33274,-75.2856
+Americas - South America,Colombia,Valledupar,medium_airport,Alfonso López Pumarejo Airport,VUP,10.435,-73.2495
+Americas - South America,Colombia,Villavicencio,medium_airport,La Vanguardia Airport,VVC,4.16787,-73.6138
+Americas - South America,Colombia,Yopal,medium_airport,El Alcaraván Airport,EYP,5.31911,-72.384
+Americas - South America,Ecuador,Cuenca,medium_airport,Mariscal Lamar International Airport,CUE,-2.88947,-78.984398
+Americas - South America,Ecuador,Esmeraldas,medium_airport,Carlos Concha Torres International Airport,ESM,0.978519,-79.626602
+Americas - South America,Ecuador,Guayaquil,large_airport,José Joaquín de Olmedo International Airport,GYE,-2.15742,-79.883598
+Americas - South America,Ecuador,Machala,medium_airport,Santa Rosa International Airport,ETR,-3.441986,-79.996957
+Americas - South America,Ecuador,Manta,medium_airport,Eloy Alfaro International Airport,MEC,-0.9460780024528505,-80.67880249023438
+Americas - South America,Ecuador,Quito,large_airport,Mariscal Sucre International Airport,UIO,-0.125399,-78.354306
+Americas - South America,Ecuador,Tulcán,medium_airport,Teniente Coronel Luis a Mantilla International Airport,TUA,0.809506,-77.708099
+Americas - South America,Falkland Islands,Mount Pleasant,medium_airport,RAF Mount Pleasant,MPN,-51.82279968261719,-58.44720077514648
+Americas - South America,French Guiana,Cayenne,large_airport,Cayenne – Félix Eboué Airport,CAY,4.819964,-52.361326
+Americas - South America,Guyana,Georgetown,medium_airport,Cheddi Jagan International Airport,GEO,6.49855,-58.254101
+Americas - South America,Paraguay,Asunción,large_airport,Silvio Pettirossi International Airport,ASU,-25.240156,-57.519227
+Americas - South America,Paraguay,Ciudad del Este,large_airport,Guaraní International Airport,AGT,-25.457186,-54.839544
+Americas - South America,Peru,Arequipa,medium_airport,Rodríguez Ballón International Airport,AQP,-16.3411006927,-71.5830993652
+Americas - South America,Peru,Chiclayo,medium_airport,José Quiñones González International Airport,CIX,-6.78748,-79.828102
+Americas - South America,Peru,Cusco,large_airport,Alejandro Velasco Astete International Airport,CUZ,-13.535699844400002,-71.9387969971
+Americas - South America,Peru,Lima,large_airport,Jorge Chávez International Airport,LIM,-12.0219,-77.114305
+Americas - South America,Peru,Trujillo,medium_airport,Carlos Martínez de Pinillos International Airport,TRU,-8.08141040802002,-79.10880279541016
+Americas - South America,Suriname,Paramaribo,large_airport,Johan Adolf Pengel International Airport,PBM,5.45283,-55.187801
+Americas - South America,Uruguay,Montevideo,large_airport,Carrasco International Airport,MVD,-34.835647,-56.026497
+Americas - South America,Uruguay,Punta del Este,medium_airport,Capitán de Corbeta Carlos A. Curbelo International Airport,PDP,-34.855099,-55.094299
+Americas - South America,Uruguay,Rivera,small_airport,Rivera International Airport,RVY,-30.9746,-55.4762
+Americas - South America,Venezuela,Caracas,large_airport,Simón Bolívar International Airport,CCS,10.601194,-66.991222
+Americas - South America,Venezuela,Maracaibo,medium_airport,La Chinita International Airport,MAR,10.5582084656,-71.7278594971
+Americas - South America,Venezuela,Valencia,medium_airport,Arturo Michelena International Airport,VLN,10.14973258972168,-67.92839813232422
+Central Asia,Kazakhstan,Aktau,medium_airport,Aktau Airport,SCO,43.860093,51.09086
+Central Asia,Kazakhstan,Aktobe,medium_airport,Aktobe International Airport,AKX,50.2458,57.206699
+Central Asia,Kazakhstan,Almaty,large_airport,Almaty International Airport,ALA,43.354267,77.042828
+Central Asia,Kazakhstan,Astana,large_airport,Nursultan Nazarbayev International Airport,NQZ,51.027035,71.467094
+Central Asia,Kazakhstan,Atyrau,medium_airport,Atyrau Airport,GUW,47.122559,51.819321
+Central Asia,Kazakhstan,Karaganda,medium_airport,Karaganda Airport,KGF,49.670799,73.334396
+Central Asia,Kazakhstan,Kokshetau,medium_airport,Kokshetau Airport,KOV,53.329102,69.594597
+Central Asia,Kazakhstan,Kostanay,medium_airport,Kostanay Airport,KSN,53.20690155029297,63.55030059814453
+Central Asia,Kazakhstan,Kyzylorda,small_airport,Kyzylorda Airport,KZO,44.706902,65.592499
+Central Asia,Kazakhstan,Oral,medium_airport,Oral Ak Zhol Airport,URA,51.15079879760742,51.54309844970703
+Central Asia,Kazakhstan,Oskemen,medium_airport,Oskemen Airport,UKK,50.036571,82.493477
+Central Asia,Kazakhstan,Pavlodar,medium_airport,Pavlodar Airport,PWQ,52.19499969482422,77.07389831542969
+Central Asia,Kazakhstan,Petropavl,medium_airport,Petropavl Airport,PPK,54.774702,69.183273
+Central Asia,Kazakhstan,Semey,medium_airport,Semey Airport,PLX,50.351295,80.234398
+Central Asia,Kazakhstan,Şymkent,medium_airport,Şymkent International Airport,CIT,42.364200592041016,69.47889709472656
+Central Asia,Kazakhstan,Taraz,medium_airport,Taraz Airport,DMB,42.85359954833984,71.30359649658203
+Central Asia,Kyrgyzstan,Issyk-Kul,medium_airport,Issyk-Kul International Airport,IKU,42.585584,76.701181
+Central Asia,Kyrgyzstan,Karakol,small_airport,Karakol International Airport,IKG,42.508099,78.407799
+Central Asia,Kyrgyzstan,Osh,large_airport,Osh Airport,OSS,40.609001,72.793297
+Central Asia,Tajikistan,Bokhtar,medium_airport,Bokhtar International Airport,KQT,37.86640167236328,68.86470031738281
+Central Asia,Tajikistan,Dushanbe,medium_airport,Dushanbe Airport,DYU,38.543746,68.822977
+Central Asia,Tajikistan,Khujand,medium_airport,Khujand Airport,LBD,40.215401,69.694702
+Central Asia,Tajikistan,Kulob,medium_airport,Kulob Airport,TJU,37.98809814453125,69.80500030517578
+Central Asia,Turkmenistan,Ashgabat,large_airport,Ashgabat Airport,ASB,37.986801,58.361
+Central Asia,Turkmenistan,Daşoguz,medium_airport,Daşoguz Airport,TAZ,41.759853,59.836149
+Central Asia,Turkmenistan,Mary,medium_airport,Mary International Airport,MYP,37.62353,61.895668
+Central Asia,Turkmenistan,Türkmenabat,medium_airport,Turkmenabat International Airport,CRZ,38.930662,63.563982
+Central Asia,Turkmenistan,Turkmenbashi,medium_airport,Turkmenbashi International Airport,KRW,40.063301,53.007198
+Central Asia,Uzbekistan,Andijan,medium_airport,Andizhan Airport,AZN,40.727699,72.293999
+Central Asia,Uzbekistan,Bukhara,medium_airport,Bukhara International Airport,BHK,39.775002,64.483299
+Central Asia,Uzbekistan,Fergana,medium_airport,Fergana International Airport,FEG,40.358799,71.745003
+Central Asia,Uzbekistan,Qarshi,small_airport,Karshi Airport,KSQ,38.802246,65.773068
+Central Asia,Uzbekistan,Namangan,small_airport,Namangan Airport,NMA,40.9846,71.556702
+Central Asia,Uzbekistan,Navoiy,medium_airport,Navoiy International Airport,NVI,40.117199,65.170799
+Central Asia,Uzbekistan,Nukus,medium_airport,Nukus Airport,NCU,42.4884,59.623299
+Central Asia,Uzbekistan,Samarkand,medium_airport,Samarkand International Airport,SKD,39.7005,66.983803
+Central Asia,Uzbekistan,Tashkent,large_airport,Islam Karimov Tashkent International Airport,TAS,41.2579,69.281197
+Central Asia,Uzbekistan,Termez,medium_airport,Termez Airport,TMJ,37.287261,67.311869
+Central Asia,Uzbekistan,Urgench,medium_airport,Urgench International Airport,UGC,41.584301,60.641701
+Eastern Asia,China,Baotou,medium_airport,Baotou Donghe international Airport,BAV,40.560001,109.997002
+Eastern Asia,China,Beihai,medium_airport,Beihai Fucheng Airport,BHY,21.5394,109.293999
+Eastern Asia,China,Beijing,large_airport,Beijing Capital International Airport,PEK,40.080101013183594,116.58499908447266
+Eastern Asia,China,Changchun,large_airport,Changchun Longjia International Airport,CGQ,43.996201,125.684998
+Eastern Asia,China,Changsha,large_airport,Changsha Huanghua International Airport,CSX,28.189199,113.220001
+Eastern Asia,China,Changzhou,medium_airport,Changzhou Benniu International Airport,CZX,31.920485,119.77546
+Eastern Asia,China,Chengdu,large_airport,Chengdu Shuangliu International Airport,CTU,30.558257,103.945966
+Eastern Asia,China,Chongqing,large_airport,Chongqing Jiangbei International Airport,CKG,29.712254,106.651895
+Eastern Asia,China,Dalian,large_airport,Dalian Zhoushuizi International Airport,DLC,38.965719,121.538477
+Eastern Asia,China,Dandong,large_airport,Dandong Langtou Airport,DDG,40.025453,124.28669
+Eastern Asia,China,Datong,small_airport,Datong Yungang Airport,DAT,40.061614,113.480032
+Eastern Asia,China,Dunhuang,medium_airport,Dunhuang Mogao International Airport,DNH,40.161098,94.809196
+Eastern Asia,China,Enshi City,medium_airport,Enshi Xujiaping Airport,ENH,30.320299,109.485001
+Eastern Asia,China,Fuzhou,large_airport,Fuzhou Changle International Airport,FOC,25.934669,119.66318
+Eastern Asia,China,Ganzhou,small_airport,Ganzhou Huangjin Airport,KOW,25.853333,114.778889
+Eastern Asia,China,Guangzhou,large_airport,Guangzhou Baiyun International Airport,CAN,23.392401,113.299004
+Eastern Asia,China,Guilin,large_airport,Guilin Liangjiang International Airport,KWL,25.219828,110.039553
+Eastern Asia,China,Guiyang,large_airport,Guiyang Longdongbao International Airport,KWE,26.541466,106.803331
+Eastern Asia,China,Haikou,large_airport,Haikou Meilan International Airport,HAK,19.9349,110.459
+Eastern Asia,China,Hangzhou,large_airport,Hangzhou Xiaoshan International Airport,HGH,30.23609,120.428865
+Eastern Asia,China,Harbin,large_airport,Harbin Taiping International Airport,HRB,45.623402,126.25
+Eastern Asia,China,Hefei,medium_airport,Hefei Xinqiao International Airport,HFE,31.98779,116.9769
+Eastern Asia,China,Heihe,medium_airport,Heihe Aihui Airport,HEK,50.171621,127.308884
+Eastern Asia,China,Hohhot,large_airport,Hohhot Baita International Airport,HET,40.849658,111.824598
+Eastern Asia,China,Huai'an,medium_airport,Huai'an Lianshui International Airport,HIA,33.790833,119.125
+Eastern Asia,China,Huangshan City,medium_airport,Huangshan Tunxi International Airport,TXN,29.733299255371097,118.25599670410156
+Eastern Asia,China,Hulunbuir,medium_airport,Hulunbuir Hailar Airport,HLD,49.205002,119.824997
+Eastern Asia,China,Jiamusi,medium_airport,Jiamusi Dongjiao Airport,JMU,46.843399,130.464996
+Eastern Asia,China,Jieyang,medium_airport,Jieyang Chaoshan International Airport,SWA,23.552,116.5033
+Eastern Asia,China,Jinan,large_airport,Jinan Yaoqiang International Airport,TNA,36.857201,117.216003
+Eastern Asia,China,Kunming,large_airport,Kunming Changshui International Airport,KMG,25.110313,102.936743
+Eastern Asia,China,Lanzhou,large_airport,Lanzhou Zhongchuan International Airport,LHW,36.515202,103.620003
+Eastern Asia,China,Lhasa,medium_airport,Lhasa Gonggar Airport,LXA,29.298001,90.911951
+Eastern Asia,China,Lianyungang,medium_airport,Lianyungang Baitabu Airport,LYG,34.41406,119.17899
+Eastern Asia,China,Lijiang,medium_airport,Lijiang Sanyi International Airport,LJG,26.68,100.246002
+Eastern Asia,China,Linyi,medium_airport,Linyi Qiyang Airport,LYI,35.052918,118.411828
+Eastern Asia,China,Luoyang,medium_airport,Luoyang Beijiao Airport,LYA,34.7411,112.388
+Eastern Asia,China,Mangshi,medium_airport,Dehong Mangshi Airport,LUM,24.4011,98.5317
+Eastern Asia,China,Manzhouli,medium_airport,Manzhouli Xijiao Airport,NZH,49.566667,117.33
+Eastern Asia,China,Mudanjiang,medium_airport,Mudanjiang Hailang International Airport,MDG,44.525172,129.568634
+Eastern Asia,China,Nanchang,large_airport,Nanchang Changbei International Airport,KHN,28.864815,115.90271
+Eastern Asia,China,Nanjing,large_airport,Nanjing Lukou International Airport,NKG,31.735032,118.865949
+Eastern Asia,China,Nanning,large_airport,Nanning Wuxu International Airport,NNG,22.608544,108.175335
+Eastern Asia,China,Nantong,medium_airport,Nantong Xingdong International Airport,NTG,32.073566,120.980076
+Eastern Asia,China,Ningbo,large_airport,Ningbo Lishe International Airport,NGB,29.82670021057129,121.46199798583984
+Eastern Asia,China,Ordos City,medium_airport,Ordos Ejin Horo International Airport,DSN,39.493514,109.8599
+Eastern Asia,China,Qingdao,large_airport,Qingdao Jiaodong International Airport,TAO,36.361953,120.088171
+Eastern Asia,China,Qinhuangdao,medium_airport,Qinhuangdao Beidaihe Airport,BPE,39.666384,119.061384
+Eastern Asia,China,Qionghai,medium_airport,Qionghai Bo'ao International Airport,BAR,19.140951,110.452766
+Eastern Asia,China,Qiqihar,medium_airport,Qiqihar Sanjiazi Airport,NDG,47.239601135253906,123.91799926757812
+Eastern Asia,China,Quanzhou,medium_airport,Quanzhou Jinjiang International Airport,JJN,24.796587,118.588883
+Eastern Asia,China,Sanya,large_airport,Sanya Phoenix International Airport,SYX,18.3029,109.412003
+Eastern Asia,China,Shanghai,large_airport,Shanghai Hongqiao International Airport,SHA,31.198104,121.33426
+Eastern Asia,China,Shenyang,large_airport,Shenyang Taoxian International Airport,SHE,41.639801,123.483002
+Eastern Asia,China,Shenzhen,large_airport,Shenzhen Bao'an International Airport,SZX,22.639299,113.810997
+Eastern Asia,China,Shijiazhuang,medium_airport,Shijiazhuang Zhengding International Airport,SJW,38.280701,114.696999
+Eastern Asia,China,Taiyuan,large_airport,Taiyuan Wusu International Airport,TYN,37.746899,112.627998
+Eastern Asia,China,Tianjin,large_airport,Tianjin Binhai International Airport,TSN,39.124401092499994,117.346000671
+Eastern Asia,China,Ulanqab,medium_airport,Ulanqab Jining Airport,UCB,41.130266,113.107274
+Eastern Asia,China,Ürümqi,large_airport,Ürümqi Diwopu International Airport,URC,43.907101,87.474197
+Eastern Asia,China,Wanzhou,small_airport,Wanzhou Wuqiao Airport,WXN,30.8017,108.433
+Eastern Asia,China,Weihai,medium_airport,Weihai Dashuibo Airport,WEH,37.187099,122.228996
+Eastern Asia,China,Wenzhou,large_airport,Wenzhou Yongqiang Airport,WNZ,27.910572,120.853465
+Eastern Asia,China,Wuhan,large_airport,Wuhan Tianhe International Airport,WUH,30.774798,114.213723
+Eastern Asia,China,Wuxi,medium_airport,Sunan Shuofang International Airport,WUX,31.494400024399997,120.429000854
+Eastern Asia,China,Wuyishan,medium_airport,Wuyishan Airport,WUS,27.7019,118.000999
+Eastern Asia,China,Xiamen,large_airport,Xiamen Gaoqi International Airport,XMN,24.54400062561035,118.12799835205078
+Eastern Asia,China,Xi'an,large_airport,Xi'an Xianyang International Airport,XIY,34.447102,108.751999
+Eastern Asia,China,Xining,medium_airport,Xining Caojiabao International Airport,XNN,36.530093,102.040062
+Eastern Asia,China,Xinzhou,small_airport,Xinzhou Wutaishan Airport,WUT,38.597456,112.969173
+Eastern Asia,China,Xishuangbanna,medium_airport,Xishuangbanna Gasa International Airport,JHG,21.974648,100.762224
+Eastern Asia,China,Xuzhou,medium_airport,Xuzhou Guanyin Airport,XUZ,34.059056,117.555278
+Eastern Asia,China,Yancheng,medium_airport,Yancheng Nanyang Airport,YNZ,33.425833,120.203056
+Eastern Asia,China,Yangzhou,medium_airport,Yangzhou Taizhou International Airport,YTY,32.5634,119.7198
+Eastern Asia,China,Yanji,medium_airport,Yanji Airport,YNJ,42.8828010559,129.451004028
+Eastern Asia,China,Yantai,large_airport,Yantai Penglai International Airport,YNT,37.659724,120.978124
+Eastern Asia,China,Yichang,medium_airport,Yichang Sanxia Airport,YIH,30.554132,111.482563
+Eastern Asia,China,Yinchuan,medium_airport,Yinchuan Hedong International Airport,INC,38.322758,106.393214
+Eastern Asia,China,Yiwu,medium_airport,Yiwu Airport,YIW,29.342095,120.03116
+Eastern Asia,China,Yuncheng,medium_airport,Yuncheng Guangong Airport,YCU,35.116391,111.031389
+Eastern Asia,China,Zhangjiajie,small_airport,Zhangjiajie Hehua Airport,DYG,29.1028,110.443001
+Eastern Asia,China,Zhanjiang,medium_airport,Zhanjiang Wuchuan Airport,ZHA,21.481667,110.590278
+Eastern Asia,China,Zhengzhou,large_airport,Zhengzhou Xinzheng International Airport,CGO,34.526497,113.849165
+Eastern Asia,China,Zhuhai,medium_airport,Zhuhai Jinwan Airport,ZUH,22.006399,113.375999
+Eastern Asia,China,Zunyi,medium_airport,Zunyi Xinzhou Airport,ZYI,27.810723,107.247189
+Eastern Asia,Hong Kong,Chek Lap Kok,large_airport,Hong Kong International Airport,HKG,22.308901,113.915001
+Eastern Asia,Japan,Akita,medium_airport,Akita Airport,AXT,39.615601,140.218994
+Eastern Asia,Japan,Aomori,medium_airport,Aomori Airport,AOJ,40.73469924926758,140.6909942626953
+Eastern Asia,Japan,Fukuoka,large_airport,Fukuoka Airport,FUK,33.585899353027344,130.4510040283203
+Eastern Asia,Japan,Hakodate,medium_airport,Hakodate Airport,HKD,41.77,140.822006
+Eastern Asia,Japan,Hiroshima,medium_airport,Hiroshima Airport,HIJ,34.4361,132.919006
+Eastern Asia,Japan,Kagoshima,large_airport,Kagoshima Airport,KOJ,31.8034,130.718994
+Eastern Asia,Japan,Kitakyushu,medium_airport,Kitakyushu Airport,KKJ,33.845901,131.035004
+Eastern Asia,Japan,Komatsu,medium_airport,Komatsu Airport,KMQ,36.3946,136.406998
+Eastern Asia,Japan,Nagasaki,medium_airport,Nagasaki Airport,NGS,32.916901,129.914001
+Eastern Asia,Japan,Nagoya,large_airport,Chubu Centrair International Airport,NGO,34.858398,136.804993
+Eastern Asia,Japan,Naha,large_airport,Naha Airport,OKA,26.195801,127.646004
+Eastern Asia,Japan,Niigata,medium_airport,Niigata Airport,KIJ,37.9558982849,139.121002197
+Eastern Asia,Japan,Ōita,medium_airport,Oita Airport,OIT,33.479400634799994,131.736999512
+Eastern Asia,Japan,Okayama,medium_airport,Okayama Airport,OKJ,34.756901,133.854996
+Eastern Asia,Japan,Osaka,large_airport,Kansai International Airport,KIX,34.427299,135.244003
+Eastern Asia,Japan,Sapporo,large_airport,New Chitose Airport,CTS,42.7752,141.692001
+Eastern Asia,Japan,Sendai,large_airport,Sendai Airport,SDJ,38.139702,140.917007
+Eastern Asia,Japan,Shizuoka,medium_airport,Shizuoka Airport,FSZ,34.796043,138.187752
+Eastern Asia,Japan,Tokyo,large_airport,Haneda Airport,HND,35.552299,139.779999
+Eastern Asia,Japan,Tokyo,large_airport,Narita International Airport,NRT,35.768602,140.3887002
+Eastern Asia,Macau,Taipa,large_airport,Macau International Airport,MFM,22.149599,113.592003
+Eastern Asia,Mongolia,Ölgii,small_airport,Ölgii International Airport,ULG,48.993301,89.922501
+Eastern Asia,Mongolia,Ulaanbaatar,large_airport,Chinggis Khaan International Airport,UBN,47.646916,106.819833
+Eastern Asia,North Korea,Pyongyang,large_airport,Pyongyang International Airport,FNJ,39.224098,125.669998
+Eastern Asia,South Korea,Busan,large_airport,Gimhae International Airport,PUS,35.179501,128.938004
+Eastern Asia,South Korea,Cheongju,medium_airport,Cheongju International Airport,CJJ,36.717008,127.498741
+Eastern Asia,South Korea,Daegu,medium_airport,Daegu International Airport,TAE,35.896872,128.65531
+Eastern Asia,South Korea,Jeju,large_airport,Jeju International Airport,CJU,33.512058,126.492548
+Eastern Asia,South Korea,Muan,large_airport,Muan International Airport,MWX,34.991406,126.382814
+Eastern Asia,South Korea,Seoul,large_airport,Gimpo International Airport,GMP,37.5583,126.791
+Eastern Asia,South Korea,Yangyang,medium_airport,Yangyang International Airport,YNY,38.061298,128.669006
+Eastern Asia,Taiwan,Hualien City,medium_airport,Hualien Airport,HUN,24.023099899291992,121.61799621582033
+Eastern Asia,Taiwan,Kaohsiung,large_airport,Kaohsiung International Airport,KHH,22.577101,120.349998
+Eastern Asia,Taiwan,Taichung,medium_airport,Taichung International Airport,RMQ,24.2647,120.621002
+Eastern Asia,Taiwan,Tainan,medium_airport,Tainan Airport,TNN,22.950399,120.206001
+Eastern Asia,Taiwan,Taipei,medium_airport,Taipei Songshan Airport,TSA,25.069401,121.552002
+Southern Asia,Bangladesh,Barishal,medium_airport,Barisal Airport,BZL,22.801001,90.301201
+Southern Asia,Bangladesh,Chittagong,medium_airport,Shah Amanat International Airport,CGP,22.249599,91.813301
+Southern Asia,Bangladesh,Cox's Bazar,medium_airport,Cox's Bazar International Airport,CXB,21.457517,91.963263
+Southern Asia,Bangladesh,Dhaka,large_airport,Hazrat Shahjalal International Airport,DAC,23.843347,90.397783
+Southern Asia,Bangladesh,Khulna,small_airport,Khan Jahan Ali Airport,KLN,57.53516,-153.976455
+Southern Asia,Bangladesh,Rajshahi,medium_airport,Shah Makhdum Airport,RJH,24.437201,88.616501
+Southern Asia,Bangladesh,Rangpur,medium_airport,Saidpur Airport,SPD,25.759199,88.908897
+Southern Asia,Bangladesh,Sylhet,medium_airport,Osmani International Airport,ZYL,24.963832,91.864843
+Southern Asia,Bhutan,Paro,large_airport,Paro International Airport,PBH,27.4032,89.424599
+Southern Asia,India,Agartala,medium_airport,Maharaja Bir Bikram Airport,IXA,23.886999,91.240402
+Southern Asia,India,Ahmedabad,medium_airport,Sardar Vallabhbhai Patel International Airport,AMD,23.0772,72.634697
+Southern Asia,India,Amritsar,medium_airport,Sri Guru Ram Das Ji International Airport,ATQ,31.7096,74.797302
+Southern Asia,India,Ayodhya,medium_airport,"Maharishi Valmiki International Airport, Ayodhya Dham",AYJ,26.751283,82.155295
+Southern Asia,India,Bengaluru,large_airport,Kempegowda International Airport,BLR,13.1979,77.706299
+Southern Asia,India,Bhopal,medium_airport,Raja Bhoj Airport,BHO,23.2875003815,77.3374023438
+Southern Asia,India,Bhubaneswar,medium_airport,Biju Patnaik International Airport,BBI,20.2444,85.817802
+Southern Asia,India,Chennai,large_airport,Chennai International Airport,MAA,12.990005,80.169296
+Southern Asia,India,Coimbatore,medium_airport,Coimbatore International Airport,CJB,11.029999733,77.0434036255
+Southern Asia,India,Delhi NCR,large_airport,Indira Gandhi International Airport,DEL,28.55563,77.09519
+Southern Asia,India,Durgapur,medium_airport,Kazi Nazrul Islam Airport,RDP,23.6225,87.243
+Southern Asia,India,Gaya,medium_airport,Gaya Airport,GAY,24.744301,84.951202
+Southern Asia,India,Guwahati,medium_airport,Lokpriya Gopinath Bordoloi International Airport,GAU,26.10610008239746,91.58589935302734
+Southern Asia,India,Hyderabad,large_airport,Rajiv Gandhi International Airport,HYD,17.231318,78.429855
+Southern Asia,India,Imphal,medium_airport,Imphal Airport,IMF,24.7600002289,93.896697998
+Southern Asia,India,Indore,medium_airport,Devi Ahilya Bai Holkar Airport,IDR,22.7217998505,75.8011016846
+Southern Asia,India,Jaipur,large_airport,Jaipur International Airport,JAI,26.8242,75.812202
+Southern Asia,India,Jammu,medium_airport,Jammu Airport,IXJ,32.688849,74.838152
+Southern Asia,India,Kannur,medium_airport,Kannur International Airport,CNN,11.918614,75.547211
+Southern Asia,India,Kochi,large_airport,Cochin International Airport,COK,10.151047,76.400838
+Southern Asia,India,Kolkata,large_airport,Netaji Subhas Chandra Bose International Airport,CCU,22.654699,88.446701
+Southern Asia,India,Kozhikode,medium_airport,Calicut International Airport,CCJ,11.1368,75.955299
+Southern Asia,India,Lucknow,large_airport,Chaudhary Charan Singh International Airport,LKO,26.760599,80.889297
+Southern Asia,India,Madurai,medium_airport,Madurai Airport,IXM,9.83450984955,78.09339904790001
+Southern Asia,India,Mangaluru,medium_airport,Mangaluru International Airport,IXE,12.9612998962,74.8900985718
+Southern Asia,India,Mumbai,large_airport,Chhatrapati Shivaji Maharaj International Airport,BOM,19.0886993408,72.8678970337
+Southern Asia,India,Nagpur,large_airport,Dr. Babasaheb Ambedkar International Airport,NAG,21.092199,79.047203
+Southern Asia,India,Nashik,medium_airport,Nashik Airport,ISK,20.119101,73.912903
+Southern Asia,India,Navi Mumbai,large_airport,Navi Mumbai International Airport,NMI,18.984597,73.065253
+Southern Asia,India,North Goa,large_airport,Manohar International Airport,GOX,15.744257,73.860625
+Southern Asia,India,Pune,large_airport,Pune Airport,PNQ,18.5821,73.919701
+Southern Asia,India,Ranchi,medium_airport,Birsa Munda Airport,IXR,23.314300537100003,85.3217010498
+Southern Asia,India,Siliguri,medium_airport,Bagdogra International Airport,IXB,26.68120002746582,88.32859802246094
+Southern Asia,India,South Goa,large_airport,Dabolim Airport,GOI,15.3808,73.831398
+Southern Asia,India,Srinagar,medium_airport,Srinagar Airport,SXR,33.987099,74.7742
+Southern Asia,India,Surat,medium_airport,Surat Airport,STV,21.1141,72.741798
+Southern Asia,India,Thiruvananthapuram,large_airport,Trivandrum International Airport,TRV,8.48212,76.920097
+Southern Asia,India,Tiruchirappalli,medium_airport,Tiruchirappalli International Airport,TRZ,10.766223,78.71774
+Southern Asia,India,Tirupati,small_airport,Tirupati International Airport,TIR,13.632499694800002,79.543296814
+Southern Asia,India,Vadodara,medium_airport,Vadodara Airport,BDQ,22.336201,73.226303
+Southern Asia,India,Varanasi,medium_airport,Lal Bahadur Shastri Airport,VNS,25.452129,82.861805
+Southern Asia,India,Vijayawada,medium_airport,Vijayawada International Airport,VGA,16.530399,80.796799
+Southern Asia,India,Visakhapatnam,medium_airport,Visakhapatnam International Airport,VTZ,17.723506,83.227729
+Southern Asia,Maldives,Addu City,medium_airport,Gan International Airport,GAN,-0.692694,73.151557
+Southern Asia,Maldives,Hanimaadhoo,medium_airport,Hanimaadhoo International Airport,HAQ,6.744229793548584,73.17050170898438
+Southern Asia,Maldives,Malé,large_airport,Velana International Airport,MLE,4.191830158233643,73.52909851074219
+Southern Asia,Maldives,Maafaru,medium_airport,Maafaru International Airport,NMF,5.818394,73.469181
+Southern Asia,Maldives,Maamigili,medium_airport,Villa International Airport Maamigili,VAM,3.470556,72.835833
+Southern Asia,Nepal,Kathmandu,large_airport,Tribhuvan International Airport,KTM,27.6966,85.3591
+Southern Asia,Nepal,Pokhara,medium_airport,Pokhara Regional International Airport,PKR,28.200621,83.981203
+Southern Asia,Nepal,Siddharthanagar,medium_airport,Gautam Buddha International Airport,BWA,27.505328,83.412594
+Southern Asia,Pakistan,Bahawalpur,medium_airport,Bahawalpur Airport,BHV,29.348100662231445,71.71800231933594
+Southern Asia,Pakistan,Faisalabad,medium_airport,Faisalabad International Airport,LYP,31.364999771118164,72.99479675292969
+Southern Asia,Pakistan,Gwadar,medium_airport,Gwadar International Airport,GWD,25.296733,62.498822
+Southern Asia,Pakistan,Islamabad,large_airport,Islamabad International Airport,ISB,33.549,72.82566
+Southern Asia,Pakistan,Karachi,large_airport,Jinnah International Airport,KHI,24.9065,67.160797
+Southern Asia,Pakistan,Lahore,large_airport,Allama Iqbal International Airport,LHE,31.521601,74.403603
+Southern Asia,Pakistan,Multan,medium_airport,Multan International Airport,MUX,30.20319938659668,71.41909790039062
+Southern Asia,Pakistan,Peshawar,medium_airport,Bacha Khan International Airport,PEW,33.993900299072266,71.51460266113281
+Southern Asia,Pakistan,Quetta,medium_airport,Quetta International Airport,UET,30.251399993896484,66.93779754638672
+Southern Asia,Pakistan,Rahim Yar Khan,medium_airport,Shaikh Zayed International Airport,RYK,28.383899688720703,70.27960205078125
+Southern Asia,Pakistan,Sialkot,medium_airport,Sialkot International Airport,SKT,32.535557,74.363892
+Southern Asia,Pakistan,Turbat,medium_airport,Turbat International Airport,TUK,25.986400604248047,63.03020095825195
+Southern Asia,Sri Lanka,Batticaloa,medium_airport,Batticaloa International Airport,BTC,7.70576,81.678802
+Southern Asia,Sri Lanka,Colombo,large_airport,Bandaranaike International Airport,CMB,7.180759906768799,79.88410186767578
+Southern Asia,Sri Lanka,Hambantota,large_airport,Mattala Rajapaksa International Airport,HRI,6.284467,81.124128
+Southern Asia,Sri Lanka,Jaffna,medium_airport,Jaffna International Airport,JAF,9.79233,80.070099
+Southeast Asia,Brunei,Bandar Seri Begawan,large_airport,Brunei International Airport,BWN,4.9442,114.928001
+Southeast Asia,Cambodia,Phnom Penh,large_airport,Techo International Airport,KTI,11.359987,104.921272
+Southeast Asia,Cambodia,Phnom Penh,large_airport,Phnom Penh International Airport,PNH,11.5466,104.844002
+Southeast Asia,Cambodia,Sihanoukville,small_airport,Sihanouk International Airport,KOS,10.571969,103.632689
+Southeast Asia,Indonesia,Balikpapan,large_airport,Sultan Aji Muhammad Sulaiman Sepinggan International Airport,BPN,-1.268342,116.89452
+Southeast Asia,Indonesia,Banda Aceh,medium_airport,Sultan Iskandar Muda International Airport,BTJ,5.525087,95.41997
+Southeast Asia,Indonesia,Bandung,medium_airport,Kertajati International Airport,KJT,-6.647384,108.165561
+Southeast Asia,Indonesia,Banjarmasin,medium_airport,Syamsudin Noor International Airport,BDJ,-3.44236,114.763
+Southeast Asia,Indonesia,Batam,medium_airport,Hang Nadim International Airport,BTH,1.12103,104.119003
+Southeast Asia,Indonesia,Denpasar,large_airport,I Gusti Ngurah Rai International Airport,DPS,-8.748409,115.167123
+Southeast Asia,Indonesia,Jakarta,medium_airport,Halim Perdanakusuma International Airport,HLP,-6.266610145568848,106.89099884033205
+Southeast Asia,Indonesia,Jayapura,large_airport,Sentani International Airport,DJJ,-2.579627,140.519857
+Southeast Asia,Indonesia,Labuan Bajo,small_airport,Komodo International Airport,LBJ,-8.480694,119.888306
+Southeast Asia,Indonesia,Makassar,large_airport,Sultan Hasanuddin International Airport,UPG,-5.06163,119.554001
+Southeast Asia,Indonesia,Manado,medium_airport,Sam Ratulangi International Airport,MDC,1.549266,124.926319
+Southeast Asia,Indonesia,Mataram,medium_airport,Lombok International Airport,LOP,-8.759962,116.278169
+Southeast Asia,Indonesia,Medan,large_airport,Kualanamu International Airport,KNO,3.637847,98.870566
+Southeast Asia,Indonesia,Padang,medium_airport,Minangkabau International Airport,PDG,-0.786917,100.280998
+Southeast Asia,Indonesia,Palembang,medium_airport,Sultan Mahmud Badaruddin II International Airport,PLM,-2.897653,104.698147
+Southeast Asia,Indonesia,Pekanbaru,medium_airport,Sultan Syarif Kasim II International Airport,PKU,0.458647,101.444321
+Southeast Asia,Indonesia,Pontianak,medium_airport,Supadio International Airport,PNK,-0.150711,109.403999
+Southeast Asia,Indonesia,Semarang,medium_airport,Jenderal Ahmad Yani International Airport,SRG,-6.970732,110.373244
+Southeast Asia,Indonesia,Surabaya,large_airport,Juanda International Airport,SUB,-7.37983,112.787003
+Southeast Asia,Indonesia,Tanjungpandan,small_airport,H.A.S. Hanandjoeddin International Airport,TJQ,-2.744109,107.754535
+Southeast Asia,Indonesia,Yogyakarta,medium_airport,Yogyakarta International Airport,YIA,-7.905338,110.057264
+Southeast Asia,Laos,Bokeo (Tonpheung district),medium_airport,Bokeo International Airport,BOR,20.323986,100.165392
+Southeast Asia,Laos,Luang Prabang,medium_airport,Luang Prabang International Airport,LPQ,19.897300720214844,102.16100311279295
+Southeast Asia,Laos,Pakse,medium_airport,Pakse International Airport,PKZ,15.132100105285645,105.78099822998048
+Southeast Asia,Laos,Savannakhet,medium_airport,Savannakhet Airport,ZVK,16.55660057067871,104.76000213623048
+Southeast Asia,Laos,Vientiane,medium_airport,Wattay International Airport,VTE,17.988300323500003,102.56300354
+Southeast Asia,Malaysia,Alor Setar,medium_airport,Sultan Abdul Halim Airport,AOR,6.189670085906982,100.39800262451172
+Southeast Asia,Malaysia,Ipoh,medium_airport,Sultan Azlan Shah Airport,IPH,4.567969799041748,101.09200286865234
+Southeast Asia,Malaysia,Johor Bahru,medium_airport,Senai International Airport,JHB,1.64131,103.669998
+Southeast Asia,Malaysia,Kota Bharu,medium_airport,Sultan Ismail Petra Airport,KBR,6.1668500900268555,102.29299926757812
+Southeast Asia,Malaysia,Kota Kinabalu,medium_airport,Kota Kinabalu International Airport,BKI,5.932743,116.049324
+Southeast Asia,Malaysia,Kuala Lumpur,large_airport,Kuala Lumpur International Airport,KUL,2.74558,101.709999
+Southeast Asia,Malaysia,Kuala Terengganu,medium_airport,Sultan Mahmud Airport,TGG,5.3826398849487305,103.10299682617188
+Southeast Asia,Malaysia,Kuantan,medium_airport,Sultan Haji Ahmad Shah Airport,KUA,3.7753899097442623,103.20899963378906
+Southeast Asia,Malaysia,Kuching,medium_airport,Kuching International Airport,KCH,1.487364,110.352859
+Southeast Asia,Malaysia,Labuan,medium_airport,Labuan International Airport,LBU,5.301667,115.248333
+Southeast Asia,Malaysia,Langkawi,medium_airport,Langkawi International Airport,LGK,6.329730033874512,99.72869873046876
+Southeast Asia,Malaysia,Penang,medium_airport,Penang International Airport,PEN,5.297140121459961,100.2770004272461
+Southeast Asia,Myanmar,Mandalay,large_airport,Mandalay International Airport,MDL,21.70219993591309,95.97789764404295
+Southeast Asia,Myanmar,Nay Pyi Taw,medium_airport,Naypyidaw International Airport,NYT,19.623501,96.200996
+Southeast Asia,Myanmar,Yangon,large_airport,Yangon International Airport,RGN,16.907300949099998,96.1332015991
+Southeast Asia,Philippines,Daraga,medium_airport,Bicol International Airport,DRP,13.111915,123.676829
+Southeast Asia,Philippines,Cagayan,medium_airport,Cagayan North International Airport,LLC,18.182388,121.745853
+Southeast Asia,Philippines,Lapu-Lapu City,large_airport,Mactan–Cebu International Airport,CEB,10.309261,123.97974
+Southeast Asia,Philippines,Angeles City,medium_airport,Clark International Airport,CRK,15.186,120.559998
+Southeast Asia,Philippines,Davao City,large_airport,Francisco Bangoy International Airport,DVO,7.12552,125.646004
+Southeast Asia,Philippines,General Santos,medium_airport,General Santos International Airport,GES,6.05800008774,125.096000671
+Southeast Asia,Philippines,Iloilo City,medium_airport,Iloilo International Airport,ILO,10.833017,122.493358
+Southeast Asia,Philippines,Kalibo,medium_airport,Kalibo International Airport,KLO,11.679400444,122.375999451
+Southeast Asia,Philippines,Laguindingan,medium_airport,Laguindingan International Airport,CGY,8.612203,124.456496
+Southeast Asia,Philippines,Laoag,medium_airport,Laoag International Airport,LAO,18.176121,120.531034
+Southeast Asia,Philippines,Manila,large_airport,Ninoy Aquino International Airport,MNL,14.5086,121.019997
+Southeast Asia,Philippines,Panglao Island,medium_airport,Bohol–Panglao International Airport,TAG,9.573045,123.770143
+Southeast Asia,Philippines,Puerto Princesa,medium_airport,Puerto Princesa International Airport,PPS,9.74212,118.759003
+Southeast Asia,Philippines,Olongapo,medium_airport,Subic Bay International Airport,SFS,14.7944,120.271004
+Southeast Asia,Philippines,Zamboanga City,medium_airport,Zamboanga International Airport,ZAM,6.92242,122.059998
+Southeast Asia,Singapore,Singapore,large_airport,Changi Airport,SIN,1.35019,103.994003
+Southeast Asia,Thailand,Bangkok,large_airport,Suvarnabhumi Airport,BKK,13.6811,100.747002
+Southeast Asia,Thailand,Chiang Mai,large_airport,Chiang Mai International Airport,CNX,18.766799926799997,98.962600708
+Southeast Asia,Thailand,Chiang Rai,medium_airport,Chiang Rai International Airport,CEI,19.952299,99.882896
+Southeast Asia,Thailand,Hat Yai,medium_airport,Hat Yai International Airport,HDY,6.93320989609,100.392997742
+Southeast Asia,Thailand,Ko Samui,medium_airport,Samui Airport,USM,9.54779,100.061996
+Southeast Asia,Thailand,Krabi,medium_airport,Krabi International Airport,KBV,8.09912014008,98.9861984253
+Southeast Asia,Thailand,Phuket,large_airport,Phuket International Airport,HKT,8.1132,98.316902
+Southeast Asia,Thailand,Rayong/Pattaya,medium_airport,U-Tapao International Airport,UTP,12.67990016937256,101.00499725341795
+Southeast Asia,Thailand,Surat Thani,medium_airport,Surat Thani International Airport,URT,9.13259983063,99.135597229
+Southeast Asia,Thailand,Udon Thani,medium_airport,Udon Thani International Airport,UTH,17.386400222800003,102.788002014
+Southeast Asia,Timor-Leste,Dili,medium_airport,Presidente Nicolau Lobato International Airport,DIL,-8.546562,125.524507
+Southeast Asia,Vietnam,Cần Thơ,medium_airport,Can Tho International Airport,VCA,10.0851,105.711998
+Southeast Asia,Vietnam,Đà Nẵng,medium_airport,Da Nang International Airport,DAD,16.0439,108.198997
+Southeast Asia,Vietnam,Hải Phòng,medium_airport,Cat Bi International Airport,HPH,20.81686,106.722994
+Southeast Asia,Vietnam,Hà Nội,large_airport,Noi Bai International Airport,HAN,21.221201,105.806999
+Southeast Asia,Vietnam,Hồ Chí Minh City,large_airport,Tan Son Nhat International Airport,SGN,10.8188,106.652
+Southeast Asia,Vietnam,Huế,medium_airport,Phu Bai International Airport,HUI,16.400628,107.703094
+Southeast Asia,Vietnam,Nha Trang,medium_airport,Cam Ranh International Airport,CXR,11.9982,109.219002
+Southeast Asia,Vietnam,Phú Quốc,medium_airport,Phu Quoc International Airport,PQC,10.1698,103.9931
+Southeast Asia,Vietnam,Quảng Nam,small_airport,Chu Lai Airport,VCL,15.4033,108.706001
+Southeast Asia,Vietnam,Vân Đồn,medium_airport,Van Don International Airport,VDO,21.120693,107.41539
+Southwest Asia and the Middle East,Afghanistan,Herat,medium_airport,Herat International Airport,HEA,34.209999,62.228298
+Southwest Asia and the Middle East,Afghanistan,Kabul,medium_airport,Kabul International Airport,KBL,34.565899,69.212303
+Southwest Asia and the Middle East,Afghanistan,Kandahar,medium_airport,Kandahar International Airport,KDH,31.5058,65.847801
+Southwest Asia and the Middle East,Afghanistan,Mazar-i-Sharif,medium_airport,Mazar-i-Sharif International Airport,MZR,36.706902,67.209702
+Southwest Asia and the Middle East,Armenia,Gyumri,medium_airport,Gyumri Shirak International Airport,LWN,40.750401,43.859299
+Southwest Asia and the Middle East,Armenia,Kapan,small_airport,Syunik Airport,YUK,39.202272,46.455204
+Southwest Asia and the Middle East,Armenia,Yerevan,large_airport,Zvartnots International Airport,EVN,40.1473007202,44.3959007263
+Southwest Asia and the Middle East,Azerbaijan,Baku,large_airport,Heydar Aliyev International Airport,GYD,40.467498779296875,50.04669952392578
+Southwest Asia and the Middle East,Azerbaijan,Fuzuli,small_airport,Fuzuli International Airport,FZL,39.594578,47.196128
+Southwest Asia and the Middle East,Azerbaijan,Lankaran,small_airport,Lankaran International Airport,LLK,38.757919,48.807042
+Southwest Asia and the Middle East,Azerbaijan,Nakhchivan,medium_airport,Nakhchivan Airport,NAJ,39.18880081176758,45.45840072631836
+Southwest Asia and the Middle East,Azerbaijan,Qabala,medium_airport,Qabala International Airport,GBB,40.808617,47.725389
+Southwest Asia and the Middle East,Azerbaijan,Zangilan,small_airport,Zangilan International Airport,ZZE,39.11443,46.74392
+Southwest Asia and the Middle East,Azerbaijan,Zaqatala,medium_airport,Zaqatala International Airport,ZTU,41.557823,46.669464
+Southwest Asia and the Middle East,Bahrain,Manama,large_airport,Bahrain International Airport,BAH,26.267295,50.63764
+Southwest Asia and the Middle East,Cyprus,Larnaca,large_airport,Larnaca International Airport,LCA,34.875099,33.624901
+Southwest Asia and the Middle East,Cyprus,North Nicosia,medium_airport,Ercan International Airport,ECN,35.152337,33.506584
+Southwest Asia and the Middle East,Cyprus,Paphos,medium_airport,Paphos International Airport,PFO,34.717999,32.485699
+Southwest Asia and the Middle East,Georgia,Batumi,medium_airport,Batumi International Airport,BUS,41.610298,41.599701
+Southwest Asia and the Middle East,Georgia,Kutaisi,medium_airport,Kutaisi International Airport,KUT,42.176768,42.482393
+Southwest Asia and the Middle East,Georgia,Sokhumi,medium_airport,Sukhumi Babushara Airport,SUI,42.8582,41.128101
+Southwest Asia and the Middle East,Georgia,Tbilisi,large_airport,Tbilisi International Airport,TBS,41.669201,44.9547
+Southwest Asia and the Middle East,Iran,Abadan,medium_airport,Abadan International Airport,ABD,30.367887,48.230075
+Southwest Asia and the Middle East,Iran,Ahvaz,medium_airport,Ahvaz International Airport,AWZ,31.3374,48.762001
+Southwest Asia and the Middle East,Iran,Arak,small_airport,Arak International Airport,AJK,34.1381,49.847301
+Southwest Asia and the Middle East,Iran,Ardabil,medium_airport,Ardabil Airport,ADU,38.3256988525,48.4244003296
+Southwest Asia and the Middle East,Iran,Asaluyeh,medium_airport,Persian Gulf Airport,PGU,27.379601,52.737701
+Southwest Asia and the Middle East,Iran,Bandar Abbas,medium_airport,Bandar Abbas International Airport,BND,27.218299865722656,56.37779998779297
+Southwest Asia and the Middle East,Iran,Birjand,large_airport,Birjand International Airport,XBJ,32.896525,59.281258
+Southwest Asia and the Middle East,Iran,Bushehr,medium_airport,Bushehr Airport,BUZ,28.9447994232,50.8345985413
+Southwest Asia and the Middle East,Iran,Gorgan,medium_airport,Gorgan International Airport,GBT,36.9094009399,54.4012985229
+Southwest Asia and the Middle East,Iran,Hamadan,medium_airport,Hamadan International Airport,HDM,34.869202,48.552502
+Southwest Asia and the Middle East,Iran,Ilam,medium_airport,Ilam Airport,IIL,33.58660125732422,46.40480041503906
+Southwest Asia and the Middle East,Iran,Isfahan,medium_airport,Isfahan International Airport,IFN,32.750755,51.861483
+Southwest Asia and the Middle East,Iran,Kerman,medium_airport,Ayatollah Hashemi Rafsanjani Airport,KER,30.271276,56.949692
+Southwest Asia and the Middle East,Iran,Kermanshah,medium_airport,Shahid Ashrafi Esfahani Airport,KSH,34.3459014893,47.1581001282
+Southwest Asia and the Middle East,Iran,Kish Island,medium_airport,Kish Airport,KIH,26.5261993408,53.9802017212
+Southwest Asia and the Middle East,Iran,Konarak,medium_airport,Chabahar Konarak Airport,ZBR,25.44319,60.382167
+Southwest Asia and the Middle East,Iran,Lamerd,medium_airport,Lamerd Airport,LFM,27.3727,53.188801
+Southwest Asia and the Middle East,Iran,Lar,medium_airport,Larestan International Airport,LRR,27.6747,54.383301
+Southwest Asia and the Middle East,Iran,Mashhad,large_airport,Mashhad International Airport,MHD,36.235198974609375,59.64099884033203
+Southwest Asia and the Middle East,Iran,Qeshm Island,small_airport,Qeshm International Airport,GSM,26.754639,55.902353
+Southwest Asia and the Middle East,Iran,Rasht,medium_airport,Rasht Airport,RAS,37.323333,49.617778
+Southwest Asia and the Middle East,Iran,Sari,medium_airport,Dasht-e Naz Airport,SRY,36.644408,53.188761
+Southwest Asia and the Middle East,Iran,Shiraz,large_airport,Shiraz International Airport,SYZ,29.5392,52.589802
+Southwest Asia and the Middle East,Iran,Tabriz,medium_airport,Tabriz International Airport,TBZ,38.1339,46.235001
+Southwest Asia and the Middle East,Iran,Tehran,large_airport,Imam Khomeini International Airport,IKA,35.416099548339844,51.152198791503906
+Southwest Asia and the Middle East,Iran,Urmia,medium_airport,Urmia Airport,OMH,37.6680984497,45.0686988831
+Southwest Asia and the Middle East,Iran,Yazd,medium_airport,Shahid Sadooghi Airport,AZD,31.9048995972,54.2765007019
+Southwest Asia and the Middle East,Iran,Zahedan,medium_airport,Zahedan Airport,ZAH,29.47570037841797,60.90620040893555
+Southwest Asia and the Middle East,Iraq,Al Najaf,medium_airport,Al Najaf International Airport,NJF,31.989853,44.404317
+Southwest Asia and the Middle East,Iraq,Baghdad,large_airport,Baghdad International Airport,BGW,33.262501,44.2346
+Southwest Asia and the Middle East,Iraq,Basra,medium_airport,Basra International Airport,BSR,30.549101,47.662102
+Southwest Asia and the Middle East,Iraq,Erbil,medium_airport,Erbil International Airport,EBL,36.23759841918945,43.96319961547851
+Southwest Asia and the Middle East,Iraq,Mosul,medium_airport,Mosul International Airport,OSM,36.305801,43.1474
+Southwest Asia and the Middle East,Iraq,Nasiriyah,medium_airport,Nasiriyah Airport,XNH,30.935801,46.090099
+Southwest Asia and the Middle East,Iraq,Sulaymaniyah,medium_airport,Sulaimaniyah International Airport,ISU,35.5617485046,45.3167381287
+Southwest Asia and the Middle East,Israel,Eilat,large_airport,Ramon Airport,ETM,29.727009,35.014116
+Southwest Asia and the Middle East,Israel,Haifa,medium_airport,Haifa Airport,HFA,32.810219,35.043719
+Southwest Asia and the Middle East,Israel,Tel Aviv,large_airport,Ben Gurion Airport,TLV,32.011398,34.8867
+Southwest Asia and the Middle East,Jordan,Aqaba,medium_airport,King Hussein International Airport,AQJ,29.611600875854492,35.01810073852539
+Southwest Asia and the Middle East,Jordan,Amman,large_airport,Queen Alia International Airport,AMM,31.7226009369,35.9931983948
+Southwest Asia and the Middle East,Kuwait,Kuwait City,large_airport,Kuwait International Airport,KWI,29.226601,47.968899
+Southwest Asia and the Middle East,Lebanon,Beirut,large_airport,Beirut–Rafic Hariri International Airport,BEY,33.820899963378906,35.488399505615234
+Southwest Asia and the Middle East,Oman,Muscat,large_airport,Muscat International Airport,MCT,23.5933,58.284401
+Southwest Asia and the Middle East,Oman,Salalah,medium_airport,Salalah International Airport,SLL,17.038700103759766,54.09130096435547
+Southwest Asia and the Middle East,Oman,Sohar,small_airport,Sohar International Airport,OHS,24.38604,56.62541
+Southwest Asia and the Middle East,Qatar,Doha,large_airport,Hamad International Airport,DOH,25.273056,51.608056
+Southwest Asia and the Middle East,Saudi Arabia,Abha,large_airport,Abha International Airport,AHB,18.2404,42.656601
+Southwest Asia and the Middle East,Saudi Arabia,Al-Ahsa,medium_airport,Al-Ahsa International Airport,HOF,25.285299,49.485199
+Southwest Asia and the Middle East,Saudi Arabia,Al-Jawf,medium_airport,Al Jawf International Airport,AJF,29.78510093688965,40.099998474121094
+Southwest Asia and the Middle East,Saudi Arabia,Al-Ula,medium_airport,Al-Ula International Airport,ULH,26.483333,38.116944
+Southwest Asia and the Middle East,Saudi Arabia,Buraydah,medium_airport,Prince Naif bin Abdulaziz International Airport,ELQ,26.302799,43.774399
+Southwest Asia and the Middle East,Saudi Arabia,Dammam,large_airport,King Fahd International Airport,DMM,26.471201,49.797901
+Southwest Asia and the Middle East,Saudi Arabia,Hafar al-Batin,medium_airport,Al Qaisumah International Airport,AQI,28.335199,46.125099
+Southwest Asia and the Middle East,Saudi Arabia,Ha'il,medium_airport,Ha'il International Airport,HAS,27.437901,41.686298
+Southwest Asia and the Middle East,Saudi Arabia,Hanak,medium_airport,Red Sea International Airport,RSI,25.627975,37.088914
+Southwest Asia and the Middle East,Saudi Arabia,Jeddah,large_airport,King Abdulaziz International Airport,JED,21.6796,39.156502
+Southwest Asia and the Middle East,Saudi Arabia,Jizan,medium_airport,King Abdullah bin Abdulaziz International Airport,GIZ,16.9011,42.5858
+Southwest Asia and the Middle East,Saudi Arabia,Medina,large_airport,Prince Mohammad bin Abdulaziz International Airport,MED,24.5534,39.705101
+Southwest Asia and the Middle East,Saudi Arabia,Najran,medium_airport,Najran Domestic Airport,EAM,17.611401,44.419201
+Southwest Asia and the Middle East,Saudi Arabia,Neom,medium_airport,Neom Bay Airport,NUM,27.927598,35.28874
+Southwest Asia and the Middle East,Saudi Arabia,Riyadh,large_airport,King Khalid International Airport,RUH,24.9576,46.698799
+Southwest Asia and the Middle East,Saudi Arabia,Tabuk,medium_airport,Prince Sultan bin Abdulaziz Airport,TUU,28.3654,36.6189
+Southwest Asia and the Middle East,Saudi Arabia,Ta'if,medium_airport,Taif International Airport,TIF,21.483001,40.543442
+Southwest Asia and the Middle East,Saudi Arabia,Yanbu,medium_airport,Yanbu Airport,YNB,24.144199,38.0634
+Southwest Asia and the Middle East,Syria,Aleppo,medium_airport,Aleppo International Airport,ALP,36.180698,37.2244
+Southwest Asia and the Middle East,Syria,Damascus,large_airport,Damascus International Airport,DAM,33.4114990234375,36.51559829711914
+Southwest Asia and the Middle East,Syria,Latakia,medium_airport,Bassel Al-Assad International Airport,LTK,35.4011,35.9487
+Southwest Asia and the Middle East,Syria,Qamishli,medium_airport,Qamishli Airport,KAC,37.020599,41.191399
+Southwest Asia and the Middle East,Turkey,Adana,medium_airport,Şakirpaşa Airport,ADA,36.982201,35.280399
+Southwest Asia and the Middle East,Turkey,Alanya,medium_airport,Gazipaşa Airport,GZP,36.299217,32.300598
+Southwest Asia and the Middle East,Turkey,Ankara,large_airport,Esenboğa International Airport,ESB,40.128101,32.995098
+Southwest Asia and the Middle East,Turkey,Antalya,large_airport,Antalya Airport,AYT,36.898701,30.800501
+Southwest Asia and the Middle East,Turkey,Bodrum,large_airport,Milas–Bodrum Airport,BJV,37.250599,27.664301
+Southwest Asia and the Middle East,Turkey,Bursa,medium_airport,Yenişehir Airport,YEI,40.255199,29.562599
+Southwest Asia and the Middle East,Turkey,Dalaman,large_airport,Dalaman Airport,DLM,36.7131004333,28.7924995422
+Southwest Asia and the Middle East,Turkey,Denizli,medium_airport,Denizli Çardak Airport,DNZ,37.7855987549,29.7012996674
+Southwest Asia and the Middle East,Turkey,Diyarbakır,medium_airport,Diyarbakır Airport,DIY,37.893902,40.201
+Southwest Asia and the Middle East,Turkey,Elazığ,medium_airport,Elazığ Airport,EZS,38.597974,39.28348
+Southwest Asia and the Middle East,Turkey,Gaziantep,medium_airport,Oğuzeli Airport,GZT,36.947201,37.478699
+Southwest Asia and the Middle East,Turkey,Istanbul,large_airport,Istanbul Airport,IST,41.261297,28.741951
+Southwest Asia and the Middle East,Turkey,İzmir,large_airport,Adnan Menderes Airport,ADB,38.2924,27.157
+Southwest Asia and the Middle East,Turkey,Kayseri,medium_airport,Erkilet Airport,ASR,38.770401001,35.4953994751
+Southwest Asia and the Middle East,Turkey,Konya,medium_airport,Konya Airport,KYA,37.979,32.561901
+Southwest Asia and the Middle East,Turkey,Kütahya,small_airport,Zafer Airport,KZR,39.113079,30.128111
+Southwest Asia and the Middle East,Turkey,Malatya,medium_airport,Erhaç Airport,MLX,38.4352989197,38.0909996033
+Southwest Asia and the Middle East,Turkey,Nevşehir,small_airport,Kapadokya Airport,NAV,38.7719,34.5345
+Southwest Asia and the Middle East,Turkey,Samsun,medium_airport,Samsun-Çarşamba Airport,SZF,41.253988,36.567546
+Southwest Asia and the Middle East,Turkey,Trabzon,medium_airport,Trabzon Airport,TZX,40.995098,39.7897
+Southwest Asia and the Middle East,Turkey,Zonguldak,medium_airport,Zonguldak Airport,ONQ,41.506401,32.0886
+Southwest Asia and the Middle East,United Arab Emirates,Abu Dhabi,large_airport,Abu Dhabi International Airport,AUH,24.443764,54.651718
+Southwest Asia and the Middle East,United Arab Emirates,Al Ain,large_airport,Al Ain International Airport,AAN,24.2617,55.6092
+Southwest Asia and the Middle East,United Arab Emirates,Dubai,large_airport,Al Maktoum International Airport,DWC,24.896356,55.161389
+Southwest Asia and the Middle East,United Arab Emirates,Ras Al Khaimah,medium_airport,Ras Al Khaimah International Airport,RKT,25.613500595092773,55.93880081176758
+Southwest Asia and the Middle East,United Arab Emirates,Sharjah,large_airport,Sharjah International Airport,SHJ,25.3286,55.5172
+Southwest Asia and the Middle East,Yemen,Aden,medium_airport,Aden International Airport,ADE,12.8295,45.028801
+Southwest Asia and the Middle East,Yemen,Mukalla,medium_airport,Riyan International Airport,RIY,14.6626,49.375
+Southwest Asia and the Middle East,Yemen,Sanaa,medium_airport,Sanaa International Airport,SAH,15.4763,44.2197
+Southwest Asia and the Middle East,Yemen,Seiyun,medium_airport,Seiyun Airport,GXF,15.9661,48.7883
+Southwest Asia and the Middle East,Yemen,Socotra,medium_airport,Socotra Airport,SCT,12.6307,53.9058
+Europe,England,Birmingham,large_airport,Birmingham Airport,BHX,52.453899,-1.74803
+Europe,England,Bournemouth,medium_airport,Bournemouth Airport,BOH,50.780483,-1.839576
+Europe,England,Bristol,medium_airport,Bristol Airport,BRS,51.382702,-2.71909
+Europe,England,Exeter,medium_airport,Exeter Airport,EXT,50.734261,-3.413984
+Europe,England,Hull,medium_airport,Humberside Airport,HUY,53.576152,-0.34954
+Europe,England,Leeds/Bradford,medium_airport,Leeds Bradford Airport,LBA,53.865898,-1.66057
+Europe,England,Liverpool,medium_airport,Liverpool John Lennon Airport,LPL,53.333599,-2.84972
+Europe,England,London,large_airport,Gatwick Airport,LGW,51.148771,-0.192089
+Europe,England,Manchester,large_airport,Manchester Airport,MAN,53.349375,-2.279521
+Europe,England,Middlesbrough,medium_airport,Teesside International Airport,MME,54.509201,-1.42941
+Europe,England,Newcastle upon Tyne,medium_airport,Newcastle International Airport,NCL,55.037958,-1.689577
+Europe,England,Newquay,medium_airport,Newquay Airport,NQY,50.440601,-4.99541
+Europe,England,Norwich,medium_airport,Norwich Airport,NWI,52.6758,1.28278
+Europe,England,Nottingham,medium_airport,East Midlands Airport,EMA,52.8311,-1.32806
+Europe,England,Southampton,medium_airport,Southampton Airport,SOU,50.950298,-1.3568
+Europe - Northern Ireland,England,Belfast,large_airport,Belfast International Airport,BFS,54.6575012207,-6.2158298492399995
+Europe - Northern Ireland,England,Derry,medium_airport,City of Derry Airport,LDY,55.04280090332031,-7.161109924316406
+Europe - Northern Ireland,Scotland,Aberdeen,medium_airport,Aberdeen Airport,ABZ,57.2019,-2.19778
+Europe - Northern Ireland,Scotland,Edinburgh,large_airport,Edinburgh Airport,EDI,55.950145,-3.372288
+Europe - Northern Ireland,Scotland,Glasgow,large_airport,Glasgow Airport,GLA,55.871899,-4.43306
+Europe - Northern Ireland,Scotland,Inverness,medium_airport,Inverness Airport,INV,57.5425,-4.0475
+Europe - Northern Ireland,Wales,Cardiff,medium_airport,Cardiff Airport,CWL,51.396702,-3.34333
+Western Europe,Belgium,Antwerp,medium_airport,Antwerp International Airport,ANR,51.190667,4.463153
+Western Europe,Belgium,Brussels,large_airport,Brussels Airport,BRU,50.901402,4.48444
+Western Europe,Belgium,Charleroi,medium_airport,Brussels South Charleroi Airport,CRL,50.460982,4.457158
+Western Europe,Belgium,Liège,medium_airport,Liège Airport,LGG,50.638574,5.443897
+Western Europe,Belgium,Ostend/Bruges,medium_airport,Ostend–Bruges International Airport,OST,51.1998,2.874673
+Western Europe,France,Ajaccio,medium_airport,Ajaccio Napoleon Bonaparte Airport,AJA,41.923599,8.80292
+Western Europe,France,Bastia,medium_airport,Poretta Airport,BIA,42.5527,9.48373
+Western Europe,France,Beauvais,medium_airport,Beauvais–Tillé Airport,BVA,49.454399,2.11278
+Western Europe,France,Bergerac,medium_airport,Bergerac Dordogne Périgord Airport,EGC,44.825298,0.518611
+Western Europe,France,Béziers,medium_airport,Béziers Cap d'Agde Airport,BZR,43.323502,3.3539
+Western Europe,France,Biarritz,medium_airport,Biarritz Pays Basque Airport,BIQ,43.468372,-1.523223
+Western Europe,France,Bordeaux,large_airport,Bordeaux–Mérignac Airport,BOD,44.82865,-0.715356
+Western Europe,France,Brest,medium_airport,Brest Bretagne Airport,BES,48.447899,-4.41854
+Western Europe,France,Carcassonne,medium_airport,Carcassonne Airport,CCF,43.216,2.30632
+Western Europe,France,Châlons-en-Champagne,medium_airport,Châlons Vatry Airport,XCR,48.77333,4.20611
+Western Europe,France,Chambéry,medium_airport,Chambéry Airport,CMF,45.6381,5.88023
+Western Europe,France,Dinard,medium_airport,Dinard–Pleurtuit–Saint-Malo Airport,DNR,48.5877,-2.07996
+Western Europe,France,Figari,medium_airport,Figari–Sud Corse Airport,FSC,41.500599,9.09778
+Western Europe,France,Grenoble,medium_airport,Alpes–Isère Airport,GNB,45.3629,5.32937
+Western Europe,France,La Rochelle,medium_airport,La Rochelle – Île de Ré Airport,LRH,46.179199,-1.19528
+Western Europe,France,Lille,medium_airport,Lille Airport,LIL,50.563332,3.086886
+Western Europe,France,Limoges,medium_airport,Limoges – Bellegarde Airport,LIG,45.862801,1.17944
+Western Europe,France,Lyon,large_airport,Lyon–Saint-Exupéry Airport,LYS,45.725996,5.090139
+Western Europe,France,Marseille,large_airport,Marseille Provence Airport,MRS,43.438088,5.2125
+Western Europe,France,Mulhouse,large_airport,EuroAirport Basel Mulhouse Freiburg,BSL,47.60068,7.521117
+Western Europe,France,Nantes,medium_airport,Nantes Atlantique Airport,NTE,47.153198,-1.61073
+Western Europe,France,Nice,large_airport,Nice Côte d'Azur Airport,NCE,43.658401,7.21587
+Western Europe,France,Nîmes,medium_airport,Nîmes–Alès–Camargue–Cévennes Airport,FNI,43.757401,4.41635
+Western Europe,France,Paris,large_airport,Charles de Gaulle Airport,CDG,49.012798,2.55
+Western Europe,France,Pau,medium_airport,Pau Pyrénées Airport,PUF,43.380001,-0.418611
+Western Europe,France,Perpignan,medium_airport,Perpignan–Rivesaltes Airport,PGF,42.740398,2.87067
+Western Europe,France,Poitiers,medium_airport,Poitiers–Biard Airport,PIS,46.5877,0.306666
+Western Europe,France,Rodez,medium_airport,Rodez–Aveyron Airport,RDZ,44.407902,2.48267
+Western Europe,France,Saint-Étienne,medium_airport,Saint-Étienne–Bouthéon Airport,EBU,45.5406,4.29639
+Western Europe,France,Strasbourg,medium_airport,Strasbourg Airport,SXB,48.538299560546875,7.628230094909668
+Western Europe,France,Toulon,medium_airport,Toulon–Hyères Airport,TLN,43.097301,6.14603
+Western Europe,France,Toulouse,large_airport,Toulouse–Blagnac Airport,TLS,43.629101,1.36382
+Western Europe,France,Tours,medium_airport,Tours Val de Loire Airport,TUF,47.432201,0.727606
+Western Europe,Gibraltar,Gibraltar,large_airport,Gibraltar International Airport,GIB,36.151199,-5.34966
+Western Europe,Guernsey (Bailiwick),Alderney,medium_airport,Alderney Airport,ACI,49.706104,-2.21472
+Western Europe,Guernsey (Bailiwick),Saint Peter Port,medium_airport,Guernsey Airport,GCI,49.435001,-2.60197
+Western Europe,Ireland,Cork,medium_airport,Cork Airport,ORK,51.841301,-8.49111
+Western Europe,Ireland,Dublin,large_airport,Dublin Airport,DUB,53.428713,-6.262121
+Western Europe,Ireland,Kerry,medium_airport,Kerry Airport,KIR,52.180901,-9.52378
+Western Europe,Ireland,Knock,medium_airport,Ireland West Airport,NOC,53.910301,-8.81849
+Western Europe,Ireland,Shannon,large_airport,Shannon Airport,SNN,52.702,-8.92482
+Western Europe,Isle of Man,Douglas,medium_airport,Isle of Man Airport,IOM,54.083302,-4.62389
+Western Europe,Jersey,Saint Helier,medium_airport,Jersey Airport,JER,49.207901,-2.19551
+Western Europe,Luxembourg,Luxembourg City,large_airport,Luxembourg Airport,LUX,49.6233333,6.2044444
+Western Europe,Netherlands,Amsterdam,large_airport,Amsterdam Airport,AMS,52.308601,4.76389
+Western Europe,Netherlands,Eindhoven,large_airport,Eindhoven Airport,EIN,51.4500999451,5.37452983856
+Western Europe,Netherlands,Groningen,medium_airport,Groningen Airport Eelde,GRQ,53.119701,6.57944
+Western Europe,Netherlands,Maastricht,medium_airport,Maastricht Aachen Airport,MST,50.911701,5.77014
+Western Europe,Netherlands,Rotterdam,large_airport,Rotterdam The Hague Airport,RTM,51.956902,4.43722
+Central Europe,Austria,Graz,medium_airport,Graz Airport,GRZ,46.9911,15.4396
+Central Europe,Austria,Klagenfurt,medium_airport,Klagenfurt Airport,KLU,46.642502,14.3377
+Central Europe,Austria,Innsbruck,medium_airport,Innsbruck Airport,INN,47.260201,11.344
+Central Europe,Austria,Linz,medium_airport,Linz Airport,LNZ,48.2332,14.1875
+Central Europe,Austria,Salzburg,medium_airport,Salzburg Airport,SZG,47.793301,13.0043
+Central Europe,Austria,Vienna,large_airport,Vienna International Airport,VIE,48.110298,16.5697
+Central Europe,Czech Republic,Brno,medium_airport,Brno–Tuřany Airport,BRQ,49.15129852294922,16.694400787353516
+Central Europe,Czech Republic,České Budějovice,small_airport,České Budějovice Airport,JCL,48.9464,14.4275
+Central Europe,Czech Republic,Karlovy Vary,medium_airport,Karlovy Vary Airport,KLV,50.202999,12.915
+Central Europe,Czech Republic,Ostrava,medium_airport,Leoš Janáček Airport,OSR,49.696301,18.111099
+Central Europe,Czech Republic,Pardubice,medium_airport,Pardubice Airport,PED,50.01340103149414,15.73859977722168
+Central Europe,Czech Republic,Prague,large_airport,Václav Havel Airport,PRG,50.100874,14.259911
+Central Europe,Germany,Baden-Baden/Karlsruhe,medium_airport,Karlsruhe/Baden-Baden Airport,FKB,48.7794,8.0805
+Central Europe,Germany,Berlin,large_airport,Berlin Brandenburg Airport,BER,52.362247,13.500672
+Central Europe,Germany,Bremen,large_airport,Bremen Airport,BRE,53.046786,8.78932
+Central Europe,Germany,Cologne/Bonn,large_airport,Cologne/Bonn Airport,CGN,50.865898,7.14274
+Central Europe,Germany,Dortmund,large_airport,Dortmund Airport,DTM,51.518299,7.61224
+Central Europe,Germany,Düsseldorf,large_airport,Düsseldorf Airport,DUS,51.289501,6.76678
+Central Europe,Germany,Frankfurt,large_airport,Frankfurt Airport,FRA,50.030241,8.561096
+Central Europe,Germany,Friedrichshafen,medium_airport,Friedrichshafen Airport,FDH,47.671299,9.51149
+Central Europe,Germany,Hamburg,large_airport,Hamburg Airport,HAM,53.630402,9.98823
+Central Europe,Germany,Hanover,large_airport,Hannover Airport,HAJ,52.461102,9.68508
+Central Europe,Germany,Leipzig,large_airport,Leipzig/Halle Airport,LEJ,51.420657,12.232705
+Central Europe,Germany,Lübeck,medium_airport,Lübeck Airport,LBC,53.805401,10.7192
+Central Europe,Germany,Memmingen,medium_airport,Memmingen Airport,FMM,47.988800048799995,10.2395000458
+Central Europe,Germany,Munich,large_airport,Munich Airport,MUC,48.353802,11.7861
+Central Europe,Germany,Nuremberg,large_airport,Nuremberg Airport,NUE,49.498699,11.078056
+Central Europe,Germany,Stuttgart,large_airport,Stuttgart Airport,STR,48.689899,9.22196
+Central Europe,Germany,Weeze,medium_airport,Weeze Airport,NRN,51.6024017334,6.14216995239
+Central Europe,Hungary,Budapest,large_airport,Budapest Ferenc Liszt International Airport,BUD,47.43018,19.262393
+Central Europe,Hungary,Debrecen,medium_airport,Debrecen International Airport,DEB,47.488899,21.615299
+Central Europe,Hungary,Hévíz,medium_airport,Hévíz-Balaton Airport,SOB,46.686391,17.159084
+Central Europe,Poland,Bydgoszcz,medium_airport,Bydgoszcz Ignacy Jan Paderewski Airport,BZG,53.096802,17.977699
+Central Europe,Poland,Gdańsk,large_airport,Gdańsk Lech Wałęsa Airport,GDN,54.377602,18.4662
+Central Europe,Poland,Katowice,large_airport,Katowice Airport,KTW,50.476015,19.080705
+Central Europe,Poland,Kraków,large_airport,Kraków John Paul II International Airport,KRK,50.077702,19.7848
+Central Europe,Poland,Lublin,large_airport,Lublin Airport,LUZ,51.240157,22.713461
+Central Europe,Poland,Łódź,large_airport,Łódź Władysław Reymont Airport,LCJ,51.721901,19.3981
+Central Europe,Poland,Olsztyn,medium_airport,Olsztyn-Mazury Airport,SZY,53.481899,20.9377
+Central Europe,Poland,Poznań,large_airport,Poznań–Ławica Airport,POZ,52.421598,16.823359
+Central Europe,Poland,Rzeszów,large_airport,Rzeszów–Jasionka Airport,RZE,50.109791,22.024155
+Central Europe,Poland,Szczecin,medium_airport,Solidarity Szczecin–Goleniów Airport,SZZ,53.584702,14.9022
+Central Europe,Poland,Warsaw,large_airport,Warsaw Chopin Airport,WAW,52.165699,20.9671
+Central Europe,Poland,Wrocław,large_airport,Wrocław Airport,WRO,51.103719,16.882096
+Central Europe,Slovakia,Bratislava,large_airport,Bratislava Airport,BTS,48.1702,17.2127
+Central Europe,Slovakia,Košice,medium_airport,Košice International Airport,KSC,48.663101,21.2411
+Central Europe,Slovakia,Piešťany,medium_airport,Piešťany Airport,PZY,48.62519836425781,17.828399658203125
+Central Europe,Slovakia,Poprad,medium_airport,Poprad-Tatry Airport,TAT,49.073601,20.2411
+Central Europe,Slovakia,Žilina,medium_airport,Žilina Airport,ILZ,49.233292,18.613386
+Central Europe,Switzerland,Basel,large_airport,EuroAirport Basel Mulhouse Freiburg,BSL,47.60068,7.521117
+Central Europe,Switzerland,Bern,medium_airport,Bern Airport,BRN,46.912868,7.498512
+Central Europe,Switzerland,Geneva,large_airport,Geneva Airport,GVA,46.238098,6.10895
+Central Europe,Switzerland,Lugano,medium_airport,Lugano Airport,LUG,46.004299,8.91058
+Central Europe,Switzerland,St. Gallen,medium_airport,St. Gallen–Altenrhein Airport,ACH,47.485001,9.56077
+Central Europe,Switzerland,Zürich,large_airport,Zurich Airport,ZRH,47.458056,8.548056
+Southern Europe,Croatia,Brač,medium_airport,Brač Airport,BWK,43.284454,16.678362
+Southern Europe,Croatia,Dubrovnik,medium_airport,Dubrovnik Airport,DBV,42.562247,18.265543
+Southern Europe,Croatia,Mali Lošinj,small_airport,Lošinj Airport,LSZ,44.566985,14.393883
+Southern Europe,Croatia,Osijek,medium_airport,Osijek Airport,OSI,45.462355,18.811278
+Southern Europe,Croatia,Pula,medium_airport,Pula Airport,PUY,44.893501,13.9222
+Southern Europe,Croatia,Rijeka,medium_airport,Rijeka Airport,RJK,45.2169,14.5703
+Southern Europe,Croatia,Split,medium_airport,Split Airport,SPU,43.538898,16.298
+Southern Europe,Croatia,Zadar,medium_airport,Zadar Airport,ZAD,44.094988,15.354879
+Southern Europe,Croatia,Zagreb,large_airport,Zagreb Airport,ZAG,45.742901,16.0688
+Southern Europe,Greece,Athens,large_airport,Athens International Airport,ATH,37.936401,23.9445
+Southern Europe,Greece,Cephalonia,medium_airport,Kefalonia Island International Airport,EFL,38.12009811401367,20.500499725341797
+Southern Europe,Greece,Chania,medium_airport,Chania International Airport,CHQ,35.5317,24.1497
+Southern Europe,Greece,Chios,medium_airport,Chios Island National Airport,JKH,38.34320068359375,26.140600204467773
+Southern Europe,Greece,Corfu,medium_airport,Corfu International Airport,CFU,39.602024,19.912038
+Southern Europe,Greece,Heraklion,large_airport,Heraklion International Airport,HER,35.339699,25.1803
+Southern Europe,Greece,Kalamata,medium_airport,Kalamata International Airport,KLX,37.06829833984375,22.02549934387207
+Southern Europe,Greece,Karpathos,medium_airport,Karpathos Island National Airport,AOK,35.421398,27.146
+Southern Europe,Greece,Kavala,medium_airport,Kavala International Airport,KVA,40.9133,24.6192
+Southern Europe,Greece,Kos,medium_airport,Kos International Airport,KGS,36.794523,27.09115
+Southern Europe,Greece,Mykonos,medium_airport,Mykonos Airport,JMK,37.435101,25.348101
+Southern Europe,Greece,Mytilene,medium_airport,Mytilene International Airport,MJT,39.057272,26.598887
+Southern Europe,Greece,Preveza,medium_airport,Aktion National Airport,PVK,38.925499,20.765301
+Southern Europe,Greece,Rhodes,medium_airport,Rhodes International Airport,RHO,36.405399,28.086201
+Southern Europe,Greece,Samos,medium_airport,Samos International Airport,SMI,37.689999,26.911699
+Southern Europe,Greece,Santorini,medium_airport,Santorini (Thira) International Airport,JTR,36.399200439453125,25.47929954528809
+Southern Europe,Greece,Skiathos,medium_airport,Skiathos International Airport,JSI,39.177101,23.5037
+Southern Europe,Greece,Skyros,small_airport,Skyros Island National Airport,SKU,38.9676017761,24.4871997833
+Southern Europe,Greece,Thessaloniki,large_airport,Thessaloniki Airport,SKG,40.51928,22.970009
+Southern Europe,Greece,Volos,medium_airport,Nea Anchialos National Airport,VOL,39.219601,22.7943
+Southern Europe,Greece,Zakynthos,medium_airport,Zakynthos International Airport,ZTH,37.7509,20.8843
+Southern Europe,Italy,Alghero,medium_airport,Fertilia Airport,AHO,40.632099,8.29077
+Southern Europe,Italy,Ancona,medium_airport,Ancona Airport,AOI,43.616299,13.3623
+Southern Europe,Italy,Bari,large_airport,Palese Airport,BRI,41.138901,16.760599
+Southern Europe,Italy,Bergamo,large_airport,Orio al Serio Airport,BGY,45.670725,9.709223
+Southern Europe,Italy,Bologna,large_airport,Bologna Airport,BLQ,44.5354,11.2887
+Southern Europe,Italy,Brescia,medium_airport,Brescia Airport,VBS,45.428902,10.3306
+Southern Europe,Italy,Brindisi,large_airport,Brindisi Airport,BDS,40.6576,17.947001
+Southern Europe,Italy,Cagliari,large_airport,Cagliari Airport,CAG,39.251499,9.05428
+Southern Europe,Italy,Catania,large_airport,Fontanarossa Airport,CTA,37.466801,15.0664
+Southern Europe,Italy,Cuneo,medium_airport,Cuneo Levaldigi Airport,CUF,44.547001,7.62322
+Southern Europe,Italy,Florence,large_airport,Peretola Airport,FLR,43.808558,11.202822
+Southern Europe,Italy,Genoa,large_airport,Cristoforo Colombo Airport,GOA,44.412039,8.840732
+Southern Europe,Italy,Lamezia,medium_airport,Lamezia Terme Airport,SUF,38.905197,16.243762
+Southern Europe,Italy,Milan,medium_airport,Linate Airport,LIN,45.445099,9.27674
+Southern Europe,Italy,Naples,large_airport,Naples International Airport,NAP,40.886002,14.2908
+Southern Europe,Italy,Olbia,medium_airport,Costa Smeralda Airport,OLB,40.898701,9.51763
+Southern Europe,Italy,Palermo,large_airport,Palermo Airport,PMO,38.175999,13.091
+Southern Europe,Italy,Parma,medium_airport,Giuseppe Verdi Airport,PMF,44.826351,10.29705
+Southern Europe,Italy,Perugia,medium_airport,San Egidio Airport,PEG,43.095901,12.5132
+Southern Europe,Italy,Pescara,medium_airport,Abruzzo Airport,PSR,42.431702,14.1811
+Southern Europe,Italy,Pisa,large_airport,Galileo Galilei Airport,PSA,43.683899,10.3927
+Southern Europe,Italy,Rimini,medium_airport,Federico Fellini Airport,RMI,44.020302,12.6117
+Southern Europe,Italy,Rome,large_airport,Leonardo da Vinci–Fiumicino Airport,FCO,41.804532,12.251998
+Southern Europe,Italy,Salerno,medium_airport,Salerno Costa d'Amalfi Airport,QSR,40.620399,14.9113
+Southern Europe,Italy,Trapani,medium_airport,Vincenzo Florio Airport,TPS,37.9114,12.488
+Southern Europe,Italy,Trieste,medium_airport,Friuli Venezia Giulia Airport,TRS,45.827499,13.4722
+Southern Europe,Italy,Turin,large_airport,Caselle Airport,TRN,45.200802,7.64963
+Southern Europe,Italy,Venice,large_airport,Venice Marco Polo Airport,VCE,45.505299,12.3519
+Southern Europe,Italy,Verona,large_airport,Verona Villafranca Airport,VRN,45.394955,10.887303
+Southern Europe,Malta,Ħal Luqa,large_airport,Malta International Airport,MLA,35.857498,14.4775
+Southern Europe,Portugal,Beja,medium_airport,Beja Airport,BYJ,38.078899,-7.9324
+Southern Europe,Portugal,Faro,large_airport,Faro Airport,FAO,37.0144004822,-7.96590995789
+Southern Europe,Portugal,Funchal,large_airport,Madeira Airport,FNC,32.697899,-16.7745
+Southern Europe,Portugal,Lisbon,large_airport,Lisbon Airport,LIS,38.7813,-9.13592
+Southern Europe,Portugal,Ponta Delgada,large_airport,João Paulo II Airport,PDL,37.7411994934,-25.6979007721
+Southern Europe,Portugal,Porto,large_airport,Porto Airport,OPO,41.2481002808,-8.68138980865
+Southern Europe,Portugal,Porto Santo Island,medium_airport,Porto Santo Airport,PXO,33.0733985901,-16.3500003815
+Southern Europe,Portugal,Terceira Island,medium_airport,Lajes Airport,TER,38.761799,-27.090799
+Southern Europe,Slovenia,Ljubljana,large_airport,Ljubljana Jože Pučnik Airport,LJU,46.223701,14.4576
+Southern Europe,Slovenia,Maribor,medium_airport,Maribor Edvard Rusjan Airport,MBX,46.4799,15.6861
+Southern Europe,Slovenia,Portorož,medium_airport,Portorož Airport,POW,45.47201,13.615951
+Southern Europe,Spain,A Coruña,medium_airport,A Coruña Airport,LCG,43.302101,-8.37726
+Southern Europe,Spain,Alicante,large_airport,Alicante–Elche Miguel Hernández Airport,ALC,38.2822,-0.558156
+Southern Europe,Spain,Almería,medium_airport,Almería Airport,LEI,36.843899,-2.3701
+Southern Europe,Spain,Asturias,medium_airport,Asturias Airport,OVD,43.563599,-6.03462
+Southern Europe,Spain,Barcelona,large_airport,Josep Tarradellas Barcelona–El Prat Airport,BCN,41.2971,2.07846
+Southern Europe,Spain,Bilbao,medium_airport,Bilbao Airport,BIO,43.301102,-2.91061
+Southern Europe,Spain,Castellón de la Plana,medium_airport,Castellón–Costa Azahar Airport,CDT,40.213889,0.073333
+Southern Europe,Spain,Fuerteventura,large_airport,Fuerteventura Airport,FUE,28.4527,-13.8638
+Southern Europe,Spain,Girona,medium_airport,Girona-Costa Brava Airport,GRO,41.904639,2.761774
+Southern Europe,Spain,Gran Canaria,large_airport,Gran Canaria Airport,LPA,27.9319,-15.3866
+Southern Europe,Spain,Granada,medium_airport,Federico García Lorca Granada Airport,GRX,37.188702,-3.77736
+Southern Europe,Spain,Huesca,small_airport,Huesca-Pirineos Airport,HSK,42.076099,-0.316667
+Southern Europe,Spain,Ibiza,large_airport,Ibiza Airport,IBZ,38.872898,1.37312
+Southern Europe,Spain,Jerez de la Frontera,medium_airport,Jerez Airport,XRY,36.744598,-6.06011
+Southern Europe,Spain,La Palma,medium_airport,La Palma Airport,SPC,28.626499,-17.7556
+Southern Europe,Spain,Lanzarote,large_airport,Lanzarote Airport,ACE,28.945499,-13.6052
+Southern Europe,Spain,Lleida,medium_airport,Alguaire Airport,ILD,41.728185,0.535023
+Southern Europe,Spain,Madrid,large_airport,Madrid-Barajas Airport,MAD,40.471926,-3.56264
+Southern Europe,Spain,Málaga,large_airport,Málaga Airport,AGP,36.6749,-4.49911
+Southern Europe,Spain,Menorca,medium_airport,Menorca Airport,MAH,39.862598,4.21865
+Southern Europe,Spain,Murcia,medium_airport,Región de Murcia International Airport,RMU,37.803,-1.125
+Southern Europe,Spain,Palma de Mallorca,large_airport,Palma de Mallorca Airport,PMI,39.551701,2.73881
+Southern Europe,Spain,Pamplona,medium_airport,Pamplona Airport,PNA,42.77,-1.64633
+Southern Europe,Spain,Reus,medium_airport,Reus Airport,REU,41.1474,1.16717
+Southern Europe,Spain,Santander,medium_airport,Santander Airport,SDR,43.427101,-3.82001
+Southern Europe,Spain,Santiago de Compostela,large_airport,Santiago de Compostela Airport,SCQ,42.896301,-8.41514
+Southern Europe,Spain,Seville,medium_airport,Seville Airport,SVQ,37.417999,-5.89311
+Southern Europe,Spain,Tenerife,medium_airport,Tenerife North–Ciudad de La Laguna Airport,TFN,28.4827,-16.341499
+Southern Europe,Spain,Valencia,large_airport,Valencia Airport,VLC,39.4893,-0.481625
+Southern Europe,Spain,Valladolid,medium_airport,Valladolid Airport,VLL,41.7061,-4.85194
+Southern Europe,Spain,Vigo,medium_airport,Vigo–Peinador Airport,VGO,42.2318,-8.62677
+Southern Europe,Spain,Vitoria-Gasteiz,medium_airport,Vitoria Airport,VIT,42.882801,-2.72447
+Southern Europe,Spain,Zaragoza,medium_airport,Zaragoza Airport,ZAZ,41.666199,-1.04155
+Eastern Europe,Albania,Kukes,medium_airport,Kukës International Airport Zayed,KFZ,42.035802,20.415955
+Eastern Europe,Albania,Tirana,large_airport,Tirana International Airport Nënë Tereza,TIA,41.4147,19.7206
+Eastern Europe,Belarus,Grodno,medium_airport,Hrodna Airport,GNA,53.602001,24.053801
+Eastern Europe,Belarus,Gomel,medium_airport,Gomel Airport,GME,52.527000427246094,31.016700744628903
+Eastern Europe,Belarus,Minsk,large_airport,Minsk International Airport,MSQ,53.888071,28.039964
+Eastern Europe,Bosnia and Herzegovina,Banja Luka,medium_airport,Banja Luka International Airport,BNX,44.941399,17.297501
+Eastern Europe,Bosnia and Herzegovina,Mostar,medium_airport,Mostar International Airport,OMO,43.282901763916016,17.84589958190918
+Eastern Europe,Bosnia and Herzegovina,Sarajevo,large_airport,Sarajevo International Airport,SJJ,43.8246,18.331499
+Eastern Europe,Bosnia and Herzegovina,Tuzla,medium_airport,Tuzla International Airport,TZL,44.458698,18.7248
+Eastern Europe,Bulgaria,Burgas,large_airport,Burgas Airport,BOJ,42.569917,27.515173
+Eastern Europe,Bulgaria,Plovdiv,medium_airport,Plovdiv Airport,PDV,42.067799,24.8508
+Eastern Europe,Bulgaria,Sofia,large_airport,Sofia Airport,SOF,42.696357,23.417671
+Eastern Europe,Bulgaria,Varna,large_airport,Varna Airport,VAR,43.232101,27.8251
+Eastern Europe,Kosovo,Pristina,large_airport,Pristina International Airport,PRN,42.5728,21.035801
+Eastern Europe,Moldova,Chişinău,medium_airport,Chișinău International Airport,RMO,46.9277,28.931
+Eastern Europe,Romania,Arad,medium_airport,Arad International Airport,ARW,46.176601,21.261999
+Eastern Europe,Romania,Bacau,medium_airport,George Enescu International Airport,BCM,46.5219,26.910299
+Eastern Europe,Romania,Baia Mare,medium_airport,Maramureș Airport,BAY,47.658444,23.464445
+Eastern Europe,Romania,Brașov,large_airport,Brașov-Ghimbav International Airport,GHV,45.70558,25.522871
+Eastern Europe,Romania,Bucharest,large_airport,Henri Coandă International Airport,OTP,44.572127,26.103396
+Eastern Europe,Romania,Cluj-Napoca,medium_airport,Cluj-Napoca International Airport,CLJ,46.787425,23.684292
+Eastern Europe,Romania,Constanța,medium_airport,Mihail Kogălniceanu International Airport,CND,44.362202,28.4883
+Eastern Europe,Romania,Craiova,medium_airport,Craiova International Airport,CRA,44.3181,23.888599
+Eastern Europe,Romania,Iași,medium_airport,Iași International Airport,IAS,47.180278,27.620833
+Eastern Europe,Romania,Oradea,medium_airport,Oradea International Airport,OMR,47.025299072265625,21.90250015258789
+Eastern Europe,Romania,Satu Mare,medium_airport,Satu Mare International Airport,SUJ,47.7033,22.8857
+Eastern Europe,Romania,Sibiu,medium_airport,Sibiu International Airport,SBZ,45.785841,24.086666
+Eastern Europe,Romania,Suceava,medium_airport,Suceava International Airport,SCV,47.6875,26.35409927368164
+Eastern Europe,Romania,Târgu Mureș,medium_airport,Târgu Mureș International Airport,TGM,46.467701,24.4125
+Eastern Europe,Romania,Timișoara,medium_airport,Timișoara Traian Vuia International Airport,TSR,45.809898,21.3379
+Eastern Europe,Montenegro,Podgorica,large_airport,Podgorica Airport,TGD,42.359402,19.2519
+Eastern Europe,Montenegro,Tivat,medium_airport,Tivat Airport,TIV,42.40470123291016,18.72330093383789
+Eastern Europe,North Macedonia,Ohrid,medium_airport,Ohrid St. Paul the Apostle Airport,OHD,41.18,20.7423
+Eastern Europe,North Macedonia,Skopje,large_airport,Skopje International Airport,SKP,41.958087,21.622581
+Eastern Europe,Russia,Abakan,medium_airport,Abakan International Airport,ABA,53.740002,91.385002
+Eastern Europe,Russia,Anadyr,medium_airport,Ugolny Airport,DYR,64.734902,177.740997
+Eastern Europe,Russia,Anapa,medium_airport,Anapa Airport,AAQ,45.002102,37.347301
+Eastern Europe,Russia,Arkhangelsk,medium_airport,Talagi Airport,ARH,64.60030364990234,40.71670150756836
+Eastern Europe,Russia,Astrakhan,medium_airport,Narimanovo Airport,ASF,46.282843,48.010511
+Eastern Europe,Russia,Barnaul,medium_airport,Barnaul Airport,BAX,53.363800048828125,83.53849792480469
+Eastern Europe,Russia,Belgorod,medium_airport,Belgorod International Airport,EGO,50.643798828125,36.5900993347168
+Eastern Europe,Russia,Blagoveshchensk,medium_airport,Ignatyevo Airport,BQS,50.42539978027344,127.41200256347656
+Eastern Europe,Russia,Bratsk,medium_airport,Bratsk Airport,BTK,56.370601654052734,101.697998046875
+Eastern Europe,Russia,Bryansk,medium_airport,Bryansk International Airport,BZK,53.214199,34.176399
+Eastern Europe,Russia,Cheboksary,medium_airport,Cheboksary International Airport,CSY,56.090302,47.347301
+Eastern Europe,Russia,Chelyabinsk,medium_airport,Chelyabinsk Airport,CEK,55.305801,61.5033
+Eastern Europe,Russia,Cherepovets,medium_airport,Cherepovets Airport,CEE,59.273601532,38.0158004761
+Eastern Europe,Russia,Chita,medium_airport,Chita-Kadala International Airport,HTA,52.026299,113.306
+Eastern Europe,Russia,Elista,medium_airport,Elista Airport,ESL,46.3739013671875,44.33089828491211
+Eastern Europe,Russia,Grozny,medium_airport,Grozny Airport,GRV,43.388106,45.699772
+Eastern Europe,Russia,Irkutsk,medium_airport,Irkutsk Airport,IKT,52.268002,104.389
+Eastern Europe,Russia,Kaliningrad,medium_airport,Khrabrovo Airport,KGD,54.891616,20.598607
+Eastern Europe,Russia,Kazan,large_airport,Kazan Airport,KZN,55.606201,49.278702
+Eastern Europe,Russia,Khabarovsk,medium_airport,Khabarovsk Novy Airport,KHV,48.528338,135.188588
+Eastern Europe,Russia,Komsomolsk-on-Amur,medium_airport,Komsomolsk-on-Amur Airport,KXK,50.40900039672851,136.9340057373047
+Eastern Europe,Russia,Krasnodar,medium_airport,Pashkovsky Airport,KRR,45.034698,39.170502
+Eastern Europe,Russia,Krasnoyarsk,large_airport,Yemelyanovo International Airport,KJA,56.173077,92.492437
+Eastern Europe,Russia,Kursk,medium_airport,Kursk Vostochny Airport,URS,51.7505989074707,36.29560089111328
+Eastern Europe,Russia,Magadan,medium_airport,Sokol Airport,GDX,59.9109992980957,150.72000122070312
+Eastern Europe,Russia,Magnitogorsk,medium_airport,Magnitogorsk International Airport,MQF,53.39310073852539,58.75569915771485
+Eastern Europe,Russia,Makhachkala,medium_airport,Uytash Airport,MCX,42.816799,47.652302
+Eastern Europe,Russia,Mineralnye Vody,medium_airport,Mineralnye Vody Airport,MRV,44.225101470947266,43.08190155029297
+Eastern Europe,Russia,Moscow,large_airport,Domodedovo International Airport,DME,55.408798,37.9063
+Eastern Europe,Russia,Murmansk,medium_airport,Murmansk Airport,MMK,68.78170013427734,32.75080108642578
+Eastern Europe,Russia,Nalchik,medium_airport,Nalchik Airport,NAL,43.512901,43.6366
+Eastern Europe,Russia,Nizhnekamsk,medium_airport,Begishevo Airport,NBC,55.564701,52.092499
+Eastern Europe,Russia,Nizhnevartovsk,medium_airport,Nizhnevartovsk Airport,NJC,60.949299,76.483597
+Eastern Europe,Russia,Nizhny Novgorod,medium_airport,Strigino Airport,GOJ,56.228254,43.785197
+Eastern Europe,Russia,Novokuznetsk,medium_airport,Spichenkovo Airport,NOZ,53.811401,86.877197
+Eastern Europe,Russia,Novosibirsk,large_airport,Tolmachevo Airport,OVB,55.019756,82.618675
+Eastern Europe,Russia,Omsk,medium_airport,Omsk Tsentralny Airport,OMS,54.96699905395508,73.31050109863281
+Eastern Europe,Russia,Orenburg,medium_airport,Orenburg Tsentralny Airport,REN,51.795799255371094,55.45669937133789
+Eastern Europe,Russia,Orsk,medium_airport,Orsk Airport,OSW,51.072498,58.5956
+Eastern Europe,Russia,Perm,medium_airport,Perm International Airport,PEE,57.914501,56.021198
+Eastern Europe,Russia,Petrozavodsk,medium_airport,Petrozavodsk Airport,PES,61.88520050048828,34.154701232910156
+Eastern Europe,Russia,Provideniya,medium_airport,Provideniya Bay Airport,PVS,64.37809753417969,-173.2429962158203
+Eastern Europe,Russia,Petropavlovsk-Kamchatsky,large_airport,Yelizovo Airport,PKC,53.168716,158.451068
+Eastern Europe,Russia,Pskov,medium_airport,Pskov Airport,PKV,57.78390121459961,28.395599365234375
+Eastern Europe,Russia,Rostov-on-Don,large_airport,Platov International Airport,ROV,47.493888,39.924722
+Eastern Europe,Russia,St. Petersburg,large_airport,Pulkovo Airport,LED,59.800301,30.262501
+Eastern Europe,Russia,Samara,large_airport,Samara Kurumoch Airport,KUF,53.504902,50.164299
+Eastern Europe,Russia,Saratov,large_airport,Saratov Gagarin Airport,GSV,51.712778,46.171111
+Eastern Europe,Russia,Sochi,large_airport,Sochi International Airport,AER,43.449902,39.9566
+Eastern Europe,Russia,Stavropol,medium_airport,Stavropol Shpakovskoye Airport,STW,45.10919952392578,42.11280059814453
+Eastern Europe,Russia,Surgut,medium_airport,Farman Salmanov Surgut Airport,SGC,61.34370040893555,73.40180206298828
+Eastern Europe,Russia,Syktyvkar,medium_airport,Syktyvkar Airport,SCW,61.64699935913086,50.84510040283203
+Eastern Europe,Russia,Tomsk,medium_airport,Bogashevo Airport,TOF,56.380298614502,85.208297729492
+Eastern Europe,Russia,Tyumen,medium_airport,Roshchino International Airport,TJM,57.178984,65.327696
+Eastern Europe,Russia,Ulan-Ude,medium_airport,Baikal International Airport,UUD,51.808614,107.439652
+Eastern Europe,Russia,Ulyanovsk,medium_airport,Ulyanovsk Baratayevka Airport,ULV,54.268299,48.2267
+Eastern Europe,Russia,Ufa,large_airport,Ufa International Airport,UFA,54.557498931885,55.874401092529
+Eastern Europe,Russia,Vladivostok,large_airport,Vladivostok International Airport,VVO,43.396256,132.148155
+Eastern Europe,Russia,Vladikavkaz,medium_airport,Beslan Airport,OGZ,43.205101,44.606602
+Eastern Europe,Russia,Volgograd,medium_airport,Volgograd International Airport,VOG,48.782501220703125,44.34550094604492
+Eastern Europe,Russia,Voronezh,medium_airport,Voronezh International Airport,VOZ,51.81420135498047,39.22959899902344
+Eastern Europe,Russia,Yakutsk,medium_airport,Yakutsk Airport,YKS,62.093299865722656,129.77099609375
+Eastern Europe,Russia,Yaroslavl,small_airport,Tunoshna Airport,IAR,57.560699,40.157398
+Eastern Europe,Russia,Yekaterinburg,large_airport,Koltsovo International Airport,SVX,56.743099212646,60.802700042725
+Eastern Europe,Russia,Yuzhno-Sakhalinsk,medium_airport,Yuzhno-Sakhalinsk Airport,UUS,46.885461,142.717466
+Eastern Europe,Serbia,Belgrade,large_airport,Belgrade Nikola Tesla Airport,BEG,44.818401,20.309099
+Eastern Europe,Serbia,Kraljevo,medium_airport,Morava Airport,KVO,43.817519,20.586662
+Eastern Europe,Serbia,Niš,medium_airport,Niš Constantine the Great Airport,INI,43.337009,21.85451
+Eastern Europe,Ukraine,Chernivtsi,medium_airport,Chernivtsi International Airport,CWC,48.259300231933594,25.98080062866211
+Eastern Europe,Ukraine,Ivano-Frankivsk,medium_airport,Ivano-Frankivsk International Airport,IFO,48.88420104980469,24.686100006103516
+Eastern Europe,Ukraine,Kharkiv,medium_airport,Kharkiv International Airport,HRK,49.926943,36.290814
+Eastern Europe,Ukraine,Kryvyi Rih,medium_airport,Kryvyi Rih International Airport,KWG,48.04330062866211,33.209999084472656
+Eastern Europe,Ukraine,Kyiv,large_airport,Boryspil International Airport,KBP,50.345001,30.894699
+Eastern Europe,Ukraine,Lviv,large_airport,Lviv Danylo Halytskyi International Airport,LWO,49.8125,23.9561
+Eastern Europe,Ukraine,Mykolaiv,medium_airport,Mykolaiv International Airport,NLV,47.057899,31.9198
+Eastern Europe,Ukraine,Odesa,medium_airport,Odesa International Airport,ODS,46.4268,30.6765
+Eastern Europe,Ukraine,Poltava,small_airport,Poltava Airport,PLV,49.5686,34.397202
+Eastern Europe,Ukraine,Simferopol,medium_airport,Simferopol International Airport,SIP,45.0522,33.975101
+Eastern Europe,Ukraine,Uzhhorod,medium_airport,Uzhhorod International Airport,UDJ,48.6343,22.263399
+Eastern Europe,Ukraine,Zaporizhzhia,medium_airport,Zaporizhzhia International Airport,OZH,47.867000579833984,35.31570053100586
+Eastern Europe - Nordic Region,Denmark,Aalborg,medium_airport,Aalborg Airport,AAL,57.094763,9.84993
+Eastern Europe - Nordic Region,Denmark,Aarhus,medium_airport,Aarhus Airport,AAR,56.303331,10.618286
+Eastern Europe - Nordic Region,Denmark,Billund,large_airport,Billund Airport,BLL,55.740335,9.157019
+Eastern Europe - Nordic Region,Denmark,Copenhagen,large_airport,Copenhagen Airport,CPH,55.617900848389,12.656000137329
+Eastern Europe - Nordic Region,Estonia,Pärnu,medium_airport,Pärnu Airport,EPU,58.41899871826172,24.47279930114746
+Eastern Europe - Nordic Region,Estonia,Tallinn,large_airport,Lennart Meri Tallinn Airport,TLL,59.413246,24.83264
+Eastern Europe - Nordic Region,Estonia,Tartu,medium_airport,Tartu Airport,TAY,58.307438,26.686473
+Eastern Europe - Nordic Region,Faroe Islands,Vágar,medium_airport,Vágar Airport,FAE,62.063256,-7.275782
+Eastern Europe - Nordic Region,Finland,Åland,medium_airport,Mariehamn Airport,MHQ,60.1222,19.898199
+Eastern Europe - Nordic Region,Finland,Helsinki,large_airport,Helsinki-Vantaa Airport,HEL,60.318363,24.963341
+Eastern Europe - Nordic Region,Finland,Kittilä,medium_airport,Kittilä Airport,KTT,67.700996398926,24.846799850464
+Eastern Europe - Nordic Region,Finland,Kuopio,medium_airport,Kuopio Airport,KUO,63.007099,27.7978
+Eastern Europe - Nordic Region,Finland,Kuusamo,medium_airport,Kuusamo Airport,KAO,65.987602,29.239401
+Eastern Europe - Nordic Region,Finland,Lappeenranta,medium_airport,Lappeenranta Airport,LPP,61.044601,28.144743
+Eastern Europe - Nordic Region,Finland,Oulu,medium_airport,Oulu Airport,OUL,64.930099,25.354601
+Eastern Europe - Nordic Region,Finland,Rovaniemi,medium_airport,Rovaniemi Airport,RVN,66.564796447754,25.830400466919
+Eastern Europe - Nordic Region,Finland,Savonlinna,medium_airport,Savonlinna Airport,SVL,61.9431,28.945101
+Eastern Europe - Nordic Region,Finland,Tampere,medium_airport,Tampere–Pirkkala Airport,TMP,61.414101,23.604401
+Eastern Europe - Nordic Region,Finland,Turku,medium_airport,Turku Airport,TKU,60.514099,22.2628
+Eastern Europe - Nordic Region,Finland,Vaasa,medium_airport,Vaasa Airport,VAA,63.050701,21.762199
+Eastern Europe - Nordic Region,Iceland,Akureyri,medium_airport,Akureyri Airport,AEY,65.656573,-18.072018
+Eastern Europe - Nordic Region,Iceland,Egilsstaðir,medium_airport,Egilsstaðir Airport,EGS,65.2833023071289,-14.401399612426758
+Eastern Europe - Nordic Region,Iceland,Reykjavík,large_airport,Keflavik International Airport,KEF,63.985001,-22.6056
+Eastern Europe - Nordic Region,Latvia,Riga,large_airport,Riga International Airport,RIX,56.920752,23.970711
+Eastern Europe - Nordic Region,Latvia,Ventspils,small_airport,Ventspils International Airport,VNT,57.3578,21.544201
+Eastern Europe - Nordic Region,Lithuania,Kaunas,medium_airport,Kaunas Airport,KUN,54.96390151977539,24.084800720214844
+Eastern Europe - Nordic Region,Lithuania,Palanga,medium_airport,Palanga International Airport,PLQ,55.973201751708984,21.093900680541992
+Eastern Europe - Nordic Region,Lithuania,Šiauliai,medium_airport,Šiauliai International Airport,SQQ,55.89390182495117,23.395000457763672
+Eastern Europe - Nordic Region,Lithuania,Vilnius,large_airport,Vilnius Airport,VNO,54.634102,25.285801
+Eastern Europe - Nordic Region,Norway,Ålesund,medium_airport,Ålesund Airport,AES,62.5625,6.1197
+Eastern Europe - Nordic Region,Norway,Bergen,large_airport,Bergen Airport,BGO,60.2934,5.21814
+Eastern Europe - Nordic Region,Norway,Bodø,medium_airport,Bodø Airport,BOO,67.269203,14.3653
+Eastern Europe - Nordic Region,Norway,Haugesund,medium_airport,Haugesund Airport,HAU,59.345299,5.20836
+Eastern Europe - Nordic Region,Norway,Kristiansand,medium_airport,"Kristiansand Airport, Kjevik",KRS,58.204201,8.08537
+Eastern Europe - Nordic Region,Norway,Kristiansund,medium_airport,"Kristiansund Airport, Kvernberget",KSU,63.111801,7.82452
+Eastern Europe - Nordic Region,Norway,Oslo,large_airport,"Oslo Airport, Gardermoen",OSL,60.193901,11.1004
+Eastern Europe - Nordic Region,Norway,Stavanger,large_airport,Stavanger Airport,SVG,58.876701,5.63778
+Eastern Europe - Nordic Region,Norway,Tromsø,large_airport,Tromsø Airport,TOS,69.683296,18.9189
+Eastern Europe - Nordic Region,Norway,Trondheim,large_airport,Trondheim Airport,TRD,63.457802,10.924
+Eastern Europe - Nordic Region,Sweden,Gothenburg,large_airport,Göteborg Landvetter Airport,GOT,57.6628,12.2798
+Eastern Europe - Nordic Region,Sweden,Luleå,medium_airport,Luleå Airport,LLA,65.5438,22.122
+Eastern Europe - Nordic Region,Sweden,Malmö,medium_airport,Malmö Airport,MMX,55.535564,13.376327
+Eastern Europe - Nordic Region,Sweden,Norrköping,medium_airport,Norrköping Airport,NRK,58.586299896240234,16.250600814819336
+Eastern Europe - Nordic Region,Sweden,Östersund,medium_airport,Åre Östersund Airport,OSD,63.194135,14.500322
+Eastern Europe - Nordic Region,Sweden,Stockholm,large_airport,Stockholm Arlanda Airport,ARN,59.64849,17.928829
+Eastern Europe - Nordic Region,Sweden,Sundsvall,medium_airport,Sundsvall–Timrå Airport,SDL,62.528099060058594,17.443899154663086
+Eastern Europe - Nordic Region,Sweden,Umeå,medium_airport,Umeå Airport,UME,63.791801452637,20.282800674438
+Eastern Europe - Nordic Region,Sweden,Växjö,medium_airport,Växjö Airport,VXO,56.929100036621094,14.727999687194824
+Eastern Europe - Nordic Region,Sweden,Visby,medium_airport,Visby Airport,VBY,57.662799835205,18.346200942993
+Oceania,American Samoa,Pago Pago,medium_airport,Pago Pago International Airport,PPG,-14.331,-170.710007
+Oceania,Australia,Adelaide,large_airport,Adelaide Airport,ADL,-34.947512,138.533393
+Oceania,Australia,Brisbane,large_airport,Brisbane Airport,BNE,-27.384199142456055,153.11700439453125
+Oceania,Australia,Broome,large_airport,Broome International Airport,BME,-17.948817,122.227482
+Oceania,Australia,Cairns,large_airport,Cairns Airport,CNS,-16.878921,145.74948
+Oceania,Australia,Canberra,medium_airport,Canberra Airport,CBR,-35.3069,149.195007
+Oceania,Australia,Darwin,large_airport,Darwin International Airport,DRW,-12.41497,130.88185
+Oceania,Australia,Gold Coast,large_airport,Gold Coast Airport,OOL,-28.165962,153.506641
+Oceania,Australia,Hobart,medium_airport,Hobart Airport,HBA,-42.8371,147.51295
+Oceania,Australia,Horn Island,medium_airport,Horn Island Airport,HID,-10.585628,142.292653
+Oceania,Australia,Melbourne,large_airport,Melbourne Airport,MEL,-37.661548,144.836432
+Oceania,Australia,Newcastle,medium_airport,Newcastle Airport[2],NTL,-32.79499816894531,151.83399963378906
+Oceania,Australia,Perth,large_airport,Perth Airport,PER,-31.94029998779297,115.96700286865234
+Oceania,Australia,Sunshine Coast,large_airport,Sunshine Coast Airport[3],MCY,-26.593324,153.08319
+Oceania,Australia,Sydney,large_airport,Sydney Airport,SYD,-33.946098,151.177002
+Oceania,Christmas Island,Flying Fish Cove,medium_airport,Christmas Island Airport,XCH,-10.449382,105.690931
+Oceania,Cocos (Keeling) Islands,Cocos (Keeling) Islands,medium_airport,Cocos (Keeling) Islands Airport,CCK,-12.19134,96.833696
+Oceania,Cook Islands,Avarua,medium_airport,Rarotonga Airport,RAR,-21.2027,-159.806
+Oceania,Easter Island,Hanga Roa,medium_airport,Mataveri International Airport,IPC,-27.1648006439,-109.42199707
+Oceania,Fiji,Nadi,medium_airport,Nadi International Airport,NAN,-17.755399703979492,177.4429931640625
+Oceania,Fiji,Suva,medium_airport,Nausori International Airport,SUV,-18.04330062866211,178.5590057373047
+Oceania,French Polynesia,Papeete,large_airport,Faa'a International Airport,PPT,-17.553699,-149.606995
+Oceania,Guam,Hagåtña,large_airport,Antonio B. Won Pat International Airport,GUM,13.485,144.797282
+Oceania,Kiribati,Kiritimati,medium_airport,Cassidy International Airport,CXI,1.986278,-157.350011
+Oceania,Kiribati,Tarawa,medium_airport,Bonriki International Airport,TRW,1.38164,173.147003
+Oceania,Marshall Islands,Kwajalein,medium_airport,Bucholz Army Airfield,KWA,8.720120429992676,167.73199462890625
+Oceania,Marshall Islands,Majuro,medium_airport,Marshall Islands International Airport,MAJ,7.06476,171.272003
+Oceania,Federated States of Micronesia,Chuuk,medium_airport,Chuuk International Airport,TKK,7.461870193481445,151.84300231933594
+Oceania,Federated States of Micronesia,Kosrae,medium_airport,Kosrae International Airport,KSA,5.35698,162.957993
+Oceania,Federated States of Micronesia,Pohnpei,medium_airport,Pohnpei International Airport,PNI,6.985099792480469,158.20899963378906
+Oceania,Federated States of Micronesia,Yap,medium_airport,Yap International Airport,YAP,9.49891,138.082993
+Oceania,Nauru,Yaren District,medium_airport,Nauru International Airport,INU,-0.547458,166.919006
+Oceania,New Caledonia,Nouméa,medium_airport,La Tontouta International Airport,NOU,-22.014601,166.212997
+Oceania,New Zealand,Auckland,large_airport,Auckland Airport,AKL,-37.01199,174.786331
+Oceania,New Zealand,Christchurch,large_airport,Christchurch Airport,CHC,-43.489029,172.532065
+Oceania,New Zealand,Dunedin,medium_airport,Dunedin Airport,DUD,-45.928101,170.197998
+Oceania,New Zealand,Hamilton,medium_airport,Hamilton Airport,HLZ,-37.8666992188,175.332000732
+Oceania,New Zealand,Queenstown,medium_airport,Queenstown Airport,ZQN,-45.021099,168.738998
+Oceania,New Zealand,Wellington,large_airport,Wellington Airport,WLG,-41.327202,174.804993
+Oceania,Norfolk Island,Burnt Pine,medium_airport,Norfolk Island Airport,NLK,-29.041887,167.939616
+Oceania - Northern Mariana Islands,Norfolk Island,Rota,medium_airport,Rota International Airport,ROP,14.1743,145.242996
+Oceania - Northern Mariana Islands,Norfolk Island,Saipan,medium_airport,Saipan International Airport,SPN,15.119,145.729004
+Oceania - Northern Mariana Islands,Norfolk Island,Tinian,medium_airport,Tinian International Airport,TIQ,14.998101,145.61923
+Oceania - Northern Mariana Islands,Niue,Alofi,large_airport,Niue International Airport,IUE,-19.079031,-169.925598
+Oceania - Northern Mariana Islands,Palau,Koror,medium_airport,Roman Tmetuchl International Airport,ROR,7.36731,134.544236
+Oceania - Northern Mariana Islands,Papua New Guinea,Daru,medium_airport,Daru Airport,DAU,-9.08676,143.207993
+Oceania - Northern Mariana Islands,Papua New Guinea,Mount Hagen,medium_airport,Mount Hagen Airport,HGU,-5.828212,144.299412
+Oceania - Northern Mariana Islands,Papua New Guinea,Port Moresby,large_airport,Jacksons International Airport,POM,-9.44338035583496,147.22000122070312
+Oceania - Northern Mariana Islands,Samoa,Apia,medium_airport,Faleolo International Airport,APW,-13.829999923706056,-172.00799560546875
+Oceania - Northern Mariana Islands,Solomon Islands,Honiara,large_airport,Honiara International Airport,HIR,-9.428,160.054993
+Oceania - Northern Mariana Islands,Tonga,Nukuʻalofa,medium_airport,Fuaʻamotu International Airport,TBU,-21.241199493408203,-175.14999389648438
+Oceania - Northern Mariana Islands,Tonga,Vavaʻu,medium_airport,Vavaʻu International Airport,VAV,-18.58530044555664,-173.96200561523438
+Oceania - Northern Mariana Islands,Tuvalu,Funafuti,medium_airport,Funafuti International Airport,FUN,-8.525,179.195999
+Oceania - Northern Mariana Islands,Vanuatu,Luganville,medium_airport,Santo-Pekoa International Airport,SON,-15.505000114399998,167.220001221
+Oceania - Northern Mariana Islands,Vanuatu,Port Vila,large_airport,Bauerfield International Airport,VLI,-17.699301,168.320007
+Oceania - Northern Mariana Islands,Wallis and Futuna,Futuna,small_airport,Pointe Vele Airport,FUT,-14.311565,-178.066492
+Oceania - Northern Mariana Islands,Wallis and Futuna,Wallis,medium_airport,Hihifo Airport,WLS,-13.2383003235,-176.199005127
+Central Europe,Hungary,Pécs,medium_airport,Pécs-Pogány International Airport,QPJ,45.988891,18.242044
+Central Europe,Hungary,Győr,medium_airport,Győr-Pér International Airport,QGY,47.628436,17.804718
+Americas - North America,Mexico,Los Cabos,large_airport,Cabo San Lucas International Airport,CSL,22.948211,-109.938155

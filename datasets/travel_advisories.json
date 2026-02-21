@@ -1,0 +1,2205 @@
+{
+  "source": "https://travel.state.gov/en/international-travel/travel-advisories.html",
+  "map_url": "https://travelmaps.state.gov/TSGMap/",
+  "advisories": [
+    {
+      "name": "Afghanistan",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)WRONGFUL DETENTION (D)"
+      ],
+      "date_issued": "01/13/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Afghanistan.html"
+    },
+    {
+      "name": "Albania",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "12/31/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Albania.html"
+    },
+    {
+      "name": "Algeria",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "09/26/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Algeria.html"
+    },
+    {
+      "name": "Andorra",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "03/25/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Andorra.html"
+    },
+    {
+      "name": "Angola",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)HEALTH (H)"
+      ],
+      "date_issued": "09/23/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Angola.html"
+    },
+    {
+      "name": "Anguilla",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Anguilla.html"
+    },
+    {
+      "name": "Antarctica",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "NATURAL DISASTER (N)OTHER (O)"
+      ],
+      "date_issued": "09/23/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/antarctica.html"
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/AntiguaandBarbuda.html"
+    },
+    {
+      "name": "Argentina",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "09/20/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Argentina.html"
+    },
+    {
+      "name": "Armenia",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "OTHER (O)"
+      ],
+      "date_issued": "09/05/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Armenia.html"
+    },
+    {
+      "name": "Aruba",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/19/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Aruba.html"
+    },
+    {
+      "name": "Australia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "05/30/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Australia.html"
+    },
+    {
+      "name": "Austria",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/23/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Austria.html"
+    },
+    {
+      "name": "Azerbaijan",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "05/21/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Azerbaijan.html"
+    },
+    {
+      "name": "The Bahamas",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "03/31/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Bahamas.html"
+    },
+    {
+      "name": "Bahrain",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "09/09/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Bahrain.html"
+    },
+    {
+      "name": "Bangladesh",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "01/20/2026",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Bangladesh.html"
+    },
+    {
+      "name": "Barbados",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Barbados.html"
+    },
+    {
+      "name": "Belarus",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)OTHER (O)"
+      ],
+      "date_issued": "12/29/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/belarus.html"
+    },
+    {
+      "name": "Belgium",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "05/22/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Belgium.html"
+    },
+    {
+      "name": "Belize",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "12/30/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Belize.html"
+    },
+    {
+      "name": "Benin",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)UNREST (U)"
+      ],
+      "date_issued": "01/07/2026",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Benin.html"
+    },
+    {
+      "name": "Bermuda",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "11/12/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Bermuda.html"
+    },
+    {
+      "name": "Bhutan",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "10/20/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Bhutan.html"
+    },
+    {
+      "name": "Bolivia",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)"
+      ],
+      "date_issued": "06/06/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Bolivia.html"
+    },
+    {
+      "name": "Bonaire",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/19/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/BonaireSintEustatiusandSaba.html"
+    },
+    {
+      "name": "Bonaire, Sint Eustatius, and Saba",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/19/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/BonaireSintEustatiusandSaba.html"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "12/12/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/BosniaandHerzegovina.html"
+    },
+    {
+      "name": "Botswana",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "02/26/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Botswana.html"
+    },
+    {
+      "name": "Brazil",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)"
+      ],
+      "date_issued": "05/29/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Brazil.html"
+    },
+    {
+      "name": "British Virgin Islands",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/BritishVirginIslands.html"
+    },
+    {
+      "name": "Brunei",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "03/19/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Brunei.html"
+    },
+    {
+      "name": "Bulgaria",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "10/09/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/bulgaria.html"
+    },
+    {
+      "name": "Burkina Faso",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "04/16/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/BurkinaFaso.html"
+    },
+    {
+      "name": "Burma (Myanmar)",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)WRONGFUL DETENTION (D)OTHER (O)"
+      ],
+      "date_issued": "05/12/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Burma.html"
+    },
+    {
+      "name": "Burundi",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)"
+      ],
+      "date_issued": "04/29/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Burundi.html"
+    },
+    {
+      "name": "Cabo Verde",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "12/18/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/cabo-verde.html"
+    },
+    {
+      "name": "Cambodia",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)OTHER (O)UNREST (U)"
+      ],
+      "date_issued": "07/25/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Cambodia.html"
+    },
+    {
+      "name": "Cameroon",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)HEALTH (H)"
+      ],
+      "date_issued": "12/18/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Cameroon.html"
+    },
+    {
+      "name": "Canada",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "06/11/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/canada.html"
+    },
+    {
+      "name": "Cayman Islands",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "09/04/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/CaymanIslands.html"
+    },
+    {
+      "name": "Central African Republic",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)KIDNAPPING OR HOSTAGE TAKING (K)OTHER (O)TERRORISM (T)"
+      ],
+      "date_issued": "01/15/2026",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/central-african-republic.html"
+    },
+    {
+      "name": "Chad",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "03/18/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Chad.html"
+    },
+    {
+      "name": "Chile",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)"
+      ],
+      "date_issued": "01/16/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Chile.html"
+    },
+    {
+      "name": "China",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "OTHER (O)"
+      ],
+      "date_issued": "11/27/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/China.html"
+    },
+    {
+      "name": "Colombia",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "04/17/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/colombia.html"
+    },
+    {
+      "name": "Comoros",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)"
+      ],
+      "date_issued": "01/12/2026",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/comoros.html"
+    },
+    {
+      "name": "Costa Rica",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "12/10/2024",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/costa-rica.html"
+    },
+    {
+      "name": "Croatia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "10/09/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/croatia.html"
+    },
+    {
+      "name": "Cuba",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)OTHER (O)"
+      ],
+      "date_issued": "05/07/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Cuba.html"
+    },
+    {
+      "name": "Cura\u00e7ao",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/19/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Curacao.html"
+    },
+    {
+      "name": "Cyprus",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "OTHER (O)"
+      ],
+      "date_issued": "01/13/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Cyprus.html"
+    },
+    {
+      "name": "Czechia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "01/08/2026",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/czechia.html"
+    },
+    {
+      "name": "C\u00f4te d'Ivoire (Ivory-Coast)",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "04/08/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/CotedIvoire.html"
+    },
+    {
+      "name": "Democratic Republic of the Congo (D.R.C.)",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "08/12/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/DemocraticRepublicoftheCongoDRC.html"
+    },
+    {
+      "name": "Denmark",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "09/17/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Denmark.html"
+    },
+    {
+      "name": "Djibouti",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "03/06/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Djibouti.html"
+    },
+    {
+      "name": "Dominica",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Dominica.html"
+    },
+    {
+      "name": "Dominican Republic",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "06/12/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/dominican-republic.html"
+    },
+    {
+      "name": "Ecuador",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "10/14/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Ecuador.html"
+    },
+    {
+      "name": "Egypt",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)CRIME (C)HEALTH (H)"
+      ],
+      "date_issued": "07/15/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/egypt.html"
+    },
+    {
+      "name": "El Salvador",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "04/08/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/ElSalvador.html"
+    },
+    {
+      "name": "Equatorial Guinea",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)HEALTH (H)OTHER (O)"
+      ],
+      "date_issued": "10/27/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/equatorial-guinea.html"
+    },
+    {
+      "name": "Eritrea",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "WRONGFUL DETENTION (D)OTHER (O)"
+      ],
+      "date_issued": "07/31/2023",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Eritrea.html"
+    },
+    {
+      "name": "Estonia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "07/23/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Estonia.html"
+    },
+    {
+      "name": "Eswatini (Swaziland)",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)"
+      ],
+      "date_issued": "07/01/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Eswatini.html"
+    },
+    {
+      "name": "Ethiopia",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "07/31/2023",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Ethiopia.html"
+    },
+    {
+      "name": "Falkland Islands",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "06/10/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/united-kingdom.html"
+    },
+    {
+      "name": "Federated States of Micronesia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "01/22/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/FederatedStatesOfMicronesia.html"
+    },
+    {
+      "name": "Fiji",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "12/02/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Fiji.html"
+    },
+    {
+      "name": "Finland",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/09/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Finland.html"
+    },
+    {
+      "name": "France",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)TERRORISM (T)"
+      ],
+      "date_issued": "05/28/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/france.html"
+    },
+    {
+      "name": "France (includes Monaco)",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)TERRORISM (T)"
+      ],
+      "date_issued": "05/28/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/france.html"
+    },
+    {
+      "name": "French Guiana",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "01/16/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/FrenchGuiana.html"
+    },
+    {
+      "name": "French Polynesia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "12/02/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/FrenchPolynesia.html"
+    },
+    {
+      "name": "French West Indies",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/FrenchWestIndies.html"
+    },
+    {
+      "name": "Gabon",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)"
+      ],
+      "date_issued": "12/18/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Gabon.html"
+    },
+    {
+      "name": "Gaza",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "07/13/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/IsraeltheWestBankandGaza.html"
+    },
+    {
+      "name": "Georgia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)OTHER (O)"
+      ],
+      "date_issued": "03/13/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Georgia.html"
+    },
+    {
+      "name": "Germany",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "05/13/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/germany.html"
+    },
+    {
+      "name": "Ghana",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)OTHER (O)"
+      ],
+      "date_issued": "04/08/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Ghana.html"
+    },
+    {
+      "name": "Gibraltar",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "06/10/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/united-kingdom.html"
+    },
+    {
+      "name": "Greece",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "10/23/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Greece.html"
+    },
+    {
+      "name": "Greenland",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "NATURAL DISASTER (N)OTHER (O)"
+      ],
+      "date_issued": "10/29/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Greenland.html"
+    },
+    {
+      "name": "Grenada",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "01/05/2026",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Grenada.html"
+    },
+    {
+      "name": "Guadeloupe (French West Indies)",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/FrenchWestIndies.html"
+    },
+    {
+      "name": "Guadeloupe, Martinique, Saint Martin, and Saint Barth\u00e9lemy (French West Indies)",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/FrenchWestIndies.html"
+    },
+    {
+      "name": "Guatemala",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "12/30/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Guatemala.html"
+    },
+    {
+      "name": "Guinea",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)"
+      ],
+      "date_issued": "12/12/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Guinea.html"
+    },
+    {
+      "name": "Guinea-Bissau",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)HEALTH (H)OTHER (O)"
+      ],
+      "date_issued": "12/11/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/guinea-bissau.html"
+    },
+    {
+      "name": "Guyana",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [],
+      "date_issued": "05/12/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Guyana.html"
+    },
+    {
+      "name": "Haiti",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "07/15/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Haiti.html"
+    },
+    {
+      "name": "Honduras",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "12/10/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Honduras.html"
+    },
+    {
+      "name": "Hong Kong",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "OTHER (O)"
+      ],
+      "date_issued": "11/27/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/HongKong.html"
+    },
+    {
+      "name": "Hungary",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/21/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Hungary.html"
+    },
+    {
+      "name": "Iceland",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Iceland.html"
+    },
+    {
+      "name": "India",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "06/16/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/india.html"
+    },
+    {
+      "name": "Indonesia",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)NATURAL DISASTER (N)TERRORISM (T)"
+      ],
+      "date_issued": "04/30/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Indonesia.html"
+    },
+    {
+      "name": "Iran",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)WRONGFUL DETENTION (D)OTHER (O)"
+      ],
+      "date_issued": "12/05/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/iran.html"
+    },
+    {
+      "name": "Iraq",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "07/17/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Iraq.html"
+    },
+    {
+      "name": "Ireland",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/28/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Ireland.html"
+    },
+    {
+      "name": "Isle of Man",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "06/10/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/united-kingdom.html"
+    },
+    {
+      "name": "Israel",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)TERRORISM (T)"
+      ],
+      "date_issued": "07/13/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/IsraeltheWestBankandGaza.html"
+    },
+    {
+      "name": "Israel, The West Bank and Gaza",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "07/13/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/IsraeltheWestBankandGaza.html"
+    },
+    {
+      "name": "Italy",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "05/23/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/italy.html"
+    },
+    {
+      "name": "Jamaica",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)HEALTH (H)NATURAL DISASTER (N)"
+      ],
+      "date_issued": "01/17/2026",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Jamaica.html"
+    },
+    {
+      "name": "Japan",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "05/15/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+    },
+    {
+      "name": "Jerusalem",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "01/17/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/IsraeltheWestBankandGaza.html"
+    },
+    {
+      "name": "Jordan",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "12/18/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Jordan.html"
+    },
+    {
+      "name": "Kazakhstan",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/05/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Kazakhstan.html"
+    },
+    {
+      "name": "Kenya",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "03/17/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Kenya.html"
+    },
+    {
+      "name": "Kiribati",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "12/02/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Kiribati.html"
+    },
+    {
+      "name": "Kosovo",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)TERRORISM (T)"
+      ],
+      "date_issued": "12/02/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Kosovo.html"
+    },
+    {
+      "name": "Kuwait",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "CRIME (C)OTHER (O)"
+      ],
+      "date_issued": "04/08/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Kuwait.html"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "UNREST (U)"
+      ],
+      "date_issued": "04/21/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Kyrgyzstan.html"
+    },
+    {
+      "name": "Laos",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)OTHER (O)"
+      ],
+      "date_issued": "11/21/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Laos.html"
+    },
+    {
+      "name": "Latvia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/26/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Latvia.html"
+    },
+    {
+      "name": "Lebanon",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "07/03/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Lebanon.html"
+    },
+    {
+      "name": "Lesotho",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "09/17/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Lesotho.html"
+    },
+    {
+      "name": "Liberia",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)"
+      ],
+      "date_issued": "12/11/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Liberia.html"
+    },
+    {
+      "name": "Libya",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "07/16/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Libya.html"
+    },
+    {
+      "name": "Liechtenstein",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "05/22/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/liechtenstein.html"
+    },
+    {
+      "name": "Lithuania",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/09/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Lithuania.html"
+    },
+    {
+      "name": "Luxembourg",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "07/19/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Luxembourg.html"
+    },
+    {
+      "name": "Macau",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "OTHER (O)"
+      ],
+      "date_issued": "11/27/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Macau.html"
+    },
+    {
+      "name": "Madagascar",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)"
+      ],
+      "date_issued": "12/04/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/madagascar.html"
+    },
+    {
+      "name": "Malawi",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)"
+      ],
+      "date_issued": "12/06/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Malawi.html"
+    },
+    {
+      "name": "Malaysia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "KIDNAPPING OR HOSTAGE TAKING (K)"
+      ],
+      "date_issued": "07/24/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Malaysia.html"
+    },
+    {
+      "name": "Maldives",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "10/07/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/maldives.html"
+    },
+    {
+      "name": "Mali",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)UNREST (U)HEALTH (H)"
+      ],
+      "date_issued": "01/09/2026",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Mali.html"
+    },
+    {
+      "name": "Malta",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "05/28/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Malta.html"
+    },
+    {
+      "name": "Marshall Islands",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "HEALTH (H)"
+      ],
+      "date_issued": "06/16/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/MarshallIslands.html"
+    },
+    {
+      "name": "Martinique (French West Indies)",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/FrenchWestIndies.html"
+    },
+    {
+      "name": "Mauritania",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "CRIME (C)TERRORISM (T)"
+      ],
+      "date_issued": "07/15/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Mauritania.html"
+    },
+    {
+      "name": "Mauritius",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "12/08/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/mauritius.html"
+    },
+    {
+      "name": "Mexico",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "08/12/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/mexico.html"
+    },
+    {
+      "name": "Moldova",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [],
+      "date_issued": "11/29/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Moldova.html"
+    },
+    {
+      "name": "Monaco",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)TERRORISM (T)"
+      ],
+      "date_issued": "05/28/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/France.html"
+    },
+    {
+      "name": "Mongolia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "01/22/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Mongolia.html"
+    },
+    {
+      "name": "Montenegro",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "11/26/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Montenegro.html"
+    },
+    {
+      "name": "Montserrat",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Montserrat.html"
+    },
+    {
+      "name": "Morocco",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "04/21/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Morocco.html"
+    },
+    {
+      "name": "Mozambique",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)TERRORISM (T)"
+      ],
+      "date_issued": "06/16/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Mozambique.html"
+    },
+    {
+      "name": "Namibia",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)HEALTH (H)"
+      ],
+      "date_issued": "12/23/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Namibia.html"
+    },
+    {
+      "name": "Nauru",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "HEALTH (H)"
+      ],
+      "date_issued": "12/02/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Nauru.html"
+    },
+    {
+      "name": "Nepal",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)"
+      ],
+      "date_issued": "09/11/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Nepal.html"
+    },
+    {
+      "name": "Netherlands",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "08/09/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Netherlands.html"
+    },
+    {
+      "name": "New Caledonia",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)"
+      ],
+      "date_issued": "06/04/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/NewCaledonia.html"
+    },
+    {
+      "name": "New Zealand",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "01/03/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/NewZealand.html"
+    },
+    {
+      "name": "Nicaragua",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "CRIME (C)HEALTH (H)WRONGFUL DETENTION (D)OTHER (O)"
+      ],
+      "date_issued": "12/13/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Nicaragua.html"
+    },
+    {
+      "name": "Niger",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "01/29/2026",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/niger.html"
+    },
+    {
+      "name": "Nigeria",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)HEALTH (H)"
+      ],
+      "date_issued": "07/15/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Nigeria.html"
+    },
+    {
+      "name": "North Korea (Democratic People's Republic of Korea)",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "WRONGFUL DETENTION (D)OTHER (O)"
+      ],
+      "date_issued": "04/29/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/north-korea.html"
+    },
+    {
+      "name": "Norway",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "02/03/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Norway.html"
+    },
+    {
+      "name": "Oman",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "11/04/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Oman.html"
+    },
+    {
+      "name": "Pakistan",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "TERRORISM (T)UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)"
+      ],
+      "date_issued": "01/26/2026",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/pakistan.html"
+    },
+    {
+      "name": "Palau",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "HEALTH (H)OTHER (O)"
+      ],
+      "date_issued": "01/07/2026",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/palau.html"
+    },
+    {
+      "name": "Panama",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)"
+      ],
+      "date_issued": "09/23/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Panama.html"
+    },
+    {
+      "name": "Papua New Guinea",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)KIDNAPPING OR HOSTAGE TAKING (K)NATURAL DISASTER (N)OTHER (O)"
+      ],
+      "date_issued": "04/29/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/PapuaNewGuinea.html"
+    },
+    {
+      "name": "Paraguay",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "04/30/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Paraguay.html"
+    },
+    {
+      "name": "Peru",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "05/16/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Peru.html"
+    },
+    {
+      "name": "Philippines",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "05/08/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Philippines.html"
+    },
+    {
+      "name": "Poland",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "06/05/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Poland.html"
+    },
+    {
+      "name": "Portugal",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "12/23/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/portugal.html"
+    },
+    {
+      "name": "Puerto Rico",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "01/01/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/US-And-Canada/Puerto-Rico.html"
+    },
+    {
+      "name": "Qatar",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "06/03/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Qatar.html"
+    },
+    {
+      "name": "Republic of North Macedonia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "01/14/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Macedonia.html"
+    },
+    {
+      "name": "Republic of the Congo",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "10/02/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/RepublicoftheCongo.html"
+    },
+    {
+      "name": "Romania",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "10/14/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/romania.html"
+    },
+    {
+      "name": "Russia",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)TERRORISM (T)WRONGFUL DETENTION (D)OTHER (O)"
+      ],
+      "date_issued": "12/29/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/russia.html"
+    },
+    {
+      "name": "Rwanda",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)"
+      ],
+      "date_issued": "07/16/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Rwanda.html"
+    },
+    {
+      "name": "Saba",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/19/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/BonaireSintEustatiusandSaba.html"
+    },
+    {
+      "name": "Saint Barth\u00e9lemy (French West Indies)",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/FrenchWestIndies.html"
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SaintKittsandNevis.html"
+    },
+    {
+      "name": "Saint Lucia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SaintLucia.html"
+    },
+    {
+      "name": "Saint Martin (French West Indies)",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/22/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/FrenchWestIndies.html"
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "12/06/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SaintVincentandtheGrenadines.html"
+    },
+    {
+      "name": "Samoa",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "03/10/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Samoa.html"
+    },
+    {
+      "name": "San Marino",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "05/23/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Italy.html"
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "HEALTH (H)"
+      ],
+      "date_issued": "10/08/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/sao-tome-and-principe.html"
+    },
+    {
+      "name": "Saudi Arabia",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "09/09/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SaudiArabia.html"
+    },
+    {
+      "name": "Senegal",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [
+        "CRIME (C)OTHER (O)"
+      ],
+      "date_issued": "12/01/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/senegal.html"
+    },
+    {
+      "name": "Serbia",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "04/11/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Serbia.html"
+    },
+    {
+      "name": "Seychelles",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "12/09/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/seychelles.html"
+    },
+    {
+      "name": "Sierra Leone",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)"
+      ],
+      "date_issued": "09/15/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/sierra-leone.html"
+    },
+    {
+      "name": "Singapore",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "03/05/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Singapore.html"
+    },
+    {
+      "name": "Sint Eustatius",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/19/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/BonaireSintEustatiusandSaba.html"
+    },
+    {
+      "name": "Sint Maarten",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "08/19/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SintMaarten.html"
+    },
+    {
+      "name": "Slovakia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "02/10/2026",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/slovakia.html"
+    },
+    {
+      "name": "Slovenia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "07/26/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Slovenia.html"
+    },
+    {
+      "name": "Solomon Islands",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)OTHER (O)"
+      ],
+      "date_issued": "04/29/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SolomonIslands.html"
+    },
+    {
+      "name": "Somalia",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)HEALTH (H)"
+      ],
+      "date_issued": "05/14/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Somalia.html"
+    },
+    {
+      "name": "South Africa",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "05/27/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-africa.html"
+    },
+    {
+      "name": "South Korea",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "05/28/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html"
+    },
+    {
+      "name": "South Sudan",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)OTHER (O)UNREST (U)HEALTH (H)"
+      ],
+      "date_issued": "11/13/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/SouthSudan.html"
+    },
+    {
+      "name": "Spain",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)TERRORISM (T)"
+      ],
+      "date_issued": "05/12/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/spain.html"
+    },
+    {
+      "name": "Sri Lanka",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "10/14/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/sri-lanka.html"
+    },
+    {
+      "name": "Sudan",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)HEALTH (H)"
+      ],
+      "date_issued": "10/15/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/sudan.html"
+    },
+    {
+      "name": "Suriname",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "12/13/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Suriname.html"
+    },
+    {
+      "name": "Sweden",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "07/24/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Sweden.html"
+    },
+    {
+      "name": "Switzerland",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "05/20/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/switzerland.html"
+    },
+    {
+      "name": "Syria",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "12/11/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/syria.html"
+    },
+    {
+      "name": "Taiwan",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "11/25/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Taiwan.html"
+    },
+    {
+      "name": "Tajikistan",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "05/16/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Tajikistan.html"
+    },
+    {
+      "name": "Tanzania",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "CRIME (C)TERRORISM (T)OTHER (O)UNREST (U)"
+      ],
+      "date_issued": "10/31/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Tanzania.html"
+    },
+    {
+      "name": "Thailand",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)"
+      ],
+      "date_issued": "07/25/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Thailand.html"
+    },
+    {
+      "name": "The Gambia",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)HEALTH (H)OTHER (O)"
+      ],
+      "date_issued": "01/16/2026",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/the-gambia.html"
+    },
+    {
+      "name": "Timor-Leste",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)"
+      ],
+      "date_issued": "03/21/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Timor-Leste.html"
+    },
+    {
+      "name": "Togo",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "11/07/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Togo.html"
+    },
+    {
+      "name": "Tonga",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "12/02/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Tonga.html"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "CRIME (C)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)"
+      ],
+      "date_issued": "05/07/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/TrinidadandTobago.html"
+    },
+    {
+      "name": "Tunisia",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "10/23/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Tunisia.html"
+    },
+    {
+      "name": "Turkey",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "10/16/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Turkey.html"
+    },
+    {
+      "name": "Turkmenistan",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "02/28/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Turkmenistan.html"
+    },
+    {
+      "name": "Turks and Caicos Islands",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "03/04/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/TurksandCaicosIslands.html"
+    },
+    {
+      "name": "Tuvalu",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "12/02/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Tuvalu.html"
+    },
+    {
+      "name": "Uganda",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "12/08/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/uganda.html"
+    },
+    {
+      "name": "Ukraine",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "OTHER (O)"
+      ],
+      "date_issued": "11/14/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Ukraine.html"
+    },
+    {
+      "name": "U.S. Virgin Islands",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "01/01/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/US-And-Canada/US-Virgin-Islands.html"
+    },
+    {
+      "name": "United Arab Emirates",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "08/08/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/UnitedArabEmirates.html"
+    },
+    {
+      "name": "United Kingdom of Great Britain and Northern Ireland",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)UNREST (U)CRIME (C)"
+      ],
+      "date_issued": "05/08/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/united-kingdom.html"
+    },
+    {
+      "name": "Uruguay",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "CRIME (C)"
+      ],
+      "date_issued": "05/07/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Uruguay.html"
+    },
+    {
+      "name": "Uzbekistan",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "01/26/2026",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/uzbekistan.html"
+    },
+    {
+      "name": "Vanuatu",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "05/22/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Vanuatu.html"
+    },
+    {
+      "name": "Vatican City (Holy See)",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "TERRORISM (T)"
+      ],
+      "date_issued": "05/23/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/italy.html"
+    },
+    {
+      "name": "Venezuela",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)WRONGFUL DETENTION (D)OTHER (O)"
+      ],
+      "date_issued": "12/03/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Venezuela.html"
+    },
+    {
+      "name": "Vietnam",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "12/16/2024",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Vietnam.html"
+    },
+    {
+      "name": "West Bank",
+      "level": 3,
+      "level_text": "Reconsider travel",
+      "risk_indicators": [
+        "TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "07/13/2025",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/IsraeltheWestBankandGaza.html"
+    },
+    {
+      "name": "Yemen",
+      "level": 4,
+      "level_text": "Do not travel",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)HEALTH (H)KIDNAPPING OR HOSTAGE TAKING (K)TERRORISM (T)OTHER (O)"
+      ],
+      "date_issued": "12/19/2025",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/yemen.html"
+    },
+    {
+      "name": "Zambia",
+      "level": 1,
+      "level_text": "Exercise normal precautions",
+      "risk_indicators": [],
+      "date_issued": "07/31/2023",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Zambia.html"
+    },
+    {
+      "name": "Zimbabwe",
+      "level": 2,
+      "level_text": "Exercise increased caution",
+      "risk_indicators": [
+        "UNREST (U)CRIME (C)OTHER (O)"
+      ],
+      "date_issued": "06/27/2023",
+      "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Zimbabwe.html"
+    }
+  ],
+  "aliases": {
+    "United Kingdom": "United Kingdom of Great Britain and Northern Ireland",
+    "UK": "United Kingdom of Great Britain and Northern Ireland",
+    "Great Britain": "United Kingdom of Great Britain and Northern Ireland",
+    "England": "United Kingdom of Great Britain and Northern Ireland",
+    "Scotland": "United Kingdom of Great Britain and Northern Ireland",
+    "Wales": "United Kingdom of Great Britain and Northern Ireland",
+    "Northern Ireland": "United Kingdom of Great Britain and Northern Ireland",
+    "USA": "United States",
+    "United States": "United States",
+    "U.S.": "United States",
+    "US": "United States",
+    "Ivory Coast": "C\u00f4te d'Ivoire (Ivory-Coast)",
+    "Cote d'Ivoire": "C\u00f4te d'Ivoire (Ivory-Coast)",
+    "Republic of North Macedonia": "Republic of North Macedonia",
+    "North Macedonia": "Republic of North Macedonia",
+    "Macedonia": "Republic of North Macedonia",
+    "DRC": "Democratic Republic of the Congo (D.R.C.)",
+    "Democratic Republic of Congo": "Democratic Republic of the Congo (D.R.C.)",
+    "Congo (Kinshasa)": "Democratic Republic of the Congo (D.R.C.)",
+    "Congo (Brazzaville)": "Republic of the Congo",
+    "Myanmar": "Burma (Myanmar)",
+    "Burma": "Burma (Myanmar)",
+    "Swaziland": "Eswatini (Swaziland)",
+    "Eswatini": "Eswatini (Swaziland)",
+    "Cabo Verde": "Cape Verde",
+    "Vatican": "Vatican City (Holy See)",
+    "Holy See": "Vatican City (Holy See)",
+    "South Korea": "South Korea",
+    "Korea": "South Korea",
+    "North Korea": "North Korea (Democratic People's Republic of Korea)",
+    "Taiwan": "Taiwan",
+    "Hong Kong": "Hong Kong",
+    "Macau": "Macau",
+    "Macao": "Macau",
+    "Palestine": "West Bank",
+    "Czech Republic": "Czechia",
+    "Turks and Caicos": "Turks and Caicos Islands",
+    "Bahamas": "The Bahamas",
+    "Virgin Islands": "U.S. Virgin Islands",
+    "Saint Martin": "Saint Martin (French West Indies)",
+    "St. Martin": "Saint Martin (French West Indies)",
+    "Saint Barthelemy": "Saint Barth\u00e9lemy (French West Indies)",
+    "St. Barth\u00e9lemy": "Saint Barth\u00e9lemy (French West Indies)",
+    "Sint Eustatius": "Sint Eustatius",
+    "Saba": "Saba",
+    "Bonaire": "Bonaire, Sint Eustatius, and Saba",
+    "The Gambia": "The Gambia",
+    "Gambia": "The Gambia",
+    "Tanzania": "Tanzania",
+    "Micronesia": "Federated States of Micronesia",
+    "FSM": "Federated States of Micronesia"
+  }
+}
