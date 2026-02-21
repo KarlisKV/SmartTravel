@@ -1131,21 +1131,21 @@ def climate():
                 payload["driving_side"] = driving_side
             currency_info = get_currency(country, place)
             if currency_info:
-                # Fetch exchange rates - wrap in try/except so failures don't block climate data
+                # Fetch exchange rates with a short timeout so slow yfinance doesn't block the whole search
                 try:
-                    exchange_rates = get_exchange_rates(currency_info.get("iso_code"))
+                    import concurrent.futures
+                    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as ex:
+                        fut = ex.submit(get_exchange_rates, currency_info.get("iso_code"), 3)
+                        exchange_rates = fut.result(timeout=4)  # 4s cap so search returns quickly
                     if exchange_rates:
                         currency_info.update(exchange_rates)
                     else:
-                        # Still include currency info even if rates aren't available
                         currency_info["eur_rate"] = None
                         currency_info["usd_rate"] = None
                 except Exception as rate_error:
-                    # If exchange rate fetching fails, still include currency info without rates
-                    print(f"Warning: Exchange rate fetch failed, continuing without rates: {rate_error}")
+                    print(f"Warning: Exchange rate fetch failed or timed out, continuing without rates: {rate_error}")
                     currency_info["eur_rate"] = None
                     currency_info["usd_rate"] = None
-                # Ensure rates are explicitly set (even if None) for frontend
                 if "eur_rate" not in currency_info:
                     currency_info["eur_rate"] = None
                 if "usd_rate" not in currency_info:
