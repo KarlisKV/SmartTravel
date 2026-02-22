@@ -42,6 +42,9 @@ function loadLgbtqTable() {
             return res.json();
         })
         .then(json => {
+            console.log('LGBTQ+ API response:', json);
+            const rows = json && Array.isArray(json.rows) ? json.rows : [];
+            console.log('LGBTQ+ rows count:', rows.length);
             const table = {};
             rows.forEach(row => {
                 const region = (row['Region'] || row['region'] || '').trim();
@@ -60,6 +63,8 @@ function loadLgbtqTable() {
                     genderIdentity: (row['Gender identity/expression laws'] || '').trim()
                 };
             });
+            console.log('LGBTQ+ table built with', Object.keys(table).length, 'locations');
+            console.log('Latvia in table?', 'latvia' in table, table['latvia']);
             lgbtqDataCache = table;
             return table;
         })
@@ -74,6 +79,7 @@ function loadLgbtqTable() {
 function getLgbtqInfo(country, place) {
     const data = lgbtqDataCache;
     if (!data || Object.keys(data).length === 0) {
+        console.log('getLgbtqInfo: No data available, cache:', data);
         return null;
     }
 
@@ -84,18 +90,22 @@ function getLgbtqInfo(country, place) {
         
         // Exact match first
         if (key in data) {
+            console.log('getLgbtqInfo: Exact match found for', name, '->', key);
             return data[key];
         }
         
         // Fuzzy match: check if key is in location name or location name is in key
         for (const k in data) {
             if (key === k) {
+                console.log('getLgbtqInfo: Exact match found (case)', name, '->', k);
                 return data[k];
             }
             if (key.includes(k) || k.includes(key)) {
+                console.log('getLgbtqInfo: Fuzzy match found', name, '->', k, '(key in k or k in key)');
                 return data[k];
             }
         }
+        console.log('getLgbtqInfo: No match found for', name);
         return null;
     }
 
@@ -103,11 +113,14 @@ function getLgbtqInfo(country, place) {
     // This handles cases like "Riga, Latvia" -> tries "Riga" then "Latvia"
     if (place && place.trim()) {
         const placeParts = place.split(',').map(p => p.trim()).filter(p => p);
+        console.log('getLgbtqInfo: Trying place parts:', placeParts, 'from place:', place);
         // Try parts in reverse order (country is usually last)
         for (let i = placeParts.length - 1; i >= 0; i--) {
             const part = placeParts[i];
+            console.log('getLgbtqInfo: Trying place part:', part);
             const match = lookupOne(part);
             if (match) {
+                console.log('getLgbtqInfo: Match found in place part:', part);
                 return match;
             }
         }
@@ -115,6 +128,7 @@ function getLgbtqInfo(country, place) {
         for (const part of placeParts) {
             const match = lookupOne(part);
             if (match) {
+                console.log('getLgbtqInfo: Match found in place part (forward):', part);
                 return match;
             }
         }
@@ -122,11 +136,15 @@ function getLgbtqInfo(country, place) {
     
     // Then try country
     if (country && country.trim()) {
+        console.log('getLgbtqInfo: Trying country:', country);
         const match = lookupOne(country.trim());
         if (match) {
+            console.log('getLgbtqInfo: Match found for country:', country);
             return match;
         }
     }
+    
+    console.log('getLgbtqInfo: No match found for country:', country, 'place:', place);
     console.log('getLgbtqInfo: Available locations sample:', Object.keys(data).slice(0, 20));
     return null;
 }
@@ -145,6 +163,10 @@ function loadAndRenderLgbtqTable() {
     tbodyEl.innerHTML = '';
     
     loadLgbtqTable().then((data) => {
+        console.log('LGBTQ+ table data loaded:', data);
+        console.log('lgbtqDataCache:', lgbtqDataCache);
+        console.log('Data keys count:', data ? Object.keys(data).length : 0);
+        console.log('Cache keys count:', lgbtqDataCache ? Object.keys(lgbtqDataCache).length : 0);
         
         // Use the returned data or cache (should be the same)
         const tableData = data || lgbtqDataCache || {};
@@ -155,6 +177,8 @@ function loadAndRenderLgbtqTable() {
             loadingEl.textContent = 'No LGBTQ+ data available. Please check the console for errors.';
             return;
         }
+        
+        console.log('Using table data with', Object.keys(tableData).length, 'locations');
         
         // Create table header (only 4 columns)
         const headerRow = document.createElement('tr');
@@ -204,47 +228,34 @@ function loadAndRenderLgbtqTable() {
     });
 }
 
-// --- Flags (lazy per-country fetch instead of one giant all-flags payload)
-// flagsCache: { lowerCaseName -> dataUrl | null }  (null = confirmed missing)
-let flagsCache = {};
-// Keep a promise per country to avoid duplicate in-flight requests
-const _flagFetchPromises = {};
+// --- Flags
+let flagsCache = null;
+let flagsLoadPromise = null;
 
-/**
- * Fetch a single flag by country name from the lightweight /flag/<name> endpoint.
- * Returns the base64 data URL string, or null if not found.
- */
-async function fetchFlagForCountry(countryName) {
-    if (!countryName) return null;
-    const key = countryName.toLowerCase().trim();
-    if (key in flagsCache) return flagsCache[key]; // cache hit (including null sentinel)
-    if (_flagFetchPromises[key]) return _flagFetchPromises[key]; // deduplicate in-flight
-
-    _flagFetchPromises[key] = fetch(API_BASE + '/flag/' + encodeURIComponent(key))
+async function loadFlags() {
+    if (flagsLoadPromise) return flagsLoadPromise;
+    flagsLoadPromise = fetch(API_BASE + '/flags')
         .then(res => {
-            if (!res.ok) return null;
+            if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
             return res.json();
         })
-        .then(data => {
-            const url = data && data.flag ? data.flag : null;
-            flagsCache[key] = url;
-            return url;
+        .then(json => {
+            const flags = {};
+            (json.flags || []).forEach(flag => {
+                const country = flag.country || '';
+                if (country) {
+                    flags[country.toLowerCase()] = flag.flag;
+                }
+            });
+            flagsCache = flags;
+            return flags;
         })
-        .catch(() => {
-            flagsCache[key] = null;
-            return null;
+        .catch(e => {
+            console.error('Failed to load flags:', e);
+            flagsCache = {};
+            return {};
         });
-    return _flagFetchPromises[key];
-}
-
-/**
- * Compatibility shim — old code called loadFlags() and then getFlagForCountry().
- * Now we pre-fetch flags for the current nationality list at startup.
- * For anything that was gating on loadFlags(), resolve immediately.
- */
-async function loadFlags() {
-    // No-op: flags are fetched on-demand via fetchFlagForCountry()
-    return flagsCache;
+    return flagsLoadPromise;
 }
 
 // Country name aliases to match dataset flag names
@@ -308,19 +319,34 @@ const COUNTRY_NAME_ALIASES = {
     'palestinian territories': 'palestine'
 };
 
-/**
- * Synchronous cache lookup — returns cached URL or null.
- * Callers that need async loading should use fetchFlagForCountry().
- */
 function getFlagForCountry(countryName) {
-    if (!countryName) return null;
+    if (!flagsCache || !countryName) return null;
+    
     const normalized = countryName.toLowerCase().trim();
-    // Direct cache hit
-    if (normalized in flagsCache) return flagsCache[normalized];
-    // Alias mapping
+    
+    // Try direct match first
+    if (flagsCache[normalized]) {
+        return flagsCache[normalized];
+    }
+    
+    // Try alias mapping
     const alias = COUNTRY_NAME_ALIASES[normalized];
-    if (alias && (alias.toLowerCase() in flagsCache)) return flagsCache[alias.toLowerCase()];
-    // No fuzzy scan — too slow for 200 countries; rely on server-side lookup instead
+    if (alias && flagsCache[alias]) {
+        return flagsCache[alias];
+    }
+    
+    // Try fuzzy matching: check if any flag country name contains the search term or vice versa
+    for (const flagKey in flagsCache) {
+        const flagCountry = flagKey.toLowerCase();
+        // Check if normalized name is contained in flag country name or vice versa
+        if (normalized.includes(flagCountry) || flagCountry.includes(normalized)) {
+            // But avoid too short matches (at least 3 characters)
+            if (normalized.length >= 3 || flagCountry.length >= 3) {
+                return flagsCache[flagKey];
+            }
+        }
+    }
+    
     return null;
 }
 
@@ -336,7 +362,8 @@ async function loadNationalities() {
         nationalitiesList = [];
     }
     
-    // No longer pre-loading all flags — they're fetched on-demand per country
+    // Load flags in parallel
+    await loadFlags();
     
     const sel = document.getElementById('nationality-select');
     const customDropdown = document.getElementById('nationality-custom-dropdown');
@@ -367,7 +394,7 @@ async function loadNationalities() {
     
     let allItems = [];
     
-    // Function to render filtered list — flags loaded on-demand per visible item
+    // Function to render filtered list
     function renderNationalityList(filter = '') {
         if (!customList) return;
         customList.innerHTML = '';
@@ -387,31 +414,24 @@ async function loadNationalities() {
         
         allItems = [];
         filtered.forEach(n => {
+            const flagUrl = getFlagForCountry(n);
             const item = document.createElement('div');
             item.className = 'nationality-dropdown-item';
             item.dataset.value = n;
             item.tabIndex = 0;
             item.setAttribute('role', 'option');
-            // Render text immediately; fetch flag async and inject if found
-            item.innerHTML = `<span>${escapeHtml(n)}</span>`;
-            fetchFlagForCountry(n).then(flagUrl => {
-                if (flagUrl && item.isConnected) {
-                    item.innerHTML = `<img src="${escapeHtml(flagUrl)}" alt="" class="flag-icon" loading="lazy"> <span>${escapeHtml(n)}</span>`;
-                }
-            });
+            if (flagUrl) {
+                item.innerHTML = `<img src="${escapeHtml(flagUrl)}" alt="" class="flag-icon"> <span>${escapeHtml(n)}</span>`;
+            } else {
+                item.innerHTML = `<span>${escapeHtml(n)}</span>`;
+            }
             item.addEventListener('click', () => {
                 sel.value = n;
                 sel.dispatchEvent(new Event('change'));
-                const cachedFlag = getFlagForCountry(n);
-                if (cachedFlag && customSelected) {
-                    customSelected.innerHTML = `<img src="${escapeHtml(cachedFlag)}" alt="" class="flag-icon"> ${escapeHtml(n)}`;
+                if (flagUrl && customSelected) {
+                    customSelected.innerHTML = `<img src="${escapeHtml(flagUrl)}" alt="" class="flag-icon"> ${escapeHtml(n)}`;
                 } else if (customSelected) {
                     customSelected.textContent = n;
-                    // Update async if flag arrives later
-                    fetchFlagForCountry(n).then(f => {
-                        if (f && customSelected && sel.value === n)
-                            customSelected.innerHTML = `<img src="${escapeHtml(f)}" alt="" class="flag-icon"> ${escapeHtml(n)}`;
-                    });
                 }
                 if (searchInput) searchInput.value = '';
                 customDropdown.classList.remove('open');
@@ -1013,6 +1033,8 @@ async function loadAndShowResults() {
     const nationality = (natSel && natSel.value) ? natSel.value.trim() : '';
     const country = dest.country || '';
     const place = dest.name || '';
+    
+    console.log('loadAndShowResults: dest =', dest);
     console.log('loadAndShowResults: country =', country, 'place =', place);
 
     showSection('results-loading', true);
@@ -1069,7 +1091,7 @@ async function loadAndShowResults() {
             titleEl.textContent = 'Climate at ' + (place || country || 'your destination');
         }
         
-        // Load and display flag — use single-country endpoint (fast, no full dump)
+        // Load and display flag
         loadFlags().then(() => {
             // Try to get country from various sources
             let countryForFlag = country || '';
@@ -1081,16 +1103,18 @@ async function loadAndShowResults() {
                 countryForFlag = data.nearest_airports[0].country;
             }
             
-            fetchFlagForCountry(countryForFlag).then(flagUrl => {
-                if (flagEl && flagUrl) {
-                    flagEl.src = flagUrl;
-                    flagEl.alt = countryForFlag;
-                    flagEl.style.display = 'block';
-                } else if (flagEl) {
-                    flagEl.style.display = 'none';
-                }
-                if (headerEl) headerEl.style.display = 'flex';
-            });
+            const flagUrl = getFlagForCountry(countryForFlag);
+            if (flagEl && flagUrl) {
+                flagEl.src = flagUrl;
+                flagEl.alt = countryForFlag;
+                flagEl.style.display = 'block';
+            } else if (flagEl) {
+                flagEl.style.display = 'none';
+            }
+            
+            if (headerEl) {
+                headerEl.style.display = 'flex';
+            }
         });
         
         renderCharts(data);
@@ -1347,19 +1371,24 @@ async function loadAndShowResults() {
         // Extract country from API response (same as plug voltage uses)
         // Start with the original country from Nominatim
         let lgbtqCountry = country || '';
+        console.log('LGBTQ+ country extraction - initial country from Nominatim:', lgbtqCountry);
         
         // Try to get country from API responses (prioritize these as they're more reliable)
         if (data.nearest_airports && data.nearest_airports.length > 0 && data.nearest_airports[0].country) {
             lgbtqCountry = data.nearest_airports[0].country;
+            console.log('LGBTQ+ country from nearest_airports:', lgbtqCountry);
         } else if (data.travel_advisory && data.travel_advisory.destination_name) {
             lgbtqCountry = data.travel_advisory.destination_name;
+            console.log('LGBTQ+ country from travel_advisory:', lgbtqCountry);
         } else if (data.visa_requirement && data.visa_requirement.destination_name) {
             lgbtqCountry = data.visa_requirement.destination_name;
+            console.log('LGBTQ+ country from visa_requirement:', lgbtqCountry);
         } else if (data.plug_voltage && data.plug_voltage.location_name) {
             // Extract country from location_name if it's in format "City, Country"
             const locationParts = data.plug_voltage.location_name.split(',').map(s => s.trim());
             if (locationParts.length > 1) {
                 lgbtqCountry = locationParts[locationParts.length - 1];
+                console.log('LGBTQ+ country from plug_voltage location_name:', lgbtqCountry);
             }
         }
         
@@ -1369,22 +1398,32 @@ async function loadAndShowResults() {
             if (placeParts.length > 1) {
                 // Try last part (usually country)
                 lgbtqCountry = placeParts[placeParts.length - 1];
+                console.log('LGBTQ+ country extracted from place (last part):', lgbtqCountry);
                 // If that doesn't work, try second-to-last (sometimes country is there)
                 if (!lgbtqCountry && placeParts.length > 2) {
                     lgbtqCountry = placeParts[placeParts.length - 2];
+                    console.log('LGBTQ+ country extracted from place (second-to-last):', lgbtqCountry);
                 }
             }
         }
+        
+        console.log('LGBTQ+ matching - final country:', lgbtqCountry, 'place:', place);
         console.log('LGBTQ+ cache before load:', lgbtqDataCache ? Object.keys(lgbtqDataCache).length + ' entries' : 'null');
         
         loadLgbtqTable().then((loadedData) => {
+            console.log('LGBTQ+ data loaded, cache has:', lgbtqDataCache ? Object.keys(lgbtqDataCache).length + ' entries' : 'null');
+            console.log('Sample keys:', lgbtqDataCache ? Object.keys(lgbtqDataCache).slice(0, 10) : 'none');
+            console.log('Checking for "latvia" in cache:', 'latvia' in lgbtqDataCache);
             if ('latvia' in lgbtqDataCache) {
+                console.log('Latvia data:', lgbtqDataCache['latvia']);
             }
             
             // Pass both country and place - getLgbtqInfo will try place parts first, then country
             // This ensures cities like "Riga, Latvia" will match "Latvia" from place parts
             const lgbtqInfo = getLgbtqInfo(lgbtqCountry, place);
+            console.log('LGBTQ+ lookup result:', lgbtqInfo ? 'FOUND' : 'NOT FOUND', 'for country:', lgbtqCountry, 'place:', place);
             if (lgbtqInfo) {
+                console.log('LGBTQ+ matched location:', lgbtqInfo.location_name);
             }
             if (lgbtqInfo) {
                 const container = document.getElementById('lgbtq-content');
@@ -1997,22 +2036,22 @@ function initVisaGlossaryNationalityDropdown() {
             return;
         }
         filtered.forEach(n => {
+            const flagUrl = getFlagForCountry(n);
             const item = document.createElement('div');
             item.className = 'nationality-dropdown-item';
             item.dataset.value = n;
             item.tabIndex = 0;
             item.setAttribute('role', 'option');
-            item.innerHTML = `<span>${escapeHtml(n)}</span>`;
-            fetchFlagForCountry(n).then(flagUrl => {
-                if (flagUrl && item.isConnected)
-                    item.innerHTML = `<img src="${escapeHtml(flagUrl)}" alt="" class="flag-icon" loading="lazy"> <span>${escapeHtml(n)}</span>`;
-            });
+            if (flagUrl) {
+                item.innerHTML = `<img src="${escapeHtml(flagUrl)}" alt="" class="flag-icon"> <span>${escapeHtml(n)}</span>`;
+            } else {
+                item.innerHTML = `<span>${escapeHtml(n)}</span>`;
+            }
             item.addEventListener('click', () => {
                 sel.value = n;
                 sel.dispatchEvent(new Event('change'));
-                const cachedFlag = getFlagForCountry(n);
-                if (cachedFlag && customSelected) {
-                    customSelected.innerHTML = `<img src="${escapeHtml(cachedFlag)}" alt="" class="flag-icon"> ${escapeHtml(n)}`;
+                if (flagUrl && customSelected) {
+                    customSelected.innerHTML = `<img src="${escapeHtml(flagUrl)}" alt="" class="flag-icon"> ${escapeHtml(n)}`;
                 } else if (customSelected) {
                     customSelected.textContent = n;
                 }
@@ -2682,6 +2721,7 @@ function initScratchMap() {
     
     // Ensure map is properly initialized
     worldMap.whenReady(() => {
+        console.log('Map ready');
     });
 
     // Add country boundaries using GeoJSON
@@ -2750,6 +2790,10 @@ function initScratchMap() {
                             const code = this.countryCode || getCountryCodeFromFeature(this.feature) || countryCode;
                             const name = this.countryName || getCountryNameFromFeature(this.feature) || countryName;
                             
+                            console.log('=== Left click - Mark as visited ===');
+                            console.log('Code:', code);
+                            console.log('Name:', name);
+                            
                             if (code && code !== '' && code !== 'Unknown') {
                                 markAsVisited(code, name);
                             } else {
@@ -2765,6 +2809,10 @@ function initScratchMap() {
                             
                             const code = this.countryCode || getCountryCodeFromFeature(this.feature) || countryCode;
                             const name = this.countryName || getCountryNameFromFeature(this.feature) || countryName;
+                            
+                            console.log('=== Right click - Mark as want to visit ===');
+                            console.log('Code:', code);
+                            console.log('Name:', name);
                             
                             if (code && code !== '' && code !== 'Unknown') {
                                 markAsWantToVisit(code, name);
@@ -2803,6 +2851,7 @@ function initScratchMap() {
                 // Log some stats
                 let countryCount = 0;
                 geoJsonLayer.eachLayer(() => countryCount++);
+                console.log(`Loaded ${countryCount} countries on map`);
                 
                 // Save country names mapping
                 saveScratchMapData();
@@ -2880,6 +2929,11 @@ function markAsWantToVisit(countryCode, countryName) {
 
 // Toggle country status
 function toggleCountry(countryCode, countryName) {
+    console.log('=== toggleCountry called ===');
+    console.log('Code:', countryCode);
+    console.log('Name:', countryName);
+    console.log('Mode:', scratchMapMode);
+    console.log('Before - Visited:', Array.from(visitedCountries));
     console.log('Before - Want to visit:', Array.from(wantToVisitCountries));
     
     if (!countryCode || countryCode === '') {
@@ -2896,32 +2950,43 @@ function toggleCountry(countryCode, countryName) {
     if (scratchMapMode === 'visited') {
         if (visitedCountries.has(countryCode)) {
             visitedCountries.delete(countryCode);
+            console.log('✓ Removed from visited:', countryCode);
         } else {
             visitedCountries.add(countryCode);
             // Remove from want-to-visit if it was there
             wantToVisitCountries.delete(countryCode);
+            console.log('✓ Added to visited:', countryCode);
         }
     } else {
         if (wantToVisitCountries.has(countryCode)) {
             wantToVisitCountries.delete(countryCode);
+            console.log('✓ Removed from want-to-visit:', countryCode);
         } else {
             wantToVisitCountries.add(countryCode);
             // Remove from visited if it was there
             visitedCountries.delete(countryCode);
+            console.log('✓ Added to want-to-visit:', countryCode);
         }
     }
+    
+    console.log('After - Visited:', Array.from(visitedCountries));
     console.log('After - Want to visit:', Array.from(wantToVisitCountries));
     
     saveScratchMapData();
     updateMapColors();
     updateLists();
+    
+    console.log('=== toggleCountry complete ===');
 }
 
 // Update map colors after changes
 function updateMapColors() {
     if (!window.scratchMapGeoJsonLayer) {
+        console.log('No GeoJSON layer found');
         return;
     }
+    
+    console.log('Updating map colors. Visited:', visitedCountries.size, 'Want to visit:', wantToVisitCountries.size);
     
     window.scratchMapGeoJsonLayer.eachLayer((layer) => {
         const feature = layer.feature;
@@ -2951,10 +3016,13 @@ function updateMapColors() {
             fillOpacity: fillOpacity
         });
     });
+    
+    console.log('Map colors updated');
 }
 
 // Update the lists display
 function updateLists() {
+    console.log('updateLists called. Visited:', visitedCountries.size, 'Want to visit:', wantToVisitCountries.size);
     
     const visitedList = document.getElementById('visited-list');
     const wantToVisitList = document.getElementById('want-to-visit-list');
@@ -2979,6 +3047,7 @@ function updateLists() {
                 div.title = code; // Show code on hover
                 visitedList.appendChild(div);
             });
+            console.log('Updated visited list with', sorted.length, 'countries');
         }
     }
     
@@ -3000,14 +3069,17 @@ function updateLists() {
                 div.title = code; // Show code on hover
                 wantToVisitList.appendChild(div);
             });
+            console.log('Updated want-to-visit list with', sorted.length, 'countries');
         }
     }
     
     if (visitedCount) {
         visitedCount.textContent = visitedCountries.size;
+        console.log('Updated visited count:', visitedCountries.size);
     }
     if (wantToVisitCount) {
         wantToVisitCount.textContent = wantToVisitCountries.size;
+        console.log('Updated want-to-visit count:', wantToVisitCountries.size);
     }
 }
 
