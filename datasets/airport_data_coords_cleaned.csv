@@ -26,12 +26,12 @@ Northern Africa,Egypt,Sohag,Sohag International Airport,HMB,31.743017,26.342515
 Northern Africa,Egypt,Taba,Taba International Airport,TCP,34.775752,29.594496
 Northern Africa,Libya,Benghazi,Benina International Airport,BEN,20.269501,32.096802
 Northern Africa,Libya,Sabha,Sabha Airport,SEB,14.466162,26.992452
-Northern Africa,Libya,Tripoli,Tripoli International Airport,TIP,,
+Northern Africa,Libya,Tripoli,Tripoli International Airport,TIP,13.159,32.6635
 Northern Africa,Libya,Tajoura,Mitiga International Airport,MJI,13.287878,32.89177
 Northern Africa,Morocco,Agadir,Agadir–Al Massira Airport,AGA,-9.412003,30.322478
 Northern Africa,Morocco,Beni Mellal,Beni Mellal Airport,BEM,-6.315905,32.401895
 Northern Africa,Morocco,Casablanca,Mohammed V International Airport,CMN,-7.58997,33.3675
-Northern Africa,Morocco,Essaouira,Essaouira-Mogador Airport,ESU,,
+Northern Africa,Morocco,Essaouira,Essaouira-Mogador Airport,ESU,-9.6817,31.3975
 Northern Africa,Morocco,Fes,Fès–Saïs Airport,FEZ,-4.97796,33.927299
 Northern Africa,Morocco,Marrakesh,Marrakesh Menara Airport,RAK,-8.0363,31.606899
 Northern Africa,Morocco,Nador,Nador International Airport,NDR,-3.02821,34.9888
@@ -63,7 +63,7 @@ Western Africa,Ghana,Accra,Kotoka International Airport,ACC,-0.1667860001325607,
 Western Africa,Ghana,Kumasi,Prempeh I International Airport,KMS,-1.59082,6.71456
 Western Africa,Ghana,Takoradi,Takoradi Airport,TKD,-1.7747600078582764,4.896059989929199
 Western Africa,Ghana,Sunyani,Sunyani Airport,NYI,-2.32876,7.36183
-Western Africa,Ghana,Ho,Ho Airport,HZO,,
+Western Africa,Ghana,Ho,Ho Airport,HZO,0.47,6.6003
 Western Africa,Ghana,Wa,Wa Airport,WZA,-2.50769,10.0827
 Western Africa,Ghana,Tamale,Tamale Airport,TML,-0.8632140159606934,9.55718994140625
 Western Africa,Guinea,Conakry,Conakry International Airport,CKY,-13.612,9.57689
@@ -92,7 +92,7 @@ Central Africa,Angola,Luanda,Quatro de Fevereiro Airport,LAD,13.2312,-8.85837
 Central Africa,Angola,Lubango,Lubango Airport,SDD,13.574999809265137,-14.924699783325195
 Central Africa,Cameroon,Douala,Douala International Airport,DLA,9.71948,4.00608
 Central Africa,Cameroon,Yaoundé,Yaoundé Nsimalen International Airport,NSI,11.5533,3.72256
-Central Africa,Central African Republic,Bangui,Bangui M'Poko International Airport,BGF,,
+Central Africa,Central African Republic,Bangui,Bangui M'Poko International Airport,BGF,18.5188,4.3985
 Central Africa,Chad,N'Djamena,N'Djamena International Airport,NDJ,15.034,12.1337
 Central Africa,Democratic Republic of the Congo,Goma,Goma International Airport,GOM,29.237929,-1.66617
 Central Africa,Democratic Republic of the Congo,Kinshasa,N'djili Airport,FIH,15.4446,-4.38575
@@ -113,13 +113,13 @@ Southern Africa,Eswatini,Manzini,King Mswati III International Airport,SHO,31.71
 Southern Africa,Lesotho,Maseru,Moshoeshoe I International Airport,MSU,27.5525,-29.462299
 Southern Africa,Namibia,Windhoek,Hosea Kutako International Airport,WDH,17.4709,-22.4799
 Southern Africa,Namibia,Walvis Bay,Walvis Bay Airport,WVB,14.647102,-22.979332
-Southern Africa,South Africa,Bloemfontein,Bram Fischer International Airport,BFN,,
-Southern Africa,South Africa,Cape Town,Cape Town International Airport,CPT,,
-Southern Africa,South Africa,Durban,King Shaka International Airport,DUR,,
-Southern Africa,South Africa,East London,East London Airport,ELS,,
-Southern Africa,South Africa,Johannesburg,O. R. Tambo International Airport,JNB,,
-Southern Africa,South Africa,Nelspruit,Kruger Mpumalanga International Airport,MQP,,
-Southern Africa,South Africa,Polokwane,Polokwane International Airport,PTG,,
+Southern Africa,South Africa,Bloemfontein,Bram Fischer International Airport,BFN,26.3024,-29.0927
+Southern Africa,South Africa,Cape Town,Cape Town International Airport,CPT,18.6017,-33.9648
+Southern Africa,South Africa,Durban,King Shaka International Airport,DUR,31.1197,-29.6145
+Southern Africa,South Africa,East London,East London Airport,ELS,27.8259,-33.0356
+Southern Africa,South Africa,Johannesburg,O. R. Tambo International Airport,JNB,28.246,-26.1392
+Southern Africa,South Africa,Nelspruit,Kruger Mpumalanga International Airport,MQP,31.1056,-25.3832
+Southern Africa,South Africa,Polokwane,Polokwane International Airport,PTG,29.4587,-23.8453
 Eastern Africa,Burundi,Bujumbura,Bujumbura International Airport,BJM,29.318501,-3.32402
 Eastern Africa,Comoros,Moroni,Prince Said Ibrahim International Airport,HAH,43.2719,-11.5337
 Eastern Africa,Djibouti,Djibouti,Djibouti–Ambouli International Airport,JIB,43.1595,11.5473
@@ -598,7 +598,7 @@ Central Asia,Kazakhstan,Petropavl,Petropavl Airport,PPK,69.183273,54.774702
 Central Asia,Kazakhstan,Semey,Semey Airport,PLX,80.234398,50.351295
 Central Asia,Kazakhstan,Şymkent,Şymkent International Airport,CIT,69.47889709472656,42.364200592041016
 Central Asia,Kazakhstan,Taraz,Taraz Airport,DMB,71.30359649658203,42.85359954833984
-Central Asia,Kyrgyzstan,Bishkek,Manas International Airport,FRU,,
+Central Asia,Kyrgyzstan,Bishkek,Manas International Airport,FRU,74.4776,42.8882
 Central Asia,Kyrgyzstan,Issyk-Kul,Issyk-Kul International Airport,IKU,76.701181,42.585584
 Central Asia,Kyrgyzstan,Karakol,Karakol International Airport,IKG,78.407799,42.508099
 Central Asia,Kyrgyzstan,Osh,Osh Airport,OSS,72.793297,40.609001
@@ -625,12 +625,12 @@ Central Asia,Uzbekistan,Urgench,Urgench International Airport,UGC,60.641701,41.5
 Eastern Asia,China,Baotou,Baotou Donghe international Airport,BAV,109.997002,40.560001
 Eastern Asia,China,Beihai,Beihai Fucheng Airport,BHY,109.293999,21.5394
 Eastern Asia,China,Beijing,Beijing Capital International Airport,PEK,116.58499908447266,40.080101013183594
-Eastern Asia,China,Beijing,Beijing Daxing International Airport,PKX,,
+Eastern Asia,China,Beijing,Beijing Daxing International Airport,PKX,116.4105,39.5098
 Eastern Asia,China,Changchun,Changchun Longjia International Airport,CGQ,125.684998,43.996201
 Eastern Asia,China,Changsha,Changsha Huanghua International Airport,CSX,113.220001,28.189199
 Eastern Asia,China,Changzhou,Changzhou Benniu International Airport,CZX,119.77546,31.920485
 Eastern Asia,China,Chengdu,Chengdu Shuangliu International Airport,CTU,103.945966,30.558257
-Eastern Asia,China,Chengdu,Chengdu Tianfu International Airport,TFU,,
+Eastern Asia,China,Chengdu,Chengdu Tianfu International Airport,TFU,104.4442,30.3128
 Eastern Asia,China,Chongqing,Chongqing Jiangbei International Airport,CKG,106.651895,29.712254
 Eastern Asia,China,Dalian,Dalian Zhoushuizi International Airport,DLC,121.538477,38.965719
 Eastern Asia,China,Dandong,Dandong Langtou Airport,DDG,124.28669,40.025453
@@ -677,7 +677,7 @@ Eastern Asia,China,Qiqihar,Qiqihar Sanjiazi Airport,NDG,123.91799926757812,47.23
 Eastern Asia,China,Quanzhou,Quanzhou Jinjiang International Airport,JJN,118.588883,24.796587
 Eastern Asia,China,Sanya,Sanya Phoenix International Airport,SYX,109.412003,18.3029
 Eastern Asia,China,Shanghai,Shanghai Hongqiao International Airport,SHA,121.33426,31.198104
-Eastern Asia,China,Shanghai,Shanghai Pudong International Airport,PVG,,
+Eastern Asia,China,Shanghai,Shanghai Pudong International Airport,PVG,121.8083,31.1443
 Eastern Asia,China,Shenyang,Shenyang Taoxian International Airport,SHE,123.483002,41.639801
 Eastern Asia,China,Shenzhen,Shenzhen Bao'an International Airport,SZX,113.810997,22.639299
 Eastern Asia,China,Shijiazhuang,Shijiazhuang Zhengding International Airport,SJW,114.696999,38.280701
@@ -741,14 +741,14 @@ Eastern Asia,South Korea,Daegu,Daegu International Airport,TAE,128.65531,35.8968
 Eastern Asia,South Korea,Jeju,Jeju International Airport,CJU,126.492548,33.512058
 Eastern Asia,South Korea,Muan,Muan International Airport,MWX,126.382814,34.991406
 Eastern Asia,South Korea,Seoul,Gimpo International Airport,GMP,126.791,37.5583
-Eastern Asia,South Korea,Seoul,Incheon International Airport,ICN,,
+Eastern Asia,South Korea,Seoul,Incheon International Airport,ICN,126.4407,37.4602
 Eastern Asia,South Korea,Yangyang,Yangyang International Airport,YNY,128.669006,38.061298
 Eastern Asia,Taiwan,Hualien City,Hualien Airport,HUN,121.61799621582033,24.023099899291992
 Eastern Asia,Taiwan,Kaohsiung,Kaohsiung International Airport,KHH,120.349998,22.577101
 Eastern Asia,Taiwan,Taichung,Taichung International Airport,RMQ,120.621002,24.2647
 Eastern Asia,Taiwan,Tainan,Tainan Airport,TNN,120.206001,22.950399
 Eastern Asia,Taiwan,Taipei,Taipei Songshan Airport,TSA,121.552002,25.069401
-Eastern Asia,Taiwan,Taipei,Taoyuan International Airport,TPE,,
+Eastern Asia,Taiwan,Taipei,Taoyuan International Airport,TPE,121.2328,25.0777
 Southern Asia,Bangladesh,Barishal,Barisal Airport,BZL,90.301201,22.801001
 Southern Asia,Bangladesh,Chittagong,Shah Amanat International Airport,CGP,91.813301,22.249599
 Southern Asia,Bangladesh,Cox's Bazar,Cox's Bazar International Airport,CXB,91.963263,21.457517
@@ -787,7 +787,7 @@ Southern Asia,India,Mumbai,Chhatrapati Shivaji Maharaj International Airport,BOM
 Southern Asia,India,Nagpur,Dr. Babasaheb Ambedkar International Airport,NAG,79.047203,21.092199
 Southern Asia,India,Nashik,Nashik Airport,ISK,73.912903,20.119101
 Southern Asia,India,Navi Mumbai,Navi Mumbai International Airport,NMI,73.065253,18.984597
-Southern Asia,India,Noida (Delhi NCR),Noida International Airport,JWR,,
+Southern Asia,India,Noida (Delhi NCR),Noida International Airport,JWR,77.5946,28.12
 Southern Asia,India,North Goa,Manohar International Airport,GOX,73.860625,15.744257
 Southern Asia,India,Pune,Pune Airport,PNQ,73.919701,18.5821
 Southern Asia,India,Ranchi,Birsa Munda Airport,IXR,85.3217010498,23.314300537100003
@@ -824,24 +824,24 @@ Southern Asia,Pakistan,Sialkot,Sialkot International Airport,SKT,74.363892,32.53
 Southern Asia,Pakistan,Turbat,Turbat International Airport,TUK,63.03020095825195,25.986400604248047
 Southern Asia,Sri Lanka,Batticaloa,Batticaloa International Airport,BTC,81.678802,7.70576
 Southern Asia,Sri Lanka,Colombo,Bandaranaike International Airport,CMB,79.88410186767578,7.180759906768799
-Southern Asia,Sri Lanka,Colombo,Ratmalana Airport,RML,,
+Southern Asia,Sri Lanka,Colombo,Ratmalana Airport,RML,79.8862,6.822
 Southern Asia,Sri Lanka,Hambantota,Mattala Rajapaksa International Airport,HRI,81.124128,6.284467
 Southern Asia,Sri Lanka,Jaffna,Jaffna International Airport,JAF,80.070099,9.79233
 Southeast Asia,Brunei,Bandar Seri Begawan,Brunei International Airport,BWN,114.928001,4.9442
 Southeast Asia,Cambodia,Phnom Penh,Techo International Airport,KTI,104.921272,11.359987
 Southeast Asia,Cambodia,Phnom Penh,Phnom Penh International Airport,PNH,104.844002,11.5466
-Southeast Asia,Cambodia,Siem Reap,Siem Reap International Airport,REP,,
+Southeast Asia,Cambodia,Siem Reap,Siem Reap International Airport,REP,103.8129,13.4107
 Southeast Asia,Cambodia,Sihanoukville,Sihanouk International Airport,KOS,103.632689,10.571969
-Southeast Asia,Indonesia,Ambon,Pattimura International Airport,AMQ,,
+Southeast Asia,Indonesia,Ambon,Pattimura International Airport,AMQ,128.089,-3.7103
 Southeast Asia,Indonesia,Balikpapan,Sultan Aji Muhammad Sulaiman Sepinggan International Airport,BPN,116.89452,-1.268342
 Southeast Asia,Indonesia,Banda Aceh,Sultan Iskandar Muda International Airport,BTJ,95.41997,5.525087
-Southeast Asia,Indonesia,Bandar Lampung,Radin Inten II International Airport,TKG,,
+Southeast Asia,Indonesia,Bandar Lampung,Radin Inten II International Airport,TKG,105.176,-5.2406
 Southeast Asia,Indonesia,Bandung,Kertajati International Airport,KJT,108.165561,-6.647384
 Southeast Asia,Indonesia,Banjarmasin,Syamsudin Noor International Airport,BDJ,114.763,-3.44236
 Southeast Asia,Indonesia,Batam,Hang Nadim International Airport,BTH,104.119003,1.12103
 Southeast Asia,Indonesia,Denpasar,I Gusti Ngurah Rai International Airport,DPS,115.167123,-8.748409
 Southeast Asia,Indonesia,Jakarta,Halim Perdanakusuma International Airport,HLP,106.89099884033205,-6.266610145568848
-Southeast Asia,Indonesia,Jakarta,Soekarno-Hatta International Airport,CGK,,
+Southeast Asia,Indonesia,Jakarta,Soekarno-Hatta International Airport,CGK,106.6559,-6.1256
 Southeast Asia,Indonesia,Jayapura,Sentani International Airport,DJJ,140.519857,-2.579627
 Southeast Asia,Indonesia,Labuan Bajo,Komodo International Airport,LBJ,119.888306,-8.480694
 Southeast Asia,Indonesia,Makassar,Sultan Hasanuddin International Airport,UPG,119.554001,-5.06163
@@ -852,11 +852,11 @@ Southeast Asia,Indonesia,Padang,Minangkabau International Airport,PDG,100.280998
 Southeast Asia,Indonesia,Palembang,Sultan Mahmud Badaruddin II International Airport,PLM,104.698147,-2.897653
 Southeast Asia,Indonesia,Pekanbaru,Sultan Syarif Kasim II International Airport,PKU,101.444321,0.458647
 Southeast Asia,Indonesia,Pontianak,Supadio International Airport,PNK,109.403999,-0.150711
-Southeast Asia,Indonesia,Samarinda,Aji Pangeran Tumenggung Pranoto International Airport,AAP,,
+Southeast Asia,Indonesia,Samarinda,Aji Pangeran Tumenggung Pranoto International Airport,AAP,117.2543,-0.3786
 Southeast Asia,Indonesia,Semarang,Jenderal Ahmad Yani International Airport,SRG,110.373244,-6.970732
-Southeast Asia,Indonesia,Sorong,Domine Eduard Osok International Airport,SOQ,,
+Southeast Asia,Indonesia,Sorong,Domine Eduard Osok International Airport,SOQ,131.2871,-0.8986
 Southeast Asia,Indonesia,Surabaya,Juanda International Airport,SUB,112.787003,-7.37983
-Southeast Asia,Indonesia,Surakarta,Adisoemarmo International Airport,SOC,,
+Southeast Asia,Indonesia,Surakarta,Adisoemarmo International Airport,SOC,110.7572,-7.5161
 Southeast Asia,Indonesia,Tanjungpandan,H.A.S. Hanandjoeddin International Airport,TJQ,107.754535,-2.744109
 Southeast Asia,Indonesia,Yogyakarta,Yogyakarta International Airport,YIA,110.057264,-7.905338
 Southeast Asia,Laos,Bokeo,Bokeo International Airport,BOR,100.165392,20.323986
@@ -870,7 +870,7 @@ Southeast Asia,Malaysia,Johor Bahru,Senai International Airport,JHB,103.669998,1
 Southeast Asia,Malaysia,Kota Bharu,Sultan Ismail Petra Airport,KBR,102.29299926757812,6.1668500900268555
 Southeast Asia,Malaysia,Kota Kinabalu,Kota Kinabalu International Airport,BKI,116.049324,5.932743
 Southeast Asia,Malaysia,Kuala Lumpur,Kuala Lumpur International Airport,KUL,101.709999,2.74558
-Southeast Asia,Malaysia,Kuala Lumpur,Sultan Abdul Aziz Shah Airport,SZB,,
+Southeast Asia,Malaysia,Kuala Lumpur,Sultan Abdul Aziz Shah Airport,SZB,101.5493,3.1306
 Southeast Asia,Malaysia,Kuala Terengganu,Sultan Mahmud Airport,TGG,103.10299682617188,5.3826398849487305
 Southeast Asia,Malaysia,Kuantan,Sultan Haji Ahmad Shah Airport,KUA,103.20899963378906,3.7753899097442623
 Southeast Asia,Malaysia,Kuching,Kuching International Airport,KCH,110.352859,1.487364
@@ -896,9 +896,9 @@ Southeast Asia,Philippines,Puerto Princesa,Puerto Princesa International Airport
 Southeast Asia,Philippines,Olongapo,Subic Bay International Airport,SFS,120.271004,14.7944
 Southeast Asia,Philippines,Zamboanga City,Zamboanga International Airport,ZAM,122.059998,6.92242
 Southeast Asia,Singapore,Singapore,Changi Airport,SIN,103.994003,1.35019
-Southeast Asia,Singapore,Singapore,Seletar Airport,XSP,,
+Southeast Asia,Singapore,Singapore,Seletar Airport,XSP,103.8678,1.4169
 Southeast Asia,Thailand,Bangkok,Suvarnabhumi Airport,BKK,100.747002,13.6811
-Southeast Asia,Thailand,Bangkok,Don Mueang International Airport,DMK,,
+Southeast Asia,Thailand,Bangkok,Don Mueang International Airport,DMK,100.607,13.9126
 Southeast Asia,Thailand,Chiang Mai,Chiang Mai International Airport,CNX,98.962600708,18.766799926799997
 Southeast Asia,Thailand,Chiang Rai,Chiang Rai International Airport,CEI,99.882896,19.952299
 Southeast Asia,Thailand,Hat Yai,Hat Yai International Airport,HDY,100.392997742,6.93320989609
@@ -928,8 +928,8 @@ Southwest Asia and Middle East,Armenia,Kapan,Syunik Airport,YUK,46.455204,39.202
 Southwest Asia and Middle East,Armenia,Yerevan,Zvartnots International Airport,EVN,44.3959007263,40.1473007202
 Southwest Asia and Middle East,Azerbaijan,Baku,Heydar Aliyev International Airport,GYD,50.04669952392578,40.467498779296875
 Southwest Asia and Middle East,Azerbaijan,Fuzuli,Fuzuli International Airport,FZL,47.196128,39.594578
-Southwest Asia and Middle East,Azerbaijan,Ganja,Ganja International Airport,KVD,,
-Southwest Asia and Middle East,Azerbaijan,Lachin,Lachin International Airport,LHL,,
+Southwest Asia and Middle East,Azerbaijan,Ganja,Ganja International Airport,KVD,46.3176,40.7377
+Southwest Asia and Middle East,Azerbaijan,Lachin,Lachin International Airport,LHL,46.5442,39.6383
 Southwest Asia and Middle East,Azerbaijan,Lankaran,Lankaran International Airport,LLK,48.807042,38.757919
 Southwest Asia and Middle East,Azerbaijan,Nakhchivan,Nakhchivan Airport,NAJ,45.45840072631836,39.18880081176758
 Southwest Asia and Middle East,Azerbaijan,Qabala,Qabala International Airport,GBB,47.725389,40.808617
@@ -968,7 +968,7 @@ Southwest Asia and Middle East,Iran,Sari,Dasht-e Naz Airport,SRY,53.188761,36.64
 Southwest Asia and Middle East,Iran,Shiraz,Shiraz International Airport,SYZ,52.589802,29.5392
 Southwest Asia and Middle East,Iran,Tabriz,Tabriz International Airport,TBZ,46.235001,38.1339
 Southwest Asia and Middle East,Iran,Tehran,Imam Khomeini International Airport,IKA,51.152198791503906,35.416099548339844
-Southwest Asia and Middle East,Iran,Tehran,Mehrabad International Airport,THR,,
+Southwest Asia and Middle East,Iran,Tehran,Mehrabad International Airport,THR,51.3134,35.6892
 Southwest Asia and Middle East,Iran,Urmia,Urmia Airport,OMH,45.0686988831,37.6680984497
 Southwest Asia and Middle East,Iran,Yazd,Shahid Sadooghi Airport,AZD,54.2765007019,31.9048995972
 Southwest Asia and Middle East,Iran,Zahedan,Zahedan Airport,ZAH,60.90620040893555,29.47570037841797
@@ -1024,7 +1024,7 @@ Southwest Asia and Middle East,Turkey,Diyarbakir,Diyarbakir Airport,DIY,40.201,3
 Southwest Asia and Middle East,Turkey,Elazig,Elazig Airport,EZS,39.28348,38.597974
 Southwest Asia and Middle East,Turkey,Gaziantep,Oguzeli Airport,GZT,37.478699,36.947201
 Southwest Asia and Middle East,Turkey,Istanbul,Istanbul Airport,IST,28.741951,41.261297
-Southwest Asia and Middle East,Turkey,Istanbul,Sabiha Gokcen International Airport,SAW,,
+Southwest Asia and Middle East,Turkey,Istanbul,Sabiha Gokcen International Airport,SAW,29.3092,40.8986
 Southwest Asia and Middle East,Turkey,Izmir,Adnan Menderes Airport,ADB,27.157,38.2924
 Southwest Asia and Middle East,Turkey,Kayseri,Erkilet Airport,ASR,35.4953994751,38.770401001
 Southwest Asia and Middle East,Turkey,Konya,Konya Airport,KYA,32.561901,37.979
@@ -1037,7 +1037,7 @@ Southwest Asia and Middle East,Turkey,Zonguldak,Zonguldak Airport,ONQ,32.0886,41
 Southwest Asia and Middle East,United Arab Emirates,Abu Dhabi,Abu Dhabi International Airport,AUH,54.651718,24.443764
 Southwest Asia and Middle East,United Arab Emirates,Al Ain,Al Ain International Airport,AAN,55.6092,24.2617
 Southwest Asia and Middle East,United Arab Emirates,Dubai,Al Maktoum International Airport,DWC,55.161389,24.896356
-Southwest Asia and Middle East,United Arab Emirates,Dubai,Dubai International Airport,DXB,,
+Southwest Asia and Middle East,United Arab Emirates,Dubai,Dubai International Airport,DXB,55.3657,25.2532
 Southwest Asia and Middle East,United Arab Emirates,Ras Al Khaimah,Ras Al Khaimah International Airport,RKT,55.93880081176758,25.613500595092773
 Southwest Asia and Middle East,United Arab Emirates,Sharjah,Sharjah International Airport,SHJ,55.5172,25.3286
 Southwest Asia and Middle East,Yemen,Aden,Aden International Airport,ADE,45.028801,12.8295
@@ -1080,7 +1080,7 @@ Europe,France,Nantes,Nantes Atlantique Airport,NTE,-1.61073,47.153198
 Europe,France,Nice,Nice Cote d'Azur Airport,NCE,7.21587,43.658401
 Europe,France,Nimes,Nimes-Ales-Camargue-Cevennes Airport,FNI,4.41635,43.757401
 Europe,France,Paris,Charles de Gaulle Airport,CDG,2.55,49.012798
-Europe,France,Paris,Orly Airport,ORY,,
+Europe,France,Paris,Orly Airport,ORY,2.3794,48.7233
 Europe,France,Pau,Pau Pyrenees Airport,PUF,-0.418611,43.380001
 Europe,France,Perpignan,Perpignan-Rivesaltes Airport,PGF,2.87067,42.740398
 Europe,France,Poitiers,Poitiers-Biard Airport,PIS,0.306666,46.5877
@@ -1103,11 +1103,11 @@ Europe,United Kingdom,Hull,Humberside Airport,HUY,-0.34954,53.576152
 Europe,United Kingdom,Leeds/Bradford,Leeds Bradford Airport,LBA,-1.66057,53.865898
 Europe,United Kingdom,Liverpool,Liverpool John Lennon Airport,LPL,-2.84972,53.333599
 Europe,United Kingdom,London,Gatwick Airport,LGW,-0.192089,51.148771
-Europe,United Kingdom,London,Heathrow Airport,LHR,,
-Europe,United Kingdom,London,London City Airport,LCY,,
-Europe,United Kingdom,London,London Southend Airport,SEN,,
-Europe,United Kingdom,London,London Stansted Airport,STN,,
-Europe,United Kingdom,London,Luton Airport,LTN,,
+Europe,United Kingdom,London,Heathrow Airport,LHR,-0.4614,51.4775
+Europe,United Kingdom,London,London City Airport,LCY,0.0553,51.5048
+Europe,United Kingdom,London,London Southend Airport,SEN,0.6956,51.5713
+Europe,United Kingdom,London,London Stansted Airport,STN,0.235,51.885
+Europe,United Kingdom,London,Luton Airport,LTN,-0.3683,51.8747
 Europe,United Kingdom,Manchester,Manchester Airport,MAN,-2.279521,53.349375
 Europe,United Kingdom,Middlesbrough,Teesside International Airport,MME,-1.42941,54.509201
 Europe,United Kingdom,Newcastle upon Tyne,Newcastle International Airport,NCL,-1.689577,55.037958
@@ -1117,12 +1117,12 @@ Europe,United Kingdom,Nottingham,East Midlands Airport,EMA,-1.32806,52.8311
 Europe,United Kingdom,Southampton,Southampton Airport,SOU,-1.3568,50.950298
 Europe,United Kingdom,Aberdeen,Aberdeen Airport,ABZ,-2.19778,57.2019
 Europe,United Kingdom,Belfast,Belfast International Airport,BFS,-6.2158298492399995,54.6575012207
-Europe,United Kingdom,Belfast,George Best Belfast City Airport,BHD,,
+Europe,United Kingdom,Belfast,George Best Belfast City Airport,BHD,-5.8725,54.6181
 Europe,United Kingdom,Cardiff,Cardiff Airport,CWL,-3.34333,51.396702
 Europe,United Kingdom,Derry,City of Derry Airport,LDY,-7.161109924316406,55.04280090332031
 Europe,United Kingdom,Edinburgh,Edinburgh Airport,EDI,-3.372288,55.950145
 Europe,United Kingdom,Glasgow,Glasgow Airport,GLA,-4.43306,55.871899
-Europe,United Kingdom,Glasgow,Glasgow Prestwick Airport,PIK,,
+Europe,United Kingdom,Glasgow,Glasgow Prestwick Airport,PIK,-4.5869,55.5094
 Europe,United Kingdom,Inverness,Inverness Airport,INV,-4.0475,57.5425
 Europe,United Kingdom,Alderney,Alderney Airport,ACI,-2.21472,49.706104
 Europe,United Kingdom,Douglas,Isle of Man Airport,IOM,-4.62389,54.083302
@@ -1148,7 +1148,7 @@ Europe,Germany,Cologne/Bonn,Cologne/Bonn Airport,CGN,7.14274,50.865898
 Europe,Germany,Dortmund,Dortmund Airport,DTM,7.61224,51.518299
 Europe,Germany,Dusseldorf,Dusseldorf Airport,DUS,6.76678,51.289501
 Europe,Germany,Frankfurt,Frankfurt Airport,FRA,8.561096,50.030241
-Europe,Germany,Frankfurt,Frankfurt-Hahn Airport,HHN,,
+Europe,Germany,Frankfurt,Frankfurt-Hahn Airport,HHN,7.2639,49.9487
 Europe,Germany,Friedrichshafen,Friedrichshafen Airport,FDH,9.51149,47.671299
 Europe,Germany,Hamburg,Hamburg Airport,HAM,9.98823,53.630402
 Europe,Germany,Hanover,Hannover Airport,HAJ,9.68508,52.461102
@@ -1175,8 +1175,8 @@ Europe,Poland,Poznan,Poznan-Lawica Airport,POZ,16.823359,52.421598
 Europe,Poland,Rzeszow,Rzeszow-Jasionka Airport,RZE,22.024155,50.109791
 Europe,Poland,Szczecin,Solidarity Szczecin-Goleniow Airport,SZZ,14.9022,53.584702
 Europe,Poland,Warsaw,Warsaw Chopin Airport,WAW,20.9671,52.165699
-Europe,Poland,Warsaw,Warsaw Modlin Airport,WMI,,
-Europe,Poland,Warsaw,Warsaw Radom Airport,RDO,,
+Europe,Poland,Warsaw,Warsaw Modlin Airport,WMI,20.6518,52.4511
+Europe,Poland,Warsaw,Warsaw Radom Airport,RDO,21.2132,51.3892
 Europe,Poland,Wroclaw,Wroclaw Airport,WRO,16.882096,51.103719
 Europe,Slovakia,Bratislava,Bratislava Airport,BTS,17.2127,48.1702
 Europe,Slovakia,Kosice,Kosice International Airport,KSC,21.2411,48.663101
@@ -1233,7 +1233,7 @@ Europe,Italy,Florence,Peretola Airport,FLR,11.202822,43.808558
 Europe,Italy,Genoa,Cristoforo Colombo Airport,GOA,8.840732,44.412039
 Europe,Italy,Lamezia,Lamezia Terme Airport,SUF,16.243762,38.905197
 Europe,Italy,Milan,Linate Airport,LIN,9.27674,45.445099
-Europe,Italy,Milan,Milan Malpensa Airport,MXP,,
+Europe,Italy,Milan,Milan Malpensa Airport,MXP,8.7231,45.6306
 Europe,Italy,Naples,Naples International Airport,NAP,14.2908,40.886002
 Europe,Italy,Olbia,Costa Smeralda Airport,OLB,9.51763,40.898701
 Europe,Italy,Palermo,Palermo Airport,PMO,13.091,38.175999
@@ -1243,7 +1243,7 @@ Europe,Italy,Pescara,Abruzzo Airport,PSR,14.1811,42.431702
 Europe,Italy,Pisa,Galileo Galilei Airport,PSA,10.3927,43.683899
 Europe,Italy,Rimini,Federico Fellini Airport,RMI,12.6117,44.020302
 Europe,Italy,Rome,Leonardo da Vinci-Fiumicino Airport,FCO,12.251998,41.804532
-Europe,Italy,Rome,Rome Ciampino Airport,CIA,,
+Europe,Italy,Rome,Rome Ciampino Airport,CIA,12.5949,41.7994
 Europe,Italy,Salerno,Salerno Costa d'Amalfi Airport,QSR,14.9113,40.620399
 Europe,Italy,Trapani,Vincenzo Florio Airport,TPS,12.488,37.9114
 Europe,Italy,Trieste,Friuli Venezia Giulia Airport,TRS,13.4722,45.827499
@@ -1290,7 +1290,7 @@ Europe,Spain,Santander,Santander Airport,SDR,-3.82001,43.427101
 Europe,Spain,Santiago de Compostela,Santiago de Compostela Airport,SCQ,-8.41514,42.896301
 Europe,Spain,Seville,Seville Airport,SVQ,-5.89311,37.417999
 Europe,Spain,Tenerife,Tenerife North-Ciudad de La Laguna Airport,TFN,-16.341499,28.4827
-Europe,Spain,Tenerife,Tenerife South Airport,TFS,,
+Europe,Spain,Tenerife,Tenerife South Airport,TFS,-16.5725,28.0445
 Europe,Spain,Valencia,Valencia Airport,VLC,-0.481625,39.4893
 Europe,Spain,Valladolid,Valladolid Airport,VLL,-4.85194,41.7061
 Europe,Spain,Vigo,Vigo-Peinador Airport,VGO,-8.62677,42.2318
@@ -1316,7 +1316,7 @@ Europe,Romania,Bacau,George Enescu International Airport,BCM,26.910299,46.5219
 Europe,Romania,Baia Mare,Maramures Airport,BAY,23.464445,47.658444
 Europe,Romania,Brasov,Brasov-Ghimbav International Airport,GHV,25.522871,45.70558
 Europe,Romania,Bucharest,Henri Coanda International Airport,OTP,26.103396,44.572127
-Europe,Romania,Bucharest,Aurel Vlaicu International Airport,BBU,,
+Europe,Romania,Bucharest,Aurel Vlaicu International Airport,BBU,26.1021,44.4983
 Europe,Romania,Cluj-Napoca,Cluj-Napoca International Airport,CLJ,23.684292,46.787425
 Europe,Romania,Constanta,Mihail Kogalniceanu International Airport,CND,28.4883,44.362202
 Europe,Romania,Craiova,Craiova International Airport,CRA,23.888599,44.3181
@@ -1360,9 +1360,9 @@ Europe,Russia,Magnitogorsk,Magnitogorsk International Airport,MQF,58.75569915771
 Europe,Russia,Makhachkala,Uytash Airport,MCX,47.652302,42.816799
 Europe,Russia,Mineralnye Vody,Mineralnye Vody Airport,MRV,43.08190155029297,44.225101470947266
 Europe,Russia,Moscow,Domodedovo International Airport,DME,37.9063,55.408798
-Europe,Russia,Moscow,Zhukovsky International Airport,ZIA,,
-Europe,Russia,Moscow,Sheremetyevo International Airport,SVO,,
-Europe,Russia,Moscow,Vnukovo Airport,VKO,,
+Europe,Russia,Moscow,Zhukovsky International Airport,ZIA,38.15,55.5533
+Europe,Russia,Moscow,Sheremetyevo International Airport,SVO,37.4146,55.9726
+Europe,Russia,Moscow,Vnukovo Airport,VKO,37.2615,55.5915
 Europe,Russia,Murmansk,Murmansk Airport,MMK,32.75080108642578,68.78170013427734
 Europe,Russia,Nalchik,Nalchik Airport,NAL,43.6366,43.512901
 Europe,Russia,Nizhnekamsk,Begishevo Airport,NBC,52.092499,55.564701
@@ -1407,7 +1407,7 @@ Europe,Ukraine,Ivano-Frankivsk,Ivano-Frankivsk International Airport,IFO,24.6861
 Europe,Ukraine,Kharkiv,Kharkiv International Airport,HRK,36.290814,49.926943
 Europe,Ukraine,Kryvyi Rih,Kryvyi Rih International Airport,KWG,33.209999084472656,48.04330062866211
 Europe,Ukraine,Kyiv,Boryspil International Airport,KBP,30.894699,50.345001
-Europe,Ukraine,Kyiv,Kyiv International Airport,IEV,,
+Europe,Ukraine,Kyiv,Kyiv International Airport,IEV,30.4497,50.4016
 Europe,Ukraine,Lviv,Lviv Danylo Halytskyi International Airport,LWO,23.9561,49.8125
 Europe,Ukraine,Mykolaiv,Mykolaiv International Airport,NLV,31.9198,47.057899
 Europe,Ukraine,Odesa,Odesa International Airport,ODS,30.6765,46.4268
@@ -1444,7 +1444,7 @@ Europe,Finland,Vaasa,Vaasa Airport,VAA,21.762199,63.050701
 Europe,Iceland,Akureyri,Akureyri Airport,AEY,-18.072018,65.656573
 Europe,Iceland,Egilsstadir,Egilsstadir Airport,EGS,-14.401399612426758,65.2833023071289
 Europe,Iceland,Reykjavik,Keflavik International Airport,KEF,-22.6056,63.985001
-Europe,Iceland,Reykjavik,Reykjavik Airport,RKV,,
+Europe,Iceland,Reykjavik,Reykjavik Airport,RKV,-21.9406,64.13
 Europe,Norway,Alesund,Alesund Airport,AES,6.1197,62.5625
 Europe,Norway,Bergen,Bergen Airport,BGO,5.21814,60.2934
 Europe,Norway,Bodo,Bodo Airport,BOO,14.3653,67.269203
@@ -1452,7 +1452,7 @@ Europe,Norway,Haugesund,Haugesund Airport,HAU,5.20836,59.345299
 Europe,Norway,Kristiansand,Kristiansand Airport Kjevik,KRS,8.08537,58.204201
 Europe,Norway,Kristiansund,Kristiansund Airport Kvernberget,KSU,7.82452,63.111801
 Europe,Norway,Oslo,Oslo Airport Gardermoen,OSL,11.1004,60.193901
-Europe,Norway,Oslo,Sandefjord Airport Torp,TRF,,
+Europe,Norway,Oslo,Sandefjord Airport Torp,TRF,10.2586,59.1867
 Europe,Norway,Stavanger,Stavanger Airport,SVG,5.63778,58.876701
 Europe,Norway,Tromso,Tromso Airport,TOS,18.9189,69.683296
 Europe,Norway,Trondheim,Trondheim Airport,TRD,10.924,63.457802
@@ -1462,9 +1462,9 @@ Europe,Sweden,Malmo,Malmo Airport,MMX,13.376327,55.535564
 Europe,Sweden,Norrkoping,Norrkoping Airport,NRK,16.250600814819336,58.586299896240234
 Europe,Sweden,Ostersund,Are Ostersund Airport,OSD,14.500322,63.194135
 Europe,Sweden,Stockholm,Stockholm Arlanda Airport,ARN,17.928829,59.64849
-Europe,Sweden,Stockholm,Stockholm Bromma Airport,BMA,,
-Europe,Sweden,Stockholm,Stockholm Skavsta Airport,NYO,,
-Europe,Sweden,Stockholm,Stockholm Vasteras Airport,VST,,
+Europe,Sweden,Stockholm,Stockholm Bromma Airport,BMA,17.9417,59.3544
+Europe,Sweden,Stockholm,Stockholm Skavsta Airport,NYO,16.9122,58.7886
+Europe,Sweden,Stockholm,Stockholm Vasteras Airport,VST,16.6336,59.5894
 Europe,Sweden,Sundsvall,Sundsvall-Timra Airport,SDL,17.443899154663086,62.528099060058594
 Europe,Sweden,Umea,Umea Airport,UME,20.282800674438,63.791801452637
 Europe,Sweden,Vaxjo,Vaxjo Airport,VXO,14.727999687194824,56.929100036621094
