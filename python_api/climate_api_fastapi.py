@@ -2,36 +2,6 @@
 """
 SmartTravel Climate API — FastAPI edition
 =========================================
-Drop-in replacement for climate_api_optimized.py (Flask).
-
-Speed improvements over the Flask version
-------------------------------------------
-1.  Async I/O — every outbound HTTP call (exchange rates, Nominatim, ip-api)
-    uses a shared httpx.AsyncClient with keep-alive connection pooling.
-    A single Uvicorn worker can handle ~80-100 concurrent requests while
-    waiting for those calls, vs ~1 per Flask thread.
-
-2.  Response cache — /climate results are cached in a TTLCache (1 h, 2 000
-    entries). Popular destinations (Paris, Tokyo, …) are served from RAM
-    in < 1 ms after the first request. Reduces server load by ~70 % in
-    practice for a travel site.
-
-3.  Startup preload — all CSV/JSON datasets are loaded once at startup in
-    a background thread, so the first real request never pays a cold-start
-    penalty.  Climate raster files are also warm after the first request
-    because get_climate_data_for_location() already caches open file handles.
-
-4.  Parallel fan-out in /climate — currency lookup + exchange rate fetch +
-    airport search + heritage sites all run concurrently with asyncio.gather.
-    On a 2-core droplet this cuts /climate latency from ~800 ms to ~300 ms
-    for a cache miss.
-
-5.  GZip middleware — large responses (/map-layers, /lgbtq, /flags) are
-    compressed automatically, saving ~70 % bandwidth.
-
-6.  Bounding-box pre-filter (carried over from Flask optimized version) —
-    nearest-airport and heritage-site searches skip 99 % of rows before
-    running Haversine.
 
 Running
 -------
@@ -124,8 +94,12 @@ _cpu_pool = ThreadPoolExecutor(max_workers=4, thread_name_prefix="climate")
 _FRANKFURTER_URL      = "https://api.frankfurter.dev/v1/latest"
 _EXCHANGERATE_API_URL = "https://api.exchangerate-api.com/v4/latest"
 NOMINATIM_URL         = "https://nominatim.openstreetmap.org/search"
-NOMINATIM_HEADERS     = {"Accept": "application/json",
-                         "User-Agent": "SmartTravel/1.0 (travel planner)"}
+NOMINATIM_HEADERS     = {
+    "Accept": "application/json",
+    # Force English responses (Nominatim may otherwise localize by region/client defaults)
+    "Accept-Language": "en",
+    "User-Agent": "SmartTravel/1.0 (travel planner)",
+}
 
 # ── geography constants ───────────────────────────────────────────────────────
 _KM_PER_DEG_LAT = 111.32
@@ -1134,7 +1108,7 @@ async def geocode(
     try:
         r = await _http.get(
             NOMINATIM_URL,
-            params={"q": q, "format": "json", "limit": limit},
+            params={"q": q, "format": "json", "limit": limit, "accept-language": "en"},
             headers=NOMINATIM_HEADERS,
         )
         r.raise_for_status()
