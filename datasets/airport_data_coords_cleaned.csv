@@ -26,12 +26,12 @@ Northern Africa,Egypt,Sohag,Sohag International Airport,HMB,31.743017,26.342515
 Northern Africa,Egypt,Taba,Taba International Airport,TCP,34.775752,29.594496
 Northern Africa,Libya,Benghazi,Benina International Airport,BEN,20.269501,32.096802
 Northern Africa,Libya,Sabha,Sabha Airport,SEB,14.466162,26.992452
-Northern Africa,Libya,Tripoli,Tripoli International Airport,TIP,32.6694,13.1567
+Northern Africa,Libya,Tripoli,Tripoli International Airport,TIP,,
 Northern Africa,Libya,Tajoura,Mitiga International Airport,MJI,13.287878,32.89177
 Northern Africa,Morocco,Agadir,Agadir–Al Massira Airport,AGA,-9.412003,30.322478
 Northern Africa,Morocco,Beni Mellal,Beni Mellal Airport,BEM,-6.315905,32.401895
 Northern Africa,Morocco,Casablanca,Mohammed V International Airport,CMN,-7.58997,33.3675
-Northern Africa,Morocco,Essaouira,Essaouira-Mogador Airport,ESU,31.3975,9.6817
+Northern Africa,Morocco,Essaouira,Essaouira-Mogador Airport,ESU,,
 Northern Africa,Morocco,Fes,Fès–Saïs Airport,FEZ,-4.97796,33.927299
 Northern Africa,Morocco,Marrakesh,Marrakesh Menara Airport,RAK,-8.0363,31.606899
 Northern Africa,Morocco,Nador,Nador International Airport,NDR,-3.02821,34.9888
@@ -92,7 +92,7 @@ Central Africa,Angola,Luanda,Quatro de Fevereiro Airport,LAD,13.2312,-8.85837
 Central Africa,Angola,Lubango,Lubango Airport,SDD,13.574999809265137,-14.924699783325195
 Central Africa,Cameroon,Douala,Douala International Airport,DLA,9.71948,4.00608
 Central Africa,Cameroon,Yaoundé,Yaoundé Nsimalen International Airport,NSI,11.5533,3.72256
-Central Africa,Central African Republic,Bangui,Bangui M'Poko International Airport,BGF,4.4027,18.5213
+Central Africa,Central African Republic,Bangui,Bangui M'Poko International Airport,BGF,,
 Central Africa,Chad,N'Djamena,N'Djamena International Airport,NDJ,15.034,12.1337
 Central Africa,Democratic Republic of the Congo,Goma,Goma International Airport,GOM,29.237929,-1.66617
 Central Africa,Democratic Republic of the Congo,Kinshasa,N'djili Airport,FIH,15.4446,-4.38575
@@ -113,13 +113,13 @@ Southern Africa,Eswatini,Manzini,King Mswati III International Airport,SHO,31.71
 Southern Africa,Lesotho,Maseru,Moshoeshoe I International Airport,MSU,27.5525,-29.462299
 Southern Africa,Namibia,Windhoek,Hosea Kutako International Airport,WDH,17.4709,-22.4799
 Southern Africa,Namibia,Walvis Bay,Walvis Bay Airport,WVB,14.647102,-22.979332
-Southern Africa,South Africa,Bloemfontein,Bram Fischer International Airport,BFN,-29.0927,26.3024
-Southern Africa,South Africa,Cape Town,Cape Town International Airport,CPT,-33.969,18.5975
-Southern Africa,South Africa,Durban,King Shaka International Airport,DUR,-29.6144,31.1199
-Southern Africa,South Africa,East London,East London Airport,ELS,-33.0392, 27.8251
-Southern Africa,South Africa,Johannesburg,O. R. Tambo International Airport,JNB,-26.1337,28.2420
-Southern Africa,South Africa,Nelspruit,Kruger Mpumalanga International Airport,MQP,-25.4128,31.0952
-Southern Africa,South Africa,Polokwane,Polokwane International Airport,PTG,-23.9049,29.4401
+Southern Africa,South Africa,Bloemfontein,Bram Fischer International Airport,BFN,,
+Southern Africa,South Africa,Cape Town,Cape Town International Airport,CPT,,
+Southern Africa,South Africa,Durban,King Shaka International Airport,DUR,,
+Southern Africa,South Africa,East London,East London Airport,ELS,,
+Southern Africa,South Africa,Johannesburg,O. R. Tambo International Airport,JNB,,
+Southern Africa,South Africa,Nelspruit,Kruger Mpumalanga International Airport,MQP,,
+Southern Africa,South Africa,Polokwane,Polokwane International Airport,PTG,,
 Eastern Africa,Burundi,Bujumbura,Bujumbura International Airport,BJM,29.318501,-3.32402
 Eastern Africa,Comoros,Moroni,Prince Said Ibrahim International Airport,HAH,43.2719,-11.5337
 Eastern Africa,Djibouti,Djibouti,Djibouti–Ambouli International Airport,JIB,43.1595,11.5473
@@ -625,7 +625,7 @@ Central Asia,Uzbekistan,Urgench,Urgench International Airport,UGC,60.641701,41.5
 Eastern Asia,China,Baotou,Baotou Donghe international Airport,BAV,109.997002,40.560001
 Eastern Asia,China,Beihai,Beihai Fucheng Airport,BHY,109.293999,21.5394
 Eastern Asia,China,Beijing,Beijing Capital International Airport,PEK,116.58499908447266,40.080101013183594
-Eastern Asia,China,Beijing,Beijing Daxing International Airport,PKX,39.5099,116.4109
+Eastern Asia,China,Beijing,Beijing Daxing International Airport,PKX,,
 Eastern Asia,China,Changchun,Changchun Longjia International Airport,CGQ,125.684998,43.996201
 Eastern Asia,China,Changsha,Changsha Huanghua International Airport,CSX,113.220001,28.189199
 Eastern Asia,China,Changzhou,Changzhou Benniu International Airport,CZX,119.77546,31.920485
@@ -677,7 +677,7 @@ Eastern Asia,China,Qiqihar,Qiqihar Sanjiazi Airport,NDG,123.91799926757812,47.23
 Eastern Asia,China,Quanzhou,Quanzhou Jinjiang International Airport,JJN,118.588883,24.796587
 Eastern Asia,China,Sanya,Sanya Phoenix International Airport,SYX,109.412003,18.3029
 Eastern Asia,China,Shanghai,Shanghai Hongqiao International Airport,SHA,121.33426,31.198104
-Eastern Asia,China,Shanghai,Shanghai Pudong International Airport,PVG,31.1434, 121.8104
+Eastern Asia,China,Shanghai,Shanghai Pudong International Airport,PVG,,
 Eastern Asia,China,Shenyang,Shenyang Taoxian International Airport,SHE,123.483002,41.639801
 Eastern Asia,China,Shenzhen,Shenzhen Bao'an International Airport,SZX,113.810997,22.639299
 Eastern Asia,China,Shijiazhuang,Shijiazhuang Zhengding International Airport,SJW,114.696999,38.280701
@@ -741,14 +741,14 @@ Eastern Asia,South Korea,Daegu,Daegu International Airport,TAE,128.65531,35.8968
 Eastern Asia,South Korea,Jeju,Jeju International Airport,CJU,126.492548,33.512058
 Eastern Asia,South Korea,Muan,Muan International Airport,MWX,126.382814,34.991406
 Eastern Asia,South Korea,Seoul,Gimpo International Airport,GMP,126.791,37.5583
-Eastern Asia,South Korea,Seoul,Incheon International Airport,ICN,37.4602, 126.4407
+Eastern Asia,South Korea,Seoul,Incheon International Airport,ICN,,
 Eastern Asia,South Korea,Yangyang,Yangyang International Airport,YNY,128.669006,38.061298
 Eastern Asia,Taiwan,Hualien City,Hualien Airport,HUN,121.61799621582033,24.023099899291992
 Eastern Asia,Taiwan,Kaohsiung,Kaohsiung International Airport,KHH,120.349998,22.577101
 Eastern Asia,Taiwan,Taichung,Taichung International Airport,RMQ,120.621002,24.2647
 Eastern Asia,Taiwan,Tainan,Tainan Airport,TNN,120.206001,22.950399
 Eastern Asia,Taiwan,Taipei,Taipei Songshan Airport,TSA,121.552002,25.069401
-Eastern Asia,Taiwan,Taipei,Taoyuan International Airport,TPE, 121.2321, 25.077
+Eastern Asia,Taiwan,Taipei,Taoyuan International Airport,TPE,,
 Southern Asia,Bangladesh,Barishal,Barisal Airport,BZL,90.301201,22.801001
 Southern Asia,Bangladesh,Chittagong,Shah Amanat International Airport,CGP,91.813301,22.249599
 Southern Asia,Bangladesh,Cox's Bazar,Cox's Bazar International Airport,CXB,91.963263,21.457517
@@ -830,7 +830,7 @@ Southern Asia,Sri Lanka,Jaffna,Jaffna International Airport,JAF,80.070099,9.7923
 Southeast Asia,Brunei,Bandar Seri Begawan,Brunei International Airport,BWN,114.928001,4.9442
 Southeast Asia,Cambodia,Phnom Penh,Techo International Airport,KTI,104.921272,11.359987
 Southeast Asia,Cambodia,Phnom Penh,Phnom Penh International Airport,PNH,104.844002,11.5466
-Southeast Asia,Cambodia,Siem Reap,Siem Reap International Airport,REP,103.8134,13.4104
+Southeast Asia,Cambodia,Siem Reap,Siem Reap International Airport,REP,,
 Southeast Asia,Cambodia,Sihanoukville,Sihanouk International Airport,KOS,103.632689,10.571969
 Southeast Asia,Indonesia,Ambon,Pattimura International Airport,AMQ,,
 Southeast Asia,Indonesia,Balikpapan,Sultan Aji Muhammad Sulaiman Sepinggan International Airport,BPN,116.89452,-1.268342
