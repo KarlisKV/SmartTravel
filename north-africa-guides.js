@@ -15,7 +15,7 @@ const IMG = {
   hammam: "https://upload.wikimedia.org/wikipedia/commons/1/13/Ali_Gholi_Agha_hammam%2C_Isfahan%2C_Iran.jpg",
   tunisCuisine: "https://upload.wikimedia.org/wikipedia/commons/3/35/Bol_de_Leblabi_de_Tunisie%2C_21_mars_2017.jpg",
   kitesurfing: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Kitesurfing_Sotavento.jpg",
-  starWarsLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/960px-Star_wars2.svg.png",
+  tunisStarWarsSet: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Star_Wars_Panorama_at_Matmata_-_panoramio.jpg/1280px-Star_Wars_Panorama_at_Matmata_-_panoramio.jpg",
   snorkel: "https://upload.wikimedia.org/wikipedia/commons/7/70/Reef_snorkeler.jpg",
   fourWheel: "https://upload.wikimedia.org/wikipedia/commons/0/03/Jeep_Wrangler_TJ.jpg",
   vineyard: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Vineyards_in_Burgundy_France.jpg",
@@ -27,16 +27,16 @@ const IMG = {
   timgad: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Timgad_%2815685889550%29.jpg",
   djemila: "https://upload.wikimedia.org/wikipedia/commons/3/34/Roman_Ruins_of_Djemila_in_S%C3%A9tif%2C_Algeria.jpg",
   ghardaia: "https://upload.wikimedia.org/wikipedia/commons/d/db/Ksar_Ghardaia_place_march%C3%A9_1.jpg",
-  tassili: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Map_of_Tassili_n%27Ajjer_and_surroundings-en.jpg",
+  tassili: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Tassili_N%27Ajjer_National_Park_%2849465145453%29.jpg/1280px-Tassili_N%27Ajjer_National_Park_%2849465145453%29.jpg",
   oran: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Oran_-_aerial_view.jpg",
   constantine: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Constantine_bridge_in_spring.jpg",
   sahara: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Sahara_real_color.jpg",
   tipaza: "https://upload.wikimedia.org/wikipedia/commons/3/30/Porte_de_Tipaza_%D8%A7%D9%84%D9%85%D9%8A%D9%86%D8%A7%D8%A1_-_panoramio.jpg",
   algerianCuisine: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Couscous_%28Alg%C3%A9rie%2C_lieu_exact_non_pr%C3%A9cis%C3%A9%29.jpg",
+  algeriaCoast: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Oran_-_Front_de_mer.jpg/1280px-Oran_-_Front_de_mer.jpg",
+  algeriaFestival: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Saxophoniste.jpg/1280px-Saxophoniste.jpg",
   hiking: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg",
-  surfing: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Mavericks_Surf_Contest_2010b.jpg",
-  romanArchitecture: "https://upload.wikimedia.org/wikipedia/commons/d/de/Colosseo_2020.jpg",
-  festival: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Holi_Festival_of_Colors_Utah%2C_United_States_2013.jpg",
+  romanArchitecture: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Timgad_1.jpg/1280px-Timgad_1.jpg",
   scuba: "https://upload.wikimedia.org/wikipedia/commons/2/29/Underwater_photograph_of_a_recreational_scuba_diver_in_Playa_del_Carmen_2006.jpg",
   roadTrip: "https://upload.wikimedia.org/wikipedia/commons/c/c2/NM_124_and_US_66_WB_near_Budville_NM.jpg",
   algeriaWineRegions: "https://upload.wikimedia.org/wikipedia/commons/4/45/Algerian_wine_regions.JPG",
@@ -69,7 +69,9 @@ const IMG = {
   atlasMountains: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Atlas_mountains_aerial_1.jpg",
   rabat: "https://upload.wikimedia.org/wikipedia/commons/1/18/Morocco_-_Rabat_%2831387775324%29.jpg",
   moroccanCuisine: "https://upload.wikimedia.org/wikipedia/commons/f/f5/%D9%85%D8%B3%D9%85%D9%86.jpg",
-  musicFestival: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Weezer_Bethlehem_2019_5.jpg",
+  moroccoFestival: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Gnaoua_%28Gnawa%29_musicians_performing_during_the_2010_Gnaoua_festival_in_the_city_of_Essaouira%2C_Morocco.jpg/960px-Gnaoua_%28Gnawa%29_musicians_performing_during_the_2010_Gnaoua_festival_in_the_city_of_Essaouira%2C_Morocco.jpg",
+  moroccoSurf: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Taghazout_From_Surf_Berbere_Roof_Terrace_Accommodation_Morocco_%26_Surf_Camp.jpg",
+  tagine: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Tajine-marocain-un-plat-varie-et-sain.jpg/960px-Tajine-marocain-un-plat-varie-et-sain.jpg",
 
   // Egypt
   giza: "https://upload.wikimedia.org/wikipedia/commons/9/96/Pyramids_of_the_Giza_Necropolis.jpg",
@@ -84,6 +86,10 @@ const IMG = {
   cairo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Cairo_Skyline_%282020%29.jpg",
   nile: "https://upload.wikimedia.org/wikipedia/commons/1/12/River-Nile-near-Aswan_square.jpg",
   egyptCuisine: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Molokheya_and_rice_with_chiken%2C_Egypt_2012.JPG",
+  koshary: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Egyptian_food_Koshary.jpg/1280px-Egyptian_food_Koshary.jpg",
+  taameya: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tameya_Karoleen_Lindberg.jpg/1280px-Tameya_Karoleen_Lindberg.jpg",
+  molokhia: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Molokheya_and_rice_with_chiken%2C_Egypt_2012.JPG/1280px-Molokheya_and_rice_with_chiken%2C_Egypt_2012.JPG",
+  egyptFestival: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Egyptian_Tannora_Dance.jpg/1280px-Egyptian_Tannora_Dance.jpg",
   felucca: "https://upload.wikimedia.org/wikipedia/commons/9/97/Felucca_R02.jpg",
 
   // Foods
@@ -287,8 +293,8 @@ const GUIDE_DATA = {
         title: "Star Wars Route",
         desc: "Visit Matmata, ksour villages, and desert sets that inspired or hosted scenes from the saga.",
         tag: "Film Tourism - South",
-        image: IMG.starWarsLogo,
-        alt: "Star Wars themed art",
+        image: IMG.tunisStarWarsSet,
+        alt: "Star Wars filming location in Matmata",
       },
       {
         title: "Carthage Summer Performances",
@@ -842,8 +848,8 @@ const GUIDE_DATA = {
         title: "Coastal Surf Session",
         desc: "Ride seasonal swells along selected Mediterranean stretches near western hubs.",
         tag: "Water Sport - Coast",
-        image: IMG.surfing,
-        alt: "Surfing wave",
+        image: IMG.algeriaCoast,
+        alt: "Oran coastline",
       },
       {
         title: "Aurès Mountain Hikes",
@@ -856,8 +862,8 @@ const GUIDE_DATA = {
         title: "Festival Evenings",
         desc: "Join seasonal arts and music events in major cities for a modern cultural contrast.",
         tag: "Events - Urban",
-        image: IMG.festival,
-        alt: "Festival crowd",
+        image: IMG.algeriaFestival,
+        alt: "Algerian music festival",
       },
       {
         title: "Mediterranean Dive Day",
@@ -972,7 +978,7 @@ const GUIDE_DATA = {
         { lat: 36.7538, lng: 3.0588, name: "Casbah Walking Tour", desc: "Historic Algiers neighborhoods" },
         { lat: 35.4849, lng: 6.4687, name: "Roman Heritage Loop", desc: "Timgad and nearby ruins" },
         { lat: 35.6987, lng: -0.6349, name: "Oran Food Stops", desc: "Regional dining scene" },
-        { lat: 36.3, lng: 2.3, name: "Coastal Surf / Dive", desc: "Seasonal water activity pockets" },
+        { lat: 35.7426, lng: -0.7693, name: "Coastal Surf / Dive", desc: "Ain El Turk and west Oran coast activity pockets" },
         { lat: 34.84, lng: 5.73, name: "Aures Hiking", desc: "Mountain trail routes" },
       ],
       staySpots: [
@@ -1966,8 +1972,8 @@ const GUIDE_DATA = {
         title: "Atlantic Surf",
         desc: "Catch waves around Taghazout and nearby beaches with schools for all levels.",
         tag: "Water Sport - Coast",
-        image: IMG.surfing,
-        alt: "Surfing scene",
+        image: IMG.moroccoSurf,
+        alt: "Taghazout surf coast",
       },
       {
         title: "Atlas Day Hike",
@@ -1980,8 +1986,8 @@ const GUIDE_DATA = {
         title: "Festival Nights",
         desc: "Catch live music events and summer programming in imperial city venues.",
         tag: "Events - Seasonal",
-        image: IMG.musicFestival,
-        alt: "Live music festival",
+        image: IMG.moroccoFestival,
+        alt: "Gnawa music festival in Essaouira",
       },
       {
         title: "Coastal Snorkel Stops",
@@ -2012,7 +2018,7 @@ const GUIDE_DATA = {
         category: "Signature Main",
         name: "Tagine",
         desc: "Slow-cooked clay-pot dishes with meat, vegetables, preserved lemon, and spices.",
-        image: IMG.moroccanCuisine,
+        image: IMG.tagine,
         alt: "Moroccan dish",
       },
       {
@@ -2542,8 +2548,8 @@ const GUIDE_DATA = {
         title: "Nile Cultural Evenings",
         desc: "Attend performance dinners or music nights in river cities.",
         tag: "Events - Nile Cities",
-        image: IMG.festival,
-        alt: "Festival stage scene",
+        image: IMG.egyptFestival,
+        alt: "Egyptian tanoura dance performance",
       },
       {
         title: "Snorkel Reefs",
@@ -2574,21 +2580,21 @@ const GUIDE_DATA = {
         category: "National Favorite",
         name: "Koshary",
         desc: "A comfort bowl of rice, lentils, pasta, tomato sauce, and crispy onions.",
-        image: IMG.egyptCuisine,
+        image: IMG.koshary,
         alt: "Egyptian food",
       },
       {
         category: "Street Classic",
         name: "Taameya (Egyptian Falafel)",
         desc: "Fava-bean falafel with herbs, often served in baladi bread.",
-        image: IMG.egyptCuisine,
+        image: IMG.taameya,
         alt: "Falafel style dish",
       },
       {
         category: "Home-Style",
         name: "Molokhia",
         desc: "A garlicky green stew often paired with rice and chicken or rabbit.",
-        image: IMG.egyptCuisine,
+        image: IMG.molokhia,
         alt: "Molokhia dish",
       },
       {
@@ -3167,13 +3173,14 @@ function renderPage(guide) {
       <div class="section-header">
         <div class="section-tag">Interactive Map</div>
         <h2 class="section-title">Explore <em>${guide.country}</em></h2>
-        <p class="section-subtitle">All major sights, activities, and stay zones in one map.</p>
+        <p class="section-subtitle">All major sights, activities, stay zones, and airports in one map.</p>
       </div>
       <div class="map-legend">
         <span class="legend-label">Legend:</span>
         <div class="legend-item"><div class="legend-dot" style="background:#C4714A"></div>Things to See</div>
         <div class="legend-item"><div class="legend-dot" style="background:#1B3A5C"></div>Activities</div>
         <div class="legend-item"><div class="legend-dot" style="background:#C9A84C"></div>Where to Stay</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#2A9D8F"></div>Airports</div>
       </div>
       <div id="country-map"></div>
     </section>
@@ -3194,6 +3201,127 @@ function renderPage(guide) {
       <p style="margin-top: 8px; font-size: 0.75rem;">${guide.footerLine2}</p>
     </footer>
   `;
+}
+
+const AIRPORTS_CSV_PATH = "datasets/airport_data_coords_cleaned.csv";
+let airportsByCountryPromise = null;
+
+function parseCsvRow(row) {
+  const cells = [];
+  let current = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < row.length; i += 1) {
+    const ch = row[i];
+    if (ch === '"') {
+      if (inQuotes && row[i + 1] === '"') {
+        current += '"';
+        i += 1;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+    if (ch === "," && !inQuotes) {
+      cells.push(current);
+      current = "";
+      continue;
+    }
+    current += ch;
+  }
+
+  cells.push(current);
+  return cells;
+}
+
+function escapeMapHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function loadAirportsByCountry() {
+  if (airportsByCountryPromise) {
+    return airportsByCountryPromise;
+  }
+
+  airportsByCountryPromise = fetch(AIRPORTS_CSV_PATH)
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`Failed to load airport CSV (${res.status})`);
+      }
+      return res.text();
+    })
+    .then((csvText) => {
+      const lines = csvText
+        .split(/\r?\n/)
+        .map((line) => line.trim())
+        .filter((line) => line.length > 0);
+
+      if (lines.length < 2) {
+        return {};
+      }
+
+      const headers = parseCsvRow(lines[0]).map((h) => h.trim());
+      const idxCountry = headers.indexOf("Country");
+      const idxCity = headers.indexOf("City");
+      const idxAirportName = headers.indexOf("Airport Name");
+      const idxIata = headers.indexOf("IATA Code");
+      const idxLon = headers.indexOf("longitude_deg");
+      const idxLat = headers.indexOf("latitude_deg");
+
+      if ([idxCountry, idxCity, idxAirportName, idxIata, idxLon, idxLat].some((idx) => idx < 0)) {
+        throw new Error("Airport CSV is missing one or more required columns.");
+      }
+
+      const maxIdx = Math.max(idxCountry, idxCity, idxAirportName, idxIata, idxLon, idxLat);
+      const grouped = {};
+
+      for (let i = 1; i < lines.length; i += 1) {
+        const row = parseCsvRow(lines[i]);
+        if (row.length <= maxIdx) {
+          continue;
+        }
+
+        const country = (row[idxCountry] || "").trim();
+        const lat = Number.parseFloat(row[idxLat]);
+        const lng = Number.parseFloat(row[idxLon]);
+        if (!country || !Number.isFinite(lat) || !Number.isFinite(lng)) {
+          continue;
+        }
+
+        const key = country.toLowerCase();
+        if (!grouped[key]) {
+          grouped[key] = [];
+        }
+        grouped[key].push({
+          airportName: (row[idxAirportName] || "").trim(),
+          city: (row[idxCity] || "").trim(),
+          iata: (row[idxIata] || "").trim(),
+          lat,
+          lng,
+        });
+      }
+
+      return grouped;
+    })
+    .catch((error) => {
+      console.error("Unable to load country airports:", error);
+      return {};
+    });
+
+  return airportsByCountryPromise;
+}
+
+function getAirportsForCountry(country) {
+  const key = (country || "").toLowerCase().trim();
+  if (!key) {
+    return Promise.resolve([]);
+  }
+  return loadAirportsByCountry().then((grouped) => grouped[key] || []);
 }
 
 function initializeMap(guide) {
@@ -3223,6 +3351,13 @@ function initializeMap(guide) {
   const seeIcon = makeIcon("#C4714A");
   const doIcon = makeIcon("#1B3A5C");
   const stayIcon = makeIcon("#C9A84C");
+  const airportIcon = L.divIcon({
+    className: "",
+    html: '<div style="width:16px;height:16px;border-radius:50%;background:#2A9D8F;border:2.5px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center;color:#fff;font-size:9px;line-height:1">✈</div>',
+    iconSize: [16, 16],
+    iconAnchor: [8, 8],
+    popupAnchor: [0, -10],
+  });
 
   guide.map.seeSpots.forEach((spot) => {
     L.marker([spot.lat, spot.lng], { icon: seeIcon })
@@ -3246,6 +3381,17 @@ function initializeMap(guide) {
       .bindPopup(
         `<strong style="font-family:Georgia,serif;font-size:1rem">${spot.name}</strong><br><span style="color:#7A7772;font-size:0.82rem">${spot.desc}</span><br><span style="font-size:0.7rem;color:#C9A84C;text-transform:uppercase;letter-spacing:0.08em">Where to Stay</span>`
       );
+  });
+
+  getAirportsForCountry(guide.country).then((airports) => {
+    airports.forEach((airport) => {
+      const title = airport.iata ? `${airport.airportName} (${airport.iata})` : airport.airportName;
+      L.marker([airport.lat, airport.lng], { icon: airportIcon })
+        .addTo(map)
+        .bindPopup(
+          `<strong style="font-family:Georgia,serif;font-size:0.98rem">${escapeMapHtml(title)}</strong><br><span style="color:#7A7772;font-size:0.82rem">${escapeMapHtml(airport.city)}</span><br><span style="font-size:0.7rem;color:#2A9D8F;text-transform:uppercase;letter-spacing:0.08em">Airport</span>`
+        );
+    });
   });
 }
 

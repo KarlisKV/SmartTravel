@@ -302,6 +302,69 @@ h2 {
     pointer-events: auto;
 }
 
+.north-africa-guides {
+    width: 100%;
+    max-width: 760px;
+    margin-top: 2rem;
+    padding: 1.25rem 1.5rem 1.4rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(12px);
+}
+
+.north-africa-title {
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 650;
+    letter-spacing: 0.01em;
+}
+
+.north-africa-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.88rem;
+    margin-top: 0.35rem;
+}
+
+.north-africa-flag-grid {
+    margin-top: 0.95rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+}
+
+.north-africa-flag-card {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 88px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.1);
+    transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+}
+
+.north-africa-flag-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.north-africa-flag-emoji {
+    font-size: 1.55rem;
+    line-height: 1;
+}
+
+.north-africa-country-name {
+    font-size: 0.88rem;
+    font-weight: 550;
+}
+
 .date-buttons {
     margin-top: 0;
     width: 100%;
@@ -2109,6 +2172,15 @@ h2 {
 
     .button-group {
         max-width: 100%;
+    }
+
+    .north-africa-guides {
+        padding: 1rem;
+        margin-top: 1.35rem;
+    }
+
+    .north-africa-flag-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .container {
