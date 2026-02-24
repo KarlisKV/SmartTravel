@@ -3360,7 +3360,7 @@ function initializeMap(guide) {
   });
 
   guide.map.seeSpots.forEach((spot) => {
-    L.marker([spot.lat, spot.lng], { icon: seeIcon })
+    L.marker([spot.lat, spot.lng], { icon: seeIcon, zIndexOffset: 100 })
       .addTo(map)
       .bindPopup(
         `<strong style="font-family:Georgia,serif;font-size:1rem">${spot.name}</strong><br><span style="color:#7A7772;font-size:0.82rem">${spot.desc}</span><br><span style="font-size:0.7rem;color:#C4714A;text-transform:uppercase;letter-spacing:0.08em">Thing to See</span>`
@@ -3368,7 +3368,7 @@ function initializeMap(guide) {
   });
 
   guide.map.doSpots.forEach((spot) => {
-    L.marker([spot.lat, spot.lng], { icon: doIcon })
+    L.marker([spot.lat, spot.lng], { icon: doIcon, zIndexOffset: 300 })
       .addTo(map)
       .bindPopup(
         `<strong style="font-family:Georgia,serif;font-size:1rem">${spot.name}</strong><br><span style="color:#7A7772;font-size:0.82rem">${spot.desc}</span><br><span style="font-size:0.7rem;color:#1B3A5C;text-transform:uppercase;letter-spacing:0.08em">Activity</span>`
@@ -3376,7 +3376,7 @@ function initializeMap(guide) {
   });
 
   guide.map.staySpots.forEach((spot) => {
-    L.marker([spot.lat, spot.lng], { icon: stayIcon })
+    L.marker([spot.lat, spot.lng], { icon: stayIcon, zIndexOffset: 50 })
       .addTo(map)
       .bindPopup(
         `<strong style="font-family:Georgia,serif;font-size:1rem">${spot.name}</strong><br><span style="color:#7A7772;font-size:0.82rem">${spot.desc}</span><br><span style="font-size:0.7rem;color:#C9A84C;text-transform:uppercase;letter-spacing:0.08em">Where to Stay</span>`
@@ -3386,7 +3386,7 @@ function initializeMap(guide) {
   getAirportsForCountry(guide.country).then((airports) => {
     airports.forEach((airport) => {
       const title = airport.iata ? `${airport.airportName} (${airport.iata})` : airport.airportName;
-      L.marker([airport.lat, airport.lng], { icon: airportIcon })
+      L.marker([airport.lat, airport.lng], { icon: airportIcon, zIndexOffset: -100 })
         .addTo(map)
         .bindPopup(
           `<strong style="font-family:Georgia,serif;font-size:0.98rem">${escapeMapHtml(title)}</strong><br><span style="color:#7A7772;font-size:0.82rem">${escapeMapHtml(airport.city)}</span><br><span style="font-size:0.7rem;color:#2A9D8F;text-transform:uppercase;letter-spacing:0.08em">Airport</span>`
