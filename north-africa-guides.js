@@ -978,7 +978,7 @@ const GUIDE_DATA = {
         { lat: 36.7538, lng: 3.0588, name: "Casbah Walking Tour", desc: "Historic Algiers neighborhoods" },
         { lat: 35.4849, lng: 6.4687, name: "Roman Heritage Loop", desc: "Timgad and nearby ruins" },
         { lat: 35.6987, lng: -0.6349, name: "Oran Food Stops", desc: "Regional dining scene" },
-        { lat: 35.7426, lng: -0.7693, name: "Coastal Surf / Dive", desc: "Ain El Turk and west Oran coast activity pockets" },
+        { lat: 35.9333, lng: 0.0892, name: "Coastal Surf / Dive", desc: "Mostaganem coast seasonal surf and dive pockets" },
         { lat: 34.84, lng: 5.73, name: "Aures Hiking", desc: "Mountain trail routes" },
       ],
       staySpots: [
