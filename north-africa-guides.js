@@ -5,9 +5,9 @@ const IMG = {
   elJem: "https://upload.wikimedia.org/wikipedia/commons/b/b3/El_Jem_panorama_01.jpg",
   dougga: "https://upload.wikimedia.org/wikipedia/commons/7/79/Dougga%2C_Beja.jpg",
   kairouanMosque: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Great_Mosque_of_Kairouan_Panorama_-_Grande_Mosqu%C3%A9e_de_Kairouan_Panorama.jpg",
-  bardoMuseum: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/MuseeBardo_1.jpg/1280px-MuseeBardo_1.jpg",
+  bardoMuseum: "https://commons.wikimedia.org/wiki/Special:FilePath/Bardo_Museum_-_Carthage_room.jpg",
   tunisMedina: "https://upload.wikimedia.org/wikipedia/commons/3/33/Medina_old_Town_of_Tunis.jpeg",
-  matmata: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Matmata_Ber_2009_12_29_006.jpg/1280px-Matmata_Ber_2009_12_29_006.jpg",
+  matmata: "https://upload.wikimedia.org/wikipedia/commons/0/08/Matmata%2C_Tunisia.JPG",
   tozeur: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Tozeur_sud_tunisien.jpg",
   djerba: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Djerba_Island.jpeg",
   camel: "https://upload.wikimedia.org/wikipedia/commons/4/43/07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg",
@@ -19,7 +19,7 @@ const IMG = {
   snorkel: "https://upload.wikimedia.org/wikipedia/commons/7/70/Reef_snorkeler.jpg",
   fourWheel: "https://upload.wikimedia.org/wikipedia/commons/0/03/Jeep_Wrangler_TJ.jpg",
   vineyard: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Vineyards_in_Burgundy_France.jpg",
-  carthageTheatre: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Ancient_Roman_Theater_of_Carthage_%28Tunisia%29.jpg",
+  carthageTheatre: "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Theater_of_Carthage.jpg",
 
   // Algeria
   algiers: "https://upload.wikimedia.org/wikipedia/commons/2/27/Botanical_Garden_Hamma.jpg",
