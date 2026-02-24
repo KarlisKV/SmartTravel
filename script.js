@@ -541,7 +541,7 @@ async function searchPlaces(query) {
         );
         const data = await res.json();
         return (data || []).map(item => ({
-            name: item.display_name,
+            name: item.english_name || item.display_name,
             lat: parseFloat(item.lat),
             lon: parseFloat(item.lon),
             country: item.address?.country || ''

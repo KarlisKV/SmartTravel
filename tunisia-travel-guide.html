@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tunisia — Travel Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<style>
+  :root {
+    --sand: #F5EFE0;
+    --ivory: #FAFAF7;
+    --charcoal: #1A1A18;
+    --warm-grey: #7A7772;
+    --terracotta: #C4714A;
+    --terracotta-light: #E8967A;
+    --deep-blue: #1B3A5C;
+    --gold: #C9A84C;
+    --border: #E0D9CC;
+    --section-pad: clamp(60px, 8vw, 120px);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--ivory);
+    color: var(--charcoal);
+    font-size: 16px;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(250,250,247,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: padding 0.3s;
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--charcoal);
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--terracotta); }
+
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--warm-grey);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--terracotta); }
+
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 80px 60px 80px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(160deg, #1B3A5C 0%, #2d5a87 30%, #8B5E3C 70%, #C4714A 100%);
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 70% 30%, rgba(201, 168, 76, 0.15) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 60% at 20% 80%, rgba(196, 113, 74, 0.3) 0%, transparent 60%);
+  }
+
+  .hero-pattern {
+    position: absolute;
+    top: 0; right: 0;
+    width: 45%;
+    height: 100%;
+    opacity: 0.08;
+    background-image:
+      repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%),
+      repeating-linear-gradient(-45deg, #fff 0, #fff 1px, transparent 0, transparent 50%);
+    background-size: 30px 30px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 750px;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(4rem, 9vw, 8rem);
+    font-weight: 300;
+    line-height: 0.92;
+    color: #fff;
+    letter-spacing: -0.02em;
+    margin-bottom: 28px;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .hero-tagline {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.72);
+    max-width: 480px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 32px;
+    flex-wrap: wrap;
+  }
+
+  .hero-stat-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 4px;
+  }
+
+  .hero-stat-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    writing-mode: vertical-rl;
+  }
+
+  /* ─── SECTION LAYOUTS ─── */
+  section {
+    padding: var(--section-pad) clamp(24px, 6vw, 100px);
+  }
+
+  .section-header {
+    margin-bottom: 56px;
+  }
+
+  .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 16px;
+  }
+
+  .section-tag::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: var(--terracotta);
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--charcoal);
+    letter-spacing: -0.01em;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--terracotta);
+  }
+
+  .section-subtitle {
+    margin-top: 16px;
+    font-size: 0.95rem;
+    color: var(--warm-grey);
+    max-width: 540px;
+    line-height: 1.7;
+  }
+
+  /* ─── KNOW SECTION ─── */
+  .know-section {
+    background: var(--sand);
+    position: relative;
+  }
+
+  .know-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2px;
+    margin-top: 48px;
+    border: 1px solid var(--border);
+  }
+
+  .know-card {
+    background: var(--ivory);
+    padding: 36px 32px;
+    border: 1px solid var(--border);
+    transition: background 0.2s;
+  }
+
+  .know-card:hover { background: #fff; }
+
+  .know-icon {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .know-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 10px;
+  }
+
+  .know-card p {
+    font-size: 0.88rem;
+    color: var(--warm-grey);
+    line-height: 1.7;
+  }
+
+  /* ─── CARDS GRID ─── */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s;
+    cursor: default;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+  }
+
+  .card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    background: var(--sand);
+  }
+
+  .card-img-placeholder {
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(135deg, var(--sand) 0%, #E8D9BE 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+
+  .card-body {
+    padding: 24px;
+  }
+
+  .card-number {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 8px;
+  }
+
+  .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+  }
+
+  .card-desc {
+    font-size: 0.86rem;
+    color: var(--warm-grey);
+    line-height: 1.65;
+  }
+
+  .card-tag {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 4px 12px;
+    background: var(--sand);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    border-radius: 2px;
+  }
+
+  /* ─── FOOD CARDS ─── */
+  .food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .food-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+
+  .food-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+  }
+
+  .food-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .food-body {
+    padding: 22px;
+  }
+
+  .food-category {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  .food-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .food-desc {
+    font-size: 0.84rem;
+    color: var(--warm-grey);
+    line-height: 1.6;
+  }
+
+  /* ─── STAY SECTION ─── */
+  .stay-section {
+    background: var(--charcoal);
+    color: #fff;
+  }
+
+  .stay-section .section-tag { color: var(--gold); }
+  .stay-section .section-tag::before { background: var(--gold); }
+  .stay-section .section-title { color: #fff; }
+  .stay-section .section-subtitle { color: rgba(255,255,255,0.5); }
+
+  .stay-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .stay-card {
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 36px 32px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .stay-card:hover {
+    border-color: var(--gold);
+    background: rgba(255,255,255,0.04);
+  }
+
+  .stay-area {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .stay-type {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .stay-desc {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .stay-picks {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .stay-pick {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.38);
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .stay-pick::before {
+    content: '—';
+    color: var(--terracotta);
+    font-size: 0.75rem;
+  }
+
+  /* ─── MAP ─── */
+  .map-section { padding: 0; }
+  .map-section .section-header { padding: var(--section-pad) clamp(24px, 6vw, 100px) 0; }
+
+  #tunisia-map {
+    width: 100%;
+    height: 600px;
+    border-top: 1px solid var(--border);
+  }
+
+  .map-legend {
+    padding: 20px clamp(24px, 6vw, 100px);
+    background: var(--sand);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .legend-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--warm-grey); margin-right: 4px; }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: var(--charcoal);
+  }
+
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  /* ─── ITINERARY ─── */
+  .itinerary-section { background: var(--ivory); }
+
+  .timeline {
+    position: relative;
+    margin-top: 56px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--border);
+  }
+
+  .day-block {
+    display: flex;
+    gap: 48px;
+    margin-bottom: 48px;
+    position: relative;
+  }
+
+  .day-label {
+    min-width: 80px;
+    text-align: right;
+    padding-top: 4px;
+    position: relative;
+  }
+
+  .day-label::after {
+    content: '';
+    position: absolute;
+    right: -28px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--terracotta);
+    border: 2px solid var(--ivory);
+    box-shadow: 0 0 0 2px var(--terracotta);
+  }
+
+  .day-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--terracotta);
+    display: block;
+  }
+
+  .day-name {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--warm-grey);
+  }
+
+  .day-content {
+    flex: 1;
+    background: #fff;
+    border: 1px solid var(--border);
+    padding: 28px 32px;
+  }
+
+  .day-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .day-location {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 16px;
+  }
+
+  .day-activities {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .day-activity {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.88rem;
+    color: var(--charcoal);
+    line-height: 1.5;
+  }
+
+  .day-activity-time {
+    min-width: 52px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--warm-grey);
+    padding-top: 1px;
+  }
+
+  .flight-block {
+    background: var(--deep-blue);
+    color: #fff;
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    border-left: 3px solid var(--gold);
+    margin-left: 128px;
+  }
+
+  .flight-info { flex: 1; }
+
+  .flight-title {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+
+  .flight-route {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .flight-meta {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    margin-top: 4px;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--charcoal);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 48px;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  footer span { color: var(--terracotta); }
+
+  /* ─── DIVIDER ─── */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 0 clamp(24px, 6vw, 100px);
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    nav { padding: 16px 20px; }
+    .nav-links { display: none; }
+    .hero { padding: 80px 24px 60px; }
+    .hero-stats { gap: 20px; }
+    .timeline::before { left: 50px; }
+    .day-label { min-width: 50px; }
+    .day-label::after { right: -18px; }
+    .flight-block { margin-left: 0; }
+  }
+
+  /* Leaflet custom markers */
+  .map-pin { width: 14px; height: 14px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Discover <span>Tunisia</span></a>
+  <ul class="nav-links">
+    <li><a href="#know">Know</a></li>
+    <li><a href="#see">See</a></li>
+    <li><a href="#do">Do</a></li>
+    <li><a href="#eat">Eat</a></li>
+    <li><a href="#stay">Stay</a></li>
+    <li><a href="#map">Map</a></li>
+    <li><a href="#itinerary">Itinerary</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">North Africa · Mediterranean</div>
+    <h1>Tu<em>ni</em>sia</h1>
+    <p class="hero-tagline">Ancient ruins, Saharan dunes, turquoise coastlines, and a cuisine kissed by spice and olive oil. North Africa's most underrated gem.</p>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-label">Capital</div>
+        <div class="hero-stat-value">Tunis</div>
+      </div>
+      <div>
+        <div class="hero-stat-label">Currency</div>
+        <div class="hero-stat-value">TND (Dinar)</div>
+      </div>
+      <div>
+        <div class="hero-stat-label">Language</div>
+        <div class="hero-stat-value">Arabic</div>
+      </div>
+      <div>
+        <div class="hero-stat-label">Time Zone</div>
+        <div class="hero-stat-value">UTC+1</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll to explore</div>
+</section>
+
+<!-- KNOW -->
+<section class="know-section" id="know">
+  <div class="section-header">
+    <div class="section-tag">Essential Info</div>
+    <h2 class="section-title">What to <em>Know</em></h2>
+    <p class="section-subtitle">Everything you need before you go — from visas and currency to weather and packing tips.</p>
+  </div>
+
+  <div class="know-grid">
+    <div class="know-card">
+      <span class="know-icon">🛂</span>
+      <h3>Visa</h3>
+      <p>Citizens of most EU countries, the UK, USA, Canada, and Australia can enter visa-free for up to 90 days. Always check current requirements before traveling as regulations may change.</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">💰</span>
+      <h3>Currency & Costs</h3>
+      <p>The Tunisian Dinar (TND) is not convertible outside Tunisia. Exchange money on arrival at banks or official bureaux de change. ATMs are available in cities. Cash is preferred for local markets. Tunisia is very affordable — meals from 5 TND.</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">🕐</span>
+      <h3>Time Zone</h3>
+      <p>Tunisia operates on Central European Time (CET / UTC+1) year-round. Tunisia does not observe daylight saving time. It's 1 hour ahead of the UK in winter and the same time as Spain/France in summer.</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">🌡️</span>
+      <h3>High Season</h3>
+      <p>June to August is peak season — beach resorts are packed and temperatures reach 35–40°C (95–104°F). July and August are the hottest. International festivals in Carthage, Hammamet and Dougga also attract summer visitors. Book ahead.</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">🌿</span>
+      <h3>Low Season</h3>
+      <p>December to February is low season — far fewer tourists, cooler temperatures (10–15°C in the north), and better deals on accommodation. The south is warmer and ideal for desert exploration. Spring (March–May) and Autumn (Sept–Nov) offer the sweet spot.</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">🎒</span>
+      <h3>What to Bring</h3>
+      <p>Lightweight, modest clothing (shoulders and knees covered for mosques and medinas). Sunscreen and a hat are essential in summer. Comfortable walking shoes for ruins. Adaptor for Type C/E plugs. Offline maps — data is cheap via Orange SIM (~14 CAD for 30GB).</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">🕌</span>
+      <h3>Religion & Culture</h3>
+      <p>Tunisia is a Muslim-majority country but one of the most secular in North Africa. Dress modestly when visiting religious sites. During Ramadan, restaurants close by day. Alcohol is available in hotels and licensed restaurants. Bargaining is expected in souks.</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">🚗</span>
+      <h3>Getting Around</h3>
+      <p>Taxis are cheap and plentiful in cities — always ask for the meter. The TGM train connects Tunis to Sidi Bou Said, Carthage, and La Marsa. Renting a car is recommended for the south and interior. Drones are prohibited throughout Tunisia.</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">🛡️</span>
+      <h3>Safety</h3>
+      <p>Tunisia is generally safe for tourists. Petty theft (phone snatching) is the main concern. Tourist police operate in most major sites. Avoid remote border areas near Libya and Algeria. Solo female travelers should be extra aware in crowded medinas.</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">🌐</span>
+      <h3>Language & Connectivity</h3>
+      <p>Arabic and Tunisian dialect are official, but French is widely spoken. English is increasingly understood in tourist areas. SIM cards (Orange, Tunisie Telecom) are available at the airport and are very affordable. Purchase one immediately on arrival.</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">✈️</span>
+      <h3>Getting There</h3>
+      <p>Tunis-Carthage (TUN) is the main international airport with direct flights from most European cities. Monastir and Djerba also receive seasonal European charter flights. Ferries sail from Marseille (22h) and Palermo (11h). Consider flying into one airport and out of another.</p>
+    </div>
+    <div class="know-card">
+      <span class="know-icon">💊</span>
+      <h3>Health & Insurance</h3>
+      <p>No mandatory vaccines required from most Western countries, though hepatitis A is recommended. Tap water is safe in cities but many prefer bottled. Travel insurance is strongly recommended. Pharmacies are well stocked and easy to find.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT TO SEE -->
+<section id="see">
+  <div class="section-header">
+    <div class="section-tag">Must See</div>
+    <h2 class="section-title">What to <em>See</em></h2>
+    <p class="section-subtitle">Ten unmissable landmarks spanning ancient civilisations, Islamic architecture, and surreal desert landscapes.</p>
+  </div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Sidi_Bou_Said_-_panoramio_%2834%29.jpg/1280px-Sidi_Bou_Said_-_panoramio_%2834%29.jpg" alt="Sidi Bou Said" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🏛️</div>
+      <div class="card-body">
+        <div class="card-number">01 / Sidi Bou Said</div>
+        <h3 class="card-title">The Blue & White Village</h3>
+        <p class="card-desc">A clifftop town of dazzling whitewashed walls and iconic cobalt-blue doorways overlooking the Gulf of Tunis. Soon to be UNESCO-listed — visit before the crowds arrive. Explore narrow alleyways, rooftop cafés, and stunning sea views.</p>
+        <span class="card-tag">Near Tunis · Day Trip</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Antonine_Baths_Carthage.jpg/1280px-Antonine_Baths_Carthage.jpg" alt="Carthage" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🏛️</div>
+      <div class="card-body">
+        <div class="card-number">02 / Carthage</div>
+        <h3 class="card-title">Ancient Ruins by the Sea</h3>
+        <p class="card-desc">Once the capital of the Roman African province and rival to Rome itself, Carthage is a UNESCO World Heritage Site. Stroll through Antonine Baths, Byrsa Hill, Punic Ports, and a Roman Theatre with views of the Mediterranean.</p>
+        <span class="card-tag">UNESCO · Historic</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/El_djem_amphitheatre.jpg/1280px-El_djem_amphitheatre.jpg" alt="El Jem" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🏟️</div>
+      <div class="card-body">
+        <div class="card-number">03 / El Jem Amphitheatre</div>
+        <h3 class="card-title">Africa's Colosseum</h3>
+        <p class="card-desc">One of the best preserved Roman amphitheatres in the world — larger than Rome's Colosseum in some respects. Rated 4.8 stars by 10,000+ visitors. You can climb all four levels and explore underground tunnels. Entry includes a mosaic museum.</p>
+        <span class="card-tag">UNESCO · 4.8 ★</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Dougga%2C_Capitole.jpg/1280px-Dougga%2C_Capitole.jpg" alt="Dougga" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🏛️</div>
+      <div class="card-body">
+        <div class="card-number">04 / Dougga</div>
+        <h3 class="card-title">Rome's Best-Kept Secret</h3>
+        <p class="card-desc">Described by many visitors as "better than any Roman site in Italy." Set in rolling Tunisian countryside, this UNESCO site preserves an entire ancient city — temples, a theatre, baths, and aqueducts — largely to themselves. Rated 4.8 stars.</p>
+        <span class="card-tag">UNESCO · 4.8 ★</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Great_Mosque_of_Kairouan.jpg/1280px-Great_Mosque_of_Kairouan.jpg" alt="Kairouan Mosque" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🕌</div>
+      <div class="card-body">
+        <div class="card-number">05 / Kairouan</div>
+        <h3 class="card-title">The Great Mosque</h3>
+        <p class="card-desc">Founded in 670 CE, the Great Mosque of Kairouan is one of Islam's holiest sites and oldest mosques. A masterpiece of Aghlabid architecture with an immense courtyard and three-tiered minaret. Non-Muslims can visit the courtyard — dress modestly.</p>
+        <span class="card-tag">Sacred · UNESCO</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/MuseeBardo_1.jpg/1280px-MuseeBardo_1.jpg" alt="Bardo Museum" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🖼️</div>
+      <div class="card-body">
+        <div class="card-number">06 / Bardo Museum</div>
+        <h3 class="card-title">World's Finest Mosaics</h3>
+        <p class="card-desc">One of the largest museums in Africa, housed in a 19th-century Beylical palace. Rated 4.6 stars by 4,000+ visitors. Features the world's finest collection of Roman mosaics alongside Punic artefacts and an exquisite Ottoman palace interior.</p>
+        <span class="card-tag">Tunis · 4.6 ★</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Tunis_medina_640.jpg/1280px-Tunis_medina_640.jpg" alt="Tunis Medina" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🛕</div>
+      <div class="card-body">
+        <div class="card-number">07 / Tunis Medina</div>
+        <h3 class="card-title">The Old City Labyrinth</h3>
+        <p class="card-desc">A UNESCO-listed medieval walled city buzzing with souks, mosques, madrasas, and artisan workshops. Less overwhelming than Morocco's medinas, with friendly locals and no aggressive hustlers. Wander the Souk el-Attarine for perfumes and spices.</p>
+        <span class="card-tag">UNESCO · Tunis</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Matmata_Ber_2009_12_29_006.jpg/1280px-Matmata_Ber_2009_12_29_006.jpg" alt="Matmata" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🏜️</div>
+      <div class="card-body">
+        <div class="card-number">08 / Matmata</div>
+        <h3 class="card-title">Star Wars Troglodyte Homes</h3>
+        <p class="card-desc">The underground cave homes of Matmata served as Luke Skywalker's childhood home in Star Wars. Still inhabited by Berber families today, these subterranean dwellings carved into soft rock are an extraordinary architectural and cultural experience.</p>
+        <span class="card-tag">Berber Culture · South</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/TozeurOasis.jpg/1280px-TozeurOasis.jpg" alt="Tozeur Oasis" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🌴</div>
+      <div class="card-body">
+        <div class="card-number">09 / Tozeur & Chebika</div>
+        <h3 class="card-title">Desert Oases</h3>
+        <p class="card-desc">Tozeur is the gateway to Tunisia's stunning desert oases. The Chebika, Tamerza, and Mides oases — mountain gorges turned lush green paradises — are within 40 minutes' drive. Date palm forests, hot springs, and abandoned Berber villages await.</p>
+        <span class="card-tag">Desert · South</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Djerba_island_aerial_view.jpg/1280px-Djerba_island_aerial_view.jpg" alt="Djerba" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🏝️</div>
+      <div class="card-body">
+        <div class="card-number">10 / Djerba Island</div>
+        <h3 class="card-title">The Island of Dreams</h3>
+        <p class="card-desc">Tunisia's beloved island is rated 4.5 stars by nearly 6,000 visitors. Famous for white sandy beaches, the street art neighbourhood of Djerbahood, one of Africa's oldest synagogues (Ghriba), a Phoenician fort, and a thriving Berber culture.</p>
+        <span class="card-tag">Island · Beaches</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHAT TO DO -->
+<section id="do">
+  <div class="section-header">
+    <div class="section-tag">Activities</div>
+    <h2 class="section-title">What to <em>Do</em></h2>
+    <p class="section-subtitle">Ten unforgettable experiences — from Saharan adventures to hammam rituals and cooking classes.</p>
+  </div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-img-placeholder">🐪</div>
+      <div class="card-body">
+        <div class="card-number">01 / Activity</div>
+        <h3 class="card-title">Camel Trek at Sunset</h3>
+        <p class="card-desc">Ride a camel into the Sahara near Douz or Tozeur as the sun melts into the dunes. Opt for an overnight camp under a sky ablaze with stars — one of Tunisia's most magical experiences. Best booked through reputable local guides for the full desert experience.</p>
+        <span class="card-tag">South · Adventure</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-placeholder">🏺</div>
+      <div class="card-body">
+        <div class="card-number">02 / Activity</div>
+        <h3 class="card-title">Souk Shopping in the Medina</h3>
+        <p class="card-desc">Lose yourself in centuries-old covered markets in Tunis, Sousse, or Kairouan. Haggle for hand-woven rugs, pottery, leather goods, silver jewellery, and aromatic spices. The Souk des Étoffes and Souk el-Attarine in Tunis are must-visits.</p>
+        <span class="card-tag">Culture · Shopping</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Hammam_Tunis.jpg/800px-Hammam_Tunis.jpg" alt="Hammam" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="card-img-placeholder" style="display:none">🛁</div>
+      <div class="card-body">
+        <div class="card-number">03 / Activity</div>
+        <h3 class="card-title">Traditional Hammam</h3>
+        <p class="card-desc">Indulge in a centuries-old Tunisian bathing ritual at a traditional hammam (bathhouse). Steam, exfoliate with a kessa mitt, and get a black soap massage. Hammam Kachachine in Tunis is one of the most authentic. Costs just a few dinars.</p>
+        <span class="card-tag">Wellness · Culture</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-placeholder">🍳</div>
+      <div class="card-body">
+        <div class="card-number">04 / Activity</div>
+        <h3 class="card-title">Tunisian Cooking Class</h3>
+        <p class="card-desc">Learn to make brik, mechouia salad, and couscous from a local home cook or chef. Many classes are held in beautifully restored medina houses (dars). You'll leave with recipes, spice knowledge, and a full stomach. Available in Tunis and Djerba.</p>
+        <span class="card-tag">Culinary · Culture</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-placeholder">🏄</div>
+      <div class="card-body">
+        <div class="card-number">05 / Activity</div>
+        <h3 class="card-title">Kitesurfing at Djerba</h3>
+        <p class="card-desc">Tunisia's consistent Mediterranean winds and shallow lagoons make Djerba and the Gulf of Gabès world-class kitesurfing and windsurfing destinations. Schools offer lessons for beginners. The flat water and warm temperatures are ideal from April to October.</p>
+        <span class="card-tag">Water Sport · Djerba</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-placeholder">🏺</div>
+      <div class="card-body">
+        <div class="card-number">06 / Activity</div>
+        <h3 class="card-title">Star Wars Location Tour</h3>
+        <p class="card-desc">Tunisia was the primary filming location for Tatooine across multiple Star Wars films. Join a dedicated tour from Tozeur visiting Matmata's cave homes, Ksar Hadada, Sidi Driss hotel (Mos Eisley), and the iconic salt flats of Chott el-Djerid.</p>
+        <span class="card-tag">Film Tourism · South</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-placeholder">🎭</div>
+      <div class="card-body">
+        <div class="card-number">07 / Activity</div>
+        <h3 class="card-title">Carthage International Festival</h3>
+        <p class="card-desc">Every July and August, world-class concerts, theatre performances, and cultural events are held in the spectacular Roman Theatre of Carthage and other ancient venues. Artists from across the Arab world and Europe perform under the stars.</p>
+        <span class="card-tag">Festival · Summer</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-placeholder">🌊</div>
+      <div class="card-body">
+        <div class="card-number">08 / Activity</div>
+        <h3 class="card-title">Snorkelling at Cap Bon</h3>
+        <p class="card-desc">The Cap Bon peninsula's clear Mediterranean waters hide posidonia meadows, sea bream, octopus, and ancient shipwreck relics. Korbous and Kelibia have excellent snorkelling spots along rocky coastlines. Diving courses are available in Hammamet.</p>
+        <span class="card-tag">Water Sport · North</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-placeholder">🚗</div>
+      <div class="card-body">
+        <div class="card-number">09 / Activity</div>
+        <h3 class="card-title">4WD Desert Drive</h3>
+        <p class="card-desc">Hire a 4WD vehicle and driver to navigate the Great Eastern Erg dunes near Douz. Stop at salt lakes (Chott el-Djerid), mountain oases, and Berber villages. An overnight bivouac in a nomadic tent camp beneath the Milky Way is unmissable.</p>
+        <span class="card-tag">Desert · Adventure</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-placeholder">🍷</div>
+      <div class="card-body">
+        <div class="card-number">10 / Activity</div>
+        <h3 class="card-title">Tunisian Wine Tasting</h3>
+        <p class="card-desc">Tunisia has a 2,000-year winemaking history. The Cap Bon peninsula produces 80% of the country's wine — including the famous Gris de Tunisie rosé. Visit local cellars near Grombalia for tastings, or enjoy a glass paired with fresh seafood by the sea.</p>
+        <span class="card-tag">Food & Drink · Cap Bon</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EAT -->
+<section id="eat" style="background: var(--sand);">
+  <div class="section-header">
+    <div class="section-tag">Local Cuisine</div>
+    <h2 class="section-title">What to <em>Eat</em></h2>
+    <p class="section-subtitle">Five iconic Tunisian flavours — a cuisine shaped by Berber, Arab, Ottoman, Italian, and French influences, and famously generous with harissa.</p>
+  </div>
+  <div class="food-grid">
+
+    <div class="food-card">
+      <img class="food-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Brik_tunisien.jpg/800px-Brik_tunisien.jpg" alt="Brik" onerror="this.style.display='none'">
+      <div class="food-body">
+        <div class="food-category">Street Food · Starter</div>
+        <h3 class="food-name">Brik à l'Oeuf</h3>
+        <p class="food-desc">Tunisia's iconic crispy fried pastry triangle, stuffed with a runny egg, tuna, capers, and parsley. Found everywhere from street stalls to fine dining. The goal: bite into it and catch the yolk. One of the most beloved Tunisian street foods. ~3 TND.</p>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img class="food-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Lablabi_Tunis.jpg/800px-Lablabi_Tunis.jpg" alt="Lablabi" onerror="this.style.display='none'">
+      <div class="food-body">
+        <div class="food-category">Breakfast · Street Food</div>
+        <h3 class="food-name">Lablabi</h3>
+        <p class="food-desc">Tunisia's beloved breakfast soup — a hearty bowl of chickpeas in spiced broth, served over torn stale bread with a raw egg, olive oil, cumin, and harissa. Tear the bread into the bowl, stir, and enjoy this warming, intensely flavourful start to the day.</p>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img class="food-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Makroud.jpg/800px-Makroud.jpg" alt="Makroud" onerror="this.style.display='none'">
+      <div class="food-body">
+        <div class="food-category">Sweet · Pastry</div>
+        <h3 class="food-name">Makroud</h3>
+        <p class="food-desc">Semolina diamonds filled with date paste, deep-fried and soaked in honey syrup. Originating in Kairouan, these syrup-drenched sweets are sold in every pastry shop across the country. Intensely sweet, fragrant with orange blossom water, and utterly addictive.</p>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img class="food-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Couscous-1.jpg/800px-Couscous-1.jpg" alt="Couscous" onerror="this.style.display='none'">
+      <div class="food-body">
+        <div class="food-category">Main · National Dish</div>
+        <h3 class="food-name">Tunisian Couscous</h3>
+        <p class="food-desc">The national dish — steamed semolina pearls topped with slow-cooked lamb, vegetables, and a deeply spiced broth laced with harissa. Every family has their own recipe. Hundreds of variations exist across regions. Eaten communally from a shared pot on Fridays.</p>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img class="food-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Atay.jpg/800px-Atay.jpg" alt="Mint Tea" onerror="this.style.display='none'">
+      <div class="food-body">
+        <div class="food-category">Drink · Tradition</div>
+        <h3 class="food-name">Mint Tea with Pine Nuts</h3>
+        <p class="food-desc">The Tunisian twist on Maghrebi tea ritual — served sweet, poured from a height for froth, and distinctively topped with crunchy pine nuts floating on the surface. Served hot or iced after meals. Sit in a café in Sidi Bou Said and sip one with a sea view.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STAY -->
+<section class="stay-section" id="stay">
+  <div class="section-header">
+    <div class="section-tag">Accommodation</div>
+    <h2 class="section-title">Where to <em>Stay</em></h2>
+    <p class="section-subtitle">The best bases for exploring Tunisia — from boutique medina guesthouses to beach resorts and desert camps.</p>
+  </div>
+  <div class="stay-grid">
+
+    <div class="stay-card">
+      <div class="stay-type">Capital · History</div>
+      <div class="stay-area">Tunis Medina & La Marsa</div>
+      <p class="stay-desc">The Medina is ideal for immersive cultural exploration — stay in a restored dar (guesthouse) inside a historic mansion. La Marsa and Sidi Bou Said offer a more relaxed, coastal vibe with excellent restaurants and TGM train access to central Tunis.</p>
+      <div class="stay-picks">
+        <div class="stay-pick">Dar Ben Gacem — boutique medina dar</div>
+        <div class="stay-pick">La Marsa — upscale beachside neighbourhood</div>
+        <div class="stay-pick">Carthage area — midpoint for day trips</div>
+      </div>
+    </div>
+
+    <div class="stay-card">
+      <div class="stay-type">Beach Resort · Families</div>
+      <div class="stay-area">Hammamet</div>
+      <p class="stay-desc">Tunisia's most popular beach destination with long sandy shores, resort hotels, a picturesque medina, and excellent water sports. Busy in summer but a great base for Cap Bon day trips. Hammamet Yasmine has a new marina district with restaurants and entertainment.</p>
+      <div class="stay-picks">
+        <div class="stay-pick">Le Royal Hotel & Resort — highly rated all-inclusive</div>
+        <div class="stay-pick">Yasmine Hammamet — newer resort strip</div>
+        <div class="stay-pick">Nabeul — quieter alternative nearby</div>
+      </div>
+    </div>
+
+    <div class="stay-card">
+      <div class="stay-type">Central Hub · Ruins</div>
+      <div class="stay-area">Sousse</div>
+      <p class="stay-desc">An excellent base for exploring central Tunisia — within easy reach of El Jem, Kairouan, and Monastir. Sousse has its own magnificent UNESCO medina, a ribat fortress, and sandy beaches. The train connects it to Tunis in 2 hours.</p>
+      <div class="stay-picks">
+        <div class="stay-pick">Medina guesthouses — authentic stay</div>
+        <div class="stay-pick">Port El Kantaoui — marina resort complex</div>
+        <div class="stay-pick">Monastir — quieter nearby alternative</div>
+      </div>
+    </div>
+
+    <div class="stay-card">
+      <div class="stay-type">Island Paradise · Relaxation</div>
+      <div class="stay-area">Djerba</div>
+      <p class="stay-desc">The island has its own airport (DJE) with direct European flights. Stay in Houmt Souk (the main town) for culture and souks, or along the hotel zone beaches for pure relaxation. Djerba rewards slow travellers — rent a bike and explore at leisure.</p>
+      <div class="stay-picks">
+        <div class="stay-pick">Houmt Souk — authentic town centre</div>
+        <div class="stay-pick">Zone Touristique — beach hotel strip</div>
+        <div class="stay-pick">Midoun — local village experience</div>
+      </div>
+    </div>
+
+    <div class="stay-card">
+      <div class="stay-type">Desert Gateway · Adventure</div>
+      <div class="stay-area">Tozeur & Douz</div>
+      <p class="stay-desc">Tozeur is the main gateway to the south — beautiful traditional brick architecture, date palm oases, and Star Wars landscapes. Douz is the "Gateway to the Sahara." Both offer desert camp experiences — sleep under the stars in a Bedouin tent.</p>
+      <div class="stay-picks">
+        <div class="stay-pick">Dar Charait — elegant heritage hotel Tozeur</div>
+        <div class="stay-pick">Desert camps — overnight bivouac in the dunes</div>
+        <div class="stay-pick">Matmata troglodyte hotel — unique underground stay</div>
+      </div>
+    </div>
+
+    <div class="stay-card">
+      <div class="stay-type">Untouched · Off-Beaten-Track</div>
+      <div class="stay-area">Tabarka & North Coast</div>
+      <p class="stay-desc">Tunisia's rugged northern coast between Bizerte and Tabarka is largely overlooked by tourists. Tabarka has a Genoese fort, coral-rich diving waters, and a summer jazz festival. Bulla Regia features unique underground Roman villas to escape summer heat.</p>
+      <div class="stay-picks">
+        <div class="stay-pick">Tabarka — coral diving and mountain scenery</div>
+        <div class="stay-pick">Bizerte — Tunisia's northernmost city with a medieval Kasbah</div>
+        <div class="stay-pick">Ain Draham — cool mountain retreat</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section" id="map">
+  <div class="section-header">
+    <div class="section-tag">Interactive Map</div>
+    <h2 class="section-title">Explore <em>Tunisia</em></h2>
+    <p class="section-subtitle">All key attractions, activities, and recommended stay areas pinned on one map.</p>
+  </div>
+  <div class="map-legend">
+    <span class="legend-label">Legend:</span>
+    <div class="legend-item"><div class="legend-dot" style="background:#C4714A"></div> Things to See</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#1B3A5C"></div> Activities</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#C9A84C"></div> Where to Stay</div>
+  </div>
+  <div id="tunisia-map"></div>
+</section>
+
+<!-- ITINERARY -->
+<section class="itinerary-section" id="itinerary">
+  <div class="section-header">
+    <div class="section-tag">Day by Day</div>
+    <h2 class="section-title">10-Day <em>Itinerary</em></h2>
+    <p class="section-subtitle">A complete journey from Tunis through ancient ruins, mountain oases, desert camps, and island beaches — including flight logistics.</p>
+  </div>
+
+  <!-- FLIGHTS IN -->
+  <div class="flight-block">
+    <div class="flight-info">
+      <div class="flight-title">✈ Arrival Flight</div>
+      <div class="flight-route">Your City → Tunis (TUN)</div>
+      <div class="flight-meta">Direct flights available from London, Paris, Frankfurt, Rome, Amsterdam · Approx. 2–3h from most European cities · Tunis-Carthage Airport (TUN)</div>
+    </div>
+    <div>
+      <div class="flight-title">Best Airlines</div>
+      <div style="font-size:0.85rem;color:rgba(255,255,255,0.6)">Tunisair · Transavia · EasyJet<br>Ryanair (seasonal) · Air France</div>
+    </div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="day-block">
+      <div class="day-label">
+        <span class="day-num">Day 1</span>
+        <span class="day-name">Arrival</span>
+      </div>
+      <div class="day-content">
+        <h3>Arrive in Tunis · Sidi Bou Said</h3>
+        <div class="day-location">📍 Tunis Region</div>
+        <div class="day-activities">
+          <div class="day-activity"><span class="day-activity-time">Afternoon</span> Arrive Tunis-Carthage airport. Buy an Orange SIM card at the airport. Take a taxi to your dar in the Medina or La Marsa.</div>
+          <div class="day-activity"><span class="day-activity-time">Late PM</span> Head to Sidi Bou Said — explore the blue and white alleyways, sip mint tea with pine nuts at Café des Nattes, and watch the sun set over the Gulf of Tunis.</div>
+          <div class="day-activity"><span class="day-activity-time">Evening</span> Dinner in Sidi Bou Said or La Marsa. Try brik and mechouia salad for your first Tunisian meal.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">
+        <span class="day-num">Day 2</span>
+        <span class="day-name">Tunis</span>
+      </div>
+      <div class="day-content">
+        <h3>Medina, Bardo Museum & Carthage</h3>
+        <div class="day-location">📍 Tunis</div>
+        <div class="day-activities">
+          <div class="day-activity"><span class="day-activity-time">09:00</span> Bardo National Museum — spend 2–3 hours with the world's finest Roman mosaics. Don't miss the Virgil mosaic.</div>
+          <div class="day-activity"><span class="day-activity-time">12:30</span> Lunch in the Medina — try lablabi for an authentic local experience.</div>
+          <div class="day-activity"><span class="day-activity-time">14:00</span> Explore the Tunis Medina — Souk el-Attarine, Zitouna Mosque, and artisan workshops.</div>
+          <div class="day-activity"><span class="day-activity-time">16:30</span> TGM train to Carthage — visit Antonine Baths and Byrsa Hill at golden hour.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">
+        <span class="day-num">Day 3</span>
+        <span class="day-name">Dougga</span>
+      </div>
+      <div class="day-content">
+        <h3>Day Trip to Dougga Roman Site</h3>
+        <div class="day-location">📍 Béja Governorate (2.5h from Tunis)</div>
+        <div class="day-activities">
+          <div class="day-activity"><span class="day-activity-time">07:30</span> Early departure by rental car or organised day tour toward Dougga via Béja.</div>
+          <div class="day-activity"><span class="day-activity-time">10:00</span> Spend 3–4 hours exploring Dougga — the Capitol Temple, Roman Theatre, Licinian Baths, and Numidian mausoleum.</div>
+          <div class="day-activity"><span class="day-activity-time">14:30</span> Lunch in Téboursouk town. Return to Tunis via Testour (see the Ottoman mosque with a Hebrew clock).</div>
+          <div class="day-activity"><span class="day-activity-time">Evening</span> Traditional hammam experience in Tunis — Hammam Kachachine in the Medina.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">
+        <span class="day-num">Day 4</span>
+        <span class="day-name">Kairouan</span>
+      </div>
+      <div class="day-content">
+        <h3>Kairouan & El Jem Colosseum</h3>
+        <div class="day-location">📍 Central Tunisia</div>
+        <div class="day-activities">
+          <div class="day-activity"><span class="day-activity-time">08:00</span> Drive south (2.5h) to Kairouan — explore the Great Mosque courtyard, medina, and Aghlabid Basins.</div>
+          <div class="day-activity"><span class="day-activity-time">12:00</span> Buy makroud at Kairouan's famous pastry shops — the city is known as the makroud capital of Tunisia.</div>
+          <div class="day-activity"><span class="day-activity-time">13:30</span> Drive to El Jem (1h) — explore the magnificent amphitheatre and underground tunnels. Visit the adjacent mosaic museum.</div>
+          <div class="day-activity"><span class="day-activity-time">Evening</span> Continue south to Tozeur (4h) or stay overnight near El Jem.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">
+        <span class="day-num">Day 5</span>
+        <span class="day-name">Tozeur</span>
+      </div>
+      <div class="day-content">
+        <h3>Desert Oases & Date Palm Paradise</h3>
+        <div class="day-location">📍 Tozeur, Southwest Tunisia</div>
+        <div class="day-activities">
+          <div class="day-activity"><span class="day-activity-time">09:00</span> Walk or cycle through Tozeur's ancient medina — unique yellow brick architecture carved in geometric patterns.</div>
+          <div class="day-activity"><span class="day-activity-time">11:00</span> Drive the oasis circuit: Chebika, Tamerza, and Mides. Mountain gorges, waterfalls (seasonal), and abandoned villages.</div>
+          <div class="day-activity"><span class="day-activity-time">15:00</span> Visit Chott el-Djerid — the vast salt lake shimmering with mirages on the horizon. A surreal, otherworldly landscape.</div>
+          <div class="day-activity"><span class="day-activity-time">17:30</span> Date palm garden tour and tasting at Eden Palm in Tozeur.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">
+        <span class="day-num">Day 6</span>
+        <span class="day-name">Sahara</span>
+      </div>
+      <div class="day-content">
+        <h3>Camel Trek & Desert Camp Overnight</h3>
+        <div class="day-location">📍 Douz / Great Eastern Erg</div>
+        <div class="day-activities">
+          <div class="day-activity"><span class="day-activity-time">09:00</span> Drive to Douz (1h from Tozeur) — the Gateway to the Sahara. Arrange a 4WD and camel trek at the gateway dunes.</div>
+          <div class="day-activity"><span class="day-activity-time">Afternoon</span> Camel ride into the dunes as the light turns golden. Watch the Saharan sunset from the top of a sand dune.</div>
+          <div class="day-activity"><span class="day-activity-time">Night</span> Overnight bivouac in a Bedouin tent camp. Traditional dinner, mint tea, and a sky filled with stars. One of Tunisia's most special experiences.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">
+        <span class="day-num">Day 7</span>
+        <span class="day-name">Matmata</span>
+      </div>
+      <div class="day-content">
+        <h3>Star Wars Landscapes & Berber Villages</h3>
+        <div class="day-location">📍 Matmata & Tataouine Region</div>
+        <div class="day-activities">
+          <div class="day-activity"><span class="day-activity-time">Morning</span> Wake at dawn in the desert camp. Sunrise over the dunes before driving north toward Matmata (3h).</div>
+          <div class="day-activity"><span class="day-activity-time">11:00</span> Explore Matmata's underground troglodyte homes — visit Sidi Driss Hotel (Luke's home in Star Wars). Talk with Berber families.</div>
+          <div class="day-activity"><span class="day-activity-time">14:00</span> Continue to Ksar Hadada and Ksar Ghilane fortress — more Star Wars locations and stunning desert ksars (Berber granary forts).</div>
+          <div class="day-activity"><span class="day-activity-time">Evening</span> Drive to Djerba via the causeway or ferry (3–4h). Check into your island accommodation.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">
+        <span class="day-num">Day 8</span>
+        <span class="day-name">Djerba</span>
+      </div>
+      <div class="day-content">
+        <h3>Island Life — Culture & Beach</h3>
+        <div class="day-location">📍 Djerba Island</div>
+        <div class="day-activities">
+          <div class="day-activity"><span class="day-activity-time">Morning</span> Explore Houmt Souk — the island's vibrant market town. Visit the Ghriba Synagogue (one of Africa's oldest), the Borj el-Kebir fort, and wander the pottery quarter.</div>
+          <div class="day-activity"><span class="day-activity-time">Afternoon</span> Djerbahood neighbourhood — over 150 street art murals by international artists transforming the village of Erriadh.</div>
+          <div class="day-activity"><span class="day-activity-time">Late PM</span> Beach time at one of Djerba's white sand beaches. Freshly grilled fish dinner by the harbour.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">
+        <span class="day-num">Day 9</span>
+        <span class="day-name">Djerba</span>
+      </div>
+      <div class="day-content">
+        <h3>Water Sports, Cooking Class & Relaxation</h3>
+        <div class="day-location">📍 Djerba Island</div>
+        <div class="day-activities">
+          <div class="day-activity"><span class="day-activity-time">Morning</span> Kitesurfing or windsurfing lesson on Djerba's calm lagoons — ideal wind conditions make this a world-class spot.</div>
+          <div class="day-activity"><span class="day-activity-time">13:00</span> Tunisian cooking class — learn to prepare brik, couscous, and slata mechouia with a local chef in a traditional kitchen.</div>
+          <div class="day-activity"><span class="day-activity-time">Evening</span> Final sunset over the island. Wine tasting — try Gris de Tunisie rosé paired with local seafood. Souvenir shopping for pottery, woven baskets, and harissa.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">
+        <span class="day-num">Day 10</span>
+        <span class="day-name">Departure</span>
+      </div>
+      <div class="day-content">
+        <h3>Final Morning in Tunisia</h3>
+        <div class="day-location">📍 Djerba Airport (DJE)</div>
+        <div class="day-activities">
+          <div class="day-activity"><span class="day-activity-time">Morning</span> Final walk through Houmt Souk. Last lablabi breakfast. Buy spices (harissa, cumin, dried rose petals) and makroud pastries to take home.</div>
+          <div class="day-activity"><span class="day-activity-time">Midday</span> Transfer to Djerba-Zarzis Airport (DJE) for your departure flight — direct connections to most European cities.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FLIGHT OUT -->
+  <div class="flight-block" style="margin-top: 0;">
+    <div class="flight-info">
+      <div class="flight-title">✈ Departure Flight</div>
+      <div class="flight-route">Djerba (DJE) → Your City</div>
+      <div class="flight-meta">Direct seasonal flights from Djerba to London, Paris, Frankfurt, Rome, Amsterdam · Fly-in-fly-out strategy eliminates backtracking through Tunisia</div>
+    </div>
+    <div>
+      <div class="flight-title">Pro Tip</div>
+      <div style="font-size:0.85rem;color:rgba(255,255,255,0.6)">Fly into Tunis (TUN)<br>Fly out of Djerba (DJE)<br>Saves 6+ hours of travel</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Discover <span>Tunisia</span> — A travel guide to North Africa's hidden gem</p>
+  <p style="margin-top: 8px; font-size: 0.75rem;">Always check current visa requirements and travel advisories before your trip. Prices and hours may change.</p>
+</footer>
+
+<!-- MAP SCRIPT -->
+<script>
+  const map = L.map('tunisia-map', {
+    center: [34.5, 9.3],
+    zoom: 6.5,
+    zoomControl: true,
+    scrollWheelZoom: false
+  });
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+    maxZoom: 19
+  }).addTo(map);
+
+  function makeIcon(color) {
+    return L.divIcon({
+      className: '',
+      html: `<div style="width:14px;height:14px;border-radius:50%;background:${color};border:2.5px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.35)"></div>`,
+      iconSize: [14, 14],
+      iconAnchor: [7, 7],
+      popupAnchor: [0, -10]
+    });
+  }
+
+  const seeIcon = makeIcon('#C4714A');
+  const doIcon = makeIcon('#1B3A5C');
+  const stayIcon = makeIcon('#C9A84C');
+
+  // THINGS TO SEE
+  const seeSpots = [
+    { lat: 36.8698, lng: 10.3414, name: 'Sidi Bou Said', desc: 'Iconic blue & white clifftop village' },
+    { lat: 36.8540, lng: 10.3328, name: 'Carthage', desc: 'UNESCO ancient ruins overlooking the sea' },
+    { lat: 35.2964, lng: 10.7070, name: 'El Jem Amphitheatre', desc: "Africa's best-preserved Roman amphitheatre" },
+    { lat: 36.4229, lng: 9.2193, name: 'Dougga', desc: 'Best Roman site in Tunisia — UNESCO' },
+    { lat: 35.6811, lng: 10.1042, name: 'Kairouan Great Mosque', desc: "One of Islam's oldest mosques" },
+    { lat: 36.8094, lng: 10.1342, name: 'Bardo Museum', desc: "World's finest Roman mosaic collection" },
+    { lat: 36.7986, lng: 10.1686, name: 'Tunis Medina', desc: 'UNESCO medieval walled city & souks' },
+    { lat: 33.5470, lng: 9.9390, name: 'Matmata', desc: 'Troglodyte homes & Star Wars location' },
+    { lat: 33.9250, lng: 8.1400, name: 'Tozeur & Chebika Oases', desc: 'Desert oases and mountain gorges' },
+    { lat: 33.8076, lng: 10.8451, name: 'Djerba Island', desc: 'Beautiful Mediterranean island' }
+  ];
+
+  seeSpots.forEach(s => {
+    L.marker([s.lat, s.lng], { icon: seeIcon })
+      .addTo(map)
+      .bindPopup(`<strong style="font-family:Georgia,serif;font-size:1rem">${s.name}</strong><br><span style="color:#7A7772;font-size:0.82rem">${s.desc}</span><br><span style="font-size:0.7rem;color:#C4714A;text-transform:uppercase;letter-spacing:0.08em">📍 Thing to See</span>`);
+  });
+
+  // ACTIVITIES
+  const doSpots = [
+    { lat: 33.4688, lng: 8.9774, name: 'Camel Trek – Douz', desc: 'Sunset camel riding & desert camps' },
+    { lat: 36.7986, lng: 10.1700, name: 'Souk Shopping – Tunis', desc: 'Traditional covered markets in the Medina' },
+    { lat: 36.8094, lng: 10.1342, name: 'Traditional Hammam', desc: 'Hammam Kachachine – authentic bathhouse' },
+    { lat: 33.4688, lng: 8.9500, name: 'Star Wars Tour – South', desc: 'Tozeur, Matmata, Ksar Hadada film locations' },
+    { lat: 33.8100, lng: 10.8600, name: 'Kitesurfing – Djerba', desc: 'World-class wind sports on the lagoon' },
+    { lat: 36.8540, lng: 10.3400, name: 'Carthage Festival', desc: 'Summer concerts in the Roman Theatre' },
+    { lat: 36.6966, lng: 10.9466, name: 'Snorkelling – Cap Bon', desc: 'Clear Mediterranean waters near Kelibia' },
+    { lat: 33.8100, lng: 10.8400, name: 'Cooking Class – Djerba', desc: 'Learn to cook Tunisian dishes' },
+  ];
+
+  doSpots.forEach(s => {
+    L.marker([s.lat, s.lng], { icon: doIcon })
+      .addTo(map)
+      .bindPopup(`<strong style="font-family:Georgia,serif;font-size:1rem">${s.name}</strong><br><span style="color:#7A7772;font-size:0.82rem">${s.desc}</span><br><span style="font-size:0.7rem;color:#1B3A5C;text-transform:uppercase;letter-spacing:0.08em">🎯 Activity</span>`);
+  });
+
+  // WHERE TO STAY
+  const staySpots = [
+    { lat: 36.8200, lng: 10.2000, name: 'Tunis – La Marsa / Medina', desc: 'Best base for the north & culture' },
+    { lat: 36.3947, lng: 10.6203, name: 'Hammamet', desc: 'Top beach resort destination' },
+    { lat: 35.8271, lng: 10.6367, name: 'Sousse', desc: 'Central hub for ruins & coast' },
+    { lat: 33.8076, lng: 10.8451, name: 'Djerba', desc: 'Island paradise – beaches & culture' },
+    { lat: 33.9250, lng: 8.1400, name: 'Tozeur', desc: 'Desert gateway – south exploration' },
+    { lat: 36.9544, lng: 8.7582, name: 'Tabarka', desc: 'Off-beat north coast & diving' }
+  ];
+
+  staySpots.forEach(s => {
+    L.marker([s.lat, s.lng], { icon: stayIcon })
+      .addTo(map)
+      .bindPopup(`<strong style="font-family:Georgia,serif;font-size:1rem">${s.name}</strong><br><span style="color:#7A7772;font-size:0.82rem">${s.desc}</span><br><span style="font-size:0.7rem;color:#C9A84C;text-transform:uppercase;letter-spacing:0.08em">🏨 Where to Stay</span>`);
+  });
+</script>
+
+</body>
+</html>

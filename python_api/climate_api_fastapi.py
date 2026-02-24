@@ -94,11 +94,19 @@ _cpu_pool = ThreadPoolExecutor(max_workers=4, thread_name_prefix="climate")
 _FRANKFURTER_URL      = "https://api.frankfurter.dev/v1/latest"
 _EXCHANGERATE_API_URL = "https://api.exchangerate-api.com/v4/latest"
 NOMINATIM_URL         = "https://nominatim.openstreetmap.org/search"
-NOMINATIM_HEADERS     = {
+# Request English-only results (header + param; public Nominatim uses both)
+NOMINATIM_HEADERS = {
     "Accept": "application/json",
-    # Force English responses (Nominatim may otherwise localize by region/client defaults)
-    "Accept-Language": "en",
+    "Accept-Language": "en-US,en;q=0.9",
     "User-Agent": "SmartTravel/1.0 (travel planner)",
+}
+
+NOMINATIM_PARAMS = {
+    "format": "jsonv2",
+    "addressdetails": 1,
+    "namedetails": 1,
+    "extratags": 1,   # <-- add this
+    "accept-language": "en",
 }
 
 # ── geography constants ───────────────────────────────────────────────────────
@@ -1100,7 +1108,7 @@ async def climate(
 @app.get("/geocode")
 async def geocode(
     q:     str = Query(""),
-    limit: str = Query("6"),
+    limit: int = Query(6, ge=1, le=40),
 ):
     q = q.strip()
     if not q:
@@ -1108,12 +1116,31 @@ async def geocode(
     try:
         r = await _http.get(
             NOMINATIM_URL,
-            params={"q": q, "format": "json", "limit": limit, "accept-language": "en"},
+            params={**NOMINATIM_PARAMS, "q": q, "limit": limit},
             headers=NOMINATIM_HEADERS,
         )
         r.raise_for_status()
         data = r.json()
-        return data if isinstance(data, list) else []
+        if not isinstance(data, list):
+            return []
+
+        enriched = []
+        for result in data:
+            # Then in the response handler:
+            namedetails = result.get("namedetails") or {}
+            extratags   = result.get("extratags") or {}
+            english_name = (
+                namedetails.get("name:en")
+                or namedetails.get("name:en-US")
+                or extratags.get("name:en")
+                or result.get("display_name")  # Nominatim translates this when accept-language=en
+                or ""
+            )
+            obj = dict(result)
+            obj["english_name"] = english_name
+            enriched.append(obj)
+
+        return enriched
     except Exception as e:
         log.warning("Geocode error: %s", e)
         return []
