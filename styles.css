@@ -9,7 +9,8 @@ body {
     background: linear-gradient(160deg, #5b21b6 0%, #7c3aed 35%, #a78bfa 70%, #c4b5fd 100%);
     background-attachment: fixed;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .logo {
