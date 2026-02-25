@@ -132,6 +132,11 @@ body {
     overflow: visible;
 }
 
+/* Same for loading screen: use viewport scrollbar instead of inner container */
+#loading-screen .container {
+    overflow: visible;
+}
+
 .visa-glossary-intro {
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.95rem;
