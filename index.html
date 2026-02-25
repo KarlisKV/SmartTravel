@@ -6,77 +6,101 @@
     <title>SmartTravel — Climate Travel Planner</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen" class="screen active">
-        <div class="container">
-            <p class="subtitle">Plan your perfect trip & explore the world!</p>
-            <div class="button-group">
-                <button id="btn-know-destination" class="btn btn-primary">
-                    I know where I want to travel
-                </button>
-                <button id="btn-explore-world" class="btn btn-secondary">
-                    Explore the world
-                </button>
-                <button id="btn-scratch-map" class="btn btn-secondary">
-                    My World Scratch Map
-                </button>
-                <button id="btn-visa-glossary" class="btn btn-secondary">
-                    Visa info all nationalities
-                </button>
-            </div>
-            <section class="north-africa-guides">
-                <h3 class="north-africa-title">North Africa Guides</h3>
-                <p class="north-africa-subtitle">Choose a country</p>
-                <div class="north-africa-flag-grid">
-                    <a href="tunisia-travel-guide.html" class="north-africa-flag-card">
-                        <span class="north-africa-flag-emoji" aria-hidden="true">🇹🇳</span>
-                        <span class="north-africa-country-name">Tunisia</span>
-                    </a>
-                    <a href="algeria-travel-guide.html" class="north-africa-flag-card">
-                        <span class="north-africa-flag-emoji" aria-hidden="true">🇩🇿</span>
-                        <span class="north-africa-country-name">Algeria</span>
-                    </a>
-                    <a href="libya-travel-guide.html" class="north-africa-flag-card">
-                        <span class="north-africa-flag-emoji" aria-hidden="true">🇱🇾</span>
-                        <span class="north-africa-country-name">Libya</span>
-                    </a>
-                    <a href="morocco-travel-guide.html" class="north-africa-flag-card">
-                        <span class="north-africa-flag-emoji" aria-hidden="true">🇲🇦</span>
-                        <span class="north-africa-country-name">Morocco</span>
-                    </a>
-                    <a href="egypt-travel-guide.html" class="north-africa-flag-card">
-                        <span class="north-africa-flag-emoji" aria-hidden="true">🇪🇬</span>
-                        <span class="north-africa-country-name">Egypt</span>
-                    </a>
-                </div>
-            </section>
-            <section class="north-africa-guides">
-                <h3 class="north-africa-title">Atlantic West Africa Guides</h3>
-                <p class="north-africa-subtitle">Choose a country</p>
-                <div class="north-africa-flag-grid">
-                    <a href="cape-verde-travel-guide.html" class="north-africa-flag-card">
-                        <span class="north-africa-flag-emoji" aria-hidden="true">🇨🇻</span>
-                        <span class="north-africa-country-name">Cape Verde</span>
-                    </a>
-                    <a href="senegal-travel-guide.html" class="north-africa-flag-card">
-                        <span class="north-africa-flag-emoji" aria-hidden="true">🇸🇳</span>
-                        <span class="north-africa-country-name">Senegal</span>
-                    </a>
-                    <a href="gambia-travel-guide.html" class="north-africa-flag-card">
-                        <span class="north-africa-flag-emoji" aria-hidden="true">🇬🇲</span>
-                        <span class="north-africa-country-name">The Gambia</span>
-                    </a>
-                    <a href="mauritania-travel-guide.html" class="north-africa-flag-card">
-                        <span class="north-africa-flag-emoji" aria-hidden="true">🇲🇷</span>
-                        <span class="north-africa-country-name">Mauritania</span>
-                    </a>
-                </div>
-            </section>
+        <div class="container loading-container">
+            <main class="landing-shell" aria-labelledby="landing-title">
+                <section class="landing-hero">
+                    <p class="landing-eyebrow">SmartTravel planner</p>
+                    <h1 id="landing-title" class="landing-title">Plan smarter trips, faster.</h1>
+                    <p class="landing-subtitle">
+                        Compare climate, visa rules, airports, maps, and travel essentials in one place before you book.
+                    </p>
+                    <div class="landing-feature-row" aria-label="What you can do">
+                        <span class="landing-feature-pill">Climate windows</span>
+                        <span class="landing-feature-pill">Visa guidance</span>
+                        <span class="landing-feature-pill">Map explorer</span>
+                        <span class="landing-feature-pill">Scratch map</span>
+                    </div>
+                </section>
+
+                <section class="landing-actions-wrap" aria-label="Start options">
+                    <div class="button-group landing-actions">
+                        <button id="btn-know-destination" class="btn btn-primary">
+                            I know my destination
+                        </button>
+                        <button id="btn-explore-world" class="btn btn-secondary">
+                            Explore the world map
+                        </button>
+                        <button id="btn-scratch-map" class="btn btn-secondary">
+                            Open my scratch map
+                        </button>
+                        <button id="btn-visa-glossary" class="btn btn-secondary">
+                            Visa info by passport
+                        </button>
+                    </div>
+                </section>
+
+                <section class="landing-guides-wrap">
+                    <h2 class="landing-guides-heading">Featured Country Guides</h2>
+                    <p class="landing-guides-subtitle">Start with curated pages built in the same style as your planner.</p>
+                    <div class="landing-guides-grid">
+                        <section class="north-africa-guides">
+                            <h3 class="north-africa-title">North Africa Guides</h3>
+                            <p class="north-africa-subtitle">Choose a country</p>
+                            <div class="north-africa-flag-grid">
+                                <a href="tunisia-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇹🇳</span>
+                                    <span class="north-africa-country-name">Tunisia</span>
+                                </a>
+                                <a href="algeria-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇩🇿</span>
+                                    <span class="north-africa-country-name">Algeria</span>
+                                </a>
+                                <a href="libya-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇱🇾</span>
+                                    <span class="north-africa-country-name">Libya</span>
+                                </a>
+                                <a href="morocco-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇲🇦</span>
+                                    <span class="north-africa-country-name">Morocco</span>
+                                </a>
+                                <a href="egypt-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇪🇬</span>
+                                    <span class="north-africa-country-name">Egypt</span>
+                                </a>
+                            </div>
+                        </section>
+                        <section class="north-africa-guides">
+                            <h3 class="north-africa-title">Atlantic West Africa Guides</h3>
+                            <p class="north-africa-subtitle">Choose a country</p>
+                            <div class="north-africa-flag-grid">
+                                <a href="cape-verde-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇨🇻</span>
+                                    <span class="north-africa-country-name">Cape Verde</span>
+                                </a>
+                                <a href="senegal-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇸🇳</span>
+                                    <span class="north-africa-country-name">Senegal</span>
+                                </a>
+                                <a href="gambia-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇬🇲</span>
+                                    <span class="north-africa-country-name">The Gambia</span>
+                                </a>
+                                <a href="mauritania-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇲🇷</span>
+                                    <span class="north-africa-country-name">Mauritania</span>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </main>
         </div>
     </div>
 
