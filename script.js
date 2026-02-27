@@ -545,7 +545,11 @@ async function searchPlaces(query) {
             lat: parseFloat(item.lat),
             lon: parseFloat(item.lon),
             country: item.address?.country || ''
-        }));
+        })).filter(item =>
+            // drop results whose name is still non-latin (CJK, Arabic, Cyrillic etc.)
+            /^[\x00-\x7F\u00C0-\u024F\s\-\,\.\']+$/.test(item.name)
+            || item.name  // keep it anyway if nothing else matched
+        );
     } catch (e) {
         return [];
     }
@@ -1691,6 +1695,173 @@ function bindEvents() {
     const btnBackScratchMap = document.getElementById('btn-back-scratch-map');
     if (btnBackScratchMap) {
         btnBackScratchMap.addEventListener('click', () => showScreen('loading-screen'));
+    }
+
+    // --- Guide search & map on landing page ---
+    const guideSearchInput = document.getElementById('guide-search-input');
+    const guideCards = Array.from(document.querySelectorAll('.north-africa-flag-card'));
+
+    // Normalize country name for matching: strip accents, collapse "&"/"and", slugify.
+    function normalizeCountryKey(str) {
+        if (!str || typeof str !== 'string') return '';
+        return str.toLowerCase()
+            .normalize('NFD').replace(/\p{Diacritic}/gu, '')
+            .replace(/\s*&\s*/g, ' ')
+            .replace(/\s+and\s+/g, ' ')
+            .replace(/[^\w\s]+/g, ' ')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-')
+            .replace(/^-|-$/g, '') || '';
+    }
+
+    const guidesIndex = guideCards.map(card => {
+        const nameEl = card.querySelector('.north-africa-country-name');
+        const name = (nameEl?.textContent || '').trim();
+        return {
+            el: card,
+            name: name.toLowerCase(),
+            normalized: normalizeCountryKey(name)
+        };
+    });
+
+    if (guideSearchInput && guidesIndex.length) {
+        guideSearchInput.addEventListener('input', () => {
+            const q = guideSearchInput.value.trim().toLowerCase();
+            const qNorm = normalizeCountryKey(q);
+            guidesIndex.forEach(({ el, name, normalized }) => {
+                if (!q) {
+                    el.style.display = '';
+                } else {
+                    const match = name.includes(q) || (qNorm && normalized.includes(qNorm));
+                    el.style.display = match ? '' : 'none';
+                }
+            });
+        });
+    }
+
+    // Lightweight Leaflet map to jump to guides by country.
+    const guidesMapEl = document.getElementById('guides-map');
+    if (guidesMapEl && typeof L !== 'undefined') {
+        // Create a small world map focused on Africa.
+        const map = L.map(guidesMapEl, {
+            attributionControl: false,
+            zoomControl: false,
+        }).setView([10, 15], 3.2);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 5,
+        }).addTo(map);
+
+        // Hard-coded approximate centroids for the supported guides.
+        const guideLocations = [
+            { key: 'tunisia', name: 'Tunisia', flag: '🇹🇳', lat: 34, lon: 9 },
+            { key: 'algeria', name: 'Algeria', flag: '🇩🇿', lat: 28, lon: 2 },
+            { key: 'libya', name: 'Libya', flag: '🇱🇾', lat: 27, lon: 18 },
+            { key: 'morocco', name: 'Morocco', flag: '🇲🇦', lat: 31.8, lon: -6 },
+            { key: 'egypt', name: 'Egypt', flag: '🇪🇬', lat: 27, lon: 30 },
+            { key: 'mali', name: 'Mali', flag: '🇲🇱', lat: 18, lon: -2 },
+            { key: 'niger', name: 'Niger', flag: '🇳🇪', lat: 17.6, lon: 9 },
+            { key: 'chad', name: 'Chad', flag: '🇹🇩', lat: 15.4, lon: 18.7 },
+            { key: 'cape-verde', name: 'Cape Verde', flag: '🇨🇻', lat: 16, lon: -24 },
+            { key: 'senegal', name: 'Senegal', flag: '🇸🇳', lat: 14.5, lon: -14.5 },
+            { key: 'gambia', name: 'The Gambia', flag: '🇬🇲', lat: 13.4, lon: -16.0 },
+            { key: 'mauritania', name: 'Mauritania', flag: '🇲🇷', lat: 20.3, lon: -10.5 },
+            { key: 'guinea-bissau', name: 'Guinea‑Bissau', flag: '🇬🇼', lat: 12, lon: -15.3 },
+            { key: 'guinea', name: 'Guinea', flag: '🇬🇳', lat: 10.5, lon: -10.5 },
+            { key: 'sierra-leone', name: 'Sierra Leone', flag: '🇸🇱', lat: 8.5, lon: -11.8 },
+            { key: 'ghana', name: 'Ghana', flag: '🇬🇭', lat: 7.9, lon: -1.0 },
+            { key: 'cote-divoire', name: "Côte d’Ivoire", flag: '🇨🇮', lat: 7.6, lon: -5.5 },
+            { key: 'nigeria', name: 'Nigeria', flag: '🇳🇬', lat: 9.1, lon: 8.7 },
+            { key: 'benin', name: 'Benin', flag: '🇧🇯', lat: 9.3, lon: 2.3 },
+            { key: 'togo', name: 'Togo', flag: '🇹🇬', lat: 8.6, lon: 0.9 },
+            { key: 'djibouti', name: 'Djibouti', flag: '🇩🇯', lat: 11.8, lon: 42.6 },
+            { key: 'eritrea', name: 'Eritrea', flag: '🇪🇷', lat: 15.2, lon: 39.0 },
+            { key: 'sudan', name: 'Sudan', flag: '🇸🇩', lat: 15.6, lon: 30 },
+            { key: 'south-sudan', name: 'South Sudan', flag: '🇸🇸', lat: 7.3, lon: 30.3 },
+            { key: 'ethiopia', name: 'Ethiopia', flag: '🇪🇹', lat: 9.1, lon: 39.6 },
+            { key: 'somalia', name: 'Somalia', flag: '🇸🇴', lat: 6.1, lon: 45.3 },
+            // East Africa interior/southern cluster
+            { key: 'kenya', name: 'Kenya', flag: '🇰🇪', lat: 0.4, lon: 37.9 },
+            { key: 'uganda', name: 'Uganda', flag: '🇺🇬', lat: 1.5, lon: 32.3 },
+            { key: 'rwanda', name: 'Rwanda', flag: '🇷🇼', lat: -1.9, lon: 29.9 },
+            { key: 'burundi', name: 'Burundi', flag: '🇧🇮', lat: -3.4, lon: 29.9 },
+            { key: 'tanzania', name: 'Tanzania', flag: '🇹🇿', lat: -6.3, lon: 34.9 },
+            { key: 'malawi', name: 'Malawi', flag: '🇲🇼', lat: -13.3, lon: 34.3 },
+            { key: 'zambia', name: 'Zambia', flag: '🇿🇲', lat: -13.1, lon: 27.8 },
+            { key: 'zimbabwe', name: 'Zimbabwe', flag: '🇿🇼', lat: -19.0, lon: 29.2 },
+            // Central + island belt
+            { key: 'central-african-republic', name: 'Central African Republic', flag: '🇨🇫', lat: 6.6, lon: 20.9 },
+            { key: 'cameroon', name: 'Cameroon', flag: '🇨🇲', lat: 7.3, lon: 12.4 },
+            { key: 'equatorial-guinea', name: 'Equatorial Guinea', flag: '🇬🇶', lat: 1.6, lon: 10.3 },
+            { key: 'gabon', name: 'Gabon', flag: '🇬🇦', lat: -0.8, lon: 11.6 },
+            { key: 'angola', name: 'Angola', flag: '🇦🇴', lat: -11.2, lon: 17.9 },
+            { key: 'drc', name: 'Democratic Republic of the Congo', flag: '🇨🇩', lat: -3.0, lon: 23.6 },
+            { key: 'republic-congo', name: 'Republic of the Congo', flag: '🇨🇬', lat: -0.8, lon: 15.2 },
+            { key: 'sao-tome-principe', name: 'São Tomé & Príncipe', flag: '🇸🇹', lat: 0.2, lon: 6.7 },
+            { key: 'madagascar', name: 'Madagascar', flag: '🇲🇬', lat: -20.0, lon: 46.7 },
+            { key: 'mozambique', name: 'Mozambique', flag: '🇲🇿', lat: -18.0, lon: 35.5 },
+            { key: 'seychelles', name: 'Seychelles', flag: '🇸🇨', lat: -4.6, lon: 55.4 },
+            { key: 'mauritius', name: 'Mauritius', flag: '🇲🇺', lat: -20.2, lon: 57.5 },
+            { key: 'south-africa', name: 'South Africa', flag: '🇿🇦', lat: -29.0, lon: 24.0 },
+            { key: 'lesotho', name: 'Lesotho', flag: '🇱🇸', lat: -29.6, lon: 28.3 },
+            { key: 'eswatini', name: 'Eswatini', flag: '🇸🇿', lat: -26.5, lon: 31.5 },
+            { key: 'namibia', name: 'Namibia', flag: '🇳🇦', lat: -22.6, lon: 17.1 },
+            { key: 'botswana', name: 'Botswana', flag: '🇧🇼', lat: -22.3, lon: 24.7 },
+        ];
+
+        const guideHrefByKey = {};
+        guideCards.forEach(card => {
+            const nameEl = card.querySelector('.north-africa-country-name');
+            const href = card.getAttribute('href') || card.getAttribute('data-href') || card.getAttribute('data-url') || card.getAttribute('data-link') || card.getAttribute('data-target') || card.getAttribute('data-guide');
+            const text = (nameEl?.textContent || '').trim();
+            if (!href || !text) return;
+            const normalized = normalizeCountryKey(text);
+            const keyLegacy = text.toLowerCase()
+                .replace(/\s*&\s*/g, '-and-')
+                .replace(/[^\w]+/g, '-')
+                .replace(/-+/g, '-')
+                .replace(/-$/g, '');
+            guideHrefByKey[keyLegacy] = href;
+            guideHrefByKey[normalized] = href;
+            guideHrefByKey[normalized.replace(/-/g, '')] = href;
+        });
+
+        guideLocations.forEach(loc => {
+            const variants = [
+                loc.key,
+                loc.key.replace(/_/g, '-'),
+                normalizeCountryKey(loc.name),
+                normalizeCountryKey(loc.name).replace(/-/g, ''),
+                loc.name.toLowerCase().replace(/\s*&\s*/g, '-and-').replace(/[^\w-]+/g, '-').replace(/-+/g, '-').replace(/-$/g, ''),
+            ];
+            let href = null;
+            for (const v of variants) {
+                if (v && guideHrefByKey[v]) {
+                    href = guideHrefByKey[v];
+                    break;
+                }
+            }
+            if (!href) return;
+
+            const icon = L.divIcon({
+                className: 'guide-flag-icon',
+                html: `<span class="guide-flag-emoji">${loc.flag}</span>`,
+                iconSize: [24, 24],
+                iconAnchor: [12, 12],
+            });
+
+            const marker = L.marker([loc.lat, loc.lon], { icon }).addTo(map);
+
+            marker.bindTooltip(`${loc.flag} ${loc.name}`, {
+                permanent: false,
+                direction: 'top',
+                offset: [0, -4],
+            });
+
+            marker.on('click', () => {
+                window.location.href = href;
+            });
+        });
     }
     
     const btnLgbtq = document.getElementById('btn-lgbtq-table');

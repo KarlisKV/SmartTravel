@@ -47,8 +47,23 @@
                 </section>
 
                 <section class="landing-guides-wrap">
-                    <h2 class="landing-guides-heading">Featured Country Guides</h2>
-                    <p class="landing-guides-subtitle">Start with curated pages built in the same style as your planner.</p>
+                    <div class="landing-guides-header">
+                        <h2 class="landing-guides-heading">Featured Country Guides</h2>
+                        <p class="landing-guides-subtitle">Start with curated pages built in the same style as your planner.</p>
+                        <div class="guide-search-row">
+                            <input 
+                                id="guide-search-input"
+                                class="guide-search-input"
+                                type="search"
+                                placeholder="Type a country name (e.g. Ghana, Tunisia, DRC)…"
+                                autocomplete="off"
+                            />
+                            <span class="guide-search-hint">Matches update instantly; click a card, or use the map.</span>
+                        </div>
+                    </div>
+                    <div id="guides-map" class="north-africa-flag-grid" style="margin-top: 0.85rem; margin-bottom: 0.85rem; min-height: 260px;">
+                        <!-- Guide map rendered here by script.js -->
+                    </div>
                     <div class="landing-guides-grid">
                         <section class="north-africa-guides">
                             <h3 class="north-africa-title">North Africa Guides</h3>
@@ -170,10 +185,42 @@
                                     <span class="north-africa-flag-emoji" aria-hidden="true">🇸🇴</span>
                                     <span class="north-africa-country-name">Somalia</span>
                                 </a>
+                                <a href="guides/kenya-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇰🇪</span>
+                                    <span class="north-africa-country-name">Kenya</span>
+                                </a>
+                                <a href="guides/uganda-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇺🇬</span>
+                                    <span class="north-africa-country-name">Uganda</span>
+                                </a>
+                                <a href="guides/rwanda-travel-guide%20(1).html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇷🇼</span>
+                                    <span class="north-africa-country-name">Rwanda</span>
+                                </a>
+                                <a href="guides/burundi-travel-guide%20(1).html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇧🇮</span>
+                                    <span class="north-africa-country-name">Burundi</span>
+                                </a>
+                                <a href="guides/tanzania-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇹🇿</span>
+                                    <span class="north-africa-country-name">Tanzania</span>
+                                </a>
+                                <a href="guides/malawi-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇲🇼</span>
+                                    <span class="north-africa-country-name">Malawi</span>
+                                </a>
+                                <a href="guides/zambia-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇿🇲</span>
+                                    <span class="north-africa-country-name">Zambia</span>
+                                </a>
+                                <a href="guides/zimbabwe-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇿🇼</span>
+                                    <span class="north-africa-country-name">Zimbabwe</span>
+                                </a>
                             </div>
                         </section>
                         <section class="north-africa-guides">
-                            <h3 class="north-africa-title">Central Africa Guides</h3>
+                            <h3 class="north-africa-title">Central & Island Africa Guides</h3>
                             <p class="north-africa-subtitle">Choose a country</p>
                             <div class="north-africa-flag-grid">
                                 <a href="guides/central-african-republic-travel-guide.html" class="north-africa-flag-card">
@@ -191,6 +238,58 @@
                                 <a href="guides/gabon-travel-guide.html" class="north-africa-flag-card">
                                     <span class="north-africa-flag-emoji" aria-hidden="true">🇬🇦</span>
                                     <span class="north-africa-country-name">Gabon</span>
+                                </a>
+                                <a href="guides/angola-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇦🇴</span>
+                                    <span class="north-africa-country-name">Angola</span>
+                                </a>
+                                <a href="guides/democratic-republic-of-the-congo-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇨🇩</span>
+                                    <span class="north-africa-country-name">Democratic Republic of the Congo</span>
+                                </a>
+                                <a href="guides/republic-of-the-congo-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇨🇬</span>
+                                    <span class="north-africa-country-name">Republic of the Congo</span>
+                                </a>
+                                <a href="guides/sao-tome-principe-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇸🇹</span>
+                                    <span class="north-africa-country-name">São Tomé &amp; Príncipe</span>
+                                </a>
+                                <a href="guides/madagascar-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇲🇬</span>
+                                    <span class="north-africa-country-name">Madagascar</span>
+                                </a>
+                                <a href="guides/mozambique-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇲🇿</span>
+                                    <span class="north-africa-country-name">Mozambique</span>
+                                </a>
+                                <a href="guides/seychelles-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇸🇨</span>
+                                    <span class="north-africa-country-name">Seychelles</span>
+                                </a>
+                                <a href="guides/mauritius-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇲🇺</span>
+                                    <span class="north-africa-country-name">Mauritius</span>
+                                </a>
+                                <a href="guides/south-africa-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇿🇦</span>
+                                    <span class="north-africa-country-name">South Africa</span>
+                                </a>
+                                <a href="guides/lesotho-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇱🇸</span>
+                                    <span class="north-africa-country-name">Lesotho</span>
+                                </a>
+                                <a href="guides/eswatini-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇸🇿</span>
+                                    <span class="north-africa-country-name">Eswatini</span>
+                                </a>
+                                <a href="guides/namibia-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇳🇦</span>
+                                    <span class="north-africa-country-name">Namibia</span>
+                                </a>
+                                <a href="guides/botswana-travel-guide.html" class="north-africa-flag-card">
+                                    <span class="north-africa-flag-emoji" aria-hidden="true">🇧🇼</span>
+                                    <span class="north-africa-country-name">Botswana</span>
                                 </a>
                             </div>
                         </section>

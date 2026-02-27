@@ -447,6 +447,39 @@ h2 {
     text-align: left;
 }
 
+.landing-guides-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.guide-search-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.guide-search-input {
+    flex: 1 1 220px;
+    max-width: 360px;
+    border-radius: 999px;
+    border: 1px solid #e0d9cc;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.guide-search-input::placeholder {
+    color: #a19c93;
+}
+
+.guide-search-hint {
+    font-size: 0.8rem;
+    color: #7a7772;
+}
+
 .landing-guides-heading {
     margin: 0;
     font-family: "Cormorant Garamond", Georgia, serif;
@@ -527,6 +560,17 @@ h2 {
 .north-africa-country-name {
     font-size: 0.83rem;
     font-weight: 600;
+}
+
+.guide-flag-icon {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.guide-flag-icon .guide-flag-emoji {
+    font-size: 1.25rem;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.35));
 }
 
 .date-buttons {
